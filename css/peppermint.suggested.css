@@ -1,0 +1,127 @@
+.peppermint.peppermint-active {
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.peppermint.peppermint-active .peppermint-slides {
+    position: relative;
+    overflow: hidden;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+.peppermint.peppermint-active .peppermint-slides > * {
+    float: left;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
+.peppermint.peppermint-active .peppermint-slides a:active,
+.peppermint.peppermint-active .peppermint-slides a:active img {
+    outline: none;
+}
+
+.peppermint.peppermint-active,
+.peppermint.peppermint-active .peppermint-slides,
+.peppermint.peppermint-active .peppermint-slides > * {
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.peppermint.peppermint-mouse .peppermint-slides {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+}
+
+.peppermint.peppermint-mouse.peppermint-drag .peppermint-slides * {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+}
+
+/* default appearance styles */
+.peppermint {
+    text-align: center;
+}
+
+.peppermint figure {
+    margin: 0 0 1.5em 0;
+}
+
+.peppermint figure img {
+    vertical-align: top;
+    max-width: 100%;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.peppermint figure figcaption {
+    font-style: italic;
+    color: #787575;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+.peppermint.peppermint-active {
+    margin-bottom: 0;
+}
+
+.peppermint-slides {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.peppermint-dots {
+    margin: 10px 0 0 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.peppermint-dots>li {
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #5a6885;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peppermint-dots>li:last-child {
+    margin-right: 0; 
+}
+
+.peppermint-slides {
+    height: 375px;
+}
+
+.peppermint-active-dot>span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #5a6885;
+    border-radius: 50%;
+}

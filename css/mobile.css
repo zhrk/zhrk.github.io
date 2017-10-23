@@ -1,0 +1,79 @@
+@media (max-width: 1279px) {
+	
+	.main-video {
+		display: none;
+	}
+
+	header {
+		height: 53px;
+		padding: 11px 20px 0 20px;
+		align-items: center;
+	}
+
+	.menu-btn__text {
+		display: none;
+	}
+
+	.header__info {
+		display: none;
+	}
+
+	.header__call {
+		display: flex;
+	}
+
+	.welcome {
+		height: 500px;
+		padding-top: 80px;
+		padding-left: 0;
+		background-image: url(../img/bg-mobile.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.slogan {
+		margin-top: 40px;
+		font-size: 30px;
+	}
+
+	.slogan__show-br {
+		display: none;
+	}
+
+	.slogan__hide-br {
+		display: block;
+	}
+
+	.logo--desktop {
+		display: none;
+	}
+
+	.logo--mobile {
+		display: block;
+	}
+
+	.btn--welcome {
+		margin-top: 50px;
+		width: 280px;
+		height: 50px;
+		font-size: 14px;
+	}
+
+	.mouse {
+		display: none;
+	}
+
+	.shares {
+		display: none;
+	}
+
+	.shares-mobile {
+		display: block;
+	}
+
+	.main-catalog-btn {
+		display: flex;
+	}
+
+}

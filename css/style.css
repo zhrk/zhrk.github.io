@@ -1,0 +1,294 @@
+@font-face {
+	font-family: Muller;
+	font-weight: bold;
+	src: url(../fonts/MullerBold.otf);
+}
+
+@font-face {
+	font-family: Muller;
+	font-weight: 900;
+	src: url(../fonts/MullerExtraBold.otf);
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0)
+	}
+	
+	50% {
+		transform: translateY(10px)
+	}
+	
+	100% {
+		transform: translateY(0)
+	}
+}
+
+
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font: 14px Roboto;
+	color: #5a6885;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 73px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 50px 108px 0 108px;
+	background-color: #ccc;
+	color: #b8cce6;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.header--main-page {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-btn {
+	display: flex;
+}
+
+.hamburger {
+	position: relative;
+	width: 29px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.hamburger>div {
+	position: absolute;;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+}
+
+.hamburger>div:nth-child(1) {
+	top: 0;
+}
+
+.hamburger>div:nth-child(2) {
+	top: 10px;
+}
+
+.hamburger>div:nth-child(3) {
+	top: 20px;
+}
+
+.menu-btn__text {
+	margin-top: -2px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+.header__info {
+	margin-top: -4px;
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__call {
+	width: 102px;
+	height: 42px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #505966;
+	font-weight: normal;
+	color: #c3d7f2;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+.main-video {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 950px;
+	overflow: hidden;
+}
+
+.main-video>video {
+	width: 100%;
+	height: 950px;
+	object-fit: cover;
+}
+
+.welcome {
+	z-index: 3;
+	height: 950px;
+	padding-top: 150px;
+	padding-left: 36px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	pointer-events: none;
+}
+
+.logo--mobile {
+	display: none;
+}
+
+.slogan {
+	margin-top: 60px;
+	font: 50px Muller;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;;
+}
+
+.slogan__hide-br {
+	display: none;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-image: -moz-linear-gradient( 0deg, rgb(17,130,49) 0%, rgb(41,148,61) 15%, rgb(65,165,72) 50%, rgb(41,148,61) 85%, rgb(17,130,49) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(17,130,49) 0%, rgb(41,148,61) 15%, rgb(65,165,72) 50%, rgb(41,148,61) 85%, rgb(17,130,49) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(17,130,49) 0%, rgb(41,148,61) 15%, rgb(65,165,72) 50%, rgb(41,148,61) 85%, rgb(17,130,49) 100%);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 1.1;
+}
+
+.btn--welcome {
+	margin-top: 60px;
+	width: 436px;
+	height: 62px;
+	border-radius: 31px;
+}
+
+.mouse {
+	margin-top: 115px;
+	pointer-events: none;
+	animation: bounce 1.5s ease-in-out infinite;
+}
+
+.shares {
+	width: 100%;
+	height: 375px;
+	display: flex;
+}
+
+.shares__bg {
+	flex-grow: 1;
+	height: 375px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.shares__info {
+	margin-top: 40px;
+	text-align: center;
+	color: #1e1e1e;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.shares__info--1 {
+	color: #489682;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.shares__info--2 {
+	color: #a19074;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.shares__info--3 {
+	color: #a286b3;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.shares__info--4 {
+	color: #657c97;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.shares__bg--1 {
+	background-image: url(../img/shares-1.jpg);
+}
+
+.shares__bg--2 {
+	background-image: url(../img/shares-2.jpg);
+}
+
+.shares__bg--3 {
+	background-image: url(../img/shares-3.jpg);
+}
+
+.shares__bg--4 {
+	background-image: url(../img/shares-4.jpg);
+}
+
+.main-catalog-btn {
+	width: 100%;
+	height: 80px;
+	display: none;
+}
+
+.main-catalog-btn__text {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-catalog-btn__arrow {
+	margin-left: 97px;
+}
+
+.main-catalog-btn__title {
+	font-size: 25px;
+	font-family: Muller;
+	font-weight: bold;
+}
+
+.main-catalog-btn__info {
+	color: #ccffcf;
+	font-size: 14px;
+}
+
+.shares-mobile {
+	display: none;
+}
+
+.services {
+	
+}
