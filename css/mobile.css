@@ -124,4 +124,55 @@
 		display: flex;
 	}
 
+	.sponsors {
+		display: none;
+	}
+
+	.questions {
+		height: 405px;
+		background-image: url(../img/questions-mobile.jpg);
+	}
+
+	.questions__row {
+		margin-top: 30px;
+	}
+
+	.questions__row--1 {
+		flex-direction: column;
+	}
+
+	.questions__row--2 {
+		display: none;
+	}
+
+	.questions__text {
+		margin: 0;
+		text-align: center;
+	}
+
+	.questions__text--1 {
+		font-size: 30px;
+	}
+
+	.questions__text--2 {
+		font-size: 20px;
+	}
+
+	.form-style {
+		align-self: center;
+		width: 280px;
+		margin-top: 50px;
+		flex-direction: column;
+	}
+
+	.form-style__button {
+		margin: 30px 0 0 0;
+		width: 280px;
+	}
+
+	.form-style__button:after {
+		top: 75px;
+		left: 23px;
+	}
+
 }
