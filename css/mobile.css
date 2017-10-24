@@ -8,6 +8,12 @@
 
 
 @media (max-width: 1279px) {
+
+	.body--noscroll {
+		overflow-y: scroll;
+		position: fixed;
+	}
+
 	
 	.main-video {
 		display: none;
@@ -17,6 +23,10 @@
 		height: 53px;
 		padding: 11px 20px 0 20px;
 		align-items: center;
+	}
+
+	.modal {
+		overflow-y: scroll;
 	}
 
 	.menu-btn__text {
@@ -173,6 +183,52 @@
 	.form-style__button:after {
 		top: 75px;
 		left: 23px;
+	}
+
+	footer {
+		height: 300px;
+	}
+
+	.footer__inner {
+		flex-direction: column;
+		max-width: none;
+		justify-content: flex-start;
+	}
+
+	.footer__block--1,
+	.footer__block--2, 
+	.footer__title,
+	.footer__numbers, 
+	.footer__email {
+		display: none;
+	}
+
+	.footer__block {
+		align-items: center;
+	}
+
+	.footer__logo {
+		margin-top: 30px;
+		order: 1;
+		align-items: center;
+	}
+
+	.copyrighted {
+		margin: 30px 0;
+	}
+
+	.footer__info {
+		margin-top: 20px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.footer__social {
+		margin-top: 30px;
+	}
+
+	.footer__btn {
+		display: flex;
 	}
 
 }
