@@ -1,3 +1,12 @@
+@media (max-width: 1429px) {
+	
+	.catalog__block {
+		width: 240px;
+	}
+
+}
+
+
 @media (max-width: 1279px) {
 	
 	.main-video {
@@ -73,6 +82,45 @@
 	}
 
 	.main-catalog-btn {
+		display: flex;
+	}
+
+	.services__title  {
+		font-size: 30px;
+		margin-top: 64px;
+		font-weight: 900;
+	}
+
+	.services__inner {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.services__inner--no-margin {
+		margin: 0;
+	}
+
+	.services__block {
+		height: 217px;
+		margin: 0 0 1px 0;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.services__caption {
+		font-size: 25px;
+	}
+
+	.services__br {
+		display: none;
+	}
+
+	.catalog {
+		display: none;
+	}
+
+	.catalog-mobile {
 		display: flex;
 	}
 
