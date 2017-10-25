@@ -1,9 +1,12 @@
-@media (max-width: 1429px) {
+@media (max-width: 1367px) {
 	
 	.catalog__block {
 		width: 240px;
 	}
 
+	.advantages__mission>p {
+		font-size: 14px;
+	}
 }
 
 
@@ -22,6 +25,10 @@
 	header {
 		padding: 0 20px;
 		align-items: center;
+	}
+
+	.hamburger>div {
+		color: #7e8fa5;
 	}
 
 	.header__logo {
@@ -51,6 +58,7 @@
 	}
 
 	.header--main-page {
+		width: 100vw;
 		height: 53px;
 		padding: 11px 20px 0 20px;
 		align-items: center;
@@ -308,6 +316,80 @@
 
 	.catalogP__list {
 		display: none;
+	}
+
+	.about-welcome {
+		height: 440px;
+		box-sizing: border-box;
+		padding: 0 20px;
+		background-image: url(../img/about-bg-m.jpg);
+	}
+
+	.about__title {
+		margin-top: 140px;
+		font-size: 28px;
+	}
+
+	.about_ads {
+		font-weight: normal;
+		margin-top: 30px;
+		font-size: 17px;
+	}
+
+	.advantages__inner {
+		flex-direction: column;
+	}
+
+	.advantages__title {
+		margin-top: 50px;
+		margin-bottom: 30px;
+		font-size: 30px;
+	}
+
+	.advantages__blocks {
+		max-width: 100%;
+		min-width: auto;
+		width: 100%;
+		height: auto;
+	}
+
+	.advantages__block {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	.advantages__mission {
+		padding-top: 50px;
+	}
+
+	.advantages__headline {
+		font-size: 30px;
+	}
+
+	.advantages__mission {
+		width: 280px;
+		align-self: center;
+		margin: 0 20px;
+	}
+
+	.reviews__title {
+		font-size: 30px;
+	}
+
+	.advantages--hidden {
+		display: none;
+	}
+
+	.advantages__show-more {
+		display: block;
+	}
+
+	.reviews__inner {
+		display: none;
+	}
+
+	.reviews__inner-mobile {
+		display: block;
 	}
 
 }
