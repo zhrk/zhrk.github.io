@@ -58,6 +58,37 @@
 
 	.modal {
 		overflow-y: scroll;
+		padding: 80px 0 0 0;
+		box-sizing: border-box;
+		align-items: flex-start;
+	}
+
+	.modal__info {
+		display: none;
+	}
+
+	.menu {
+		padding-top: 40px;
+		height: 430px;
+		width: 290px;
+	}
+
+	.menu:after {
+		width: 25px;
+	}
+
+	.menu:before {
+		width: 156px;
+	}
+
+	.menu__title {
+		top: -14px;
+		left: 30px;
+		font-size: 30px;
+	}
+
+	.menu>a {
+		font-size: 25px;
 	}
 
 	.menu-btn__text {
@@ -263,7 +294,7 @@
 	}
 
 	.catalogP {
-		align-self: center;
+		justify-content: space-around;
 	}
 
 	.catalogP__block {
@@ -273,6 +304,10 @@
 	.catalogP__img {
 		width: 280px;
 		height: 162px;
+	}
+
+	.catalogP__list {
+		display: none;
 	}
 
 }

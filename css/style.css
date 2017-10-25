@@ -1068,12 +1068,121 @@ footer {
 	width: 344px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 60px;
+	align-self: flex-start;
 }
 
-.catalogP__img{
+.catalogP__img {
 	width: 344px;
 	height: 200px;
 	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 56px 32px;
+	justify-content: center;
+	align-items: center;
+}
+
+.catalogP__img:hover > span {
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	transition: all 0.15s ease-out;
+}
+
+.catalogP__img:hover .catalogP__border {
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.15s ease-out;
+}
+
+.catalogP__caption {
+	text-align: center;
+	position: relative;
+	font: 25px Muller;
+	font-weight: bold;
+	color: #fff;
+	padding: 15px;
+	border: 2px solid rgba(255, 255, 255, 0);
+	transition: all 0.15s ease-out;
+}
+
+.catalogP__border {
+	position: absolute;
+	bottom: -2px;
+	width: 44px;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.8);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.catalogP__list {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.catalogP__list>a {
+	color: #5a6885;
+	margin-bottom: 25px;
+	transition: all 0.15s ease-out;
+}
+
+.catalogP__list>a:hover {
+	color: #323b4e;
+	transition: all 0.15s ease-out;
+}
+
+.catalogP__list>a:last-child {
+	margin: 0;
+}
+
+
+
+.catalogP__img--1 {
 	background-image: url(../img/catalogP-1.jpg);
-	margin-bottom: 50px;
+}
+
+.catalogP__img--2 {
+	background-image: url(../img/catalogP-2.jpg);
+}
+
+.catalogP__img--3 {
+	background-image: url(../img/catalogP-3.jpg);
+}
+
+.catalogP__img--4 {
+	background-image: url(../img/catalogP-4.jpg);
+}
+
+.catalogP__img--5 {
+	background-image: url(../img/catalogP-5.jpg);
+}
+
+.catalogP__img--6 {
+	background-image: url(../img/catalogP-6.jpg);
+}
+
+.catalogP__img--7 {
+	background-image: url(../img/catalogP-7.jpg);
+}
+
+.catalogP__img--8 {
+	background-image: url(../img/catalogP-8.jpg);
+}
+
+.catalogP__img--9 {
+	background-image: url(../img/catalogP-9.jpg);
+}
+
+.catalogP__img--10 {
+	background-image: url(../img/catalogP-10.jpg);
+}
+
+.catalogP__img--11 {
+	background-image: url(../img/catalogP-11.jpg);
+}
+
+.catalogP__img--12 {
+	background-image: url(../img/catalogP-12.jpg);
 }
