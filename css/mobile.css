@@ -20,6 +20,37 @@
 	}
 
 	header {
+		padding: 0 20px;
+		align-items: center;
+	}
+
+	.header__logo {
+		order: 1;
+		margin: 0;
+	}
+
+	.header__logo--desktop {
+		display: none;
+	}
+
+	.header__logo--mobile {
+		display: block !important;
+	}
+
+	.header__call {
+		order: 2;
+		max-width: 280px;
+		width: 100%;
+		margin: 0 20px;
+	}
+
+	.menu-btn {
+		order: 3;
+		width: 80px;
+		justify-content: flex-end;
+	}
+
+	.header--main-page {
 		height: 53px;
 		padding: 11px 20px 0 20px;
 		align-items: center;
@@ -229,6 +260,19 @@
 
 	.footer__btn {
 		display: flex;
+	}
+
+	.catalogP {
+		align-self: center;
+	}
+
+	.catalogP__block {
+		width: 280px;
+	}
+
+	.catalogP__img {
+		width: 280px;
+		height: 162px;
 	}
 
 }
