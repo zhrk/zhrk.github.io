@@ -146,6 +146,7 @@ header {
 	font: 40px Muller;
 	font-weight: bold;
 	align-items: flex-start;
+	margin-bottom: 40px;
 }
 
 .menu__title {

@@ -495,4 +495,9 @@
 		display: flex;
 	}
 
+	.catalogP__title {
+		margin: 50px 0 30px 0;
+		font-size: 30px;
+	}
+
 }
