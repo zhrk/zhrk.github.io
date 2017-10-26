@@ -20,6 +20,18 @@ var openModal = () => {
 menuBtn.addEventListener('click', openModal);
 
 
+(function () {
+  if (window.innerWidth < 1280) {
+
+  	var imgDisable =  document.querySelectorAll('.catalogP__img');
+
+  	for (var i = 0; i < imgDisable.length; i++) {
+  		imgDisable[i].removeAttribute('href');
+  	}
+
+	}
+}());
+
 
 
 var back = () => {
@@ -30,41 +42,19 @@ var back = () => {
 	backBtn.style.display = 'none';
 }
 
+var selectCategory = () => {
+	'use strict';
+	var target = event.target.parentNode,
+			clonedDiv = target.cloneNode(true);
+
+
+	clonedDiv.classList.add('catalogP__block--selected');
+	document.querySelector('main').style.height = '0';
+	document.querySelector('main').style.overflow = 'hidden';
+	backBtn.style.display = 'flex';
+	document.querySelector('body').insertBefore(clonedDiv, document.querySelector('footer'));
+}
+
 
 backBtn.addEventListener('click', back);
-
-
-
-document.querySelector('.catalogP__img--1').addEventListener('click', function (event) {
-	'use strict';
-	var target = event.target,
-			clonedDiv = target.cloneNode(true);
-
-
-
-	document.querySelector('main').style.height = '0';
-	document.querySelector('main').style.overflow = 'hidden';
-	backBtn.style.display = 'flex';
-	document.querySelector('body').insertBefore(clonedDiv, document.querySelector('footer'));
-
-
-	console.log(target.parentNode);
-
-});
-
-document.querySelector('.catalogP__img--6').addEventListener('click', function (event) {
-	'use strict';
-	var target = event.target,
-			clonedDiv = target.cloneNode(true);
-
-
-
-	document.querySelector('main').style.height = '0';
-	document.querySelector('main').style.overflow = 'hidden';
-	backBtn.style.display = 'flex';
-	document.querySelector('body').insertBefore(clonedDiv, document.querySelector('footer'));
-
-
-	console.log(target.parentNode);
-
-});
+document.querySelector('.catalogP').addEventListener('click', selectCategory);

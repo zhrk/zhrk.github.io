@@ -376,8 +376,21 @@
 		height: 163px;
 	}
 
+	.catalogP__caption {
+		pointer-events: none;
+	}
+
 	.catalogP__list {
 		display: none;
+		margin: 0;
+		align-items: stretch;
+		margin-bottom: 30px;
+	}
+
+	.catalogP__list>a {
+		border-bottom: 1px solid #d7e3f7;
+		padding: 20px 0 15px 20px;
+		margin: 0;
 	}
 
 	.about-welcome {
