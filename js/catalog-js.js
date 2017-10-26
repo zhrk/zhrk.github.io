@@ -1,5 +1,7 @@
 var menuBtn = document.querySelector('.menu-btn'),
-		modal = document.querySelector('.modal');
+		modal = document.querySelector('.modal'),
+		backBtn = document.querySelector('.btn__back');
+
 
 var openModal = () => {
 	'use strict';
@@ -16,3 +18,53 @@ var openModal = () => {
 }
 
 menuBtn.addEventListener('click', openModal);
+
+
+
+
+var back = () => {
+	'use strict';
+	document.querySelector('body').removeChild(document.body.children[3]);
+	document.querySelector('main').style.height = 'auto';
+	document.querySelector('main').style.overflow = 'auto';
+	backBtn.style.display = 'none';
+}
+
+
+backBtn.addEventListener('click', back);
+
+
+
+document.querySelector('.catalogP__img--1').addEventListener('click', function (event) {
+	'use strict';
+	var target = event.target,
+			clonedDiv = target.cloneNode(true);
+
+
+
+	document.querySelector('main').style.height = '0';
+	document.querySelector('main').style.overflow = 'hidden';
+	backBtn.style.display = 'flex';
+	document.querySelector('body').insertBefore(clonedDiv, document.querySelector('footer'));
+
+
+	console.log(target.parentNode);
+
+});
+
+document.querySelector('.catalogP__img--6').addEventListener('click', function (event) {
+	'use strict';
+	var target = event.target,
+			clonedDiv = target.cloneNode(true);
+
+
+
+	document.querySelector('main').style.height = '0';
+	document.querySelector('main').style.overflow = 'hidden';
+	backBtn.style.display = 'flex';
+	document.querySelector('body').insertBefore(clonedDiv, document.querySelector('footer'));
+
+
+	console.log(target.parentNode);
+
+});
