@@ -19,19 +19,6 @@ var openModal = () => {
 
 menuBtn.addEventListener('click', openModal);
 
-
-(function () {
-  if (window.innerWidth < 1280) {
-
-  	var imgDisable =  document.querySelectorAll('.catalogP__img');
-
-  	for (var i = 0; i < imgDisable.length; i++) {
-  		imgDisable[i].removeAttribute('href');
-  	}
-
-	}
-}());
-
 var scrollBack = 0; 
 
 var back = () => {
@@ -62,3 +49,16 @@ var selectCategory = () => {
 
 backBtn.addEventListener('click', back);
 document.querySelector('.catalogP').addEventListener('click', selectCategory);
+
+(function () {
+  if (window.innerWidth < 1280) {
+  	var imgDisable =  document.querySelectorAll('.catalogP__img');
+
+  	for (var i = 0; i < imgDisable.length; i++) {
+  		imgDisable[i].removeAttribute('href');
+  	}
+
+	} else {
+		document.querySelector('.catalogP').removeEventListener('click', selectCategory);
+	}
+}());
