@@ -32,7 +32,7 @@ menuBtn.addEventListener('click', openModal);
 	}
 }());
 
-
+var scrollBack = 0; 
 
 var back = () => {
 	'use strict';
@@ -40,6 +40,7 @@ var back = () => {
 	document.querySelector('main').style.height = 'auto';
 	document.querySelector('main').style.overflow = 'auto';
 	backBtn.style.display = 'none';
+	window.scrollTo(0, scrollBack + 140);
 }
 
 var selectCategory = () => {
@@ -53,6 +54,9 @@ var selectCategory = () => {
 	document.querySelector('main').style.overflow = 'hidden';
 	backBtn.style.display = 'flex';
 	document.querySelector('body').insertBefore(clonedDiv, document.querySelector('footer'));
+	window.scrollTo(0, 0);
+
+	scrollBack = target.offsetTop;
 }
 
 
