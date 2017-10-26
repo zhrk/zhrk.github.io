@@ -123,6 +123,47 @@ header {
 	visibility: visible;
 }
 
+.modal--active>.menu {
+	display: flex;
+}
+
+.modal--active>.modal__info {
+	display: flex;
+}
+
+.modal--active-consl {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal--active-consl>.modal__consl {
+	display: flex;	
+}
+
+.modal__consl {
+	display: none;
+	flex-direction: column;
+	padding-left: 35px;
+}
+
+.modal__consl-title {
+	color: rgba(255, 255, 255, 0.2);
+	font: 60px Muller;
+	font-weight: bold;
+	text-align: center;
+}
+
+.modal__consl>.form-style {
+	margin-top: 65px;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+.modal__consl .form-style__button {
+	margin: 69px 0 0 0;
+	width: 436px;
+}
+
 .modal-blur {
 	-webkit-filter: blur(7px);
   -moz-filter: blur(7px);
@@ -147,6 +188,7 @@ header {
 	font-weight: bold;
 	align-items: flex-start;
 	margin-bottom: 40px;
+	display: none;
 }
 
 .menu__title {
@@ -194,6 +236,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin-left: 64px;
+	display: none;
 }
 
 .modal__address {
