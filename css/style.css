@@ -953,6 +953,7 @@ footer {
 	height: 420px;
 	display: flex;
 	justify-content: center;
+	background-color: #f7faff;
 }
 
 .footer__inner {
@@ -1320,7 +1321,7 @@ footer {
 
 .reviews__inner {
 	align-self: center;
-	max-width: 1840px;
+	max-width: 1370px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1355,4 +1356,29 @@ footer {
 	display: none;
 	width: 280px;
 	height: 280px;
+}
+
+.reviews__block--mobile {
+	width: 280px;
+	height: 280px;
+	background-color: #f7faff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 4px solid #fff;
+	border-left: 4px solid #f7faff;
+	box-sizing: border-box;
+}
+
+.reviews__block--mobile>img {
+	width: 150px;
+	height: 208px;
+}
+
+.reviews__inner-mobile .peppermint-slides {
+	height: 280px;
+}
+
+.reviews__inner-mobile {
+	height: 350px;
 }
