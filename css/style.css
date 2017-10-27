@@ -352,12 +352,17 @@ main {
 	display: none;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #505966;
+	border: 1px solid #b8c5d6;
 	font-weight: normal;
 	color: #7e8fa5;
 	font-size: 14px;
 	border-radius: 5px;
 }
+
+.header--main-page .header__call {
+	border: 1px solid #505966;
+}
+
 
 .main-video {
 	position: absolute;
@@ -1555,4 +1560,115 @@ footer {
 
 .catalogP__block--selected>.catalogP__list {
 	display: flex !important;
+}
+
+.news_btn-back {
+	max-width: 1704px;
+	width: 100%;
+	height: 160px;
+	box-sizing: border-box;
+	padding-left: 100px;
+	display: flex;
+	align-items: center;
+	align-self: center;
+	color: #323b4e;
+	font: 25px Muller;
+	font-weight: bold;
+}
+
+.news_btn-back:hover .arrow-news-back-desktop {
+	transform: scale(1.2);
+	transition: all 0.5s ease-out;
+}
+
+.arrow-news-back-desktop {
+	margin-right: 20px;
+	margin-top: -3px;
+	transition: all 0.15s ease-out;
+}
+
+.news-single__inner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.news-single__welcome {
+	display: flex;
+	position: relative;
+}
+
+.news-single__img {
+	display: flex;
+	width: 50%;
+	overflow: hidden;
+}
+
+.news-single__img>img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.news-single__title-wrapper {
+	width: 50%;
+	position: relative;
+}
+
+.news-single__title-block {
+	width: 645px;
+	position: absolute;
+	padding: 40px;
+	background: #fff;
+	z-index: 2;
+	top: 120px;
+	left: -300px;
+}
+
+.news_btn-back-text--mobile {
+	display: none;
+}
+
+.arrow-news-back-mobile {
+	display: none;
+}
+
+.news-single__title {
+	color: #323b4e;
+	font: 40px Muller;
+	font-weight: bold;
+}
+
+.news-single__text {
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.news-single__date {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #a3b5cc;
+}
+
+.news-single__article {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	width: 100%;
+	align-self: center;
+	margin-top: 64px;
+	font-size: 15px;
+	margin-bottom: 110px;
+}
+
+.news-single__article>p {
+	margin-bottom: 10px;
+}
+
+.news-single__article {
+	max-width: 100%;
+	margin: 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	background-color: #f7faff;
 }
