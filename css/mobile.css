@@ -576,4 +576,12 @@
 		font-size: 25px;
 	}
 
+	.news-single__article {
+		max-width: 100%;
+		margin: 0;
+		padding: 0 20px;
+		box-sizing: border-box;
+		background-color: #f7faff;
+	}
+
 }
