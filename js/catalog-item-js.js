@@ -171,9 +171,48 @@ document.querySelector('.catalogS__popup').addEventListener('click', openPopUp);
 
 
 
+
+
+(function () {
+    if (window.innerWidth < 1280) {
+
+	  	document.querySelector('.catalogS__popup').removeEventListener('click', openPopUp);
+
+	}
+}());
+
+
+
 var popUpA = document.querySelectorAll('.catalogS__popup>a');
 
 
 for (var i = 0; i < popUpA.length; i++) {
 	popUpA[i].addEventListener('click', popUpChange);
 }
+
+var filterM = document.querySelector('.catalogS-filter-mobile');
+
+
+var openFilter = () => {
+	'use strict';
+	document.querySelector('.catalogS__form').classList.toggle('catalogS__form--active');
+	document.querySelector('.catalogS__sort-mobile').classList.toggle('catalogS__sort-mobile--active');
+	document.querySelector('.catalogS-filter-mobile').classList.toggle('catalogS-filter-mobile--active');
+
+}
+
+
+
+var sortM = document.querySelector('.catalogS-sort-mobile');
+
+
+function openSort() {
+	'use strict';
+	sortM.classList.toggle('catalogS-filter-mobile--active');
+	document.querySelector('.catalogS__popup').classList.toggle('catalogS__popup-mobile--active');
+}
+
+
+filterM.addEventListener('click', openFilter);
+sortM.addEventListener('click', openSort);
+document.querySelector('.catalogS__popup-mobile-sort').addEventListener('click', openSort);
