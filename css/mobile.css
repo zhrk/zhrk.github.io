@@ -748,4 +748,157 @@
 		align-self: center;
 	}
 
+	.catalogI__inner {
+		flex-direction: column;
+	}
+
+	.catalogI__info-text {
+		height: 200px;
+		overflow: hidden;
+		padding-left: 20px;
+		line-height: 1.533;
+		margin-bottom: 10px;
+	}
+
+	.catalogI__img-slides {
+		align-self: center;
+	}
+
+	.catalogI__img-nav {
+		width: 280px;
+		justify-content: space-between;
+	}
+
+	.catalogI__img-nav>div {
+		width: 65px;
+		height: 65px;
+		margin-right: 0;
+	}
+
+	.catalogI__img-subj {
+		width: 280px;
+		height: 360px;
+		align-self: center;
+	}
+
+	.catalogI__img-nav>div:last-child {
+		display: none;
+	}
+
+	.catalogI__img-slides {
+		margin: 0;
+	}
+
+	.catalogI__consl {
+		width: 280px;
+		height: 156px;
+	}
+
+	.catalogI__consl-btn {
+		width: 240px;
+		height: 41px;
+	}
+
+	.catalogI__table-title {
+		flex-direction: column;
+	}
+
+	.catalog__table-shadow {
+		display: none;
+	}
+
+	.catalogI__table-list {
+		display: flex;
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	.catalogI__table-title>div {
+		padding: 0;
+		text-transform: none;
+		border: 0;
+	}
+
+	.catalogI__table {
+		margin: 0;
+		padding: 0;
+	}
+
+	.catalogI__img-slides {
+		width: 280px;
+	}
+
+	.catalogI__info {
+		margin-top: 50px;
+	}
+
+	.catalogI__info-title {
+		text-align: center;
+	}
+
+	.catalogI__table-headline {
+		text-transform: uppercase !important;
+		width: 100%;
+		height: 50px;
+		border-top: 1px solid #d3d8de;
+		border-bottom: 1px solid #d3d8de !important;
+		color: #5a6885 !important;
+		box-sizing: border-box;
+		padding-left: 20px !important;
+		background-color: #e6e9ed;
+		display: flex;
+		align-items: center;
+	}
+
+	.catalogI__table-row>div:first-child {
+		margin-right: 50px;
+		padding-top: 16px;
+		padding-bottom: 14px;
+		width: 50%;
+	}
+
+	.catalogI__table-row>div:nth-child(2) {
+		width: 50%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.catalogI__table-row {
+		line-height: 1.643;
+		padding-right: 20px;
+	}
+
+	.catalogI__table-row-2>div {
+		width: 50%;
+	}
+
+	.catalogI__table-row-2>div:first-child {
+		margin-right: 50px;
+	}
+
+	.catalogI__table-price {
+		font-size: 14px !important;
+	}
+
+	.catalogI__table-btn {
+		display: none;
+	}
+
+	.catalogI__table-row-2 {
+		align-items: flex-start;
+	}
+
+	.catalogI__table-row-2:first-child {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.catalogI__showmore {
+		display: flex;
+	}
+
+	.catalogI_headline_img {
+		display: block;
+	}
+
 }

@@ -1679,6 +1679,7 @@ footer {
 	font: 25px Muller;
 	font-weight: bold;
 	margin-right: 20px;
+	transform: translateX(-3px);
 }
 
 .catalogS__title--current {
@@ -2272,4 +2273,267 @@ footer {
 .catalogS__popup-mobile-sort-dot--active {
 	background: #2a8031;
 	border: 2px solid #56af5d;
+}
+
+.catalog__back {
+	width: 1700px;
+	box-sizing: border-box;
+	padding-left: 100px;
+	display: flex;
+	height: 140px;
+	padding-top: 120px;
+}
+
+.catalogI__inner {
+	display: flex;
+	max-width: 1500px;
+	width: 100%;
+	align-self: center;
+}
+
+.catalogI__img-slides {
+	display: flex;
+	flex-direction: column;
+	width: 420px;
+	margin-bottom: 40px;
+	margin-right: 40px;
+}
+
+.catalogI__img-subj {
+	width: 420px;
+	height: 440px;
+	justify-content: center;
+	display: flex;
+}
+
+.catalogI__img-subj>img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.catalogI__img-nav {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+
+.catalogI__img-nav>div {
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+	margin-right: 15px;
+	display: flex;
+}
+
+.catalogI__img-nav>div:last-child {
+	margin: 0;
+}
+
+.catalogI__img-nav>div>img {
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.catalogI__consl {
+	margin-top: 15px;
+	width: 410px;
+	height: 156px;
+	background-color: #f0f5f7;
+	align-self: center;
+	border-radius: 5px;
+	font-size: 35px;
+	color: #323b4e;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.catalogI__consl-price {
+	margin-top: 25px;
+}
+
+.catalogI__consl-price--text {
+	font-size: 25px;
+}
+
+.catalogI__consl-btn {
+	margin-top: 20px;
+	border-radius: 20.5px;
+	width: 356px;
+	height: 41px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.catalogI__info {
+	display: flex;
+	flex-direction: column;
+}
+
+.catalogI__info-title {
+	font: 25px Muller;
+	font-weight: bold;
+	color: #323b4e;
+}
+
+.catalogI__info-text {
+	margin-top: 40px;
+	color: #323b4e;
+	font-weight: 500;
+	font-size: 15px;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
+.catalogI__table {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 60px;
+	position: relative;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
+.catalogI__table-title {
+	margin-top: 50px;
+	display: flex;
+}
+
+.catalogI__table-title>div {
+	color: #005aff;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 0 20px 18px 20px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	user-select: none;
+	transition: all 0.2s ease-out;
+}
+
+.catalogI__table-list {
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.catalogI__table-row {
+	display: flex;
+	background: #f4f8fa;
+	line-height: 3.571;
+	padding-left: 20px;
+}
+
+.catalogI__table-row:nth-child(even) {
+	background: #fff;
+}
+
+.catalogI__table-row>div:first-child {
+	max-width: 300px;
+	width: 100%;
+	color: #323b4e;
+	font-weight: 500;
+}
+
+.catalogI__table-row>div:nth-child(2) {
+	font-weight: bold;
+	color: #323b4e;
+}
+
+.catalogI__table-plank {
+	position: absolute;
+	height: 2px;
+	background-color: #005aff;
+	width: 300px;
+}
+
+.catalogI__table-title--active {
+	color: #5a6885 !important;
+	border-bottom: 2px solid #005aff !important;
+	transition: all 0.2s ease-out;
+}
+
+.catalogI__table-list--active {
+	display: flex;
+}
+
+.catalog__table-shadow {
+	max-width: calc(100% - 20px);
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 87px;
+	background-color: #daebf2;
+	box-shadow: 0px 1px 2px 0px rgba(184, 193, 204, 0.4);
+}
+
+.catalogI__table-row-2 {
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	display: flex;
+	line-height: 1.786;
+	height: 41px;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.catalogI__table-row-2>div:first-child {
+	width: 65%;
+	font-weight: bold;
+	color: #323b4e;
+}
+
+.catalogI__table-row-2>div:nth-child(2) {
+	font-size: 14px;
+	font-weight: bold;
+	color: #323b4e;
+}
+
+.catalogI__table-btn {
+	width: 145px;
+	height: 41px;
+	border-radius: 20.5px;
+	font-weight: 500;
+	font-size: 15px;
+	margin-left: auto;
+}
+
+.catalogI__table-price {
+	font-size: 25px !important;
+}
+
+.catalogI__table-list-3 {
+	padding-top: 10px;
+}
+
+.open-mobile-cat {
+	max-height: 2000px !important;
+}
+
+.catalogI__showmore {
+	margin-left: 20px;
+	color: #005aff;
+	align-self: flex-start;
+	border-bottom: 1px dashed #7d9dff;
+	display: none;
+}
+
+.catalogI_headline_img {
+	display: none;
+}
+
+.catalogI__table-headline {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 20px !important;
+}
+
+.catalogI__table-headline>img {
+	transition: all 0.2s ease-out;
+}
+
+.catalogI__img-title--active>img {
+	transform: rotate(180deg);
+	transition: all 0.2s ease-out;
 }
