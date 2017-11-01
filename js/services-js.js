@@ -203,6 +203,7 @@ for (var i = 0; i < welcomeBtns.length; i++) {
 				document.querySelector('.ourservices-back').style.display = 'flex';
 				document.querySelector('.ourservices__blocks-wrapper').style.display = 'flex';
 				event.target.removeEventListener('click', mWelcome);
+				window.scrollTo(0, 0);
 
 				for (var i = 0; i < welcomeBtns.length; i++) {
 					if (event.target.classList[1] !== welcomeBtns[i].classList[1]) {
