@@ -107,7 +107,6 @@
 
 	.ourservices__inner {
 		padding: 0 10px;
-		flex-direction: column;
 	}
 
 }
@@ -1017,6 +1016,12 @@
 		margin: 0;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		padding-right: 20px;
+	}
+
+	.ourservices__title-list>a>img {
+		display: block;
 	}
 
 	.ourservices__title-list {
@@ -1032,6 +1037,7 @@
 
 	.ourservices__blocks-wrapper {
 		flex-direction: column;
+		max-width: 100%;
 	}
 
 	.ourservices__img {
@@ -1105,6 +1111,47 @@
 
 	.ourservices__img-6 {
 		background-image: url('../img/osm-3.png') !important;
+	}
+
+	.ourservices__form {
+		display: none;
+		width: 100%;
+		border-radius: 0;
+		padding: 50px 20px 0 20px;
+		margin-bottom: 50px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 40%;
+		background-image: url('../img/ourservices-form-m.jpg');
+	}
+
+	.ourservices-form-title {
+		align-self: center;
+		font-size: 25px;
+	}
+
+	.ourservices__form>.form-style__inner {
+		width: 280px;
+		align-self: center;
+	}
+
+	.ourservices__form > .form-style__inner > .form-style__input {
+		width: 280px;
+	}
+
+	.ourservices-form-q {
+		align-self: center;
+		width: 280px;
+	}
+
+	.ourservices__form>.checkbox__block {
+		align-self: center;
+		width: 280px;
+	}
+
+	.ourservices__form-btn {
+		align-self: center;
+		width: 280px;
 	}
 
 }

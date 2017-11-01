@@ -179,19 +179,7 @@ for (var i = 0; i < welcomeBtns.length; i++) {
 
 
 
-var openMobileNav = (event) => {
-	'use strict';
-	event.target.nextElementSibling.classList.toggle('open-mobile-nav');
-}
 
-
-var mobileNav = document.querySelectorAll('.ourservices__nav-a');
-
-
-for (var i = 0; i < mobileNav.length; i++) {
-	mobileNav[i].addEventListener('click', openMobileNav);
-	mobileNav[i].removeAttribute('href');
-}
 
 
 
@@ -225,6 +213,7 @@ for (var i = 0; i < mobileNav.length; i++) {
 				document.querySelector('.ourservices__headline').style.display = 'none';
 
 				document.querySelector('.ourservices__nav').style.display = 'flex';
+				document.querySelector('.ourservices__form').style.display = 'flex';
 
 
 
@@ -239,6 +228,18 @@ for (var i = 0; i < mobileNav.length; i++) {
 						document.querySelector('.ourservices__title-list-2').style.maxHeight = '100%';
 						break;
 
+					case 'ourservices__welcome-btn-3':
+						document.querySelector('.ourservices__block-7').style.maxHeight = '100%';
+						break;
+
+					case 'ourservices__welcome-btn-4':
+						document.querySelector('.ourservices__block-8').style.maxHeight = '100%';
+						break;
+
+					case 'ourservices__welcome-btn-5':
+						document.querySelector('.ourservices__block-9').style.maxHeight = '100%';
+						break;
+					
 				}
 
 			}
@@ -260,6 +261,7 @@ for (var i = 0; i < mobileNav.length; i++) {
 			'use strict';
 			document.querySelector('.ourservices-back').style.display = 'none';
 			document.querySelector('.ourservices__headline').style.display = 'flex';
+			document.querySelector('.ourservices__form').style.display = 'none';
 
 			for (var i = 0; i < welcomeBtns.length; i++) {
 				welcomeBtns[i].parentNode.style.display = 'flex';
@@ -279,6 +281,9 @@ for (var i = 0; i < mobileNav.length; i++) {
 
 			document.querySelector('.ourservices__title-list-1').style.maxHeight = '0';
 			document.querySelector('.ourservices__title-list-2').style.maxHeight = '0';
+			document.querySelector('.ourservices__block-7').style.maxHeight = '0';
+			document.querySelector('.ourservices__block-8').style.maxHeight = '0';
+			document.querySelector('.ourservices__block-9').style.maxHeight = '0';
 
 			}
 
@@ -293,6 +298,26 @@ for (var i = 0; i < mobileNav.length; i++) {
 			document.querySelector('.ourservices__title-list-2').insertBefore(document.querySelector('.ourservices__block-4'), document.querySelector('.ourservices__nav-a-5'));
 			document.querySelector('.ourservices__title-list-2').insertBefore(document.querySelector('.ourservices__block-5'), document.querySelector('.ourservices__nav-a-6'));
 			document.querySelector('.ourservices__title-list-2').appendChild(document.querySelector('.ourservices__block-6'));
+			document.querySelector('.ourservices__nav').insertBefore(document.querySelector('.ourservices__block-7'), document.querySelector('.ourservices__title-4'));
+			document.querySelector('.ourservices__nav').insertBefore(document.querySelector('.ourservices__block-8'), document.querySelector('.ourservices__title-5'));
+			document.querySelector('.ourservices__nav').appendChild(document.querySelector('.ourservices__block-9'));
+
+
+
+			var openMobileNav = (event) => {
+			'use strict';
+				event.target.nextElementSibling.classList.toggle('open-mobile-nav');
+				event.target.children[0].classList.toggle('mobile-nav--active');
+			}
+
+
+			var mobileNav = document.querySelectorAll('.ourservices__nav-a');
+
+
+			for (var i = 0; i < mobileNav.length; i++) {
+				mobileNav[i].addEventListener('click', openMobileNav);
+				mobileNav[i].removeAttribute('href');
+			}
 
 
 	}

@@ -2779,7 +2779,8 @@ footer {
 }
 
 .ourservices__welcome {
-	width: 1520px;
+	max-width: 1520px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -2856,10 +2857,104 @@ footer {
 	font-weight: bold;
 	color: #323b4e;
 	display: none;
+	box-sizing: border-box;
+	padding-left: 20px;
 	align-items: center;
+}
+
+.ourservices-back>img {
+	margin-right: 30px;
+	margin-top: -1px;
 }
 
 .open-mobile-nav {
 	max-height: 1000px !important;
 	transition: all 0.2s ease-out;
+}
+
+.ourservices__title-list>a>img {
+	display: none;
+	transition: all 0.2s ease-out;
+}
+
+.mobile-nav--active {
+	transform: rotate(-180deg);
+	transition: all 0.2s ease-out;
+}
+
+.ourservices__form {
+	height: 492px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-image: url('../img/ourservices-form.jpg');
+	box-sizing: border-box;
+	padding: 40px;
+	margin-bottom: 120px;
+}
+
+.ourservices-form-title {
+	font: 50px Muller;
+	font-weight: 900;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.ourservices__form>.form-style__inner {
+	flex-grow: 0;
+}
+
+.ourservices__form > .form-style__inner > .form-style__label {
+	color: #dae5f2;
+}
+
+.ourservices__form > .form-style__inner > .form-style__phone {
+	transform: translateY(-5px);
+}
+
+.ourservices__form > .form-style__inner > .form-style__input {
+	width: 456px;
+	background-image: url(../img/star.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.ourservices__form>.checkbox__block>label>input:checked + .catalogS__checkbox {
+	background-color: #45ab4c;
+	background-image: url('../img/accept_sq.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid #45ab4c;
+	transition: background-color 0.1s ease-out;
+}
+
+.ourservices__form>.checkbox__block input {
+	display: none;
+}
+
+.ourservices__form>.checkbox__block {
+	margin-bottom: 15px;
+}
+
+.ourservices__form>.checkbox__block span {
+	margin-left: 10px;
+	color: #fff;
+}
+
+.ourservices-form-q {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	color: #dae5f2;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.ourservices__form-btn {
+	border: 0;
+	width: 187px;
+	height: 41px;
+	border-radius: 20.5px;
+	font-size: 15px;
+	font-weight: 500;
+	margin-top: 20px;
 }
