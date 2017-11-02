@@ -52,7 +52,7 @@ function openModalConsl() {
 
 function changeInputLabel(event) {
 	'use strict';
-	let target = event.target;
+	var target = event.target;
 
 	if (target.classList.contains('form-style__input')) {
 
