@@ -8,13 +8,13 @@ var menuBtn = document.querySelector('.menu-btn'),
 
 var labels = document.querySelectorAll('.form-style__inner');
 
-var changeMenuBtn = () => {
+function changeMenuBtn() {
 	'use strict';
 	hamburger.classList.toggle('hamburger--active');
 	document.querySelector('.menu-btn>span').classList.toggle('menu-btn__text--active');
 }
 
-var blurBG = () => {
+function blurBG() {
 	'use strict';
 	main.classList.toggle('modal-blur');
 	footer.classList.toggle('modal-blur');
@@ -24,7 +24,7 @@ var blurBG = () => {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
-var openModal = () => {
+function openModal() {
 	'use strict';
 	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
 		document.querySelector('.modal').classList.remove('modal--active-consl');
@@ -40,7 +40,7 @@ var openModal = () => {
 	
 }
 
-var openModalConsl = () => {
+function openModalConsl() {
 	'use strict';
 	modal.classList.toggle('modal--active-consl');
 	changeMenuBtn();
@@ -53,7 +53,7 @@ document.querySelector('.menu-btn').addEventListener('click', openModal);
 document.querySelector('.header__consultation').addEventListener('click', openModalConsl);
 document.querySelector('.catalogI__consl-btn').addEventListener('click', openModalConsl);
 
-var changeInputLabel = (event) => {
+function changeInputLabel(event) {
 	'use strict';
 	let target = event.target;
 
@@ -77,7 +77,7 @@ var tableLists = document.querySelectorAll('.catalogI__table-list');
 
 
 
-var changeTitle = (event) => {
+function changeTitle(event) {
 	'use strict';
 	for (var i = 0; i < tableTitle.length; i++) {
 		tableTitle[i].classList.remove('catalogI__table-title--active');
@@ -111,7 +111,7 @@ for (var i = 0; i < tableTitle.length; i++) {
 	tableTitle[i].addEventListener('click', changeTitle);
 }
 
-var openMobileCat = (event) => {
+function openMobileCat(event) {
 	'use strict';
 	event.target.nextElementSibling.classList.toggle('open-mobile-cat');
 	event.target.classList.toggle('catalogI__img-title--active');
@@ -146,7 +146,7 @@ document.querySelector('.catalogI__showmore').addEventListener('click', function
 
 
 
-var openCatalog = (event) => {
+function openCatalog(event){
 	'use strict';
 	document.querySelector('.catalogI-big').classList.toggle('catalogI-big--active');
 	event.target.classList.toggle('catalogI-big__inner-title--active');

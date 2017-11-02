@@ -1251,4 +1251,8 @@
 		margin: 0;
 	}
 
+	.catalogI-big {
+		display: none;
+	}
+
 }

@@ -7,13 +7,13 @@ var menuBtn = document.querySelector('.menu-btn'),
 		backBtn = document.querySelector('.btn__back');
 
 
-var changeMenuBtn = () => {
+function changeMenuBtn() {
 	'use strict';
 	hamburger.classList.toggle('hamburger--active');
 	document.querySelector('.menu-btn>span').classList.toggle('menu-btn__text--active');
 }
 
-var blurBG = () => {
+function blurBG() {
 	'use strict';
 	main.classList.toggle('modal-blur');
 	footer.classList.toggle('modal-blur');
@@ -23,7 +23,7 @@ var blurBG = () => {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
-var openModal = () => {
+function openModal() {
 	'use strict';
 	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
 		document.querySelector('.modal').classList.remove('modal--active-consl');
@@ -39,7 +39,7 @@ var openModal = () => {
 	
 }
 
-var openModalConsl = () => {
+function openModalConsl() {
 	'use strict';
 	modal.classList.toggle('modal--active-consl');
 	changeMenuBtn();
@@ -58,7 +58,7 @@ document.querySelector('.header__consultation').addEventListener('click', openMo
 
 var scrollBack = 0; 
 
-var back = () => {
+function back() {
 	'use strict';
 	document.querySelector('body').removeChild(document.body.children[3]);
 	document.querySelector('main').style.height = 'auto';
@@ -67,7 +67,7 @@ var back = () => {
 	window.scrollTo(0, scrollBack + 140);
 }
 
-var selectCategory = () => {
+function selectCategory() {
 	'use strict';
 	var target = event.target.parentNode,
 			clonedDiv = target.cloneNode(true);
@@ -103,7 +103,7 @@ document.querySelector('.catalogP').addEventListener('click', selectCategory);
 var labels = document.querySelectorAll('.form-style__inner');
 
 
-var changeInputLabel = (event) => {
+function changeInputLabel(event) {
 	'use strict';
 	let target = event.target;
 

@@ -22,13 +22,13 @@ document.querySelector('.advantages__show-more').addEventListener('click', funct
 
 })
 
-var changeMenuBtn = () => {
+function changeMenuBtn() {
 	'use strict';
 	hamburger.classList.toggle('hamburger--active');
 	document.querySelector('.menu-btn>span').classList.toggle('menu-btn__text--active');
 }
 
-var blurBG = () => {
+function blurBG() {
 	'use strict';
 	main.classList.toggle('modal-blur');
 	footer.classList.toggle('modal-blur');
@@ -38,7 +38,7 @@ var blurBG = () => {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
-var openModal = () => {
+function openModal() {
 	'use strict';
 	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
 		document.querySelector('.modal').classList.remove('modal--active-consl');
@@ -54,7 +54,7 @@ var openModal = () => {
 	
 }
 
-var openModalConsl = () => {
+function openModalConsl() {
 	'use strict';
 	modal.classList.toggle('modal--active-consl');
 	changeMenuBtn();
@@ -77,7 +77,7 @@ document.querySelector('.header__consultation').addEventListener('click', openMo
 
 var labels = document.querySelectorAll('.form-style__inner');
 
-var changeInputLabel = (event) => {
+function changeInputLabel (event) {
 	'use strict';
 	let target = event.target;
 

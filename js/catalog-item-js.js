@@ -8,13 +8,13 @@ var menuBtn = document.querySelector('.menu-btn'),
 
 var labels = document.querySelectorAll('.form-style__inner');
 
-var changeMenuBtn = () => {
+function changeMenuBtn() {
 	'use strict';
 	hamburger.classList.toggle('hamburger--active');
 	document.querySelector('.menu-btn>span').classList.toggle('menu-btn__text--active');
 }
 
-var blurBG = () => {
+function blurBG() {
 	'use strict';
 	main.classList.toggle('modal-blur');
 	footer.classList.toggle('modal-blur');
@@ -24,7 +24,7 @@ var blurBG = () => {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
-var openModal = () => {
+function openModal() {
 	'use strict';
 	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
 		document.querySelector('.modal').classList.remove('modal--active-consl');
@@ -40,7 +40,7 @@ var openModal = () => {
 	
 }
 
-var openModalConsl = () => {
+function openModalConsl() {
 	'use strict';
 	modal.classList.toggle('modal--active-consl');
 	changeMenuBtn();
@@ -52,7 +52,7 @@ var openModalConsl = () => {
 document.querySelector('.menu-btn').addEventListener('click', openModal);
 document.querySelector('.header__consultation').addEventListener('click', openModalConsl);
 
-var changeInputLabel = (event) => {
+function changeInputLabel(event) {
 	'use strict';
 	let target = event.target;
 
@@ -92,7 +92,7 @@ range.noUiSlider.on('update', function( values, handle ) {
 
 
 
-var resetCloud = () => {
+function resetCloud() {
 	'use strict';
 
 	var cloudsList = document.querySelectorAll('.sortCloud');
@@ -106,7 +106,7 @@ var resetCloud = () => {
 
 }
 
-var hideCloud = (event) => {
+function hideCloud(event) {
 	'use strict';
 	document.querySelector('.catalogS__sort').removeChild(event.target);
 	for (var i = 0; i < checkboxes.length; i++) {
@@ -117,7 +117,7 @@ var hideCloud = (event) => {
 }
 
 
-var addCheck = (event) => {
+function addCheck(event) {
 	'use strict';
 
 	var cloudsList = document.querySelectorAll('.sortCloud'),
@@ -150,12 +150,12 @@ for (var i = 0; i < checkboxes.length; i++) {
 }
 
 
-var openPopUp = (event) => {
+function openPopUp(event) {
 	'use strict';
 	document.querySelector('.catalogS__popup').classList.toggle('catalogS__popup--active');
 }
 
-var popUpChange = (event) => {
+function popUpChange(event) {
 	'use strict';
 	console.log(event.target);
 	document.querySelector('.catalogS__sort-btn-selected').innerHTML = event.target.innerHTML;
@@ -193,7 +193,7 @@ for (var i = 0; i < popUpA.length; i++) {
 var filterM = document.querySelector('.catalogS-filter-mobile');
 
 
-var openFilter = () => {
+function openFilter() {
 	'use strict';
 	document.querySelector('.catalogS__form').classList.toggle('catalogS__form--active');
 	document.querySelector('.catalogS__sort-mobile').classList.toggle('catalogS__sort-mobile--active');
@@ -220,7 +220,7 @@ document.querySelector('.catalogS__popup-mobile-sort').addEventListener('click',
 
 
 
-var openCatalog = (event) => {
+function openCatalog(event) {
 	'use strict';
 	document.querySelector('.catalogI-big').classList.toggle('catalogI-big--active');
 	event.target.classList.toggle('catalogI-big__inner-title--active');
