@@ -143,3 +143,15 @@ document.querySelector('.catalogI__showmore').addEventListener('click', function
 	event.target.previousElementSibling.style.height = 'auto';
 	event.target.style.display = 'none';
 })
+
+
+
+var openCatalog = (event) => {
+	'use strict';
+	document.querySelector('.catalogI-big').classList.toggle('catalogI-big--active');
+	event.target.classList.toggle('catalogI-big__inner-title--active');
+}
+
+
+
+document.querySelector('.catalogS__title-btn').addEventListener('click', openCatalog);

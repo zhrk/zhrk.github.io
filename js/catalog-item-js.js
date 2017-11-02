@@ -216,3 +216,14 @@ function openSort() {
 filterM.addEventListener('click', openFilter);
 sortM.addEventListener('click', openSort);
 document.querySelector('.catalogS__popup-mobile-sort').addEventListener('click', openSort);
+
+
+
+
+var openCatalog = (event) => {
+	'use strict';
+	document.querySelector('.catalogI-big').classList.toggle('catalogI-big--active');
+	event.target.classList.toggle('catalogI-big__inner-title--active');
+}
+
+document.querySelector('.catalogS__title-btn').addEventListener('click', openCatalog);

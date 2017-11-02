@@ -13,11 +13,12 @@ var changeMenuBtn = () => {
 
 var blurBG = () => {
 	'use strict';
+	main.classList.toggle('modal-blur');
+	footer.classList.toggle('modal-blur');
 	document.querySelector('.header__info').classList.toggle('modal-blur');
 	document.querySelector('.header__logo--desktop').classList.toggle('modal-blur');
 	document.querySelector('.header__logo--mobile').classList.toggle('modal-blur');
 	document.querySelector('.header__call').classList.toggle('modal-blur');
-	document.querySelector('.contacts').classList.toggle('modal-blur');
 }
 
 var openModal = () => {
@@ -50,13 +51,6 @@ document.querySelector('.header__consultation').addEventListener('click', openMo
 
 
 
-
-
-
-
-
-
-
 var labels = document.querySelectorAll('.form-style__inner');
 
 var changeInputLabel = (event) => {
@@ -75,3 +69,21 @@ for (var i = 0; i < labels.length; i++) {
 	labels[i].addEventListener('focusin', changeInputLabel);
 	labels[i].addEventListener('focusout', changeInputLabel);
 }
+
+var slider = Peppermint(document.getElementById('peppermint'), {
+	dots: true,
+	speed: 300,
+	slideshow: true
+});
+
+var slider2 = Peppermint(document.getElementById('peppermint2'), {
+	dots: true,
+	speed: 300,
+	slideshow: true
+});
+
+var slider3 = Peppermint(document.getElementById('peppermint3'), {
+	dots: true,
+	speed: 300,
+	slideshow: true
+});
