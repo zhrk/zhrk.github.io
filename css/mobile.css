@@ -416,6 +416,7 @@
 	.catalogP__img {
 		width: 280px;
 		height: 163px;
+		padding: 0;
 	}
 
 	.catalogP__caption {
