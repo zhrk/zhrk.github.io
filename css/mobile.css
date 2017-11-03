@@ -934,19 +934,22 @@
 	.ourservices__welcome {
 		flex-direction: column;
 		width: 100%;
-		align-items: center;
 	}
 
 	.ourservices__welcome>div {
 		width: 100%;
 		background: #fff;
 		height: 150px;
-		left: 50%;
-		transform: translate(-50%);
 		position: relative;
 		padding: 0;
 		border-radius: 0;
 		overflow: hidden;
+	}
+
+	.ourservices__welcome-btn {
+		align-self: flex-start;
+		left: 50%;
+		transform: translate(-50%);
 	}
 
 	.ourservices__welcome-btn {
