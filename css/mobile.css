@@ -150,7 +150,7 @@
 		order: 2;
 		max-width: 280px;
 		width: 100%;
-		margin: 0 20px;
+		margin: 0 30px;
 	}
 
 	.menu-btn {
@@ -934,6 +934,7 @@
 	.ourservices__welcome {
 		flex-direction: column;
 		width: 100%;
+		align-items: center;
 	}
 
 	.ourservices__welcome>div {
@@ -1152,6 +1153,8 @@
 	.ourservices__form-btn {
 		align-self: center;
 		width: 280px;
+		display: inline-block;
+		text-align: center;
 	}
 
 	.catalogI__inner>.ourservices-back  {
@@ -1212,7 +1215,7 @@
 		top: 0;
 		width: 100%;
 		height: 100vh;
-		position: relative;
+		position: absolute;
 		left: 0;
 		right: 0;
 		display: flex;
@@ -1253,6 +1256,11 @@
 
 	.catalogI-big {
 		display: none;
+	}
+
+	.catalogS_form-submit>button {
+		display: inline-block;
+		text-align: center;
 	}
 
 }
