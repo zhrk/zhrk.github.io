@@ -421,6 +421,12 @@
 
 	.catalogP__caption {
 		pointer-events: none;
+		position: relative;
+	}
+
+	.catalogP__img>svg {
+		order: 1;
+		position: absolute;
 	}
 
 	.catalogP__list {
