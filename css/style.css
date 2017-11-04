@@ -1126,30 +1126,60 @@ footer {
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	padding: 56px 32px;
 	justify-content: center;
 	align-items: center;
 }
 
-.catalogP__img:hover > span {
-	border: 2px solid rgba(255, 255, 255, 0.8);
-	transition: all 0.3s ease-out;
+
+.catalogP__img {
+  position: relative;  
 }
 
-.catalogP__img:hover .catalogP__border {
-	background-color: rgba(255, 255, 255, 0);
-	transition: all 0.3s ease-out;
+.catalogP__img>svg {
+	pointer-events: none;
 }
+
+
+.shape {
+  stroke-dasharray: 40 480;
+  stroke-dashoffset: -460;
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: #fff;
+  transition: stroke-dashoffset 0.8s, stroke-dasharray 0.8s;
+}
+
+.catalogP__img:hover .shape {
+ stroke-dashoffset: 0;
+ stroke-dasharray: 680;
+}
+
+.shape2 {
+  stroke-dasharray: 40 500;
+  stroke-dashoffset: -500;
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: #fff;
+  transition: stroke-dashoffset 0.8s, stroke-dasharray 0.8s;
+}
+
+.catalogP__img:hover .shape2 {
+ stroke-dashoffset: 0;
+ stroke-dasharray: 760;
+}
+
+
 
 .catalogP__caption {
 	text-align: center;
-	position: relative;
+	position: absolute;
 	font: 25px Muller;
 	font-weight: bold;
 	color: #fff;
 	padding: 15px;
 	border: 2px solid rgba(255, 255, 255, 0);
 	transition: all 0.15s ease-out;
+	pointer-events: none;
 }
 
 .catalogP__border {
@@ -3211,3 +3241,4 @@ footer {
 .peppermint--2 {
 	order: 1;
 }
+
