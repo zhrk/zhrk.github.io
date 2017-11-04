@@ -416,7 +416,10 @@
 	.catalogP__img {
 		width: 280px;
 		height: 163px;
-		padding: 0;
+	}
+
+	.catalogP__img:after {
+		display: block;
 	}
 
 	.catalogP__caption {
@@ -425,8 +428,7 @@
 	}
 
 	.catalogP__img>svg {
-		order: 1;
-		position: absolute;
+		display: none;
 	}
 
 	.catalogP__list {
