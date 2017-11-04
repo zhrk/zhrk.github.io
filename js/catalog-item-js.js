@@ -104,6 +104,10 @@ function resetCloud() {
 		checkboxes[i].previousElementSibling.checked = false;
 	}
 
+	if (document.querySelector('.catalogS__sort').children[0] === document.querySelector('.catalogS__reset-btn')) {
+		document.querySelector('.catalogS__reset-btn').style.visibility = 'hidden';
+	}
+
 }
 
 function hideCloud(event) {
@@ -111,8 +115,12 @@ function hideCloud(event) {
 	document.querySelector('.catalogS__sort').removeChild(event.target);
 	for (var i = 0; i < checkboxes.length; i++) {
 		if (checkboxes[i].parentNode.parentNode.childNodes[3].innerHTML === event.target.innerHTML) {
-			console.log(checkboxes[i].previousElementSibling.checked = false);
+			checkboxes[i].previousElementSibling.checked = false;
 		}
+	}
+
+	if (document.querySelector('.catalogS__sort').children[0] === document.querySelector('.catalogS__reset-btn')) {
+		document.querySelector('.catalogS__reset-btn').style.visibility = 'hidden';
 	}
 }
 
@@ -127,6 +135,7 @@ function addCheck(event) {
 	newSort.innerHTML = sortText;
 	newSort.className = 'sortCloud';
 	newSort.addEventListener('click', hideCloud);
+	document.querySelector('.catalogS__reset-btn').style.visibility = 'visible';
 
 	if (event.target.previousElementSibling.checked === true) {
 		for (var i = 0; i < cloudsList.length; i++) {
@@ -157,8 +166,7 @@ function openPopUp(event) {
 
 function popUpChange(event) {
 	'use strict';
-	console.log(event.target);
-	document.querySelector('.catalogS__sort-btn-selected').innerHTML = event.target.innerHTML;
+	document.querySelector('.catalogS__sort-btn-selected').innerHTML = event.target.children[0].innerHTML;
 }
 
 
@@ -227,3 +235,26 @@ function openCatalog(event) {
 }
 
 document.querySelector('.catalogS__title-btn').addEventListener('click', openCatalog);
+
+function openCatalog(event){
+	'use strict';
+	document.querySelector('.catalogI-big').classList.toggle('catalogI-big--active');
+	event.target.classList.add('catalogI-big__inner-title--active');
+}
+
+function closeCatalog(event){
+	'use strict';
+		document.querySelector('.catalogI-big').classList.remove('catalogI-big--active');
+		document.querySelector('.catalogS__title-btn').classList.remove('catalogI-big__inner-title--active');
+}
+
+
+document.querySelector('.catalogS__title-btn').addEventListener('mouseover', openCatalog);
+
+$(".catalogI-big").on( {
+   'mouseleave':function() { closeCatalog() }
+});
+
+$(".catalogS__popup").on( {
+   'mouseleave':function() { document.querySelector('.catalogS__popup').classList.remove('catalogS__popup--active') }
+});

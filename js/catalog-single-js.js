@@ -149,9 +149,18 @@ document.querySelector('.catalogI__showmore').addEventListener('click', function
 function openCatalog(event){
 	'use strict';
 	document.querySelector('.catalogI-big').classList.toggle('catalogI-big--active');
-	event.target.classList.toggle('catalogI-big__inner-title--active');
+	event.target.classList.add('catalogI-big__inner-title--active');
+}
+
+function closeCatalog(event){
+	'use strict';
+		document.querySelector('.catalogI-big').classList.remove('catalogI-big--active');
+		document.querySelector('.catalogS__title-btn').classList.remove('catalogI-big__inner-title--active');
 }
 
 
+document.querySelector('.catalogS__title-btn').addEventListener('mouseover', openCatalog);
 
-document.querySelector('.catalogS__title-btn').addEventListener('click', openCatalog);
+$(".catalogI-big").on( {
+   'mouseleave':function() { closeCatalog() }
+});
