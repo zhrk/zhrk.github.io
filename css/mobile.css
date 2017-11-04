@@ -1003,6 +1003,8 @@
 	.ourservices__nav {
 		margin: 0;
 		min-width: 100%;
+		position: relative;
+		align-items: stretch;
 	}
 
 	.ourservices__inner {
@@ -1011,6 +1013,7 @@
 
 	.ourservices__title {
 		display: none;
+		min-width: 100%;
 	}
 
 	.ourservices__title-list>a {
@@ -1044,6 +1047,7 @@
 	.ourservices__blocks-wrapper {
 		flex-direction: column;
 		max-width: 100%;
+		margin: 0;
 	}
 
 	.ourservices__img {

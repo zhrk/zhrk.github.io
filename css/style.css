@@ -2779,11 +2779,12 @@ footer {
 .ourservices__inner {
 	max-width: 1560px;
 	width: 100%;
-	justify-content: space-between;
 	align-self: center;
 	display: flex;
 	box-sizing: border-box;
 	padding: 0 20px;
+	justify-content: flex-end; /* adasdasasdasdas23u581254m12cfm51cy12 */
+	position: relative;
 }
 
 .ourservices__title {
@@ -2792,6 +2793,7 @@ footer {
 	color: #005aff;
 	padding: 25px 0;
 	cursor: pointer;
+	min-width: 340px;
 }
 
 .ourservices__title-2 {
@@ -2841,6 +2843,7 @@ footer {
 	max-width: 1144px;
 	width: 100%;
 	display: none;
+	margin-left: 374px;
 }
 
 .ourservices__text>p {
@@ -2858,6 +2861,21 @@ footer {
 	flex-direction: column;
 	min-width: 326px;
 	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	max-width: 1560px;
+	width: 100%;
+	transition: top 0.3s ease-out;
+	align-items: flex-start;
+}
+
+.ourservices__nav--fixed {
+	position: fixed;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%);
+	transition: top 0.3s ease-out;
 }
 
 .ourservices__block {
@@ -2988,10 +3006,6 @@ footer {
 
 .ourservices__welcome>div:nth-child(5) .ourservices__welcome-img {
 	background-image: url('../img/ourw-5.jpg');
-}
-
-.ourservices__nav {
-	margin-right: 40px;
 }
 
 .open-welcome-m {

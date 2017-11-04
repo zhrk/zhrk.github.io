@@ -1,3 +1,11 @@
+$(function(){
+	$('a[href^="#"]').click(function(){
+		var target = $(this).attr('href');
+		$('html, body').animate({scrollTop: $(target).offset().top}, 300);
+		return false; 
+	}); 
+});
+
 var menuBtn = document.querySelector('.menu-btn'),
 		modal = document.querySelector('.modal'),
 		body = document.querySelector('body'),
@@ -178,13 +186,29 @@ for (var i = 0; i < welcomeBtns.length; i++) {
 
 
 
+function navFixed() {
+	'use strict';
+	var
+		navOffsetTop = body.getBoundingClientRect().top;
+	
+	if (navOffsetTop < -330) {
+		document.querySelector('.ourservices__nav').classList.add('ourservices__nav--fixed');	
+	} else {
+		document.querySelector('.ourservices__nav').classList.remove('ourservices__nav--fixed');
+	}
+}
 
+
+
+window.addEventListener('scroll', navFixed);
 
 
 
 
 (function () {
     if (window.innerWidth < 1280) {
+
+    	window.removeEventListener('scroll', navFixed);
 
     	document.querySelector('.ourservices__welcome-btn-1').innerHTML = document.querySelector('.ourservices__title-1').innerHTML;
     	document.querySelector('.ourservices__welcome-btn-2').innerHTML = document.querySelector('.ourservices__title-2').innerHTML;
