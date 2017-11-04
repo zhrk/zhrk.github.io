@@ -1168,7 +1168,7 @@ footer {
  stroke-dasharray: 760;
 }
 
-.catalogP__img:after {
+/* .catalogP__img:after {
 	content: '';
 	display: none;
 	position: absolute;
@@ -1197,7 +1197,7 @@ footer {
 .catalogP__img--10:after {
 	margin-top: 40px;
 }
-
+ */
 
 
 
@@ -1213,14 +1213,16 @@ footer {
 	pointer-events: none;
 }
 
-.catalogP__border {
+.catalogP__caption:after {
+	content: '';
+	display: none;
 	position: absolute;
-	bottom: -2px;
-	width: 44px;
-	height: 2px;
-	background-color: rgba(255, 255, 255, 0.8);
 	left: 50%;
 	transform: translateX(-50%);
+	height: 2px;
+	width: 60px;
+	background: #fff;
+	margin-top: 10px;
 }
 
 .catalogP__list {

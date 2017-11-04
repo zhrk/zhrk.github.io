@@ -422,6 +422,10 @@
 		display: block;
 	}
 
+	.catalogP__caption:after {
+		display: block;
+	}
+
 	.catalogP__caption {
 		pointer-events: none;
 		position: relative;
