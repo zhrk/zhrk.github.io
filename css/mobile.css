@@ -418,10 +418,6 @@
 		height: 163px;
 	}
 
-	.catalogP__img:after {
-		display: block;
-	}
-
 	.catalogP__caption:after {
 		display: block;
 	}
