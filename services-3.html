@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
-		<link rel="stylesheet" href="css/peppermint.suggested-objects.css">
+		<link rel="stylesheet" href="css/peppermint.suggested.css">
 		<link rel="icon" href="img/title-icon.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-		<title>Наши объекты</title>
+		<title>Наши услуги</title>
 	</head>
 	<body>
 		<header>
@@ -62,55 +62,72 @@
 			</div>
 		</header>
 		<main>
-			<h6 class="objects__title">
-				<span>Наши объекты</span>
+			<a href="services.html" class="ourservices-back"><img src="img/nav-arrow-left.svg">Назад</a>
+			<h6 class="ourservices__headline">
+				<span>Наши услуги</span>
 				<div class="title-border"></div>
 			</h6>
-			<div class="objects">
-				<div class="objects__slides" id="peppermint"">
-					<img src="img/objects-1.jpg">
-					<img src="img/objects-2.jpg">
-					<img src="img/objects-3.jpg">
+			<div class="ourservices__inner">
+				<div class="ourservices-img-m"><img src="img/ourservices-3-m.png"><span>Обслуживание</span></div>
+				<div class="ourservices__nav">
+					<a href="services-1.html" class="ourservices__title ourservices__title-1">Проектирование и монтаж</a>
+					<div class="ourservices__title-list ourservices__title-list-1"> <!-- ACTIVE CLASS -->
+						<a href="#l1" class="ourservices__nav-a ourservices__nav-a-1">Системы отопления <img src="img/mini_arrow_shack.svg"></a>
+						<a href="#l2" class="ourservices__nav-a ourservices__nav-a-2">Водоснабжение <img src="img/mini_arrow_shack.svg"></a>
+						<a href="#l3" class="ourservices__nav-a ourservices__nav-a-3">Теплые полы <img src="img/mini_arrow_shack.svg"></a>
+					</div>
+					<a href="services-2.html" class="ourservices__title ourservices__title-2">Установка</a>
+					<div class="ourservices__title-list ourservices__title-list-2">
+						<a href="#l4" class="ourservices__nav-a ourservices__nav-a-4">Установка радиаторов <img src="img/mini_arrow_shack.svg"></a>
+						<a href="#l5" class="ourservices__nav-a ourservices__nav-a-5">Установка систем водоочистки <img src="img/mini_arrow_shack.svg"></a>
+						<a href="#l6" class="ourservices__nav-a ourservices__nav-a-6">Установка котлов <img src="img/mini_arrow_shack.svg"></a>
+					</div>
+					<a href="services-3.html" class="ourservices__title ourservices__title-3">Обслуживание 24 / 7</a>
+					<a href="services-4.html" class="ourservices__title ourservices__title-4">Продажа запчастей</a>
+					<a href="services-5.html" class="ourservices__title ourservices__title-5">Замена и ремонт</a>
 				</div>
-				<div class="objects__info">
-					<div class="objects__info-title">Дом без батарей</div>
-					<div class="objects__info-text">Теплые полы, которые снабжают и обогревают дом. Регулируйте температуру в каждом помещении дома на свое усмотрение. Проверено сибирским холодом уже три года подряд.</div>
-					<div class="objects__area">160 м2</div>
-					<div class="btn objects__btn">Узнать стоимость</div>
+				<div class="ourservices__blocks-wrapper">
+					<div class="ourservices__block ourservices__block-7">
+						<div class="ourservices__img ourservices__img-7">Обслуживание <br> 24 / 7</div>
+						<div class="ourservices__text">
+							<p>Для вашего удобства наша сервисная служба работает круглосуточно.</p>
+							<p>Позвонить оператору можно в любое время по телефону: <b>+7 (3822) 50-51-05</b>.</p>
+							<p>Сотрудники проконсультируют вас по возникшему вопросу и помогут оперативно решить проблему. Без выходных и перерывов «Тепло и уют» заботится о вашем комфорте!</p>
+						</div>
+					</div>
+					<form class="ourservices__form" action="">
+						<div class="ourservices-form-title">Остались вопросы?</div>
+						<div class="form-style__inner">
+							<span class="form-style__label form-style__name">Имя</span>
+							<input class="form-style__input" type="text">
+							<span class="form-style__label form-style__phone">Телефон</span>
+							<input class="form-style__input form-style__input-mask" type="text" maxlength='12'>
+						</div>
+						<div class="ourservices-form-q">По вопросу установки</div>
+						<div class="checkbox__block">
+							<label>
+								<input type="checkbox">
+								<div class="catalogS__checkbox"></div>
+							</label>
+							<span>Котла</span>
+						</div>
+						<div class="checkbox__block">
+							<label>
+								<input type="checkbox">
+								<div class="catalogS__checkbox"></div>
+							</label>
+							<span>Радиатора</span>
+						</div>
+						<div class="checkbox__block">
+							<label>
+								<input type="checkbox">
+								<div class="catalogS__checkbox"></div>
+							</label>
+							<span>Водоочистительного оборудования</span>
+						</div>
+						<button type="submit" class="btn ourservices__form-btn">Отправить заявку</button>
+					</form>
 				</div>
-			</div>
-			<div class="objects">
-				<div class="objects__slides peppermint--2" id="peppermint2"">
-					<img src="img/objects-2.jpg">
-					<img src="img/objects-3.jpg">
-					<img src="img/objects-1.jpg">
-				</div>
-				<div class="objects__info">
-					<div class="objects__info-title">Солнечный источник тепла</div>
-					<div class="objects__info-text">Солнце может дарить не только тепло и хорошее настроение, но и обеспечить вас энергией для нагрева воды, например. Наши клиенты уже экономят свои средства на электроэнергии, присоединяйтесь!</div>
-					<div class="btn objects__btn">Узнать стоимость</div>
-				</div>
-			</div>
-			<div class="objects">
-				<div class="objects__slides" id="peppermint3"">
-					<img src="img/objects-3.jpg">
-					<img src="img/objects-2.jpg">
-					<img src="img/objects-1.jpg">
-					<img src="img/objects-3.jpg">
-				</div>
-				<div class="objects__info">
-					<div class="objects__info-title">Идеальная погода <br> в вашем доме</div>
-					<div class="objects__info-text">Большому кораблю – большое плавание. А для большого дома нужна соответствующая система отопления. Мы берем на себя заботу о вашем комфорте в жилье любого размера.</div>
-					<div class="objects__area">250 м2</div>
-					<div class="btn objects__btn">Узнать стоимость</div>
-				</div>
-			</div>
-			<div class="catalogS-page-nav objects__nav">
-				<div><img src="img/nav-arrow-left.svg"></div>
-				<div>1</div>
-				<div class="catalogS-page-nav--active">2</div>
-				<div>3</div>
-				<div><img src="img/nav-arrow-right.svg"></div>
 			</div>
 		</main>
 		<footer>
@@ -150,7 +167,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/peppermint.min.js"></script>
-		<script src="js/object-js.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/services-js-3.js"></script>
 	</body>
 </html>

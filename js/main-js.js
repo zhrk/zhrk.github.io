@@ -44,6 +44,7 @@ function openModal() {
 
 function openModalConsl() {
 	'use strict';
+	window.scrollTo(0, 0);
 	modal.classList.toggle('modal--active-consl');
 	changeMenuBtn();
 	blurBG();

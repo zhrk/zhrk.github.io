@@ -83,14 +83,19 @@
 
 @media (max-width: 1367px) {
 
+	.advantages__mission>p {
+		font-size: 14px;
+	}
+
 	.welcome {
 		padding-top: 0;
 	}
 
 	.menu {
 		width: 550px;
-		height: 550px;
-		padding: 50px 0 0 65px;
+		height: 500px;
+		font-size: 36px;
+		padding: 40px 0 0 65px;
 	}
 
 	.menu:before {
@@ -101,12 +106,22 @@
 		width: 240px;
 	}
 
-	.advantages__mission>p {
-		font-size: 14px;
-	}
-
 	.ourservices__inner {
 		padding: 0 10px;
+	}
+
+	.advantages__mission {
+		padding-top: 80px;
+	}
+
+	.contacts__inner {
+		top: 2%;
+		left: 10%;
+		height: 640px;
+	}
+
+	.contacts__container {
+		padding-top: 40px;
 	}
 
 }
@@ -780,6 +795,7 @@
 
 	.catalogI__inner {
 		flex-direction: column;
+		padding: 0;
 	}
 
 	.catalogI__info-text {
@@ -940,7 +956,6 @@
 	}
 
 	.ourservices__inner {
-		width: 100%;
 		padding: 0;
 	}
 
@@ -988,23 +1003,23 @@
 		width: 280px;
 	}
 
-	.ourservices__welcome>div:nth-child(1)>div {
+	.ourservices__welcome-btn-1 {
 		background-image: url('../img/ourservices-1-m.png');
 	}
 
-	.ourservices__welcome>div:nth-child(2)>div {
+	.ourservices__welcome-btn-2 {
 		background-image: url('../img/ourservices-2-m.png');
 	}
 	
-	.ourservices__welcome>div:nth-child(3)>div {
+	.ourservices__welcome-btn-3 {
 		background-image: url('../img/ourservices-3-m.png');
 	}
 
-	.ourservices__welcome>div:nth-child(4)>div {
+	.ourservices__welcome-btn-4 {
 		background-image: url('../img/ourservices-4-m.png');
 	}
 
-	.ourservices__welcome>div:nth-child(5)>div {
+	.ourservices__welcome-btn-5 {
 		background-image: url('../img/ourservices-5-m.png');
 	}
 
@@ -1043,11 +1058,6 @@
 
 	.ourservices__title-list>a>img {
 		display: block;
-	}
-
-	.ourservices__title-list {
-		max-height: 0;
-		overflow: hidden;
 	}
 
 	.ourservices__block {
@@ -1282,6 +1292,27 @@
 	.catalogS_form-submit>button {
 		display: inline-block;
 		text-align: center;
+	}
+
+	.q-video {
+		display: none;
+	}
+
+	.ourservices__title-list {
+		max-height: 100%;
+	}
+
+	.ourservices-back {
+		display: flex;
+	}
+
+	.ourservices-img-m {
+		display: flex;
+	}
+
+	.opensnav {
+		max-height: 1000px !important;
+    transition: all 0.3s ease-out !important; 
 	}
 
 }
