@@ -551,6 +551,8 @@ main {
 	    -ms-flex-align: center;
 	        align-items: center;
 	color: #fff;
+  	background-image: -moz-linear-gradient( 0deg, rgb(17,130,49) 0%, rgb(41,148,61) 15%, rgb(65,165,72) 50%, rgb(41,148,61) 85%, rgb(17,130,49) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(17,130,49) 0%, rgb(41,148,61) 15%, rgb(65,165,72) 50%, rgb(41,148,61) 85%, rgb(17,130,49) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(17,130,49) 0%, rgb(41,148,61) 15%, rgb(65,165,72) 50%, rgb(41,148,61) 85%, rgb(17,130,49) 100%);
   font-size: 20px;
   cursor: pointer;
