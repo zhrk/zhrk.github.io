@@ -83,7 +83,7 @@ function navFixed() {
 	var
 		navOffsetTop = body.getBoundingClientRect().top;
 	
-	if (navOffsetTop < -330) {
+	if (navOffsetTop < -230) {
 		document.querySelector('.ourservices__nav').classList.add('ourservices__nav--fixed');	
 	} else {
 		document.querySelector('.ourservices__nav').classList.remove('ourservices__nav--fixed');

@@ -43,7 +43,6 @@ function openModalConsl() {
 	changeMenuBtn();
 	blurBG();
 	body.classList.toggle('body--noscroll');
-	window.scrollTo(0, 0);
 }
 
 

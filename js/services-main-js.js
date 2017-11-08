@@ -78,22 +78,6 @@ for (var i = 0; i < labels.length; i++) {
 	labels[i].addEventListener('focusout', changeInputLabel);
 }
 
-function navFixed() {
-	'use strict';
-	var
-		navOffsetTop = body.getBoundingClientRect().top;
-	
-	if (navOffsetTop < -330) {
-		document.querySelector('.ourservices__nav').classList.add('ourservices__nav--fixed');	
-	} else {
-		document.querySelector('.ourservices__nav').classList.remove('ourservices__nav--fixed');
-	}
-}
-
-
-
-window.addEventListener('scroll', navFixed);
-
 (function () {
     if (window.innerWidth < 1280) {
 

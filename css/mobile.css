@@ -115,13 +115,21 @@
 	}
 
 	.contacts__inner {
-		top: 2%;
-		left: 10%;
+		top: 4%;
+		left: 11%;
 		height: 640px;
 	}
 
 	.contacts__container {
 		padding-top: 40px;
+	}
+
+	.catalogI__table-row-2>div:first-child {
+		width: 55%;
+	}
+
+	header {
+		padding: 0 20px;
 	}
 
 }
@@ -143,6 +151,7 @@
 	header {
 		padding: 0 20px;
 		align-items: center;
+		height: 73px;
 	}
 
 	.hamburger>div {
@@ -666,6 +675,7 @@
 	.catalogS__inner {
 		max-width: 100%;
 		position: relative;
+		padding: 0;
 	}
 
 	.catalogS__list {
@@ -1147,15 +1157,19 @@
 	}
 
 	.ourservices__form {
-		display: none;
+		height: 100%;
+		margin-bottom: 0;
 		width: 100%;
 		border-radius: 0;
-		padding: 50px 20px 0 20px;
-		margin-bottom: 50px;
+		padding: 50px 20px 20px 20px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 40%;
 		background-image: url('../img/ourservices-form-m.jpg');
+	}
+
+	.ourservices-form-wrapper {
+		flex-direction: column;
 	}
 
 	.ourservices-form-title {

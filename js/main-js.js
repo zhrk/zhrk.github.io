@@ -78,3 +78,28 @@ for (var i = 0; i < labels.length; i++) {
 	labels[i].addEventListener('focusin', changeInputLabel);
 	labels[i].addEventListener('focusout', changeInputLabel);
 }
+
+
+header = document.querySelector('header');
+
+
+
+function fixedHeaderBg() {
+	'use strict';
+	var
+		headerPosition = document.querySelector('body').getBoundingClientRect().top;
+	
+	if (headerPosition < 0) {
+		header.classList.remove('header--main-page');
+	} else {
+		header.classList.add('header--main-page');
+	}
+}
+
+window.addEventListener('scroll', fixedHeaderBg);
+
+document.querySelector('main').style.padding = '0';
+
+document.querySelector('.main-video').style.height = window.innerHeight + 'px';
+document.querySelector('.main-video>video').style.height = window.innerHeight + 'px';
+document.querySelector('.welcome').style.height = window.innerHeight + 'px';
