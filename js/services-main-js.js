@@ -81,8 +81,6 @@ for (var i = 0; i < labels.length; i++) {
 (function () {
     if (window.innerWidth < 1280) {
 
-    	window.removeEventListener('scroll', navFixed);
-
     	var welcomeBtns =  document.querySelectorAll('.ourservices__welcome-btn');
 
     	for (var i = 0; i < welcomeBtns.length; i++) {
