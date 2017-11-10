@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>EMS</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="icon" href="img/title-icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<nav>
+					<img src="img/nav-logo.png">
+					<div id="guest3">Гостевой визит</div>
+					<a href="index.html">Клубные карты</a>
+					<a href="index.html">Расписание</a>
+				</nav>
+				<a href="tel:88005553535" class="phone-mobile btn">Позвонить</a>
+				<div class="info">
+					<div class="address">
+						<span>Томск, ул. Красноармейская, 120</span>
+						<span class="phone">55-77-17</span>
+					</div>
+					<div class="time">
+						<div>
+							<span>Будни</span>
+							<span>7:00-22:45</span>
+						</div>
+						<div>
+							<span>Выходные</span>
+							<span>9:00-21:45</span>
+						</div>
+					</div>
+				</div>
+				<div class="fixed-tel">55-77-17</div>
+				<div class="btn-menu btn">
+					<span>Меню</span>
+					<div class="hamburger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+					<h2>Меню</h2>
+					<h2 class="mobile-m">Меню</h2>
+					<div><img src="img/menu-icons/1.png"><a href="index.html">Программы</a></div>
+					<div><img src="img/menu-icons/2.png"><a href="index.html">Расписание</a></div>
+					<div><img src="img/menu-icons/3.png"><a href="index.html">Клубные карты</a></div>
+					<div><img src="img/menu-icons/4.png"><a href="index.html">Тренеры</a></div>
+					<div><img src="img/menu-icons/5.png"><a href="index.html">Фотогалерея</a></div>
+					<div><img src="img/menu-icons/6.png"><a href="index.html">События клубы</a></div>
+					<div><img src="img/menu-icons/7.png"><a href="index.html">Вакансии</a></div>
+					<div id="freeze-card"><img src="img/menu-icons/8.png"><a>Заморозка карты</a></div>
+					<div><img src="img/menu-icons/9.png"><a href="index.html">Контакты</a></div>
+				</div>
+			<div class="guest-form">
+					<h2>Гостевой визит</h2>
+					<span>Почувствовать нашу атмосферу поможет бесплатная услуга «Клубный тур».<br> Мы покажем наш фитнес-центр и расскажем о его преимуществах.</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel" type="text" maxlength="12" required>
+								<span class="wrongnumber-text">неправильный номер</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-inactive">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			<div class="processing">
+					<h2>ЗАЯВКА ОТПРАВЛЕНА</h2>
+					<span>Спасибо за проявленный интерес! Наши менеджеры свяжутся<br> с вами в течение 24 часов по указанным контактам.</span>
+				</div>
+			<div class="freeze-form">
+					<h2>Заморозка карты</h2>
+					<span>Если в какое-то время вы не будете посещать клуб, воспользуйтесь заморозкой карты.<br> Для клубных карт на 6 месяцев от 10 до 30 дней, для карты на 12 месяцев - от 10 до 60 дней.</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel2" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt2">неправильный номер</span>
+							</div>
+						</div>
+						<div>
+							<div>
+								<span>Дата начала заморозки</span>
+								<input type="text" maxlength="10" id="datePickerSince" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);" class="datepicker-here date-i" required readonly>
+							</div>
+							<div>
+								<span>Дата окончания заморозки</span>
+								<input type="text" maxlength="10" id="datePickerSince2" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);" class="datepicker-here date-i" required readonly>
+							</div>
+						</div>
+						<button type="submit"  class="btn">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			<div class="feedback">
+					<h2>ОБРАТНАЯ СВЯЗЬ</h2>
+					<span>Мы рады ответить на любой вопрос или выслушать пожелания</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel3" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt3">неправильный номер</span>
+							</div>
+							<div>
+								<span>Электронная почта</span>
+								<input type="email" required>
+							</div>
+						</div>
+						<div class="feedback-msg">
+							<span>Сообщение</span>
+							<textarea cols="30" rows="6" required></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+		</header>
+		<video src="video/POWERHOUSE.mp4" muted loop poster="img/ems-video-bg.jpg"></video>
+		<div class="slogan-ems">
+			<div class="slogan-ems__inner">
+				<p class="slogan-ems__text1"><span class="slogan-ems-red">30</span> минут занятия = <span class="slogan-ems-red">1,5</span> часа активной <br> тренировки в тренажерном зале</p>
+				<h1>EMS-тренировки </h1>
+				<p class="slogan-ems__text2">Передовая разработка <br> в сфере фитнеса и спорта</p>
+				<p class="slogan-ems__text3">EMS (электромиостимуляция) – воздействие электрических <br> импульсов на основные группы мышц. За время тренировки <br> происходит комплексное воздействие более чем на 500 мышечных <br> волокон.</p>
+				<a href="index.html" class="btn slogan-ems-btn">Записаться</a>
+			</div>
+		</div>
+		<main>
+			<div class="ems-how">
+				<div class="ems-how__inner">
+					<span class="ems-how__title">Как проходят занятия?</span>
+					<div class="ems-how__wrapper">
+						<div class="ems-kek"><img src="img/esl-how.png"></div>
+						<div class="ems-how__list">
+							<div class="ems-how__item">
+								<div class="ems-how__number">1</div>
+								<span>Вам выдают специальное белье</span>
+							</div>
+							<div class="ems-how__item">
+								<div class="ems-how__number">2</div>
+								<span>Вы надеваете тренировочный костюм</span>
+							</div>
+							<div class="ems-how__item">
+								<div class="ems-how__number">3</div>
+								<span>Тренер составляет для вас индивидуальную программу</span>
+							</div>
+							<div class="ems-how__item">
+								<div class="ems-how__number">4</div>
+								<span>Под руководством тренера выполняете упражнения</span>
+							</div>
+							<div class="ems-how__item">
+								<div class="ems-how__number">5</div>
+								<span>В завершении тренировки – лимфодренажный массаж</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ems-profit">
+				<div class="ems-profit__inner">
+					<div class="ems-profit__block">
+						<div class="ems-profit__circle ems-profit__circle--1"></div>
+						<div class="ems-profit__title">Экономия времени</div>
+						<div class="ems-profit__text">Всего 30 минут для проработки более чем 500 групп мышц</div>
+					</div>
+					<div class="ems-profit__block">
+						<div class="ems-profit__circle ems-profit__circle--2"></div>
+						<div class="ems-profit__title">Занятие с персональным тренером</div>
+						<div class="ems-profit__text">Внимание только к Вам и достижению поставленной цели</div>
+					</div>
+					<div class="ems-profit__block">
+						<div class="ems-profit__circle ems-profit__circle--3"></div>
+						<div class="ems-profit__title">Безопасно для суставов</div>
+						<div class="ems-profit__text">Идеальный вариант для укрепления мышц и восстановления после травм</div>
+					</div>
+					<div class="ems-profit__block">
+						<div class="ems-profit__circle ems-profit__circle--3"></div>
+						<div class="ems-profit__title">Восстановление после травм</div>
+						<div class="ems-profit__text">Технологии широко применяются медицине, и хорошо зарекомендовали себя в реабилитации после травм, или операций</div>
+					</div>
+				</div>
+			</div>
+			<div class="ems-q">
+				<div class="ems-q__inner">
+					<div class="ems-q__title">У нас есть ответы <br> на ваши вопросы</div>
+					<div class="ems-q__list">
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">А какие побочные эффекты тренировок?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">Побочных эффектов нет. Тренажер передает безопасные электрические импульсы. Они аналогичны тем, что генерирует наш головной мозг во время тренировок.</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Хочу все и сразу! Можно тренироваться каждый день для быстрого результата?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Можно ли увеличить мышечную массу с помощью EMS – тренировок?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Когда будет заметен первый результат?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Когда будет заметен первый результат?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Из чего сделан EMS – костюм, и как он работает?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Как проходит тренировка?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Есть ли ограничения по возрасту для занятий?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Можно ли заниматься, если есть проблемы с сердцем?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+						<div class="ems-q__list-block">
+							<div class="ems-q__list-title">Какие противопоказания к занятиям?</div>
+							<div class="ems-q__list-plus">+</div>
+						</div>
+						<div class="ems-q__list-hidden">тренировок</div>
+					</div>
+				</div>
+			</div>
+			<div class="ems-form">
+				<div class="ems-form__inner">
+					<div class="ems-form__title">записаться на <br> EMS-тренировки</div>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel1" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt1">неправильный номер</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-inactive">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<div>
+					<div class="info">
+						<div class="address">
+							<span>Томск, ул. Красноармейская, 120</span>
+							<span class="phone">55-77-17</span>
+						</div>
+						<div class="time">
+							<div>
+								<span>Будни</span>
+								<span>7:00-22:45</span>
+							</div>
+							<div>
+								<span>Выходные</span>
+								<span>9:00-21:45</span>
+							</div>
+						</div>
+						<div class="footer-nav">
+							<div class="btn" id="guest2">Бесплатный гостевой визит</div>
+							<a href="https://vk.com" class="btn" target="_blank"><img src="img/vk.png"></a>
+							<a href="https://instagram.com" class="btn" target="_blank"><img src="img/insta.png"></a>
+							<a href="https://facebook.com" class="btn" target="_blank"><img src="img/fb.png"></a>
+						</div>
+					</div>
+					<img src="img/logo-footer.png">
+				</div>
+			</footer>
+		</main>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/ems.js"></script>
+	</body>
+</html>

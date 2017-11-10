@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>FitTest</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="icon" href="img/title-icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<nav>
+					<img src="img/nav-logo.png">
+					<div id="guest3">Гостевой визит</div>
+					<a href="index.html">Клубные карты</a>
+					<a href="index.html">Расписание</a>
+				</nav>
+				<a href="tel:88005553535" class="phone-mobile btn">Позвонить</a>
+				<div class="info">
+					<div class="address">
+						<span>Томск, ул. Красноармейская, 120</span>
+						<span class="phone">55-77-17</span>
+					</div>
+					<div class="time">
+						<div>
+							<span>Будни</span>
+							<span>7:00-22:45</span>
+						</div>
+						<div>
+							<span>Выходные</span>
+							<span>9:00-21:45</span>
+						</div>
+					</div>
+				</div>
+				<div class="fixed-tel">55-77-17</div>
+				<div class="btn-menu btn">
+					<span>Меню</span>
+					<div class="hamburger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+					<h2>Меню</h2>
+					<h2 class="mobile-m">Меню</h2>
+					<div><img src="img/menu-icons/1.png"><a href="index.html">Программы</a></div>
+					<div><img src="img/menu-icons/2.png"><a href="index.html">Расписание</a></div>
+					<div><img src="img/menu-icons/3.png"><a href="index.html">Клубные карты</a></div>
+					<div><img src="img/menu-icons/4.png"><a href="index.html">Тренеры</a></div>
+					<div><img src="img/menu-icons/5.png"><a href="index.html">Фотогалерея</a></div>
+					<div><img src="img/menu-icons/6.png"><a href="index.html">События клубы</a></div>
+					<div><img src="img/menu-icons/7.png"><a href="index.html">Вакансии</a></div>
+					<div id="freeze-card"><img src="img/menu-icons/8.png"><a>Заморозка карты</a></div>
+					<div><img src="img/menu-icons/9.png"><a href="index.html">Контакты</a></div>
+				</div>
+			<div class="guest-form">
+					<h2>Гостевой визит</h2>
+					<span>Почувствовать нашу атмосферу поможет бесплатная услуга «Клубный тур».<br> Мы покажем наш фитнес-центр и расскажем о его преимуществах.</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel" type="text" maxlength="12" required>
+								<span class="wrongnumber-text">неправильный номер</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-inactive">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			<div class="processing">
+					<h2>ЗАЯВКА ОТПРАВЛЕНА</h2>
+					<span>Спасибо за проявленный интерес! Наши менеджеры свяжутся<br> с вами в течение 24 часов по указанным контактам.</span>
+				</div>
+			<div class="freeze-form">
+					<h2>Заморозка карты</h2>
+					<span>Если в какое-то время вы не будете посещать клуб, воспользуйтесь заморозкой карты.<br> Для клубных карт на 6 месяцев от 10 до 30 дней, для карты на 12 месяцев - от 10 до 60 дней.</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel2" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt2">неправильный номер</span>
+							</div>
+						</div>
+						<div>
+							<div>
+								<span>Дата начала заморозки</span>
+								<input type="text" maxlength="10" id="datePickerSince" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);" class="datepicker-here date-i" required readonly>
+							</div>
+							<div>
+								<span>Дата окончания заморозки</span>
+								<input type="text" maxlength="10" id="datePickerSince2" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);" class="datepicker-here date-i" required readonly>
+							</div>
+						</div>
+						<button type="submit"  class="btn">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			<div class="feedback">
+					<h2>ОБРАТНАЯ СВЯЗЬ</h2>
+					<span>Мы рады ответить на любой вопрос или выслушать пожелания</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel3" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt3">неправильный номер</span>
+							</div>
+							<div>
+								<span>Электронная почта</span>
+								<input type="email" required>
+							</div>
+						</div>
+						<div class="feedback-msg">
+							<span>Сообщение</span>
+							<textarea cols="30" rows="6" required></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+		</header>
+		<video src="video/POWERHOUSE.mp4" muted loop poster="img/fittest-video-bg.jpg"></video>
+		<div class="slogan-ems">
+			<div class="slogan-ems__inner">
+				<p class="slogan-ems__text1"><span class="slogan-ems-red">98.5%</span> точность <br> воспроизводимость результатов <span class="slogan-ems-red">99%</span></p>
+				<h1>Фитнес-тестирование</h1>
+				<p class="slogan-ems__text2">Пора заниматься <br> по науке!</p>
+				<p class="slogan-ems__text3">Занятия в клубе следует начинать с фитнес-тестирования. Оценка <br> уровня физического состояния позволит сделать ваши <br> тренировки максимально эффективными и отслеживать <br> реальный результат.</p>
+				<a href="index.html" class="btn slogan-ems-btn for-card-owners">Записаться</a>
+			</div>
+		</div>
+		<main>
+			<div class="ftw">
+				<div class="ftw-left"></div>
+				<div class="ftw-right">
+					<div class="ftw-right__inner">
+						<div class="ftw-right__title">Зачем нужен анализ состава тела?</div>
+						<div class="ftw-right__list">
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>установить уровень допустимых нагрузок</div>
+							</div>
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>составить программу тренировок, которая подходит именно вам</div>
+							</div>
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>разработать сбалансированную программу питания</div>
+							</div>
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>оценить результаты занятий</div>
+							</div>
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>корректировать программу тренировок и питания</div>
+							</div>
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>анализировать за счет каких показателей (жировая, мышечная <br> ткань или жидкость), вы худеете или набираете вес.</div>
+							</div>
+							<div class="ftw-right__block">
+								<div class="ftw-right__circle"></div>
+								<div>быть уверенным, что вашему здоровью ничего не угрожает</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ft-how">
+				<div class="ft-how__inner">
+					<div class="ft-how__title">Как проводится процедура?</div>
+					<div class="ft-how__row">
+						<div class="ft-how__block">
+							<div class="ft-how__block-row">
+								<img src="img/ft-how-1.png">
+								<span>1</span>
+							</div>
+							<div class="ft-how__text">Это абсолютно безопасный метод диагностики: переменный мультичастотный электрический сигнал проходит через тело человека.</div>
+						</div>
+						<div class="ft-how__block">
+							<div class="ft-how__block-row">
+								<img src="img/ft-how-2.png">
+								<span>2</span>
+							</div>
+							<div class="ft-how__text">Система тактильных электродов фиксирует точку начала измерения биоимпеданса – это гарантирует высокую точность результата.</div>
+						</div>
+					</div>
+					<div class="ft-how__row">
+						<div class="ft-how__block">
+							<div class="ft-how__block-row">
+								<img src="img/ft-how-3.png">
+								<span>3</span>
+							</div>
+							<div class="ft-how__text">Одновременно происходит измерение на разных частотах переменного тока, которые проникают сквозь клеточную мембрану и измеряют уровень внутриклеточной жидкости.</div>
+						</div>
+						<div class="ft-how__block">
+							<div class="ft-how__block-row">
+								<img src="img/ft-how-4.png">
+								<span>4</span>
+							</div>
+							<div class="ft-how__text">В листе результатов содержится индивидуальная информация о показателях импеданса по пяти сегментам тела. Это не расчет на основе среднестатистических данных.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ft-quoute"><span>Чтобы оценить свои успехи, недостаточно цифры на весах и отражения в зеркале. Эффективнее ориентироваться на результаты исследования, которые покажут реальную картину.</span></div>
+			<div class="ems-form ft-form">
+				<div class="ems-form__inner">
+					<div class="ems-form__title ft-form__title">записаться на <br> фитнес-тестирование</div>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel1" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt1">неправильный номер</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-inactive">Отправить<img class="ft-form-btn" src="img/submit-message.png"></button>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<div>
+					<div class="info">
+						<div class="address">
+							<span>Томск, ул. Красноармейская, 120</span>
+							<span class="phone">55-77-17</span>
+						</div>
+						<div class="time">
+							<div>
+								<span>Будни</span>
+								<span>7:00-22:45</span>
+							</div>
+							<div>
+								<span>Выходные</span>
+								<span>9:00-21:45</span>
+							</div>
+						</div>
+						<div class="footer-nav">
+							<div class="btn" id="guest2">Бесплатный гостевой визит</div>
+							<a href="https://vk.com" class="btn" target="_blank"><img src="img/vk.png"></a>
+							<a href="https://instagram.com" class="btn" target="_blank"><img src="img/insta.png"></a>
+							<a href="https://facebook.com" class="btn" target="_blank"><img src="img/fb.png"></a>
+						</div>
+					</div>
+					<img src="img/logo-footer.png">
+				</div>
+			</footer>
+		</main>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/ems.js"></script>
+	</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Главная</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="icon" href="img/title-icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<nav>
+					<img src="img/nav-logo.png">
+					<div id="guest3">Гостевой визит</div>
+					<a href="index.html">Клубные карты</a>
+					<a href="index.html">Расписание</a>
+				</nav>
+				<a href="tel:88005553535" class="phone-mobile btn">Позвонить</a>
+				<div class="info">
+					<div class="address">
+						<span>Томск, ул. Красноармейская, 120</span>
+						<span class="phone">55-77-17</span>
+					</div>
+					<div class="time">
+						<div>
+							<span>Будни</span>
+							<span>7:00-22:45</span>
+						</div>
+						<div>
+							<span>Выходные</span>
+							<span>9:00-21:45</span>
+						</div>
+					</div>
+				</div>
+				<div class="fixed-tel">55-77-17</div>
+				<div class="btn-menu btn">
+					<span>Меню</span>
+					<div class="hamburger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+					<h2>Меню</h2>
+					<h2 class="mobile-m">Меню</h2>
+					<div><img src="img/menu-icons/1.png"><a href="index.html">Программы</a></div>
+					<div><img src="img/menu-icons/2.png"><a href="index.html">Расписание</a></div>
+					<div><img src="img/menu-icons/3.png"><a href="index.html">Клубные карты</a></div>
+					<div><img src="img/menu-icons/4.png"><a href="index.html">Тренеры</a></div>
+					<div><img src="img/menu-icons/5.png"><a href="index.html">Фотогалерея</a></div>
+					<div><img src="img/menu-icons/6.png"><a href="index.html">События клубы</a></div>
+					<div><img src="img/menu-icons/7.png"><a href="index.html">Вакансии</a></div>
+					<div id="freeze-card"><img src="img/menu-icons/8.png"><a>Заморозка карты</a></div>
+					<div><img src="img/menu-icons/9.png"><a href="index.html">Контакты</a></div>
+					<div><img src="img/menu-icons/9.png"><a href="index.html">123</a></div>
+				</div>
+			<div class="guest-form">
+					<h2>Гостевой визит</h2>
+					<span>Почувствовать нашу атмосферу поможет бесплатная услуга «Клубный тур».<br> Мы покажем наш фитнес-центр и расскажем о его преимуществах.</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel" type="text" maxlength="12" required>
+								<span class="wrongnumber-text">неправильный номер</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-inactive">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			<div class="processing">
+					<h2>ЗАЯВКА ОТПРАВЛЕНА</h2>
+					<span>Спасибо за проявленный интерес! Наши менеджеры свяжутся<br> с вами в течение 24 часов по указанным контактам.</span>
+				</div>
+			<div class="freeze-form">
+					<h2>Заморозка карты</h2>
+					<span>Если в какое-то время вы не будете посещать клуб, воспользуйтесь заморозкой карты.<br> Для клубных карт на 6 месяцев от 10 до 30 дней, для карты на 12 месяцев - от 10 до 60 дней.</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel2" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt2">неправильный номер</span>
+							</div>
+						</div>
+						<div>
+							<div>
+								<span>Дата начала заморозки</span>
+								<input type="text" maxlength="10" id="datePickerSince" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);" class="datepicker-here date-i" required readonly>
+							</div>
+							<div>
+								<span>Дата окончания заморозки</span>
+								<input type="text" maxlength="10" id="datePickerSince2" onkeypress="return fun_AllowOnlyAmountAndDot(this.id);" class="datepicker-here date-i" required readonly>
+							</div>
+						</div>
+						<button type="submit"  class="btn">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+			<div class="feedback">
+					<h2>ОБРАТНАЯ СВЯЗЬ</h2>
+					<span>Мы рады ответить на любой вопрос или выслушать пожелания</span>
+					<form class="modal-form" action="">
+						<div>
+							<div>
+								<span>Имя</span>
+								<input type="text" required>
+							</div>
+							<div>
+								<span>Телефон</span>
+								<input class="tel3" type="text" maxlength="12" required>
+								<span class="wrongnumber-text wrnt3">неправильный номер</span>
+							</div>
+							<div>
+								<span>Электронная почта</span>
+								<input type="email" required>
+							</div>
+						</div>
+						<div class="feedback-msg">
+							<span>Сообщение</span>
+							<textarea cols="30" rows="6" required></textarea>
+						</div>
+						<button type="submit" class="btn">Отправить<img src="img/submit-message.png"></button>
+					</form>
+				</div>
+		</header>
+		<div class="slogan">
+			<div>
+				<img src="img/LOGO.png">
+				<span class="headline">Слова обретают форму</span>
+				<div class="slogan-nav">
+					<div class="btn" id="guest">Гостевой визит</div>
+					<a href="index.html" class="btn">Клубные карты</a>
+					<a href="index.html" class="btn">Расписание</a>
+				</div>
+				<img src="img/mouse.png">
+			</div>
+		</div>
+		<video src="video/POWERHOUSE.mp4" autoplay muted loop poster="img/mobile-bg.png"></video>
+		<main>
+			<div class="floating-1">
+				<h4 id="h-1">Преимущества</h4>
+			</div>
+			<div class="advantages">
+				<div class="adv1">
+					<div>
+						<div class="area"><span>S = 1500 <span>м</span><sup>2</sup></span></div>
+						<span>Мы расположены в самом центре города, к нам удобно добираться, а на парковке вы всегда сможете оставить свой автомобиль. Несколько залов с прекрасной вентиляцией, просторные раздевалки, фитнес-кафе и бар обеспечат вам комфортное пребывание в нашем фитнес-центре.</span>
+						<a href="index.html" class="btn">Присоединиться!</a>
+					</div>
+					<div>
+						<h6>Высокотехнологичное оборудование</h6>
+						<span>Большой выбор премиальных тренажеров поможет достичь ваших целей</span>
+						<img src="img/adv-logo-1.png">
+						<img src="img/adv-logo-2.png">
+						<img src="img/adv-logo-3.png">
+					</div>
+					<div class="hand"><img src="img/hand.png"></div>
+				</div>
+				<div>
+					<div class="adv2">
+						<h6>Высококвалифицированные специалисты</h6>
+						<span>Каждое ваше движение под контролем опытных и квалифицированных тренеров. Они составляют уникальные программы занятий, учитывая состояние вашего здоровья, цели и опыт тренировок.</span>
+						<img src="img/specialists.png">
+					</div>
+					<div class="adv3">
+						<h6>Больше,<br> чем тренировки</h6>
+						<span>Регулярно мы проводим мастер-классы со знаменитостями фитнес-индустрии, организуем мероприятия различного уровня для наших гостей. Так мы стремимся расширить границы вашего спортивного мира.</span>
+						<img src="img/daetojoska.png">
+					</div>
+				</div>
+			</div>
+			<div class="advantages-mobile">
+				<div class="advm-1">
+					<div class="area-m"><span>1500 <span>м</span><sup>2</sup></span></div>
+					<span>Мы расположены в самом центре города, к нам удобно добираться, а на парковке вы всегда сможете оставить свой автомобиль. Несколько залов с прекрасной вентиляцией, просторные раздевалки, фитнес-кафе и бар обеспечат вам комфортное пребывание в нашем фитнес-центре.</span>
+					<img src="img/mobile-hand.png">
+				</div>
+				<div class="advm-2">
+					<h6>Высоко-квалифицированные специалисты</h6>
+					<span>Каждое ваше движение под контролем опытных и квалифицированных тренеров. Они составляют уникальные программы занятий, учитывая состояние вашего здоровья, цели и опыт тренировок.</span>
+					<img src="img/specialists.png">
+				</div>
+				<div class="advm-3">
+					<h6>Высокотехнологичное оборудование</h6>
+					<span>Большой выбор премиальных тренажеров поможет достичь ваших целей</span>
+					<img src="img/adv-logo-1.png">
+					<img src="img/adv-logo-2.png">
+					<img src="img/adv-logo-3.png">
+				</div>
+				<div class="advm-4">
+					<h6>Больше, чем тренировки</h6>
+					<span>Регулярно мы проводим мастер-классы со знаменитостями фитнес-индустрии, организуем мероприятия различного уровня для наших гостей. Так мы стремимся расширить границы вашего спортивного мира.</span>
+					<img src="img/daetojoskam.png">
+				</div>
+			</div>
+			<div class="floating-2">
+				<h4 id="h-2">Услуги</h4>
+			</div>
+			<div class="services">
+				<div class="s-col">
+					<div></div>
+					<div>
+						<h1>Тренажёрный зал</h1>
+						<span>В просторных залах, оборудованных согласно<br>мировым стандартам, вы добьетесь любых результатов.<br> Решайте сами, какую группу мышц вы будете тренировать сегодня.</span>
+					</div>
+				</div>
+				<div class="s-col">
+					<div>
+						<div>
+							<h5>Кардиозона</h5>
+							<span>Большой выбор современных и функциональных<br>кардиотренажеров. Здесь вы укрепите сердечнососудистую<br> систему, повысите выносливость и без чрезмерных<br> усилий скорректируете фигуру.</span>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="s-col">
+					<div></div>
+					<div>
+						<h5>CrossFit</h5>
+						<span>Уникальная программа, открывающая широкие возможности<br> для тренировок людям любого уровня подготовки, возраста,<br> физиологических особенностей. Развивает физические<br> и двигательные качества; сила, выносливость,<br> координация, гибкость, быстрота.</span>
+					</div>
+				</div>
+				<div class="s-col">
+					<div>
+						<div>
+							<h5>Единоборства и бокс</h5>
+							<span>Занятия под руководством опытных тренеров помогают укрепить<br> все группы мышц, способствуют избавлению от отрицательных<br> эмоций, прекрасно развивают координацию движений, быстроту<br> реакций и уверенность в себе.</span>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="s-col">
+					<div></div>
+					<div>
+						<h5>EMS</h5>
+						<span>EMS-технологии позволяют увеличить интенсивность сокращений<br> мышц благодаря едва заметным электроимпульсам. Этот принцип<br> позволяет активизировать более 90% мышц тела и проработать<br> их за одну тренировку.</span>
+					</div>
+				</div>
+				<div class="s-col">
+					<div>
+						<div>
+							<h5>Зал групповых программ</h5>
+							<span>Просторные залы групповых программ объединяют любителей<br> заниматься вместе, но под руководством тренера. Здесь каждый<br> выберет себе направление по душе - аэробные занятия, силовые,<br> смешанный формат, танцевальные классы.</span>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="s-col">
+					<div></div>
+					<div>
+						<h5>Персональные тренировки</h5>
+						<span>Персональные тренировки – это возможность заниматься под<br> руководством опытного тренера. Наши специалисты подберут<br> тот уровень и тип нагрузки, который подходит именно вам.<br> При составлении программы учитываются ваши физиологические<br> особенности: возраст, вес, телосложение, тип фигуры.<br> И поставленные личные цели такие как: снижение или увеличение<br> веса, коррекция проблемных зон, исправление осанки, увеличение<br> выносливости, гибкости.</span>
+					</div>
+				</div>
+				<div class="s-col">
+					<div>
+						<div>
+							<h5>Зал пилатеса и йоги</h5>
+							<span>Уютный, светлый зал с хорошей вентиляцией, где вы обретете<br> здоровье, красоту и душевное равновесие. Здесь вы сможете<br> проработать глубокие «медленные» мышцы и научиться разумно<br> управлять своим телом</span>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="s-col">
+					<div></div>
+					<div>
+						<h5>Массаж &#38; SPA</h5>
+						<span>Мы заботимся о вашем здоровье и красоте. На spa-процедурах и<br> сеансах массажа вы получите заряд хорошего настроения, свежий<br> и отдохнувший внешний вид, избавитесь от существующих проблем<br> со здоровьем.</span>
+					</div>
+				</div>
+			</div>
+			<div class="services-mobile">
+				<div class="sm-item">
+					<div>
+						<h5>Тренажёрный зал</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>В просторных залах, оборудованных согласно мировым стандартам, вы добьетесь любых результатов. Решайте сами, какую группу мышц вы будете тренировать сегодня.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>Кардиозона</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Большой выбор современных и функциональных кардиотренажеров. Здесь вы укрепите сердечнососудистую систему, повысите выносливость и без чрезмерных усилий скорректируете фигуру.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>CrossFit</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Уникальная программа, открывающая широкие возможности для тренировок людям любого уровня подготовки, возраста, физиологических особенностей. Развивает физические и двигательные качества; сила, выносливость, координация, гибкость, быстрота.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>Единоборства и бокс</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Занятия под руководством опытных тренеров помогают укрепить все группы мышц, способствуют избавлению от отрицательных эмоций, прекрасно развивают координацию движений, быстроту реакций и уверенность в себе.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>EMS</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>EMS-технологии позволяют увеличить интенсивность сокращений мышц благодаря едва заметным электроимпульсам. Этот принцип позволяет активизировать более 90% мышц тела и проработать их за одну тренировку.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>Зал групповых программ</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Просторные залы групповых программ объединяют любителей заниматься вместе, но под руководством тренера. Здесь каждый выберет себе направление по душе - аэробные занятия, силовые, смешанный формат, танцевальные классы.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>Персональные тренировки</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Персональные тренировки – это возможность заниматься под руководством опытного тренера. Наши специалисты подберут тот уровень и тип нагрузки, который подходит именно вам. При составлении программы учитываются ваши физиологические особенности: возраст, вес, телосложение, тип фигуры. И поставленные личные цели такие как: снижение или увеличение веса, коррекция проблемных зон, исправление осанки, увеличение выносливости, гибкости.</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>Зал пилатеса и йоги</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Уютный, светлый зал с хорошей вентиляцией, где вы обретете здоровье, красоту и душевное равновесие. Здесь вы сможете проработать глубокие «медленные» мышцы и научиться разумно управлять своим телом</span>
+					</div>
+				</div>
+				<div class="sm-item">
+					<div>
+						<h5>Массаж &#38; SPA</h5>
+						<img class="arrow" src="img/arrow.png">
+					</div>
+					<div>
+						<span>Мы заботимся о вашем здоровье и красоте. На spa-процедурах и сеансах массажа вы получите заряд хорошего настроения, свежий и отдохнувший внешний вид, избавитесь от существующих проблем со здоровьем.</span>
+					</div>
+				</div>
+			</div>
+			<div class="programs">
+				<div class="floating-3">
+					<h4 id="h-3">Программы</h4>
+				</div>
+				<div class="program-info">
+					<h3 class="pTitle">Anti-Gravity Yoga</h3>
+					<span class="pInfo">Асаны хатха-йоги выполняются с помощью подвесного оборудования — йога-гамака. Вхождение в асаны осуществляется за счет естественного веса тела, что облегчает возможность правильного выстраивания многих поз. Во время занятий расширяются границы тренировочного процесса уже привычного для вашего тела.</span>
+					<div class="program-btns">
+						<a href="index.html" class="btn">Расписание</a>
+						<a href="index.html">Все программы</a>
+					</div>
+				</div>
+			</div>
+			<div class="select-program">
+				<div>
+					<div class="prgm-itm program-active" id="p-1">Anti-Gravity Yoga</div>
+					<div class="prgm-itm" id="p-2">Hot Iron</div>
+					<div class="prgm-itm" id="p-3">Stretching</div>
+					<div class="prgm-itm" id="p-4">F-training </div>
+					<div class="prgm-itm" id="p-5">Kids CrossFit</div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="divider"></div>
+				</div>
+			</div>
+			<div class="floating-4">
+				<h4 id="h-4">Отзывы</h4>
+			</div>
+			<div class="reviews">
+				<div>
+					<div class="reviews-img-bg"></div>
+					<div class="reviews-img"><img src="img/jashankin.png"></div>
+					<div class="avatars">
+						<span class="avatar-info">Действующий вулкан Катмаи надкусывает уличный очаг многовекового орошаемого земледелия. Когда из храма с шумом выбегают мужчины в костюмах.</span>
+						<div class="avatar-name">Дмитрий <span>ЯШАНЬКИН</span></div>
+						<div class="avatar-select">
+							<div class="a-selected" id="a1">
+								<img src="img/jashankin-preview.jpg">
+								<span class="avatar-name">Дмитрий <span>Яшанькин</span></span>
+							</div>
+							<div id="a2">
+								<img src="img/koklyaev-preview.jpg">
+								<span class="avatar-name">Дмитрий <span>Кокляев</span></span>
+							</div>
+							<div id="a3">
+								<img src="img/pytrova-preview.jpg">
+								<span class="avatar-name">Дмитрий <span>Путрова</span></span>
+							</div>
+							<div id="a4">
+								<img src="img/lindrover-preview.jpg">
+								<span class="avatar-name">Дмитрий <span>Линдовер</span></span>
+							</div>
+							<div id="a5">
+								<img src="img/jashankinB-preview.jpg">
+								<span class="avatar-name">Дмитрий <span>Яшанькин</span></span>
+							</div>
+						</div>
+					</div>
+					<div class="slider">
+						<div class="slider-bg"></div>
+						<div class="s-btn" id="s-left"><img src="img/s-arrow-left.png"></div>
+						<div class="s-img"></div>
+						<div class="s-btn" id="s-right"><img src="img/s-arrow-right.png"></div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-mobile">
+				<div class="rm-info">Действующий вулкан Катмаи надкусывает уличный очаг многовекового орошаемого земледелия. Когда из храма с шумом выбегают мужчины в костюмах.</div>
+				<div class="rm-avatar">
+					<div class="rm-bg"></div>
+					<div class="rm-btn" id="rm-left"></div>
+					<div class="rm-img"></div>
+					<div class="rm-btn" id="rm-right"></div>
+				</div>
+				<div class="rm-name">Дмитрий <span>Яшанькин</span></div>
+			</div>
+			<footer>
+				<div>
+					<div class="info">
+						<div class="address">
+							<span>Томск, ул. Красноармейская, 120</span>
+							<span class="phone">55-77-17</span>
+						</div>
+						<div class="time">
+							<div>
+								<span>Будни</span>
+								<span>7:00-22:45</span>
+							</div>
+							<div>
+								<span>Выходные</span>
+								<span>9:00-21:45</span>
+							</div>
+						</div>
+						<div class="footer-nav">
+							<div class="btn" id="guest2">Бесплатный гостевой визит</div>
+							<a href="https://vk.com" class="btn" target="_blank"><img src="img/vk.png"></a>
+							<a href="https://instagram.com" class="btn" target="_blank"><img src="img/insta.png"></a>
+							<a href="https://facebook.com" class="btn" target="_blank"><img src="img/fb.png"></a>
+						</div>
+					</div>
+					<img src="img/logo-footer.png">
+				</div>
+			</footer>
+		</main>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/js.js"></script>
+	</body>
+</html>
