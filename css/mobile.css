@@ -119,11 +119,11 @@
 	.contacts__inner {
 		top: 4%;
 		left: 11%;
-		height: 640px;
+		height: 545px;
 	}
 
 	.contacts__container {
-		padding-top: 40px;
+		padding-top: 25px;
 	}
 
 	.catalogI__table-row-2>div:first-child {
@@ -132,6 +132,10 @@
 
 	header {
 		padding: 0 20px;
+	}
+
+	.contacts__numbers {
+		height: 260px;
 	}
 
 }

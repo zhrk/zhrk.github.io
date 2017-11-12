@@ -1304,6 +1304,7 @@ footer {
 	        justify-content: center;
 	background-color: #f7faff;
 	position: relative;
+	z-index: 2;
 }
 
 .footer__inner {
