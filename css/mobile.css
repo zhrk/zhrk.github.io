@@ -158,7 +158,6 @@
 
 	.body--noscroll {
 		overflow-y: scroll;
-	
 		margin: 0;
 	}
 
@@ -1519,6 +1518,10 @@
 		margin-bottom: 32px;
 		max-width: 280px;
 		width: 100%;
+	}
+
+	.objects__slides:before {
+		display: block;
 	}
 
 }

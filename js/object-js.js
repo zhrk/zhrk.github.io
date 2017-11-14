@@ -94,19 +94,20 @@ var slider3 = Peppermint(document.getElementById('peppermint3'), {
 
 
 
-var imgList = document.querySelectorAll('.objects__slides img');
+
+
+
+
+
+;(function(){
+	if (window.innerWidth < 1280) {
+		var imgList = document.querySelectorAll('.objects__slides img');
 var topS = 0;
 
 
 
 function zoomImg(event) {
 	document.querySelector('.catalogI__img-subj-popup').classList.add('catalogI__img-subj-popup--active');
-
-
-/*	document.querySelector('.o-slides-m > div').removeChild(document.querySelector('.o-slides-m > div').children[0]);
-	document.querySelector('.o-slides-m > div').removeChild(document.querySelector('.o-slides-m > div').children[1]);
-	document.querySelector('.o-slides-m > div').removeChild(document.querySelector('.o-slides-m > div').children[0]);*/
-
 
 	var currentImgs = event.target.parentNode.children;
 
@@ -135,3 +136,5 @@ document.querySelector('.catalogI__img-subj-popup').addEventListener('click', fu
 
 	window.scrollTo(0, topS - 100);
 })
+	}
+})();

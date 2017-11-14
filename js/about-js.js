@@ -56,8 +56,6 @@ function openModal() {
 		changeMenuBtn();
 		blurBG();
 		body.classList.toggle('body--noscroll');
-		/*console.log(topP);
-		window.scrollTo(0, topP);*/
 	}
 	
 }
