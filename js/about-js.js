@@ -38,10 +38,6 @@ function blurBG() {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
-
-const pageS = window.pageYOffset;
-
-
 function openModal() {
 	'use strict';
 	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
@@ -50,8 +46,6 @@ function openModal() {
 		blurBG();
 		body.classList.toggle('body--noscroll');
 	} else {
-		var pageP = pageS;
-		console.log(pageP);
 		modal.classList.toggle('modal--active');
 		changeMenuBtn();
 		blurBG();
@@ -107,6 +101,7 @@ for (var i = 0; i < labels.length; i++) {
 
 
 reviewsImg = document.querySelectorAll('.reviews__block-img>img');
+reviewsImgM = document.querySelectorAll('.reviews__block--mobile>img');
 
 
 function zoomImg(event) {
@@ -117,6 +112,10 @@ function zoomImg(event) {
 
 for (var i = 0; i < reviewsImg.length; i++) {
 	reviewsImg[i].addEventListener('click', zoomImg);
+}
+
+for (var i = 0; i < reviewsImgM.length; i++) {
+	reviewsImgM[i].addEventListener('click', zoomImg);
 }
 
 document.querySelector('.catalogI__img-subj-popup').addEventListener('click', function() {
