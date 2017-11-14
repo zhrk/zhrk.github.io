@@ -75,6 +75,9 @@ document.querySelector('.header__consultation').addEventListener('click', openMo
 
 
 
+
+
+
 var labels = document.querySelectorAll('.form-style__inner');
 
 function changeInputLabel (event) {
@@ -93,3 +96,24 @@ for (var i = 0; i < labels.length; i++) {
 	labels[i].addEventListener('focusin', changeInputLabel);
 	labels[i].addEventListener('focusout', changeInputLabel);
 }
+
+
+
+
+reviewsImg = document.querySelectorAll('.reviews__block-img>img');
+
+
+function zoomImg(event) {
+	'use strict';
+	document.querySelector('.catalogI__img-subj-popup').classList.add('catalogI__img-subj-popup--active');
+	document.querySelector('.catalogI__img-subj-popup').innerHTML = event.target.parentNode.innerHTML;
+}
+
+for (var i = 0; i < reviewsImg.length; i++) {
+	reviewsImg[i].addEventListener('click', zoomImg);
+}
+
+document.querySelector('.catalogI__img-subj-popup').addEventListener('click', function() {
+	'use strict';
+	document.querySelector('.catalogI__img-subj-popup').classList.remove('catalogI__img-subj-popup--active');
+})

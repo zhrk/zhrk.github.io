@@ -1485,30 +1485,21 @@ footer {
 	width: 344px;
 	height: 200px;
 	border-radius: 5px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-
-
-.catalogP__img {
-  position: relative;  
+	position: relative;
+	display: block;
 }
 
 .catalogP__img>svg {
 	pointer-events: none;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 
@@ -1543,16 +1534,22 @@ footer {
 }
 
 .catalogP__caption {
-	text-align: center;
-	position: absolute;
 	font: 25px Muller;
 	font-weight: bold;
 	color: #fff;
-	padding: 15px;
 	border: 2px solid rgba(255, 255, 255, 0);
 	-webkit-transition: all 0.15s ease-out;
 	transition: all 0.15s ease-out;
 	pointer-events: none;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 280px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .catalogP__caption:after {
@@ -1852,9 +1849,19 @@ footer {
 	        align-items: center;
 }
 
-.reviews__block>img {
+.reviews__block>div {
 	-webkit-box-shadow: 0px 30px 30px 0px rgba(90, 104, 133, 0.3);
 	        box-shadow: 0px 30px 30px 0px rgba(90, 104, 133, 0.3);
+	border: 10px solid #5a6885;
+	height: 285px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.reviews__block-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .reviews__btn {
@@ -3468,6 +3475,7 @@ footer {
 }
 
 .contacts {
+	display: block;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -3476,11 +3484,13 @@ footer {
 }
 
 .contacts>#map {
+	display: block;
 	width: 100vw;
 	height: calc(100vh - 83px);
 }
 
 .contacts__inner {
+	display: block;
 	top: 15%;
 	left: 15%;
 	position: absolute;
@@ -3504,6 +3514,7 @@ footer {
 }
 
 .contacts__container {
+	display: block;
 	width: 440px;
 	padding: 64px;
 	-webkit-box-sizing: border-box;
@@ -4174,10 +4185,10 @@ footer {
 	-webkit-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
 	cursor: pointer;
-	background-image: url('../img/closepop.svg');
+	background-image: url('../img/closepop.png');
 	background-repeat: no-repeat;
-	background-size: 60px;
-	background-position: 98% 15%;
+	background-size: 25px;
+	background-position: calc(100% - 20px) 25px;
 }
 
 .catalogI__img-subj-popup--active {
@@ -4185,4 +4196,38 @@ footer {
 	opacity: 1;
 	-webkit-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
+}
+
+.services__more {
+	margin-top: 64px;
+	width: 207px;
+	height: 60px;
+	border-radius: 30px;
+	font-size: 17px;
+	align-self: center;
+}
+
+.o-slides-m {
+	width: 100%;
+}
+
+.objects__slides {
+	position: relative;
+}
+
+.objects__slides:before {
+	content: '';
+	display: block;
+	z-index: 10;
+	position: absolute;
+	top: 10px;
+	pointer-events: none;
+	right: 10px;
+	width: 36px;
+	height: 36px;
+	border-radius: 6px;
+	background-color: rgba(50, 59, 78, 0.6);
+	background-image: url('../img/search_1.svg');
+	background-position: center;
+	background-repeat: no-repeat;
 }

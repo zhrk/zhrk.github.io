@@ -81,10 +81,19 @@ for (var i = 0; i < labels.length; i++) {
 function navFixed() {
 	'use strict';
 	var
-		navOffsetTop = body.getBoundingClientRect().top;
+		navOffsetTop = - + body.getBoundingClientRect().top,
+		wHeight = $( body ).height() - 1110;
 	
-	if (navOffsetTop < -230) {
-		document.querySelector('.ourservices__nav').classList.add('ourservices__nav--fixed');	
+	if (navOffsetTop > 230) {
+		document.querySelector('.ourservices__nav').classList.add('ourservices__nav--fixed');
+		if (navOffsetTop >= wHeight) {
+			document.querySelector('.ourservices__nav').classList.remove('ourservices__nav--fixed');
+			document.querySelector('.ourservices__nav').style.position = 'absolute';
+			document.querySelector('.ourservices__nav').style.top = wHeight - 210 + 'px';
+		} else {
+			document.querySelector('.ourservices__nav').removeAttribute('style');
+			document.querySelector('.ourservices__nav').classList.add('ourservices__nav--fixed');
+		}
 	} else {
 		document.querySelector('.ourservices__nav').classList.remove('ourservices__nav--fixed');
 	}

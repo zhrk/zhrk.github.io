@@ -44,7 +44,6 @@ function openModal() {
 
 function openModalConsl() {
 	'use strict';
-	window.scrollTo(0, 0);
 	modal.classList.toggle('modal--active-consl');
 	changeMenuBtn();
 	blurBG();
@@ -67,6 +66,7 @@ function changeInputLabel(event) {
 
 document.querySelector('.menu-btn').addEventListener('click', openModal);
 document.querySelector('.btn--welcome').addEventListener('click', openModalConsl);
+document.querySelector('.header__consultation').addEventListener('click', openModalConsl);
 
 
 
@@ -100,6 +100,18 @@ window.addEventListener('scroll', fixedHeaderBg);
 
 document.querySelector('main').style.padding = '0';
 
-document.querySelector('.main-video').style.height = window.innerHeight + 'px';
-document.querySelector('.main-video>video').style.height = window.innerHeight + 'px';
-document.querySelector('.welcome').style.height = window.innerHeight + 'px';
+
+
+
+function initWelcomeHeight() {
+	'use strict';
+	document.querySelector('.welcome').style.height = window.innerHeight + 'px';
+	document.querySelector('.main-video').style.height = window.innerHeight + 'px';
+	document.querySelector('.main-video>video').style.height = window.innerHeight + 'px';
+}
+
+
+
+
+window.addEventListener('resize', initWelcomeHeight);
+initWelcomeHeight();

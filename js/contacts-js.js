@@ -75,3 +75,17 @@ for (var i = 0; i < labels.length; i++) {
 	labels[i].addEventListener('focusin', changeInputLabel);
 	labels[i].addEventListener('focusout', changeInputLabel);
 }
+
+
+
+
+function initWelcomeHeight() {
+	'use strict';
+	document.querySelector('.contacts').style.height = window.innerHeight - 83 + 'px';
+}
+
+
+
+
+window.addEventListener('resize', initWelcomeHeight);
+initWelcomeHeight();

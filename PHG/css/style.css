@@ -2128,3 +2128,7 @@ h2 {
 .ft-form-btn {
 	filter: invert(1) brightness(1);
 }
+
+.ems-form > div > form > button {
+	display: inline-block;
+}

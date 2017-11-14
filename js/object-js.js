@@ -77,19 +77,56 @@ for (var i = 0; i < labels.length; i++) {
 }
 
 var slider = Peppermint(document.getElementById('peppermint'), {
-	dots: true,
-	speed: 300,
-	slideshow: true
+	dots: true
 });
 
 var slider2 = Peppermint(document.getElementById('peppermint2'), {
-	dots: true,
-	speed: 300,
-	slideshow: true
+	dots: true
 });
 
 var slider3 = Peppermint(document.getElementById('peppermint3'), {
-	dots: true,
-	speed: 300,
-	slideshow: true
+	dots: true
 });
+
+
+
+
+
+
+
+var imgList = document.querySelectorAll('.objects__slides img');
+
+
+
+function zoomImg(event) {
+	'use strict';
+	document.querySelector('.catalogI__img-subj-popup').classList.add('catalogI__img-subj-popup--active');
+
+
+/*	document.querySelector('.o-slides-m > div').removeChild(document.querySelector('.o-slides-m > div').children[0]);
+	document.querySelector('.o-slides-m > div').removeChild(document.querySelector('.o-slides-m > div').children[1]);
+	document.querySelector('.o-slides-m > div').removeChild(document.querySelector('.o-slides-m > div').children[0]);*/
+
+
+	var currentImgs = event.target.parentNode.children;
+
+	for (var i = 0; i < currentImgs.length; i++) {
+		document.querySelector('.o-slides-m').appendChild(currentImgs[i].parentNode.children[i].cloneNode(true));
+	}
+
+  var slider4 = Peppermint(document.getElementById('peppermint4'), {
+		speed: 300
+	});
+
+
+}
+
+for (var i = 0; i < imgList.length; i++) {
+	imgList[i].addEventListener('click', zoomImg);
+}
+
+document.querySelector('.catalogI__img-subj-popup').addEventListener('click', function() {
+	'use strict';
+	document.querySelector('.catalogI__img-subj-popup').classList.remove('catalogI__img-subj-popup--active');
+	document.querySelector('.o-slides-m').innerHTML = null;
+})
