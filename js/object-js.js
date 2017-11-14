@@ -117,6 +117,7 @@ function zoomImg(event) {
   var slider4 = Peppermint(document.getElementById('peppermint4'), {
 		speed: 300
 	});
+	body.classList.toggle('body--noscroll');
 
 
 }
@@ -129,4 +130,5 @@ document.querySelector('.catalogI__img-subj-popup').addEventListener('click', fu
 	'use strict';
 	document.querySelector('.catalogI__img-subj-popup').classList.remove('catalogI__img-subj-popup--active');
 	document.querySelector('.o-slides-m').innerHTML = null;
+	body.classList.toggle('body--noscroll');
 })

@@ -184,6 +184,7 @@ for (var i = 0; i < catalogNavBtns.length; i++) {
 function zoomImg() {
 	'use strict';
 	document.querySelector('.catalogI__img-subj-popup').classList.add('catalogI__img-subj-popup--active');
+	body.classList.toggle('body--noscroll');
 }
 
 document.querySelector('.catalogI__img-subj').addEventListener('click', zoomImg);
@@ -191,4 +192,5 @@ document.querySelector('.catalogI__img-subj').addEventListener('click', zoomImg)
 document.querySelector('.catalogI__img-subj-popup').addEventListener('click', function() {
 	'use strict';
 	document.querySelector('.catalogI__img-subj-popup').classList.remove('catalogI__img-subj-popup--active');
+	body.classList.toggle('body--noscroll');
 })
