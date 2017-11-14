@@ -38,6 +38,10 @@ function blurBG() {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
+
+const pageS = window.pageYOffset;
+
+
 function openModal() {
 	'use strict';
 	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
@@ -46,10 +50,14 @@ function openModal() {
 		blurBG();
 		body.classList.toggle('body--noscroll');
 	} else {
+		var pageP = pageS;
+		console.log(pageP);
 		modal.classList.toggle('modal--active');
 		changeMenuBtn();
 		blurBG();
 		body.classList.toggle('body--noscroll');
+		/*console.log(topP);
+		window.scrollTo(0, topP);*/
 	}
 	
 }
