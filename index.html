@@ -11,9 +11,6 @@
 		<title>Главная</title>
 	</head>
 	<body>
-		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #202020 url('img/bars.svg') center center no-repeat;background-size:41px;}</style>
-		<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
-		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
 		<header class="header--main-page"> <!-- CLASS ONLY FOR MAIN PAGE -->
 			<div class="menu-btn">
 				<div class="hamburger">
@@ -382,6 +379,142 @@
 		</footer>
 		<script src="js/peppermint.min.js"></script>
 		<script src="js/main-js.js"></script>
-		
+		<style type="text/css">#hellopreloader>
+	#loadFacebookG{
+	width:86px;
+	height: 86px;
+	display: block;
+	position: relative;
+	margin:auto;
+}
+
+.facebook_blockG{
+	background-color:rgb(255,255,255);
+	border:2px solid rgb(0,0,0);
+	float:left;
+	height:61px;
+	margin-left:5px;
+	width:16px;
+	opacity:0.1;
+	animation-name:bounceG;
+		-o-animation-name:bounceG;
+		-ms-animation-name:bounceG;
+		-webkit-animation-name:bounceG;
+		-moz-animation-name:bounceG;
+	animation-duration:0.905s;
+		-o-animation-duration:0.905s;
+		-ms-animation-duration:0.905s;
+		-webkit-animation-duration:0.905s;
+		-moz-animation-duration:0.905s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	transform:scale(0.7);
+		-o-transform:scale(0.7);
+		-ms-transform:scale(0.7);
+		-webkit-transform:scale(0.7);
+		-moz-transform:scale(0.7);
+}
+
+#blockG_1{
+	animation-delay:0.2695s;
+		-o-animation-delay:0.2695s;
+		-ms-animation-delay:0.2695s;
+		-webkit-animation-delay:0.2695s;
+		-moz-animation-delay:0.2695s;
+}
+
+#blockG_2{
+	animation-delay:0.366s;
+		-o-animation-delay:0.366s;
+		-ms-animation-delay:0.366s;
+		-webkit-animation-delay:0.366s;
+		-moz-animation-delay:0.366s;
+}
+
+#blockG_3{
+	animation-delay:0.4525s;
+		-o-animation-delay:0.4525s;
+		-ms-animation-delay:0.4525s;
+		-webkit-animation-delay:0.4525s;
+		-moz-animation-delay:0.4525s;
+}
+
+
+
+@keyframes bounceG{
+	0%{
+		transform:scale(1.2);
+		opacity:1;
+	}
+
+	100%{
+		transform:scale(0.7);
+		opacity:0.1;
+	}
+}
+
+@-o-keyframes bounceG{
+	0%{
+		-o-transform:scale(1.2);
+		opacity:1;
+	}
+
+	100%{
+		-o-transform:scale(0.7);
+		opacity:0.1;
+	}
+}
+
+@-ms-keyframes bounceG{
+	0%{
+		-ms-transform:scale(1.2);
+		opacity:1;
+	}
+
+	100%{
+		-ms-transform:scale(0.7);
+		opacity:0.1;
+	}
+}
+
+@-webkit-keyframes bounceG{
+	0%{
+		-webkit-transform:scale(1.2);
+		opacity:1;
+	}
+
+	100%{
+		-webkit-transform:scale(0.7);
+		opacity:0.1;
+	}
+}
+
+@-moz-keyframes bounceG{
+	0%{
+		-moz-transform:scale(1.2);
+		opacity:1;
+	}
+
+	100%{
+		-moz-transform:scale(0.7);
+		opacity:0.1;
+	}
+}p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #202020 url('img/bars.svg') center center no-repeat;background-size:41px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload">
+			<div id="loadFacebookG">
+	<div id="blockG_1" class="facebook_blockG"></div>
+	<div id="blockG_2" class="facebook_blockG"></div>
+	<div id="blockG_3" class="facebook_blockG"></div>
+</div>
+		</div></div>
+		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
 	</body>
 </html>
