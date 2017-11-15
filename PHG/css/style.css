@@ -1714,6 +1714,10 @@ h2 {
 	line-height: 1.25;
 }
 
+.slogan-ems__text2-fit {
+	height: 80px;
+}
+
 .slogan-ems-red {
 	color: #e31e24;
 }
