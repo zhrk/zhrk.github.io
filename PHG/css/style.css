@@ -1650,13 +1650,27 @@ h2 {
 
 
 
+.fit-fix {
+	top: 0;
+}
+
+.ems-video {
+	width: 100%;
+	overflow: hidden;
+	filter: brightness(0.5);
+}
+
+.ems-video > video {
+	width: 100%;
+	object-fit: cover;
+}
 
 .slogan-ems {
 	  position: absolute;
-    top: 250px;
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     z-index: 100;	
 }
 
@@ -1691,6 +1705,7 @@ h2 {
 }
 
 .slogan-ems__text2 {
+	height: 40px;
 	margin: 50px 0 0 0;
 	text-transform: uppercase;
 	letter-spacing: 7px;

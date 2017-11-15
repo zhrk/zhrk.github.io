@@ -506,6 +506,9 @@
 
 	/* NEW STYLES */
 
+	.ems-video {
+		display: none;
+	}
 
 	.slogan-ems {
 		position: relative;
@@ -515,7 +518,7 @@
 		background-size: cover;
 		top: 0;
 		box-sizing: border-box;
-		padding: 156px 0 0 0;
+		padding: 100px 0 0 0;
 	}
 
 	.slogan-ems__inner {
@@ -525,26 +528,25 @@
 	}
 
 	.slogan-ems__inner>h1 {
-		font-size: 24px;
+		margin-top: 40px;
+		font-size: 18px !important;
 	}
 
 	.slogan-ems__text1 {
-		font-size: 25px;
+		margin-top: 0;
+		font-size: 16px;
 	}
 
 	.slogan-ems__text2 {
-		font-size: 18px;
+		display: none;
 	}
 
 	.slogan-ems__text3 {
+		font-size: 14px;
 		margin-top: 40px;
 	}
 
 	.slogan-ems__text1>br {
-		display: none;
-	}
-
-	.slogan-ems__text2>br {
 		display: none;
 	}
 
@@ -556,7 +558,8 @@
 		max-width: 376px;
 		align-self: center;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-top: 10px;
+		margin-bottom: 20px;
 	}
 
 	.ems-how {
