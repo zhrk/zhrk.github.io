@@ -117,7 +117,7 @@
 	}
 
 	.contacts__inner {
-		top: 40px;
+		top: 60px;
 		left: 11%;
 		height: 545px;
 	}
@@ -1387,7 +1387,9 @@
 	}
 
 	.objects__slides img {
-		min-height: 190px;
+		min-height: 190px !important;
+		width: 280px !important;
+		object-fit: cover;
 	}
 
 	.objects__info {
@@ -1524,5 +1526,15 @@
 	.objects__slides:before {
 		display: block;
 	}
+
+	.catalogI__img-subj-popup > img {
+		height: 80%;
+		width: 100%;
+		object-fit: contain;
+	}
+
+	/* .objects__img-zoom {
+		display: none;
+	} */
 
 }

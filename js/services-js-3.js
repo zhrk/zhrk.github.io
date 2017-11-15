@@ -122,7 +122,6 @@ window.addEventListener('scroll', navFixed);
 			document.querySelector('.ourservices__nav').removeChild(document.querySelector('.ourservices__title-5'));
 			document.querySelector('main').removeChild(document.querySelector('.ourservices__headline'));
 
-	    document.querySelector('.ourservices__title-list').classList.remove('opensnav');
 
 	    var navLinks = document.querySelectorAll('.ourservices__nav-a');
 
