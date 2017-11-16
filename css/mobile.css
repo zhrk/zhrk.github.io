@@ -119,11 +119,7 @@
 	.contacts__inner {
 		top: 60px;
 		left: 11%;
-		height: 545px;
-	}
-
-	.contacts>#map {
-		display: none;
+		height: 500px;
 	}
 
 	.contacts__social {
@@ -148,13 +144,18 @@
 	}
 
 	.contacts__numbers {
-		height: 260px;
+		margin-top: 10px;
+		height: 270px;
 	}
 
 }
 
 
 @media (max-width: 1279px) {
+
+	.contacts>#map {
+		display: none;
+	}
 
 	.body--noscroll {
 		overflow-y: scroll;
@@ -1532,9 +1533,5 @@
 		width: 100%;
 		object-fit: contain;
 	}
-
-	/* .objects__img-zoom {
-		display: none;
-	} */
 
 }

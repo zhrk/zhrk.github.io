@@ -4235,23 +4235,6 @@ footer {
 	position: relative;
 }
 
-/* .objects__slides:before {
-	content: '';
-	display: none;
-	z-index: 10;
-	position: absolute;
-	top: 10px;
-	pointer-events: none;
-	right: 10px;
-	width: 36px;
-	height: 36px;
-	border-radius: 6px;
-	background-color: rgba(50, 59, 78, 0.6);
-	background-image: url('../img/search_1.svg');
-	background-position: center;
-	background-repeat: no-repeat;
-} */
-
 .objects__img-zoom {
 	display: block;
 	position: absolute;
@@ -4265,8 +4248,15 @@ footer {
 	background-image: url('../img/search_1.svg');
 	background-position: center;
 	background-repeat: no-repeat;
+	pointer-events: none;
 }
 
 .catalogI__img-subj-popup .objects__img-zoom {
 	display: none;
+}
+
+.catalogI__img-subj-popup > img {
+	width: 100%;
+	height: 80%;
+	object-fit: contain;
 }

@@ -506,6 +506,15 @@
 
 	/* NEW STYLES */
 
+
+	.ems-m {
+		background-image: url('../img/ems-m.jpg');
+	}
+
+	.fit-m {
+		background-image: url('../img/fit-m.jpg');
+	}
+
 	.ems-video {
 		display: none;
 	}
@@ -513,7 +522,6 @@
 	.slogan-ems {
 		position: relative;
 		height: auto;
-		background-image: url('../img/ems-video-bg-m.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		top: 0;

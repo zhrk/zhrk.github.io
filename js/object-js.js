@@ -77,15 +77,18 @@ for (var i = 0; i < labels.length; i++) {
 }
 
 var slider = Peppermint(document.getElementById('peppermint'), {
-	dots: true
+	dots: true,
+	mouseDrag: false
 });
 
 var slider2 = Peppermint(document.getElementById('peppermint2'), {
-	dots: true
+	dots: true,
+	mouseDrag: false
 });
 
 var slider3 = Peppermint(document.getElementById('peppermint3'), {
-	dots: true
+	dots: true,
+	mouseDrag: false
 });
 
 
@@ -143,7 +146,7 @@ document.querySelector('.catalogI__img-subj-popup').addEventListener('click', fu
 
 
 
-objectsZoomBtns = document.querySelectorAll('.objects__img-zoom');
+objectsZoomBtns = document.querySelectorAll('.objects__img');
 
 
 function zoomImgD(event) {
