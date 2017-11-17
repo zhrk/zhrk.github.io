@@ -117,9 +117,13 @@
 	}
 
 	.contacts__inner {
-		top: 60px;
+		top: 40px;
 		left: 11%;
-		height: 500px;
+		height: 490px;
+	}
+
+	.contacts__blur {
+		height: 490px;
 	}
 
 	.contacts__social {
@@ -133,6 +137,7 @@
 
 	.contacts__container {
 		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 
 	.catalogI__table-row-2>div:first-child {
