@@ -1660,7 +1660,7 @@ h2 {
 }
 
 .slogan-ems {
-  position: absolute;
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -1669,7 +1669,6 @@ h2 {
 }
 
 .slogan-ems__inner {
-	position: absolute;
 	width: 1208px;
 	padding: 106px 40px 0 40px;
 	display: flex;
