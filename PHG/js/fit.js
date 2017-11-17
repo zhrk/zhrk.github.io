@@ -234,13 +234,7 @@ function initWelcomeHeight() {
 	document.querySelector('.slogan-ems').style.height = window.innerHeight + 'px';
 	document.querySelector('.ems-video').style.height = window.innerHeight + 'px';
 	document.querySelector('.ems-video>video').style.height = window.innerHeight + 'px';
-
-	if (window.innerWidth > 1280) {
-		document.querySelector('main').style.top = window.innerHeight + 'px';
-	} else {
-		document.querySelector('main').style.top = 0;
-	}
-
+	document.querySelector('main').style.top = 0;
 	
 }
 
