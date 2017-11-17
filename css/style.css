@@ -3623,7 +3623,7 @@ footer {
 	padding: 0 20px;
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
-	        justify-content: flex-end; /* adasdasasdasdas23u581254m12cfm51cy12 */
+	        justify-content: flex-end;
 	position: relative;
 }
 
@@ -4056,11 +4056,6 @@ footer {
 	-o-object-fit: contain;
 	   object-fit: contain;
 }
-
-/* .objects__slides img {
-	width: 1144px;
-	min-height: 539px;
-} */
 
 .objects__slides>div {
 	display: flex;
