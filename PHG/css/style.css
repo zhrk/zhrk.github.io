@@ -2157,6 +2157,7 @@ h2 {
 	position: relative;
 	display: flex;
 	height: 497px;
+	overflow: hidden;
 }
 
 .services__img {
