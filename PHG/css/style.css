@@ -2179,7 +2179,13 @@ h2 {
 }
 
 .services__info--flex-end {
-	justify-content: flex-end;
+	display: block;
+}
+
+.services__info-inner--mac {
+	position: absolute !important;
+	top: 125px;
+	right: 0;
 }
 
 .services__info-inner {
@@ -2215,6 +2221,7 @@ h2 {
 }
 
 .services__bg {
+	display: block;
 	position: absolute;
 	height: 100%;
 	width: 100%;
