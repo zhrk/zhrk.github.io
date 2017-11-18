@@ -749,6 +749,10 @@
 	.ft-form {
 		background-image: url(../img/ft-form-bg-m.jpg);
 	}
+
+	.services--video {
+		display: none;
+	}
 	
 }
 

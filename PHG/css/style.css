@@ -2146,3 +2146,113 @@ h2 {
 .ems-form > div > form > button {
 	display: inline-block;
 }
+
+
+
+
+
+
+
+.services__row {
+	display: flex;
+	height: 497px;
+}
+
+.services__img {
+	width: 50%;
+}
+
+.services__img > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.services__info {
+	position: relative;
+	padding-left: 85px;
+	box-sizing: border-box;
+	width: 50%;
+	background-color: #fff;
+	display: flex;
+}
+
+.services__info--flex-end {
+	justify-content: flex-end;
+}
+
+.services__info-inner {
+	width: 608px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.services__info--purple-bg {
+	background-color: #1c1a30;
+}
+
+.services__title {
+	color: #1e1d32;
+	font: bold 32px Muller;
+}
+
+.services__title--color-white {
+	color: #fff;
+}
+
+.services__text {
+	margin-top: 25px;
+	color: #4e4d66;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.services__text--color-pink {
+	color: #dad9ff;
+}
+
+.services__bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	filter: brightness(0.3);
+	overflow: hidden;
+}
+
+.services__bg > video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.services__info--padding-0 {
+	padding: 0;
+}
+
+.services__info-inner--z-index {
+	z-index: 1;
+}
+
+.services__info-inner--margin {
+	margin-left: 85px;
+}
+
+.services__nav {
+	margin-top: 30px;
+	display: flex;
+}
+
+.services__nav > *:first-child {
+	margin-right: 30px;
+}
+
+.services__row--hidden {
+	display: none;
+}
+
+.services__nav > * {
+	padding: 0 30px;
+	color: #fff;
+	text-decoration: none;
+}
