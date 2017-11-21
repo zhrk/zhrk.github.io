@@ -62,7 +62,7 @@
 			</div>
 		</header>
 		<main>
-			<div class="main-video"><video src="video/VAILLANT_1.mp4" poster="img/video-poster-hd.jpg" autoplay loop muted></video></div>
+			<div class="main-video"><video src-desktop="video/VAILLANT_1.mp4" poster="img/video-poster-hd.jpg" autoplay loop muted></video></div>
 			<div class="welcome">
 				<div class="logo">
 					<img src="img/logo.png" class="logo--desktop">
@@ -300,7 +300,7 @@
 				</div>
 			</div>
 			<div class="questions">
-				<div class="q-video"><video src="video/qqq.mp4" poster="img/questions-bg.jpg" autoplay loop muted></video></div>
+				<div class="q-video"><video src-desktop="video/qqq.mp4" poster="img/questions-bg.jpg" autoplay loop muted></video></div>
 				<div class="questions__row questions__row--1">
 					<div class="questions__text">
 						<span class="questions__text--1">Есть вопросы?</span>
@@ -377,10 +377,23 @@
 				</div>
 			</div>
 		</footer>
+		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/peppermint.min.js"></script>
 		<script src="js/main-js.js"></script>
 		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100vw;height: 100vh;background: #202020 url('img/bars.svg') center center no-repeat;background-size:41px;}</style>
 		<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+		<script>
+			var mob_width=1280;
+
+			if ($(window).innerWidth()>=mob_width){ 
+				$(".main-video > video").each(function(){ 
+					$(this).attr("src", $(this).attr("src-desktop")); 
+				});
+				$(".q-video > video").each(function(){ 
+					$(this).attr("src", $(this).attr("src-desktop")); 
+				});
+			}
+		</script>
 		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
 	</body>
 </html>
