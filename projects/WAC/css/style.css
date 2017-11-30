@@ -479,7 +479,7 @@ main {
 
 .main-video>video {
 	width: 100%;
-	height: 950px;
+	height: 100vh;
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
@@ -502,7 +502,7 @@ main {
 
 .welcome {
 	z-index: 3;
-	height: 950px;
+	height: 100vh;
 	padding-top: 150px;
 	padding-left: 36px;
 	-webkit-box-sizing: border-box;
@@ -1203,7 +1203,8 @@ h6 {
 	outline: none;
 	font: 18px Roboto;
 	font-weight: bold;
-	color: #fff;
+	color: transparent;
+	text-shadow: 0 0 0 #fff;
 }
 
 .form-style__button {
@@ -2047,7 +2048,7 @@ footer {
 	display: none;
 	position: relative;
 	top: 73px;
-	z-index: 3;
+	z-index: 2;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;

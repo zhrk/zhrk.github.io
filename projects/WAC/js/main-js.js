@@ -26,30 +26,6 @@ function blurBG() {
 	document.querySelector('.header__call').classList.toggle('modal-blur');
 }
 
-function openModal() {
-	'use strict';
-	if (document.querySelector('.modal').classList.contains('modal--active-consl')) {
-		document.querySelector('.modal').classList.remove('modal--active-consl');
-		changeMenuBtn();
-		blurBG();
-		body.classList.toggle('body--noscroll');
-	} else {
-		modal.classList.toggle('modal--active');
-		changeMenuBtn();
-		blurBG();
-		body.classList.toggle('body--noscroll');
-	}
-	
-}
-
-function openModalConsl() {
-	'use strict';
-	modal.classList.toggle('modal--active-consl');
-	changeMenuBtn();
-	blurBG();
-	body.classList.toggle('body--noscroll');
-}
-
 function changeInputLabel(event) {
 	'use strict';
 	var target = event.target;
@@ -62,11 +38,6 @@ function changeInputLabel(event) {
 	}
 }
 
-
-
-document.querySelector('.menu-btn').addEventListener('click', openModal);
-document.querySelector('.btn--welcome').addEventListener('click', openModalConsl);
-document.querySelector('.header__consultation').addEventListener('click', openModalConsl);
 
 
 
@@ -103,15 +74,46 @@ document.querySelector('main').style.padding = '0';
 
 
 
-function initWelcomeHeight() {
+
+
+
+
+
+
+
+
+
+var offsetY = window.pageYOffset;
+
+function openModal() {
 	'use strict';
-	document.querySelector('.welcome').style.height = window.innerHeight + 'px';
-	document.querySelector('.main-video').style.height = window.innerHeight + 'px';
-	document.querySelector('.main-video>video').style.height = window.innerHeight + 'px';
+	offsetY = window.pageYOffset;
+
+	if (event.target.classList.contains('btn--welcome') || event.target.classList.contains('header__consultation')) {
+		modal.classList.add('modal--active-consl');
+	} else {
+		modal.classList.add('modal--active');
+	}
+
+	body.classList.add('body--noscroll');
+	changeMenuBtn();
+	blurBG();
+	document.querySelector('.menu-btn').removeEventListener('click', openModal);
+	document.querySelector('.menu-btn').addEventListener('click', closeModal);
 }
 
+function closeModal() {
+	'use strict';
+	body.classList.remove('body--noscroll');
+	modal.classList.remove('modal--active-consl');
+	modal.classList.remove('modal--active');
+	changeMenuBtn();
+	blurBG();
+	document.querySelector('.menu-btn').removeEventListener('click', closeModal);
+	document.querySelector('.menu-btn').addEventListener('click', openModal);
+	window.scrollTo(0, offsetY);
+}
 
-
-
-window.addEventListener('resize', initWelcomeHeight);
-initWelcomeHeight();
+document.querySelector('.menu-btn').addEventListener('click', openModal);
+document.querySelector('.btn--welcome').addEventListener('click', openModal);
+document.querySelector('.header__consultation').addEventListener('click', openModal);
