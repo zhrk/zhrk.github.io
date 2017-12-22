@@ -3780,30 +3780,6 @@ footer {
 	background-image: url('../img/ourservices-9.jpg');
 }
 
-.cran {
-	position: absolute;
-	right: 0;
-	top: -60px;
-}
-
-.cran2{
-	position: absolute;
-	right: 0;
-	top: -46px;
-}
-
-.idk {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.kid {
-	position: absolute;
-	right: 120px;
-	top: -71px;
-}
-
 .opensnav {
 	max-height: 300px;
 	-webkit-transition: all 0.3s ease-out;
