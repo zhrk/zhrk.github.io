@@ -1,0 +1,445 @@
+@media screen and (max-width: 1700px) {
+
+	.movie {
+		background-position: 90% 630px
+	}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.header__nav,
+	.header__other,
+	.header__schedule,
+	.header__path,
+	.header__schedule,
+	.header__search,
+	.header__map,
+	.header__lang,
+	.header__path-hidden,
+	.path,
+	.search,
+	.header__today, 
+	.header__shops, 
+	.header__food,
+	.emerald,
+	.ads__title,
+	.sub,
+	.shops__bg-1,
+	.shops__bg-2,
+	.about,
+	.posts,
+	.footer__nav {
+		display: none;
+	}
+
+	.preloader {
+		display: flex;
+	}
+
+	body {
+		min-width: 100%;
+	}
+
+	main {
+		margin-top: 80px;
+	}
+
+	footer {
+		height: auto;
+		background-color: #0b0f12;
+	}
+
+	h3 {
+		font-size: 30px;
+		align-self: center;
+	}
+
+	.body--noscroll {
+		position: fixed;
+		overflow: hidden;
+	}
+
+	.header__inner {
+		justify-content: flex-end;
+	}
+
+	.menu {
+		width: 100%;
+		transform: translateX(-100%);
+		overflow-y: scroll;
+	}
+
+	.menu--active {
+		transform: translateX(0);
+	}
+
+	.menu__lang-mobile {
+		display: flex;
+		min-height: 81px;
+	}
+
+	.menu__title {
+		justify-content: flex-start;
+		padding-left: 20px;
+		min-height: 81px;
+	}
+
+	.menu__title > span {
+		order: 1;
+		margin-left: 20px;
+	}
+
+	.menu > a {
+		min-height: 51px;
+		padding-left: 20px;
+		justify-content: space-between;
+	}
+
+	.menu__mobile-fav {
+		display: flex;
+	}
+
+	.menu__circle {
+		display: flex;
+	}
+
+	.slick-dots {
+		bottom: 20px;
+	}
+
+	.ads {
+		padding-top: 40px;
+		background: none;
+		overflow: hidden;
+	}
+
+	.ads__actual .slick-slide {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.ads__text-mobile {
+		display: block;
+	}
+
+	.ads__actual-2--item {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.ads__actual {
+		margin-top: 20px;
+	}
+
+	.ads__actual-2 {
+		width: 90%;
+		align-self: center;
+	}
+
+	.ads__actual-2  .slick-slide > img {
+		width: 100%;
+	}
+
+	.ads__actual-2  .slick-dots {
+		bottom: -20px;
+	}
+
+	.btn {
+		min-width: 230px;
+		max-width: 230px;
+	}
+
+	.ads__inner {
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+
+	.ads__col-2 {
+		margin: 0;
+		margin-top: 40px;
+	}
+
+	.ads__row {
+		width: 100%;
+		margin-bottom: 5px;
+		justify-content: center;
+	}
+
+	.ads__item {
+		width: 153px;
+		height: 130px;
+		overflow: hidden;
+	}
+
+	.ads__item:not(:last-child) {
+		margin-right: 5px;
+	}
+
+	.ads__item > img {
+		object-fit: cover;
+	}
+
+	.ads__col-2__inner {
+		display: flex;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.ads__item--mobile-hide {
+		display: none;
+	}
+
+	.circle--ads {
+		display: flex;
+	}
+
+	.ads__actual-mobile {
+		display: flex;
+	}
+
+	.ads__text {
+		top: auto;
+		font-size: 14px;
+		bottom: 15px;
+	}
+
+	.ads__text > br {
+		display: none;
+	}
+
+	.shops {
+		height: 440px;
+	}
+
+	.shops__bg-3 {
+		height: 360px;
+		background-color: #9751cd;
+	}
+
+	.shops__bg-3__inner {
+		background-image: none;
+		width: 100%;
+		height: 450px;
+		overflow: hidden;
+	}
+
+	.bags {
+		display: none;
+	}
+
+	.bags-m {
+		display: block;
+		left: 0;
+		right: 0;
+		top: 130px;
+		position: absolute;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+	}
+
+	.shops__info {
+		top: 20px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.shops__value {
+		font-size: 70px;
+	}
+
+	.shops__text {
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+
+	.adv {
+		padding-bottom: 40px;
+	}
+
+	.adv__inner {
+		padding-top: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.adv__tiles {
+		width: 282px;
+		height: 263px;
+		flex-wrap: nowrap;
+		display: block;
+	}
+
+	.adv__tile {
+		height: 263px !important;
+	}
+
+	.adv__tile:nth-child(odd) {
+		margin-right: 0;
+	}
+
+	.adv__tile:nth-child(1) {
+		margin-bottom: 0;
+	}
+
+	.adv__tile:nth-child(2) {
+		margin-bottom: 0;
+	}
+
+	.adv__top {
+		display: block;
+	}
+
+	.adv .slick-dots {
+		bottom: -20px;
+	}
+
+	.adv__cards {
+		margin-top: 40px;
+	}
+
+	.adv__card {
+		height: auto;
+		width: 100%;
+		border: 0;
+		box-shadow: none;
+		padding-bottom: 0;
+	}
+
+	.adv__card:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.adv__card > img {
+		display: none;
+	}
+
+	.adv__card-title {
+		font-size: 25px;
+	}
+
+	.adv__card-text {
+		font-size: 14px;
+	}
+
+	.trends {
+		display: none !important;
+	}
+
+	.movie {
+		padding-top: 40px;
+		background-image: none;
+		overflow: hidden;
+	}
+
+	.movie__nav {
+		width: 100%;
+		position: relative;
+		justify-content: center;
+	}
+
+	.movie__switch {
+		width: 280px;
+	}
+
+	.movie .btn {
+		max-width: 140px;
+		min-width: 140px;
+		box-sizing: border-box;
+	}
+
+	.movie--acs {
+		position: absolute;
+		top: 470px;
+		width: 230px !important;
+		max-width: 230px !important;
+	}
+
+	.h3--movie-mobile {
+		display: block;
+	}
+
+	.movie__btn-mobile {
+		display: none;
+	}
+
+	.movie__logo {
+		margin-top: 90px;
+	}
+
+	.movie__list {
+		margin-top: 25px;
+		width: 100%;
+	}
+
+	.movie__item {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.movie .slick-slide {
+		
+	}
+
+	.footer__inner {
+		padding-top: 40px;
+		align-items: center;
+	}
+
+	.footer__mobile {
+		display: flex;
+	}
+
+	.footer__email {
+		margin-top: 40px;
+		color: #414a52;
+	}
+
+	.footer__copyright {
+		color: #414a52;
+	}
+
+	.footer__social {
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+
+	.movie-emerald-1,
+	.movie-emerald-2 {
+		display: block;
+	}
+
+	.pop h3 {
+		text-align: center;
+	}
+
+	.pop__brands {
+		padding-bottom: 70px;
+	}
+
+	.pop .slick-dots {
+		bottom: 40px;
+	}
+
+	.pop__brands  img {
+		border-radius: 5px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.movie-emerald-1,
+	.movie-emerald--2 {
+		display: block;
+	}
+
+	.footer__btn {
+		display: inline-block;
+	}
+
+}
