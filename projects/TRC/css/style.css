@@ -71,6 +71,7 @@ h3 {
 	background-color: #fff;
 	position: relative;
 	z-index: 3;
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .header__nav {
@@ -1795,4 +1796,97 @@ h3 {
 .footer__btn {
 	border: 0;
 	margin-top: 10px;
+}
+
+.renters {
+	display: flex;
+	justify-content: center;
+	background-color: #fcfcfc;
+}
+
+.renters__inner {
+	padding-top: 100px;
+	padding-bottom: 90px;
+	max-width: 1208px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.renters__info {
+	display: flex;
+}
+
+.renters__col {
+	max-width: 800px;
+	width: 100%;
+}
+
+.renters  h6 {
+	font-weight: bold;
+	font-size: 15px;
+	color: #34213e;
+	margin: 50px 0 0 0;
+}
+
+.renters p {
+	font-size: 15px;
+	color: #34213e;
+	padding: 20px 0 0 0;
+}
+
+.renters__card {
+	padding: 30px 30px 0 30px;
+	background-color: #fff;
+	box-shadow: 0px 1px 1px 0px rgba(21, 7, 39, 0.1);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-left: auto;
+	height: 290px;
+}
+
+.renters__card-title {
+	color: #34213e;
+	text-align: center;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.renters__card-phone {
+	margin-top: 30px;
+	color: #34213e;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.renters__card-email {
+	margin-top: 30px;
+	color: #099d77;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.renters__card-divider {
+	background-color: #f5f7fc;
+	height: 1px;
+	width: 250px;
+	margin-top: 25px;
+}
+
+.renters__card-text {
+	margin-top: 25px;
+	color: #34213e;
+	font-size: 13px;
+	text-align: center;
+}
+
+.renter__card-btn {
+	margin-top: 20px;
+	align-self: center;
+}
+
+.foradv {
+	height: 320px;
 }
