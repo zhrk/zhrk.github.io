@@ -98,7 +98,7 @@
 	}
 
 	.menu__mobile-fav {
-		display: flex;
+		display: flex !important;
 	}
 
 	.menu__circle {
@@ -457,6 +457,7 @@
 	}
 
 	.renters__card {
+		transform: translateY(0);
 		margin-top: 25px;
 		margin-left: auto;
 		margin-right: auto;
@@ -469,6 +470,10 @@
 
 	.renters__card-divider {
 		width: 100%;
+	}
+
+	.poster {
+		padding-top: 40px;
 	}
 
 }

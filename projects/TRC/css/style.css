@@ -1836,6 +1836,7 @@ h3 {
 }
 
 .renters__card {
+	transform: translateY(-50px);
 	padding: 30px 30px 0 30px;
 	background-color: #fff;
 	box-shadow: 0px 1px 1px 0px rgba(21, 7, 39, 0.1);
@@ -1889,4 +1890,154 @@ h3 {
 
 .foradv {
 	height: 320px;
+}
+
+.poster {
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	background-color: #fcfcfc
+}
+
+.poster__inner {
+	max-width: 1208px;
+	width: 100%;
+}
+
+.poster__info {
+	margin-top: 40px;
+	display: flex;
+}
+
+.poster__cards {
+	display: flex;
+	width: 1000px;
+	flex-wrap: wrap;
+}
+
+.poster__card {
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	transition: all .15s ease-in-out;
+}
+
+.poster__card:hover {
+	box-shadow: 0px 30px 30px 0px rgba(21, 7, 39, 0.05);
+	transition: all .15s ease-in-out;
+}
+
+.poster__card:nth-child(odd) {
+	margin-right: 40px;
+}
+
+.poster__card-img {
+	height: 400px;
+}
+
+.poster__card-img > img {
+	object-fit: cover;
+}
+
+.poster__card-info {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 0 0 3px 3px;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.poster__card-title {
+	font-family: Roboto Black;
+	font-size: 20px;
+	color: #34213e;
+}
+
+.poster .border-date {
+	align-self: flex-start;
+}
+
+.poster__card-status {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.poster__card-status > *:not(:last-child) {
+	margin-right: 10px
+}
+
+.poster .ads__title-value {
+	height: 35px;
+}
+
+.poster .ads__title {
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 35px;
+}
+
+.poster__card-done {
+	padding: 10px;
+	background-color: #e7ebf2;
+	text-transform: uppercase;
+	color: #8b98aa;
+	font-weight: 500;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+	justify-content: center;
+}
+
+.poster__card-title--green {
+	color: #099d77;
+}
+
+.poster__date {
+	width: 130px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	border-top: 1px solid #e7ebf2;
+	border-bottom: 1px solid #e7ebf2;
+}
+
+.poster__year {
+	font-size: 17px;
+	font-weight: 500;
+	color: #34213e;
+	display: flex;
+	height: 52px;
+	align-items: center;
+}
+
+.poster__year:not(:last-child) {
+	border-bottom: 1px solid #e7ebf2;
+}
+
+.poster__year > img {
+	margin-left: 15px;
+}
+
+.poster__mounths {
+	max-height: 0;
+	overflow: hidden;
+}
+
+.poster__mounths--active {
+	max-height: 100%;
+	transition: all .15s ease-in-out;
+}
+
+.poster__mounth {
+	color: #8b98ab;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }

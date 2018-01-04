@@ -89,7 +89,11 @@ function closeMenu() {
 
 
 
-
+Hammer(window).on("swiperight", function() {
+	 if (window.innerWidth < 767) {
+		openMenu();
+	}        
+});
 
 window.addEventListener('scroll', changeHeader);
 
