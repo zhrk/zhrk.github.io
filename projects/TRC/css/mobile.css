@@ -629,6 +629,8 @@
 
 	.h3--blog-page {
 		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.blog-page__img {
