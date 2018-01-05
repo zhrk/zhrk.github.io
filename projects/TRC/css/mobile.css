@@ -540,10 +540,6 @@
 		width: 100%;
 	}
 
-	.feedback .selectbox {
-		width: 100%;
-	}
-
 	.feedback__post {
 		flex-direction: column;
 	}
@@ -560,18 +556,6 @@
 	.feedback__text {
 		margin-bottom: 20px;
 		text-align: center;
-	}
-
-	.justwrap {
-		width: 100% !important;
-		margin: 0 0 30px 0 !important;
-	}
-
-	.justselect {
-		width: 100% !important;
-		box-sizing: border-box !important;
-		margin: 0 !important;
-		z-index: 0 !important;
 	}
 
 	.feedback__title-col:last-child {
@@ -593,12 +577,6 @@
 		
 	.feedback__title-text {
 		margin-top: 20px;
-	}
-
-	.feedback .selectbox {
-    position: absolute!important;
-    z-index: 0 !important;
-    pointer-events: none;
 	}
 
 }
