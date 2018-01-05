@@ -88,13 +88,6 @@ function closeMenu() {
 
 
 
-
-/*Hammer(window).on("swiperight", function() {
-	 if (window.innerWidth < 767) {
-		openMenu();
-	}        
-});*/
-
 window.addEventListener('scroll', changeHeader);
 
 document.querySelector('.header__other-btn').addEventListener('click', openOtherNav);

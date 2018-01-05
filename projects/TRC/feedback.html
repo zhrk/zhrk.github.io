@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="css/libs/slick.css">
 		<link rel="icon" href="img/icons/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-		<title>Арендаторам</title>
+		<link rel="stylesheet" href="css/libs/selectbox.min.css">
+		<title>Написать нам</title>
 	</head>
 	<body>
 		<header>
@@ -273,25 +274,51 @@
 			</div>
 		</header>
 		<main>
-			<div class="renters">
-				<div class="renters__inner">
-					<h3>Арендаторам</h3>
-					<div class="renters__info">
-						<div class="renters__col">
-							<p>Российский потребительский рынок — крупнейший в Европе, что делает его особенно привлекательным для инвестиций. Растущая покупательская способность и любовь россиян к всемирно известным брендам приводит посетителей в лучшие торговые центры страны.</p>
-							<p>Стремительно меняющийся образ жизни делает российских потребителей более требовательными к качеству услуг и ассортименту товаров, при этом они готовы тратить на шопинг до 70% своего общего дохода.</p>
-							<h6>Почему Изумрудный город?</h6>
-							<p>Являясь частью успешной международной розничной сети, мы предлагаем привлекательные условия для развития бизнеса. Это делает нас желанным партнером для компаний, готовых выйти на российский рынок. Мы гордимся тем, что такие бренды, как Zara, Starbucks, The Body Shop, Armani Exchange, Superdry, Lindt &#38; Sprüngli, NYX, Accessorize, Victoria’s Secret Beauty &#38; Accessories и Violeta by Mango, выбрали МЕГУ в качестве своей стартовой площадки в России.</p>
+			<div class="feedback">
+				<div class="feedback__inner">
+					<div class="feedback__title">
+						<div class="feedback__title-col">
+							<h3>Написать нам</h3>
+							<div class="feedback__title-text">Мы всегда рады возможности сделать нашу работу еще лучше. <br> И всегда готовы ответить на ваши вопросы. Выберите подходящую <br> для вашего замечания или вопроса тему и напишите нам.</div>
 						</div>
-						<div class="renters__card">
-							<div class="renters__card-title">Отдел аренды</div>
-							<div class="renters__card-phone">+7 (3822) 281-381, доб. 112</div>
-							<div class="renters__card-email">arenda.izumrudniy@gmail.com</div>
-							<div class="renters__card-divider"></div>
-							<div class="renters__card-text">Хотите арендовать площадь <br> в Изумрудном городе?</div>
-							<a href="" class="btn renter__card-btn">Заполнить заявку</a>
+						<div class="feedback__title-col">
+							<div class="about__title">
+								<div class="about__title-item">
+									<img src="img/icons/vacs.png">
+									<a href="" class="about__title-text">Вакансии</a>
+								</div>
+								<div class="about__title-item">
+									<img src="img/icons/works.png">
+									<a href="" class="about__title-text">Арендаторам</a>
+								</div>
+								<div class="about__title-item">
+									<img src="img/icons/rupor.png">
+									<a href="" class="about__title-text">Рекламодателям</a>
+								</div>
+							</div>
 						</div>
 					</div>
+					<form class="feedback__form" action="">
+						<div class="feedback__form-col">
+							<input class="feedback__input" placeholder="Имя" type="text">
+							<input class="feedback__input" placeholder="E-mail" type="text">
+							<input class="feedback__input" placeholder="Телефон" type="text">
+							<select class="feedback__select justselect">
+								<option class="feedback__select-option" disabled selected>Тема сообщения</option>
+								<option value="">Замечания и предложения</option>
+								<option value="">Неточность на сайте или в социальных сетях</option>
+								<option value="">Забытые вещи</option>
+								<option value="">СМИ</option>
+							</select>
+						</div>
+						<div class="feedback__form-col">
+							<textarea placeholder="Сообщение"></textarea>
+							<div class="feedback__post">
+								<div class="feedback__text">Отправляя сообщение вы соглашаетесь на обработку персональных данных</div>
+								<div class="btn">Отправить</div>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</main>
@@ -355,6 +382,8 @@
 		</footer>
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="js/libs/slick.min.js"></script>
+		<script src="js/libs/selectbox.min.js"></script>
 		<script src="js/js.js"></script>
+		<script src="js/feedback.js" defer></script>
 	</body>
 </html>

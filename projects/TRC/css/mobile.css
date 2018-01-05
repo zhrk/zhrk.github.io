@@ -30,7 +30,8 @@
 	.shops__bg-2,
 	.about,
 	.posts,
-	.footer__nav {
+	.footer__nav,
+	.poster__date {
 		display: none;
 	}
 
@@ -474,6 +475,119 @@
 
 	.poster {
 		padding-top: 40px;
+	}
+
+	.poster__cards {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	.poster__card {
+		width: 100%;
+	}
+
+	.poster__card-img {
+		height: 220px;
+	}
+
+	.poster__card:nth-child(odd) {
+		margin-right: 0
+	}
+
+	.poster h3 {
+		align-self: center;
+	}
+
+	.poster__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.poster__card-title {
+		font-size: 15px;
+	}
+
+	.feedback__inner {
+		padding-top: 40px;
+		padding-bottom: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		overflow: hidden;
+	}
+
+	.feedback__form {
+		flex-direction: column;
+	}
+
+	.feedback__title {
+		flex-direction: column;
+	}
+
+	.feedback .about__title {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
+	}
+
+	.feedback__form textarea {
+		width: 100%;
+	}
+
+	.feedback__input {
+		width: 100%;
+	}
+
+	.feedback .selectbox {
+		width: 100%;
+	}
+
+	.feedback__post {
+		flex-direction: column;
+	}
+
+	.feedback__title-col {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.feedback__title-col h3 {
+		text-align: center;
+	}
+
+	.feedback__text {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.justwrap {
+		width: 100% !important;
+		margin: 0 0 30px 0 !important;
+	}
+
+	.justselect {
+		width: 100% !important;
+	}
+
+	.feedback__title-col:last-child {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.feedback .about__title-item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.feedback__post .btn {
+		max-width: 100%;
+		min-width: 10%;
+		width: 230px;
+		box-sizing: border-box;
+		align-self: center;
+	}
+		
+	.feedback__title-text {
+		margin-top: 20px;
 	}
 
 }
