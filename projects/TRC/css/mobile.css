@@ -64,6 +64,7 @@
 
 	.header__inner {
 		justify-content: flex-end;
+		z-index: 2;
 	}
 
 	.menu {
@@ -489,6 +490,7 @@
 
 	.poster__card-img {
 		height: 220px;
+		overflow: hidden;
 	}
 
 	.poster__card:nth-child(odd) {
@@ -567,6 +569,9 @@
 
 	.justselect {
 		width: 100% !important;
+		box-sizing: border-box !important;
+		margin: 0 !important;
+		z-index: 0 !important;
 	}
 
 	.feedback__title-col:last-child {
@@ -588,6 +593,12 @@
 		
 	.feedback__title-text {
 		margin-top: 20px;
+	}
+
+	.feedback .selectbox {
+    position: absolute!important;
+    z-index: 0 !important;
+    pointer-events: none;
 	}
 
 }
