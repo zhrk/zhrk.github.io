@@ -32,7 +32,10 @@
 	.posts,
 	.footer__nav,
 	.poster__date,
-	.blog-page__nav  {
+	.blog-page__nav,
+	.fav__title,
+	.fav__events,
+	.fav__discount {
 		display: none;
 	}
 
@@ -658,6 +661,37 @@
 	.blog-page__products > div .blog-page__product {
 		margin-right: 10px;
 		margin-left: 25px;
+	}
+
+	.fav__inner {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.fav h3 {
+		text-align: center;
+	}
+
+	.fav__item:not(:nth-child(4n)) {
+		margin-right: 0;
+	}
+
+	.fav__items {
+		flex-wrap: nowrap;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.fav .ads__title {
+		display: flex;
+	}
+
+	.fav__switch {
+		display: flex;
+	}
+
+	.fav__discount {
+		margin-top: 0;
 	}
 
 }
