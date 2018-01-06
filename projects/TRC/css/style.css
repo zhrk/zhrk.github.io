@@ -78,7 +78,7 @@ h3 {
 }
 
 .preloader > svg {
-	animation: spin 2s infinite;
+	animation: spin 1s infinite;
 }
 
 .header__info {
