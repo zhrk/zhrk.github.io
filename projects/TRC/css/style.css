@@ -4,6 +4,19 @@
 	src: url(../fonts/PROXIMA_NOVA_EXTRABOLD.OTF);
 }
 
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
 
 body {
 	min-width: 1280px;
@@ -62,6 +75,10 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	display: none;
+}
+
+.preloader > svg {
+	animation: spin 3s infinite;
 }
 
 .header__info {

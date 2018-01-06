@@ -13,7 +13,7 @@ function aboutPageMobile() {
 			infinite: false,
 			arrows: false,
 		  dots: true,
-		  touchMove: true
+		  touchMove: false
 		});
 	}
 }
