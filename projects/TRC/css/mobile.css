@@ -35,7 +35,8 @@
 	.blog-page__nav,
 	.fav__title,
 	.fav__events,
-	.fav__discount {
+	.fav__discount,
+	.about-page__time {
 		display: none;
 	}
 
@@ -692,6 +693,79 @@
 
 	.fav__discount {
 		margin-top: 0;
+	}
+
+	.about-page__welcome {
+		height: calc(100vh - 80px);
+	}
+
+	.about-page__welcome-item:not(:last-child) {
+		margin: 0;
+	}
+
+	.about-page__welcome h3 {
+		font-size: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.about-page__welcome-item-title {
+		font-size: 20px;
+	}
+
+	.about-page__welcome-item-value {
+		font-size: 30px;
+	}
+
+	.about-page__welcome-items {
+		display: block;
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.about-page__inner {
+		padding-top: 40px;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+	}
+
+	.about-page__text {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.about-page__info-col h3 {
+		text-align: center;
+	}
+
+	.about-page__welcome-item-value,
+	.about-page__welcome-item-title {
+		text-align: center;
+	}
+
+	.about-page__slides {
+		width: 100%;
+		height: 315px;
+	}
+
+	.about-page__slides .slick-dots {
+		bottom: -30px;
+	}
+
+	.about-page__slides .slick-slide {
+		height: 315px;
+	}
+
+	.about-page__slide {
+		width: 100%;
+		overflow: hidden;
+		order: 2;
+	}
+
+	.about-page__slide > img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 }

@@ -2618,3 +2618,145 @@ h3 {
 .fav__events--active {
 	display: block !important;
 }
+
+.about-page {
+	background-color: #fcfcfc;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-page__welcome {
+	height: calc(100vh - 130px);
+	width: 100%;
+	background-image: url('../img/about-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about-page__welcome h3 {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}
+
+.about-page__welcome-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-page__welcome-item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-page__welcome-item-title {
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: Proxima Nova;
+	font-weight: 800;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.about-page__welcome-item-value {
+	margin-top: 10px;
+	font-size: 40px;
+	font-family: Proxima Nova;
+	font-weight: 800;
+	color: #fff;
+}
+
+.about-page__welcome-item-img {
+	height: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-page__welcome-items {
+	margin-top: 90px;
+	display: flex;
+}
+
+.about-page__welcome-item:not(:last-child) {
+	margin-right: 185px;
+}
+
+.about-page__inner {
+	padding-top: 100px;
+	padding-bottom: 40px;
+	max-width: 1208px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.about-page__info-col {
+	max-width: 780px;
+	width: 100%;
+}
+
+.about-page__text {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	color: #34213e;
+}
+
+.about-page__time {
+	padding: 30px;
+	height: 390px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #f6f5f6;
+	box-shadow: 0px 1px 1px 0px rgba(21, 7, 39, 0.1);
+}
+
+.about-page__time-title {
+	color: #34213e;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.about-page__time-item-title {
+	color: #8b98ab;
+	font-size: 13px;
+}
+
+.about-page__time-item-value {
+	margin-top: 10px;
+	font-size: 15px;
+	color: #34213e;
+}
+
+.about-page__time-item {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f5f7fc;
+}
+
+.about-page__time-item:last-child {
+	border: 0;
+}
+
+.about-page__info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-page__slides {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about-page__slides > img {
+	margin-bottom: 10px;
+}
