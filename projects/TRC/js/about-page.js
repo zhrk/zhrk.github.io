@@ -6,14 +6,14 @@ function aboutPageMobile() {
   		autoplaySpeed: 2000,
 		  arrows: false,
 		  dots: false,
-		  touchMove: true
+		  touchMove: false
 		});
 
 		$('.about-page__slides').slick({
 			infinite: false,
 			arrows: false,
 		  dots: true,
-		  touchMove: false
+		  touchMove: true
 		});
 	}
 }
