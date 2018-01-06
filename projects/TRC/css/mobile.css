@@ -768,4 +768,16 @@
 		object-fit: cover;
 	}
 
+	.news__title {
+		flex-direction: column;
+	}
+
+	.news__title h3 {
+		align-self: center;
+	}
+
+	.news-past .fav__item:not(:nth-child(3n)) {
+		margin-right: 0
+	}
+
 }

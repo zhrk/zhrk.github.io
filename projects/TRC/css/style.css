@@ -2602,14 +2602,15 @@ h3 {
 	align-self: center;
 	justify-content: space-between;
 	align-items: center;
-	color: #8b98aa;
 	font-weight: 500;
 	font-size: 15px;
 	position: relative;
 }
 
-.fav__switch > div {
+.fav__switch > div,
+.fav__switch > a {
 	z-index: 1;
+	color: #8b98aa;
 }
 
 .fav__switcher {
@@ -2625,7 +2626,7 @@ h3 {
 }
 
 .fav__switch-btn--active {
-	color: #fff;
+	color: #fff !important;
 }
 
 .fav__discount--active {
@@ -2776,4 +2777,45 @@ h3 {
 
 .about-page__slides > img {
 	margin-bottom: 10px;
+}
+
+.news .fav__switch {
+	width: 260px;
+	display: flex;
+	transform: translateY(-5px);
+}
+
+.news .fav__switcher {
+	width: 120px;
+}
+
+.news__title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news__title h3 {
+	align-self: flex-end;
+}
+
+.news-past .fav__items {
+	max-width: 901px;
+	width: 100%;
+}
+
+.news-past .fav__item:not(:nth-child(4n)) {
+	margin-right: 0;
+}
+
+.news-past .fav__item:not(:nth-child(3n)) {
+	margin-right: 20px;
+}
+
+.news-past .fav__discount {
+	display: flex;
+}
+
+.news-past .news__title {
+	max-width: 901px;
+	width: 100%;
 }
