@@ -116,6 +116,16 @@ h3 {
 	transition: all .15s ease-in-out;
 }
 
+.header--scrolled {
+	transform: translateY(-80px);
+	transition: all .15s ease-in-out;
+}
+
+.header--didnt-scrolled {
+	transform: translateY(0);
+	transition: all .15s ease-in-out;
+}
+
 .header__other-item:hover {
 	filter: brightness(2);
 }
