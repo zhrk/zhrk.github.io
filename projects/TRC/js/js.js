@@ -104,7 +104,9 @@ var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
 $(window).scroll(function(event){
-    didScroll = true;
+	if (window.innerWidth < 767) {
+		didScroll = true;
+	} 
 });
 
 setInterval(function() {
