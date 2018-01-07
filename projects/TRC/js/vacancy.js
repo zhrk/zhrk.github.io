@@ -11,7 +11,8 @@ function openVacancyInfo(event) {
 }
 
 
+var vacancyShowBtns = document.querySelectorAll('.vacancy__show');
 
-
-
-document.querySelector('.vacancy__show').addEventListener('click', openVacancyInfo);
+for (var i = 0; i < vacancyShowBtns.length; i++) {
+	vacancyShowBtns[i].addEventListener('click', openVacancyInfo);
+}
