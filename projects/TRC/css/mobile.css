@@ -780,4 +780,27 @@
 		margin-right: 0
 	}
 
+	.vacancy__show {
+		display: flex;
+	}
+
+	.vacancy__row {
+		flex-direction: column;
+	}
+
+	.vacancy__item {
+		align-self: center;
+		margin-bottom: 20px;
+	}
+
+	.vacancy__info {
+		max-height: 0;
+		overflow: hidden;
+		transition: all .15s ease-in-out;
+	}
+
+	.about-page__welcome-items {
+		pointer-events: none;
+	}
+
 }
