@@ -3172,6 +3172,7 @@ h3 {
 .mags__nav-list {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 20px;
 }
 
 .nav__opacity-top {
@@ -3179,6 +3180,7 @@ h3 {
 	top: 139px;
 	display: none;
 	z-index: 1;
+	pointer-events: none;
 }
 
 .nav__opacity-bottom {
@@ -3186,6 +3188,7 @@ h3 {
 	bottom: 76px;
 	z-index: 1;
 	display: none;
+	pointer-events: none;
 }
 
 .mags__nav--active {
