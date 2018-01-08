@@ -803,4 +803,89 @@
 		pointer-events: none;
 	}
 
+	.vacancy__inner {
+		padding-top: 40px;
+	}
+
+	.mags__list {
+		width: 100%;
+	}
+
+	.mags h3 {
+		text-align: center;
+	}
+
+	.mags__list-row {
+		flex-direction: column;
+		margin: 0;
+		align-items: center;
+	}
+
+	.mags__list-item:not(:nth-child(4n)) {
+		margin-right: 0;
+	}
+
+	.mags__list-item {
+		margin-bottom: 20px;
+		width: 280px;
+	}
+
+	.mags__inner {
+		padding-top: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mags__nav-open  {
+		display: flex;
+	}
+
+	.mags__nav {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		top: 80px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 3;
+		background-color: #6d2482;
+		visibility: hidden;
+		pointer-events: none;
+		opacity: 0;
+		transition: all .15s ease-in-out;
+	}
+
+	.mags__nav-list {
+		overflow: scroll;
+		position: relative;
+	}
+
+	.mags__nav-value {
+		display: none;
+	}
+
+	.mags__nav-title {
+		color: #fff;
+	}
+
+	.mags__nav-item {
+		justify-content: center;
+		min-height: 60px;
+		margin: 0;
+	}
+
+	.mags__nav-title-mobile {
+		display: block;
+	}
+
+	.mags__nav-close {
+		display: flex;
+	}
+
+	.nav__opacity-top,
+	.nav__opacity-bottom {
+		display: block;
+	}
+
 }
