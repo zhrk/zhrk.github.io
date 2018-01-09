@@ -888,4 +888,69 @@
 		display: block;
 	}
 
+	.mag .blog-page__back {
+		display: none;
+	}
+
+	.mag__inner {
+		padding-top: 10px;
+		padding-bottom: 60px;
+	}
+
+	.mag__info {
+		flex-direction: column;
+	}
+
+	.mag__text {
+		padding-left: 20px;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+
+	.mag__side {
+		transform: none;
+	}
+
+	.mag__about {
+		order: 2;
+	}
+
+	.mag__side {
+		margin-right: auto;
+	}
+
+	.mag h3 {
+		align-self: flex-start;
+		padding-left: 20px;
+		margin-bottom: 10px;
+	}
+
+	.mag__side-ad {
+		display: none;
+	}
+
+	.mag__images {
+		width: 100%;
+		height: 290px;
+	}
+
+	.mag__images .slick-slide {
+		height: 290px;
+		overflow: hidden;
+	}
+
+	.mag__img {
+		margin: 0;
+	}
+
+	.mag__img-subj {
+		margin: 0;
+		min-height: 290px;
+		width: 100%;
+	}
+
+	.mag .slick-dots {
+		bottom: -30px;
+	}
+
 }
