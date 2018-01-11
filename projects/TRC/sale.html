@@ -6,9 +6,10 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="stylesheet" href="css/libs/slick.css">
+		<link rel="stylesheet" href="css/libs/datepicker.css">
 		<link rel="icon" href="img/icons/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-		<title>Новости и акции</title>
+		<title>Акция</title>
 	</head>
 	<body>
 		<header>
@@ -273,22 +274,72 @@
 			</div>
 		</header>
 		<main>
-			<div class="fav news news-past">
-				<div class="fav__inner">
-					<div class="news__title">
-						<h3>Новости и акции</h3>
-						<div class="fav__switch">
-							<div class="fav__switcher" style="right: -1px; width: 145px"></div>
-							<a href="news-current.html" class="fav__switch-btn fav__switch-btn-left">Текущие</a>
-							<a href="news-past.html" class="fav__switch-btn fav__switch-btn-right fav__switch-btn--active">Прошедшие</a>
+			<div class="event">
+				<div class="event__inner">
+					<div class="blog-page__back">
+						<img src="img/icons/arrow-back.png">
+						<a href="">Назад</a>
+					</div>
+					<div class="event__title">
+						<h3>Йывон нофелет нужен?</h3>
+						<div class="event__title-nav">
+							<div class="dt-share">
+								<a href="">
+									<img src="img/icons/vk--event.png"> 
+								</a>
+								<a href="">
+									<img src="img/icons/facebook--event.png"> 
+								</a>
+								<a href="">
+									<img src="img/icons/insta--event.png"> 
+								</a>
+								<a href="">
+									<img src="img/icons/ok--event.png"> 
+								</a>
+							</div>
+							<form class="datepicker-container">
+								<!-- <div class="dt-done">
+									<h3>Напоминание <br> создано</h3>
+									<span class="dt-done-text">Вам придет смс оповещение <br> на указанный номер телефона</span>
+									<div class="btn dt-btn--gray">Закрыть</div>
+								</div> -->
+								<label class="datepicker-label" for="datepicker">
+									<div class="datepicker-img"><img src="img/icons/calendar.png"></div>
+									<input data-date-format="d M yyyy" id="datepicker" class="datepicker-input datepicker-here" type="text">
+								</label>
+								<input class="datepicker-input" placeholder="Ваше имя" type="text">
+								<input class="datepicker-input" placeholder="Телефон для смс оповещения" type="text">
+								<div class="dt-nav">
+									<button class="btn dt-btn" type="submit">Напомнить</button>
+									<div class="btn dt-btn--gray">Закрыть</div>
+								</div>
+							</form>
+							<div class="event__title-btn event__title-remind">
+								<span>Напомнить</span> 
+							</div>
+							<div class="event__title-btn dt-btn-share">Поделиться</div>
+							<div class="event__title-btn event__title-btn--circle"></div>
+							<!-- <div class="event__title-btn event__title-btn--circle-active"></div> -->
 						</div>
 					</div>
-					<div class="fav__discount">
+					<div class="event__title-info">
+						<div class="border-date">1 сентября  —  25 ноября</div>
+						<div class="ads__title ads__title-count">Осталось дней<div class="ads__title-value">7</div></div>
+					</div>
+					<div class="event__info">
+						<div class="event__img"><img src="img/sale-1.jpg"></div>
+						<div class="event__info-text">На что вы обращаете внимание при выборе обуви? </div>
+						<div class="event__info-text">Скандинавский дизайн, выверенные линии, максимальный комфорт и тщательная проверка качества — вот главные критерии, которыми руководствуется компания ECCO при создании своих коллекций.</div>
+						<div class="event__info-text">В новом сезоне Осень–Зима 2017–18 бренд представил широкий ассортимент модной обуви для всей семьи. Необычные цвета и фактуры, узнаваемый стиль — все это вы найдете в коллекции ECCO. На полках фирменного магазина вас ждут не только комфортные модели на каждый день, но и линия аксессуаров, которая включает сумки, клатчи, кошельки, рюкзаки и обувную косметику.</div>
+						<div class="event__info-text">Приходите за новинками в Изумрудный город!</div>						
+					</div>
+					<div class="event__more">
+						<h3>Другие предложения</h3>
 						<div class="fav__items">
 							<a href="" class="fav__item">
 								<div class="fav__img">
 									<img src="img/fav-1.jpg">
-									<div class="fav__done">Завершено</div>
+									<div class="ads__title ads__title-new">Новинка</div>
 								</div>
 								<div class="fav__info">
 									<div class="fav__item-title">Новая коллекция ECCO</div>
@@ -299,7 +350,7 @@
 							<a href="" class="fav__item">
 								<div class="fav__img">
 									<img src="img/fav-2.jpg">
-									<div class="fav__done">Завершено</div>
+									<div class="ads__title ads__title-count">Осталось дней<div class="ads__title-value">5</div></div>
 								</div>
 								<div class="fav__info">
 									<div class="fav__item-title">Скидки до 40% на обувь <br> в магазине Adidas Originals</div>
@@ -309,8 +360,19 @@
 							</a>
 							<a href="" class="fav__item">
 								<div class="fav__img">
+									<img src="img/fav-5.jpg">
+									<div class="ads__title ads__title-date">До 20 ноября</div>
+								</div>
+								<div class="fav__info">
+									<div class="fav__item-title">1000 баллов за любую <br> покупку в СПОРТМАСТЕР</div>
+									<div class="fav__item-text">Баллы это всегда здорово. Совершите любую покупку <br> в магазине СпортМастер <br> и получите 1000 баллов!</div>
+									<div class="fav__item-date">10.11.2017</div>
+								</div>
+							</a>
+							<a href="" class="fav__item">
+								<div class="fav__img">
 									<img src="img/fav-3.jpg">
-									<div class="fav__done">Завершено</div>
+									<div class="ads__title ads__title-new">Новинка</div>
 								</div>
 								<div class="fav__info">
 									<div class="fav__item-title">Межсезонная распродажа <br> в Pelican Kids</div>
@@ -321,7 +383,7 @@
 							<a href="" class="fav__item">
 								<div class="fav__img">
 									<img src="img/fav-4.jpg">
-									<div class="fav__done">Завершено</div>
+									<div class="ads__title ads__title-date">До 20 ноября</div>
 								</div>
 								<div class="fav__info">
 									<div class="fav__item-title">Новые коллекции <br> в Palmetta</div>
@@ -329,65 +391,26 @@
 									<div class="fav__item-date">14.11.2017</div>
 								</div>
 							</a>
-							<a href="" class="fav__item">
-								<div class="fav__img">
-									<img src="img/fav-5.jpg">
-									<div class="fav__done">Завершено</div>
-								</div>
-								<div class="fav__info">
-									<div class="fav__item-title">1000 баллов за любую <br> покупку в СПОРТМАСТЕР</div>
-									<div class="fav__item-text">Баллы это всегда здорово. Совершите любую покупку <br> в магазине СпортМастер <br> и получите 1000 баллов!</div>
-									<div class="fav__item-date">10.11.2017</div>
-								</div>
+						</div>
+					</div>
+					<div class="event__title-nav event__title-nav--mobile">
+						<div class="dt-share dt-share--mobile">
+							<a href="">
+								<img src="img/icons/vk--event.png"> 
 							</a>
-							<a href="" class="fav__item">
-								<div class="fav__img">
-									<img src="img/fav-6.jpg">
-									<div class="fav__done">Завершено</div>
-								</div>
-								<div class="fav__info">
-									<div class="fav__item-title">Получи свою скидку <br> в М.Видео</div>
-									<div class="fav__item-text">Испытайте удачу вместе с магазином электроники М.Видео и получите скидку до 60%!</div>
-									<div class="fav__item-date">14.11.2017</div>
-								</div>
+							<a href="">
+								<img src="img/icons/facebook--event.png"> 
+							</a>
+							<a href="">
+								<img src="img/icons/insta--event.png"> 
+							</a>
+							<a href="">
+								<img src="img/icons/ok--event.png"> 
 							</a>
 						</div>
-						<div class="poster__date">
-							<div class="poster__year">2018<img src="img/icons/arrow--poster.png"></div>
-							<div class="poster__mounths poster__mounths--active">
-								<div class="poster__mounth">Январь</div>
-							</div>
-							<div class="poster__year poster__year--active">2017<img src="img/icons/arrow--poster.png"></div>
-							<div class="poster__mounths">
-								<div class="poster__mounth">Декабрь</div>
-								<div class="poster__mounth poster__mounth--active">Ноябрь</div>
-								<div class="poster__mounth">Октябрь</div>
-								<div class="poster__mounth">Сентябрь</div>
-								<div class="poster__mounth">Август</div>
-								<div class="poster__mounth">Июль</div>
-								<div class="poster__mounth">Июнь</div>
-								<div class="poster__mounth">Май</div>
-								<div class="poster__mounth">Апрель</div>
-								<div class="poster__mounth">Март</div>
-								<div class="poster__mounth">Февраль</div>
-								<div class="poster__mounth">Январь</div>
-							</div>
-							<div class="poster__year ">2016<img src="img/icons/arrow--poster.png"></div>
-							<div class="poster__mounths">
-								<div class="poster__mounth">Декабрь</div>
-								<div class="poster__mounth">Ноябрь</div>
-								<div class="poster__mounth">Октябрь</div>
-								<div class="poster__mounth">Сентябрь</div>
-								<div class="poster__mounth">Август</div>
-								<div class="poster__mounth">Июль</div>
-								<div class="poster__mounth">Июнь</div>
-								<div class="poster__mounth">Май</div>
-								<div class="poster__mounth">Апрель</div>
-								<div class="poster__mounth">Март</div>
-								<div class="poster__mounth">Февраль</div>
-								<div class="poster__mounth">Январь</div>
-							</div>
-						</div>
+						<div class="event__title-btn event__title-btn--mobile">Поделиться</div>
+						<div class="event__title-btn event__title-btn--circle"></div>
+						<!-- <div class="event__title-btn event__title-btn--circle-active"></div> -->
 					</div>
 				</div>
 			</div>
@@ -452,6 +475,8 @@
 		</footer>
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="js/libs/slick.min.js"></script>
+		<script src="js/libs/datepicker.min.js"></script>
 		<script src="js/js.js"></script>
+		<script src="js/event.js"></script>
 	</body>
 </html>
