@@ -220,25 +220,6 @@ document.querySelector('.btn__search-close').addEventListener('click', closeSear
 
 
 
-
-
-function openPath() {
-	document.querySelector('.path').classList.remove('hide-el');
-	/*document.querySelector('.header__search').classList.add('header__search--active');*/
-}
-
-function closePath() {
-	document.querySelector('.path').classList.add('hide-el');
-	/*document.querySelector('.header__search').classList.remove('header__search--active');*/
-}
-
-
-
-/*document.querySelector('.header__path').addEventListener('click', openPath);
-document.querySelector('.path__close').addEventListener('click', closePath);*/
-
-
-
 function headerMobile() {
 	if (window.innerWidth < 767) {
 		document.querySelector('.header__menu').classList.remove('hide-el');

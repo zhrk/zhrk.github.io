@@ -31,11 +31,6 @@ function mainMobile() {
 }
 
 
-
-/*$( document ).ready(function() {
-
-});*/
-
 $('.welcome').slick({
 	  infinite: false,
 	  arrows: false,
