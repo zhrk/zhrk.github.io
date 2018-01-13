@@ -1,5 +1,6 @@
+document.querySelector('footer').style.display = 'none';
+
 if (window.innerWidth < 767) {
-	document.querySelector('footer').style.display = 'none';
 	document.getElementById('mpath').classList.add('map__item--active');
 	document.getElementById('btnP').classList.add('map__btn--active');
 	document.querySelector('.map__ui').classList.add('map__ui--hidden');
