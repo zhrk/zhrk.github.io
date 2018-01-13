@@ -7,6 +7,7 @@ if (window.innerWidth < 767) {
     document.querySelector('main').style.marginTop = '0';
     document.querySelector('main').style.height = '100vh';
 	document.querySelector('main').style.position = 'relative';
+    window.scrollTo(0, 80);
 }
 
 function openPath() {
