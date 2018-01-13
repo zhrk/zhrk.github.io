@@ -143,6 +143,7 @@
 	.ads__actual-2 {
 		width: 90%;
 		align-self: center;
+		overflow: visible;
 	}
 
 	.ads__actual-2  .slick-slide > img {
@@ -268,6 +269,10 @@
 
 	.adv {
 		padding-bottom: 40px;
+	}
+
+	.adv__cards {
+		display: none;
 	}
 
 	.adv__inner {

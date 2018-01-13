@@ -145,30 +145,36 @@ function openToday() {
 	document.querySelector('.header__today').classList.remove('hide-el');
 	closeShops();
 	closeFood();
+	document.querySelector('.header__today-btn>a').classList.add('header__nav-item--active');
 }
 
 function openShops() {
 	document.querySelector('.header__shops').classList.remove('hide-el');
 	closeToday();
 	closeFood();
+	document.querySelector('.header__shops-btn>a').classList.add('header__nav-item--active');
 }
 
 function openFood() {
 	document.querySelector('.header__food').classList.remove('hide-el');
 	closeToday();
 	closeShops();
+	document.querySelector('.header__food-btn>a').classList.add('header__nav-item--active');
 }
 
 function closeToday() {
 	document.querySelector('.header__today').classList.add('hide-el');
+	document.querySelector('.header__today-btn>a').classList.remove('header__nav-item--active');
 }
 
 function closeShops() {
 	document.querySelector('.header__shops').classList.add('hide-el');
+	document.querySelector('.header__shops-btn>a').classList.remove('header__nav-item--active');
 }
 
 function closeFood() {
 	document.querySelector('.header__food').classList.add('hide-el');
+	document.querySelector('.header__food-btn>a').classList.remove('header__nav-item--active');
 }
 
 function closeAll() {
