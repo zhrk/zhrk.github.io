@@ -338,267 +338,64 @@
 			</div>
 			<div id="map"></div>
 		</main>
-		<header>
-			<div class="preloader">
-				<svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
-			    <circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#099d77" stroke-width="2" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(183.75 50 50)">
-			      <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="3.2s" begin="0s" repeatCount="indefinite"></animateTransform>
-			    </circle>
-			  </svg>
-			</div>
-			<div class="path hide-el">
-				<div class="path__inner">
-					<img src="img/path.png">
-					<div class="path__close btn"><img src="img/icons/close--white.png"></div>
-				</div>
-			</div>
-			<div class="search hide-el">
-				<div class="search__inner">
-					<div class="search__row">
-						<input type="text" placeholder="Поиск">
-						<div class="btn btn__search-close btn--gray-bg">Закрыть</div>
-					</div>
-					<!-- <div class="search__notfound">По вашему запросу ничего не найдено</div> -->
-					<div class="search__item">
-						<a href="" class="search__item-title">ECCO</a>
-						<div class="search__item-text">Ведущий мировой производитель комфортной и стильной обуви. <br> Успех компании базируется на трех основных элементах: великолепный...</div>
-					</div>
-					<div class="search__item">
-						<a href="" class="search__item-title">ECCO</a>
-						<div class="search__item-text">Ведущий мировой производитель комфортной и стильной обуви. <br> Успех компании базируется на трех основных элементах: великолепный...</div>
-					</div>
-					<div class="search__item search__item--noborder">
-						<a href="" class="search__item-title">ECCO</a>
-						<div class="search__item-text">Ведущий мировой производитель комфортной и стильной обуви. <br> Успех компании базируется на трех основных элементах: великолепный...</div>
+		<footer>
+			<div class="footer__inner">
+				<img src="img/logo.png">
+				<div class="footer__mobile">
+					<div class="footer__schedule">Режим работы</div>
+					<div class="footer__name">ТРЦ «Изумрудный город»</div>
+					<div class="footer__time">10:00 - 22:00</div>
+					<div class="footer__divider"></div>
+					<div class="footer__text">Получайте актуальные <br> новости и акции</div>
+					<form class="footer__form" action="">
+						<input class="footer__input" type="text" placeholder="Введите свой e-mail">
+						<button class="btn footer__btn" type="submit">Подписаться</button>
+					</form>
+					<div class="footer__email">izumrudniy.tomsk.ru © 2017</div>
+					<div class="footer__copyright">Все права защищены</div>
+					<div class="footer__social">
+						<a href=""><img src="img/icons/vk--gray.png"></a>
+						<a href=""><img src="img/icons/facebook--gray.png"></a>
+						<a href=""><img src="img/icons/insta--gray.png"></a>
+						<a href=""><img src="img/icons/ok--gray.png"></a>
 					</div>
 				</div>
-			</div>
-			<div class="header__today header__popup hide-el">
-				<div class="header__popup-inner">
-					<div class="header__today-date">
-						<span>Декабрь<span class="header__today-date-divider">’</span><span class="header__today-date-number">31</span></span>
+				<div class="footer__nav">
+					<div class="footer__col">
+						<a href="mags.html" class="footer__nav-item">Магазины</a>
+						<a href="food.html" class="footer__nav-item">Рестораны и кафе</a>
+						<a href="fun.html" class="footer__nav-item">Развлечения</a>
+						<a href="services.html" class="footer__nav-item">Услуги</a>
 					</div>
-					<div class="header__today-events">
-						<div class="header__col">
-							<span class="header__col-title">События и акции</span>
-							<div class="banner-small-short">
-								<div class="banner-small-short__title">Черная пятница!</div>
-								<div class="banner-small-short__value">Скидки до 90%</div>
-								<div class="banner-small-short__percent">%</div>
-							</div>
-							<a class="header__link" href="">Скидки до 50% в Stern</a>
-							<a class="header__link" href="">Грандиозная распродажа в SELA</a>
-							<a class="header__link header__link--noborder" href="">Скидки до 50% в Pelican Kids</a>
-							<a class="btn btn--margin-top" href="">Показать все</a>
+					<div class="footer__col">
+						<a href="poster.html" class="footer__nav-item">Афиша</a>
+						<a href="sale.html" class="footer__nav-item">Акции и скидки</a>
+						<a href="galery.html" class="footer__nav-item">Фотогалерея</a>
+					</div>
+					<div class="footer__col">
+						<a href="vacancy.html" class="footer__nav-item">Вакансии</a>
+						<a href="renters.html" class="footer__nav-item">Арендаторам</a>
+						<a href="foradv.html" class="footer__nav-item">Рекламодателям</a>
+					</div>
+					<div class="footer__col">
+						<a href="about-page.html" class="footer__nav-item">О ТРЦ</a>
+						<a href="map.html" class="footer__nav-item">Карта этажей</a>
+						<a href="path.html" class="footer__nav-item">Как добраться</a>
+						<a href="contacts.html" class="footer__nav-item">Контакты</a>
+					</div>
+					<div class="footer__info">
+						<div class="footer__social">
+							<a href=""><img src="img/icons/vk--gray.png"></a>
+							<a href=""><img src="img/icons/facebook--gray.png"></a>
+							<a href=""><img src="img/icons/insta--gray.png"></a>
+							<a href=""><img src="img/icons/ok--gray.png"></a>
 						</div>
-						<div class="header__col header__col--margin">
-							<a class="header__link" href="">Скидки до 50% в Stern</a>
-							<a class="header__link" href="">Грандиозная распродажа в SELA</a>
-							<a class="header__link" href="">Грандиозная распродажа в SELA</a>
-							<a class="header__link header__link--noborder" href="">Грандиозная распродажа в SELA</a>
-						</div>
-						<div class="header__col">
-							<div class="banner-big-medium">
-								<img src="img/banner.jpg">
-							</div>
-							<div class="header__fav-title">«ЙЫВОН НОФЕЛЕТ» нужен?</div>
-							<div class="header__fav-date">1 сентября  —  25 ноября</div>
-						</div>
+						<div class="footer__email">izumrudniy.tomsk.ru © 2017</div>
+						<div class="footer__copyright">Все права защищены</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__shops header__popup hide-el">
-				<div class="header__popup-inner header__popup-inner--jus-con">
-					<div class="header__col">
-							<span class="header__col-title">Категории</span>
-							<a class="header__link header__link--cat" href="">Аксессуары</a>
-							<a class="header__link header__link--cat" href="">Одежда</a>
-							<a class="header__link header__link--cat" href="">Бытовая техника</a>
-							<a class="header__link header__link--cat" href="">Обувь</a>
-							<a class="header__link header__link--cat" href="">Товары для дома</a>
-							<a class="header__link header__link--cat header__link--noborder" href="">Товары для детей</a>
-							<a href="" class="btn btn--margin-top">Все категории</a>
-						</div>
-						<div class="header__col">
-							<span class="header__col-title">Бренды</span>
-							<a class="header__link header__link--cat" href="">Adidas</a>
-							<a class="header__link header__link--cat" href="">Nike</a>
-							<a class="header__link header__link--cat" href="">М.Видео</a>
-							<a class="header__link header__link--cat" href="">Спортмастер</a>
-							<a class="header__link header__link--cat" href="">ECCO</a>
-							<a class="header__link header__link--cat header__link--noborder" href="">Gloria Jeans</a>
-							<a href="" class="btn btn--margin-top">Все бренды</a>
-						</div>
-						<div class="header__popular-banners">
-							<span class="header__col-title">Популярное</span>
-							<div>
-								<img src="img/hm.jpg">
-								<img src="img/reserved.jpg">
-								<img src="img/mvideo.jpg">
-							</div>
-						</div>
-				</div>
-			</div>
-			<div class="header__food header__popup hide-el">
-				<div class="header__popup-inner header__popup-inner--jus-con">
-					<div class="header__col">
-							<span class="header__col-title">Категории</span>
-							<a class="header__link header__link--cat" href="">Фастфуд</a>
-							<a class="header__link header__link--cat" href="">Европейская кухня</a>
-							<a class="header__link header__link--cat" href="">Русская кухня</a>
-							<a class="header__link header__link--cat" href="">Восточная кухня</a>
-							<a class="header__link header__link--cat" href="">Японская кухня</a>
-							<a class="header__link header__link--cat header__link--noborder" href="">Мороженое</a>
-							<a href="" class="btn btn--margin-top">Все категории</a>
-						</div>
-						<div class="header__col">
-							<span class="header__col-title">Бренды</span>
-							<a class="header__link header__link--cat" href="">KFC</a>
-							<a class="header__link header__link--cat" href="">Перчини</a>
-							<a class="header__link header__link--cat" href="">Желатерея Итальяна</a>
-							<a class="header__link header__link--cat" href="">Burger King</a>
-							<a class="header__link header__link--cat" href="">Woki</a>
-							<a class="header__link header__link--cat header__link--noborder" href="">Сбарро</a>
-							<a href="" class="btn btn--margin-top">Все бренды</a>
-						</div>
-						<div class="header__popular-banners">
-							<span class="header__col-title">Популярное</span>
-							<div>
-								<img src="img/kfc.jpg">
-								<img src="img/br.jpg">
-								<img src="img/per.jpg">
-							</div>
-						</div>
-				</div>
-			</div>
-			<div class="menu">
-				<div class="menu__title">
-					<span>Меню</span>
-					<img class="menu__close-btn" src="img/icons/close.png">
-				</div>
-				<a class="menu__mobile-fav" href="fav.html">Избранное <div class="circle menu__circle">8</div> </a>
-				<a href="mags.html">Магазины</a>
-				<a href="food.html">Рестораны и кафе</a>
-				<a href="fun.html">Развлечения</a>
-				<a href="services.html">Услуги</a>
-				<a href="poster.html">Афиша</a>
-				<a href="news-current.html">Акции и скидки </a>
-				<a href="galery.html">Фотогалерея</a>
-				<a href="vacancy.html">Вакансии</a>
-				<a href="renters.html">Арендаторам</a>
-				<a href="foradv.html">Рекламодателям</a>
-				<a href="about-page.html">О ТРЦ</a>
-				<a href="map.html">Карта этажей</a>
-				<a href="path.html">Как добраться</a>
-				<a href="contacts.html">Контакты</a>
-				<div class="menu__lang-mobile">
-					<div class="menu__lang-mobile--active">Русский</div>
-					<div>English</div>
-				</div>
-			</div>
-			<div class="header__info">
-				<div class="header__inner">
-					<div class="header__menu hide-el">
-						<div class="hamburger">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<span>Меню</span>
-					</div>
-					<div class="header__info-item header__schedule">
-						<img src="img/icons/time.svg">
-						<span>Ежедневно 10:00 - 22:00</span>
-						<img class="header__schedule-arrow" src="img/icons/arrow--bottom.svg">
-					</div>
-					<div class="header__info-item header__path">
-						<img src="img/icons/marker.png">
-						<span>Как добраться</span>
-					</div>
-					<a class="logo" href="index.html"><img src="img/logo.png"></a>
-					<div class="header__info-item header__map">
-						<img src="img/icons/map.svg">
-						<span>Карта этажей</span>
-					</div>
-					<div class="header__info-item header__search">
-						<div class="header__search-img"></div>
-						<span>Поиск по сайту</span>
-					</div>
-					<div class="header__info-item header__lang">
-						<img src="img/icons/earth.png">
-						<span>EN</span>
-					</div>
-					<div class="header__info-item header__path-hidden hide-el">
-						<img src="img/icons/marker.png">
-						<span>Как добраться</span>
-					</div>
-				</div>
-			</div>
-			<div class="header__nav">
-				<div class="header__inner">
-					<div class="header__nav-item header__today-btn">
-						<a>Что сегодня?</a>
-					</div>
-					<div class="header__nav-item header__shops-btn">
-						<a href="mags.html">Магазины</a>
-					</div>
-					<div class="header__nav-item header__food-btn">
-						<a href="food.html">Рестораны и кафе</a>
-					</div>
-					<div class="header__nav-item">
-						<a href="fun.html">Развлечения</a>
-					</div>
-					<div class="header__nav-item">
-						<a href="services.html">Услуги</a>
-					</div>
-					<div class="header__nav-item">
-						<a href="poster.html">Афиша</a>
-					</div>
-					<div class="header__nav-item">
-						<a href="news-current.html">Акции и скидки</a>
-					</div>
-					<div class="header__nav-item header__other-btn">
-						<span>Другое</span>
-						<img class="header__other-arrow" src="img/icons/arrow--other.png">
-					</div>
-					<a href="fav.html" class="header__nav-item">
-						<img src="img/icons/fav.png">
-						<div class="circle fav__circle">3</div>
-					</a>
-				</div>
-			</div>
-			<div class="header__other header__other--hiden">
-				<div class="header__inner">
-					<div class="header__other-item">
-						<a href="blog.html">Блог</a>
-					</div>
-					<div class="header__other-item">
-						<a href="galery.html">Фотогалерея</a>
-					</div>
-					<div class="header__other-item">
-						<a href="vacancy.html">Вакансии</a>
-					</div>
-					<div class="header__other-item">
-						<a href="renters.html">Арендаторам</a>
-					</div>
-					<div class="header__other-item">
-						<a href="foradv.html">Рекламодателям</a>
-					</div>
-					<div class="header__other-item">
-						<a href="about-page.html">О ТРЦ</a>
-					</div>
-					<div class="header__other-item">
-						<a href="contacts.html">Контакты</a>
-					</div>
-					<div class="header__social">
-						<a href=""><img src="img/icons/vk--pink.png"></a>
-						<a href=""><img src="img/icons/facebook--pink.png"></a>
-						<a href=""><img src="img/icons/insta--pink.png"></a>
-						<a href=""><img src="img/icons/ok--pink.png"></a>
-					</div>
-				</div>
-			</div>
-		</header>
+		</footer>
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="js/libs/slick.min.js"></script>
 		<script src="js/js.js"></script>
