@@ -1183,6 +1183,7 @@
 		top: initial;
 		bottom: 0px;
 		transition: all .15s ease-in-out;
+		position: fixed;
 	}
 
 	#map {
