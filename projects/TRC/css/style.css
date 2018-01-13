@@ -4367,9 +4367,6 @@ h3 {
 
 .map__ui--hidden {
 	transform: translateY(200px);
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
 	transition: all .15s ease-in-out;
 }
 
