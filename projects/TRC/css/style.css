@@ -2455,6 +2455,7 @@ h3 {
 .fav {
 	display: flex;
 	justify-content: center;
+	background-color: #fcfcfc;
 }
 
 .fav__inner {
@@ -3999,6 +4000,7 @@ h3 {
 .galery {
 	display: flex;
 	justify-content: center;
+	background-color: #fcfcfc;
 }
 
 .galery__inner {
