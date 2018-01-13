@@ -5,7 +5,8 @@ if (window.innerWidth < 767) {
 	document.querySelector('.map__ui').classList.add('map__ui--hidden');
     document.querySelector('main').style.overflow = 'hidden';
     document.querySelector('main').style.marginTop = '0';
-	document.querySelector('main').style.height = '100vh';
+    document.querySelector('main').style.height = '100vh';
+	document.querySelector('main').style.position = 'relative';
 }
 
 function openPath() {
