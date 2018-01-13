@@ -1178,4 +1178,69 @@
 		box-sizing: border-box;
 	}
 
+	.map__ui {
+		padding-top: 20px;
+		top: initial;
+		bottom: 0px;
+		transition: all .15s ease-in-out;
+	}
+
+	#map {
+		height: 100vh;
+	}
+
+	.map__car-title {
+		margin-top: 10px;
+	}
+
+	.map__car {
+		display: none;
+	}
+
+	.map__top {
+		display: flex;
+	}
+
+	.map__btns-mobile {
+		width: 280px;
+		display: flex;
+	}
+
+	.map__car-title > img {
+		display: none;
+	}
+
+	.map__ui-inner {
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 15px;
+		justify-content: flex-start;
+	}
+
+	.map__btn {
+		width: 100%;
+	}
+
+	.map__btn--path {
+		width: 280px;
+	}
+
+	.map__btn--active > img {
+		filter: brightness(0) invert(1);
+	}
+
+	.map__btn-feed {
+		display: none;
+	}
+
+	.map__btn--troll {
+		width: 280px;
+	}
+
+	.map__car-input > input{
+		width: 280px;
+		box-sizing: border-box;
+	}
+
+
 }
