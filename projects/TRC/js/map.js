@@ -3,7 +3,8 @@ if (window.innerWidth < 767) {
 	document.getElementById('mpath').classList.add('map__item--active');
 	document.getElementById('btnP').classList.add('map__btn--active');
 	document.querySelector('.map__ui').classList.add('map__ui--hidden');
-	document.querySelector('html').style.overflow = 'hidden';
+    document.querySelector('html').style.overflow = 'hidden';
+	document.querySelector('main').style.marginTop = '0';
 }
 
 function openPath() {
