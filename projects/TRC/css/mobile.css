@@ -1183,6 +1183,9 @@
 		top: initial;
 		bottom: 0px;
 		transition: all .15s ease-in-out;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
 	}
 
 	#map {
