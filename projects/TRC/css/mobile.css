@@ -18,7 +18,6 @@
 	.header__map,
 	.header__lang,
 	.header__path-hidden,
-	.path,
 	.search,
 	.header__today, 
 	.header__shops, 
@@ -36,7 +35,27 @@
 	.fav__title,
 	.fav__events,
 	.fav__discount,
-	.about-page__time {
+	.about-page__time,
+	.map__btn-feed,
+	.ads__item--mobile-hide,
+	.ads__text > br,
+	.bags,
+	.adv__cards,
+	.adv__card > img,
+	.movie__btn-mobile,
+	.btn--blog,
+	.mags__nav-value,
+	.mag__side-ad,
+	.mag .blog-page__back,
+	.event__more,
+	.event__title .event__title-nav,
+	.event .blog-page__back,
+	.album .blog-page__back,
+	.album__title-date,
+	.contacts__divider,
+	.p404__text--desktop,
+	.map__car,
+	.map__car-title > img {
 		display: none;
 	}
 
@@ -195,10 +214,6 @@
 		padding-right: 5px;
 	}
 
-	.ads__item--mobile-hide {
-		display: none;
-	}
-
 	.circle--ads {
 		display: flex;
 	}
@@ -211,10 +226,6 @@
 		top: auto;
 		font-size: 14px;
 		bottom: 15px;
-	}
-
-	.ads__text > br {
-		display: none;
 	}
 
 	.shops {
@@ -231,10 +242,6 @@
 		width: 100%;
 		height: 450px;
 		overflow: hidden;
-	}
-
-	.bags {
-		display: none;
 	}
 
 	.bags-m {
@@ -269,10 +276,6 @@
 
 	.adv {
 		padding-bottom: 40px;
-	}
-
-	.adv__cards {
-		display: none;
 	}
 
 	.adv__inner {
@@ -328,10 +331,6 @@
 		margin-bottom: 40px;
 	}
 
-	.adv__card > img {
-		display: none;
-	}
-
 	.adv__card-title {
 		font-size: 25px;
 	}
@@ -375,10 +374,6 @@
 
 	.h3--movie-mobile {
 		display: block;
-	}
-
-	.movie__btn-mobile {
-		display: none;
 	}
 
 	.movie__logo {
@@ -609,10 +604,6 @@
 
 	.blog__item-img {
 		height: 195px;
-	}
-
-	.btn--blog {
-		display: none;
 	}
 
 	.blog__item-title {
@@ -866,10 +857,6 @@
 		position: relative;
 	}
 
-	.mags__nav-value {
-		display: none;
-	}
-
 	.mags__nav-title {
 		color: #fff;
 	}
@@ -891,10 +878,6 @@
 	.nav__opacity-top,
 	.nav__opacity-bottom {
 		display: block;
-	}
-
-	.mag .blog-page__back {
-		display: none;
 	}
 
 	.mag__inner {
@@ -930,10 +913,6 @@
 		margin-bottom: 10px;
 	}
 
-	.mag__side-ad {
-		display: none;
-	}
-
 	.mag__images {
 		width: 100%;
 		height: 290px;
@@ -958,20 +937,8 @@
 		bottom: -30px;
 	}
 
-	.event__more {
-		display: none;
-	}
-
 	.event__inner {
 		padding-top: 0;
-	}
-
-	.event__title .event__title-nav {
-		display: none;
-	}
-
-	.event .blog-page__back {
-		display: none;
 	}
 
 	.event__img {
@@ -1029,16 +996,8 @@
 		margin-right: 0;
 	}
 
-	.album .blog-page__back {
-		display: none;
-	}
-
 	.album__inner {
 		padding-top: 40px;
-	}
-
-	.album__title-date {
-		display: none;
 	}
 
 	.album h3 {
@@ -1073,10 +1032,6 @@
 
 	.album__btn {
 		display: flex;
-	}
-
-	.contacts__divider {
-		display: none;
 	}
 
 	.contacts__info {
@@ -1121,10 +1076,6 @@
 		margin-top: 100px;
 		width: 270px;
 		height: 100px;	
-	}
-
-	.p404__text--desktop {
-		display: none;
 	}
 
 	.p404__bg {
@@ -1199,10 +1150,6 @@
 		margin-top: 10px;
 	}
 
-	.map__car {
-		display: none;
-	}
-
 	.map__top {
 		display: flex;
 	}
@@ -1210,10 +1157,6 @@
 	.map__btns-mobile {
 		width: 280px;
 		display: flex;
-	}
-
-	.map__car-title > img {
-		display: none;
 	}
 
 	.map__ui-inner {
@@ -1235,18 +1178,25 @@
 		filter: brightness(0) invert(1);
 	}
 
-	.map__btn-feed {
-		display: none;
-	}
-
 	.map__btn--troll {
 		width: 280px;
 	}
 
-	.map__car-input > input{
+	.map__car-input > input {
 		width: 280px;
 		box-sizing: border-box;
 	}
 
+	.path__inner > img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.path__close {
+		max-width: 41px;
+		min-width: 41px;
+		right: 0;
+	}
 
 }
