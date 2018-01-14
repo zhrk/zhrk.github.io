@@ -16,6 +16,7 @@ function openPath() {
 
 function closePath() {
 	document.querySelector('.path').classList.add('hide-el');
+	document.body.style.zoom = "0%" 
 }
 
 
