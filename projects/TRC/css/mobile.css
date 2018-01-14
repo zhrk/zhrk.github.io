@@ -1199,4 +1199,15 @@
 		right: 0;
 	}
 
+	.path-page__inner {
+		display: flex;
+		justify-content: center;
+		background-image: none;
+	}
+
+	.path-page__title {
+		align-self: center;
+		text-align: center;
+	}
+
 }
