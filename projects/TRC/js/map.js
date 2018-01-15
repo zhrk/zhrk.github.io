@@ -4,9 +4,9 @@ if (window.innerWidth < 767) {
 	document.getElementById('mpath').classList.add('map__item--active');
 	document.getElementById('btnP').classList.add('map__btn--active');
 	document.querySelector('.map__ui').classList.add('map__ui--hidden');
-    document.querySelector('main').style.overflow = 'hidden';
-    document.querySelector('main').style.marginTop = '0';
-    document.querySelector('main').style.height = '100vh';
+	document.querySelector('main').style.overflow = 'hidden';
+	document.querySelector('main').style.marginTop = '0';
+	document.querySelector('main').style.height = '100vh';
 	document.querySelector('main').style.position = 'relative';
 }
 
@@ -16,7 +16,7 @@ function openPath() {
 
 function closePath() {
 	document.querySelector('.path').classList.add('hide-el');
-	document.body.style.zoom = "0%" 
+	document.querySelector('meta[name="viewport"]').content = "width=device-width, initial-scale=1";
 }
 
 
@@ -169,70 +169,70 @@ document.querySelector('.map__top').addEventListener('click', openOptions);
 
 
 function initMap() {
-  var uluru = {lat: 56.488671, lng: 84.978496};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 17,
-    center: uluru,
-    mapTypeControl: false
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-    icon: 'img/marker.png',
-    mapTypeControl: false
-  });
+	var uluru = {lat: 56.488671, lng: 84.978496};
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 17,
+		center: uluru,
+		mapTypeControl: false
+	});
+	var marker = new google.maps.Marker({
+		position: uluru,
+		map: map,
+		icon: 'img/marker.png',
+		mapTypeControl: false
+	});
 
-  var styles = [
-	  {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#00ffbc"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -70
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            },
-            {
-                "saturation": -60
-            }
-        ]
-    }
+	var styles = [
+		{
+				"featureType": "all",
+				"elementType": "all",
+				"stylers": [
+						{
+								"hue": "#00ffbc"
+						}
+				]
+		},
+		{
+				"featureType": "poi",
+				"elementType": "all",
+				"stylers": [
+						{
+								"visibility": "off"
+						}
+				]
+		},
+		{
+				"featureType": "road",
+				"elementType": "all",
+				"stylers": [
+						{
+								"saturation": -70
+						}
+				]
+		},
+		{
+				"featureType": "transit",
+				"elementType": "all",
+				"stylers": [
+						{
+								"visibility": "off"
+						}
+				]
+		},
+		{
+				"featureType": "water",
+				"elementType": "all",
+				"stylers": [
+						{
+								"visibility": "simplified"
+						},
+						{
+								"saturation": -60
+						}
+				]
+		}
 	]
 
-  map.setOptions({styles: styles});
+	map.setOptions({styles: styles});
 
 }
