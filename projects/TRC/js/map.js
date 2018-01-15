@@ -16,7 +16,6 @@ function openPath() {
 
 function closePath() {
 	document.querySelector('.path').classList.add('hide-el');
-	document.querySelector('meta[name="viewport"]').content = "width=device-width, initial-scale=1";
 }
 
 
