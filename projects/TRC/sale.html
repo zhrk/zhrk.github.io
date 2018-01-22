@@ -274,7 +274,7 @@
 			</div>
 		</header>
 		<main>
-			<div class="event">
+			<div class="event sale">
 				<div class="event__inner">
 					<div class="blog-page__back">
 						<img src="img/icons/arrow-back.png">
@@ -307,8 +307,14 @@
 									<div class="datepicker-img"><img src="img/icons/calendar.png"></div>
 									<input data-date-format="d M yyyy" id="datepicker" class="datepicker-input datepicker-here" type="text">
 								</label>
-								<input class="datepicker-input" placeholder="Ваше имя" type="text">
-								<input class="datepicker-input" placeholder="Телефон для смс оповещения" type="text">
+								<div class="dt__i-wrapper">
+									<input class="datepicker-input dt__ph--name" placeholder="Ваше имя" type="text">
+									<div class="dt__ph">Имя:</div>
+								</div>
+								<div class="dt__i-wrapper">
+									<input id="phone" class="datepicker-input" placeholder="Телефон для смс оповещения" type="text">
+									<div class="dt__ph">Телефон:</div>
+								</div>
 								<div class="dt-nav">
 									<button class="btn dt-btn" type="submit">Напомнить</button>
 									<div class="btn dt-btn--gray">Закрыть</div>
@@ -327,11 +333,47 @@
 						<div class="ads__title ads__title-count">Осталось дней<div class="ads__title-value">7</div></div>
 					</div>
 					<div class="event__info">
-						<div class="event__img"><img src="img/sale-1.jpg"></div>
-						<div class="event__info-text">На что вы обращаете внимание при выборе обуви? </div>
-						<div class="event__info-text">Скандинавский дизайн, выверенные линии, максимальный комфорт и тщательная проверка качества — вот главные критерии, которыми руководствуется компания ECCO при создании своих коллекций.</div>
-						<div class="event__info-text">В новом сезоне Осень–Зима 2017–18 бренд представил широкий ассортимент модной обуви для всей семьи. Необычные цвета и фактуры, узнаваемый стиль — все это вы найдете в коллекции ECCO. На полках фирменного магазина вас ждут не только комфортные модели на каждый день, но и линия аксессуаров, которая включает сумки, клатчи, кошельки, рюкзаки и обувную косметику.</div>
-						<div class="event__info-text">Приходите за новинками в Изумрудный город!</div>						
+						<div class="event__info-inner">
+							<div class="event__img"><img src="img/sale-1.jpg"></div>
+							<div class="event__info-text">На что вы обращаете внимание при выборе обуви? </div>
+							<div class="event__info-text">Скандинавский дизайн, выверенные линии, максимальный комфорт и тщательная проверка качества — вот главные критерии, которыми руководствуется компания ECCO при создании своих коллекций.</div>
+							<div class="event__info-text">В новом сезоне Осень–Зима 2017–18 бренд представил широкий ассортимент модной обуви для всей семьи. Необычные цвета и фактуры, узнаваемый стиль — все это вы найдете в коллекции ECCO. На полках фирменного магазина вас ждут не только комфортные модели на каждый день, но и линия аксессуаров, которая включает сумки, клатчи, кошельки, рюкзаки и обувную косметику.</div>
+							<div class="event__info-text">Приходите за новинками в Изумрудный город!</div>
+						</div>
+						<div class="mag__side">
+							<div class="mag__side-inner">
+								<div class="mag__side-img"><img src="img/ECCO.png"></div>
+								<div class="mag__side-item">
+									<div class="mag__side-item-title">Режим работы</div>
+									<div class="mag__side-item-text">11:00 - 22:00</div>
+								</div>
+								<div class="mag__side-item">
+									<div class="mag__side-item-title">Этаж</div>
+									<div class="mag__side-item-text">3</div>
+								</div>
+								<div class="mag__side-item">
+									<div class="mag__side-item-title">Сайт</div>
+									<a href="" class="mag__side-item-text mag__side-item-text--link">ecco.com</a>
+								</div>
+								<div class="mag__side-item">
+									<div class="mag__side-item-title">E-mail</div>
+									<div class="mag__side-item-text mag__side-item-text--link">sale@ecco.com</div>
+								</div>
+								<div class="mag__side-social">
+									<a href=""><img src="img/icons/vk-mag.png"></a>
+									<a href=""><img src="img/icons/facebook-mag.png"></a>
+									<a href=""><img src="img/icons/insta-mag.png"></a>
+									<a href=""><img src="img/icons/ok-mag.png"></a>
+								</div>
+								<div class="mag__side-baubles">
+									<div class="mag-bauble">Обувь</div>
+								</div>
+								<a href="" class="mag__side-path">
+									<img src="img/icons/map.svg">
+									<div>Посмотреть на карте этажей</div>
+								</a>
+							</div>
+						</div>
 					</div>
 					<div class="event__more">
 						<h3>Другие предложения</h3>
@@ -476,6 +518,7 @@
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
 		<script src="js/libs/slick.min.js"></script>
 		<script src="js/libs/datepicker.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
 		<script src="js/js.js"></script>
 		<script src="js/event.js"></script>
 	</body>

@@ -142,8 +142,14 @@
 	}
 
 	.ads__actual .slick-slide {
-		margin-right: 20px;
+			
+	}
+
+	.ads__actual .ads__actual-container {
+		width: 320px;
 		margin-left: 20px;
+		margin-right: 20px;
+		overflow: hidden;
 	}
 
 	.ads__text-mobile {
@@ -165,7 +171,7 @@
 		overflow: visible;
 	}
 
-	.ads__actual-2  .slick-slide > img {
+	.ads__actual-2  .ads__actual-container > img {
 		width: 100%;
 	}
 
@@ -983,6 +989,24 @@
 		justify-content: center;
 	}
 
+	.event__info-inner {
+		width: 100%;
+	}
+
+	.sale .event__img {
+		width: 100%;
+		height: 260px;
+	}
+
+	.sale .event__info {
+		flex-direction: column;
+	}
+
+	.event .mag__side {
+		order: -1;
+		margin-bottom: 30px;
+	}
+
 	.dt-share {
 		top: 60px;
 		z-index: 5;
@@ -1208,6 +1232,10 @@
 	.path-page__title {
 		align-self: center;
 		text-align: center;
+	}
+
+	.welcome {
+		height: 200px;
 	}
 
 }

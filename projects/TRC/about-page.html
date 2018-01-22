@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="stylesheet" href="css/libs/slick.css">
+		<link rel="stylesheet" href="lightgallery/css/lightgallery.css">
 		<link rel="icon" href="img/icons/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 		<title>О ТРЦ</title>
@@ -275,6 +276,7 @@
 		<main>
 			<div class="about-page">
 				<div class="about-page__welcome">
+					<video id="video" autoplay muted loop type='video/mp4' src="video/video-about.mp4"></video>
 					<h3>Самый крупный <br> торгово-развлекательный центр в Томске</h3>
 					<div class="about-page__welcome-items">
 						<div class="about-page__welcome-item">
@@ -330,15 +332,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="about-page__slides">
-						<div class="about-page__slide about-page__slide-1"><img src="img/about-1.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-2.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-3.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-4.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-5.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-6.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-7.jpg"></div>
-						<div class="about-page__slide"><img src="img/about-8.jpg"></div>
+					<div id="lightgallery" class="about-page__slides">
+						<div data-src="img/about-1.jpg" class="about-page__slide about-page__slide-1"><img src="img/about-1.jpg"></div>
+						<div data-src="img/about-2.jpg" class="about-page__slide"><img src="img/about-2.jpg"></div>
+						<div data-src="img/about-3.jpg" class="about-page__slide"><img src="img/about-3.jpg"></div>
+						<div data-src="img/about-4.jpg" class="about-page__slide"><img src="img/about-4.jpg"></div>
+						<div data-src="img/about-5.jpg" class="about-page__slide"><img src="img/about-5.jpg"></div>
+						<div data-src="img/about-6.jpg" class="about-page__slide"><img src="img/about-6.jpg"></div>
+						<div data-src="img/about-7.jpg" class="about-page__slide"><img src="img/about-7.jpg"></div>
+						<div data-src="img/about-8.jpg" class="about-page__slide"><img src="img/about-8.jpg"></div>
 					</div>
 				</div>
 			</div>
@@ -402,6 +404,7 @@
 			</div>
 		</footer>
 		<script src="js/libs/jquery-3.2.1.min.js"></script>
+		<script src="lightgallery/js/lightgallery.min.js"></script>
 		<script src="js/libs/slick.min.js"></script>
 		<script src="js/js.js"></script>
 		<script src="js/about-page.js" defer></script>

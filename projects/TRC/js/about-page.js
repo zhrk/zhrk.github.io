@@ -15,6 +15,11 @@ function aboutPageMobile() {
 		  dots: true,
 		  touchMove: true
 		});
+
+		lightGallery(document.querySelector('#lightgallery>div>div'));
+
+	} else {
+		lightGallery(document.getElementById('lightgallery'));
 	}
 }
 

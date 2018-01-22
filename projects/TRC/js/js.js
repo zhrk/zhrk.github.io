@@ -54,8 +54,13 @@ function changeHeader() {
 
 
 function openOtherNav() {
-	document.querySelector('.header__other').classList.toggle('header__other--hiden');
-	document.querySelector('.header__other-btn').classList.toggle('header__other-btn--active');
+	document.querySelector('.header__other').classList.remove('header__other--hiden');
+	document.querySelector('.header__other-btn').classList.add('header__other-btn--active');
+}
+
+function closeOtherNav() {
+	document.querySelector('.header__other').classList.add('header__other--hiden');
+	document.querySelector('.header__other-btn').classList.remove('header__other-btn--active');
 }
 
 
@@ -90,11 +95,19 @@ function closeMenu() {
 
 window.addEventListener('scroll', changeHeader);
 
-document.querySelector('.header__other-btn').addEventListener('click', openOtherNav);
+document.querySelector('.header__other-btn').addEventListener('mouseover', openOtherNav);
 document.querySelector('.header__menu').addEventListener('click', openMenu);
 
 document.querySelector('.header__menu').addEventListener('click', openMenu);
 document.querySelector('.menu__close-btn').addEventListener('click', closeMenu);
+
+
+$(".header__other").on( {
+   'mouseleave':function() { closeOtherNav() }
+});
+
+
+
 
 
 
@@ -235,3 +248,17 @@ function headerMobile() {
 }
 
 headerMobile();
+
+$("body").mouseover(function(){
+
+	if (event.target === document.querySelector('.header__nav > .header__inner')) {
+		document.querySelector('.header__shops').classList.add('hide-el');
+		document.querySelector('.header__today').classList.add('hide-el');
+		document.querySelector('.header__food').classList.add('hide-el');
+		document.querySelector('.header__shops-btn>a').classList.remove('header__nav-item--active');
+		document.querySelector('.header__today-btn>a').classList.remove('header__nav-item--active');
+		document.querySelector('.header__food-btn>a').classList.remove('header__nav-item--active');
+		closeOtherNav();
+	}
+
+});

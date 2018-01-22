@@ -4,10 +4,10 @@ function mainMobile() {
 		$('.ads__actual').slick({
 		  infinite: false,
 		  arrows: false,
-		  dots: true,
+		  dots: false,
 		  touchMove: true,
 		  centerMode: true,
-		  centerPadding: (window.innerWidth - 250) / 2 + 'px'
+		  centerPadding: (window.innerWidth - 320) / 2 + 'px'
 		});
 
 		$('.adv__tiles').slick({
@@ -89,3 +89,25 @@ $(document).ready(function() {
   mainMobile();
   
 });
+
+
+
+
+
+
+function paralax() {
+  var x = (event.clientX - window.innerWidth) / 15;
+  var y = (event.clientY - window.innerHeight) / 15;
+
+  document.querySelector('.ads').style.backgroundPosition = x + 'px' + ' ' + y + 'px';
+  document.querySelector('.emerald').style.transform = 'translate(' + x + 'px' + ',' + y + 'px)';
+  document.querySelector('.welcome__container--iphone').style.backgroundPosition = (x * 0.9) + 'px' + ' ' + (y * 0.9) + 'px';
+}
+
+
+
+
+
+
+
+document.querySelector('body').addEventListener('mousemove', paralax);
