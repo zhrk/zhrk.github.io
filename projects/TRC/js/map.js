@@ -21,9 +21,8 @@ function initMap() {
 
 	var params_p3 = function() {
 		var originPath = '56.521796, 85.059263';
-		var destPath = '56.485937, 84.980807';
+		var destPath = '56.487903, 84.977014';
 		var path = [{
-		location : new google.maps.LatLng(56.499459, 84.970136),
 		location : new google.maps.LatLng(56.519286, 85.049478),
 		location : new google.maps.LatLng(56.520896, 85.047418),
 		location : new google.maps.LatLng(56.513344, 85.023128),
@@ -44,7 +43,9 @@ function initMap() {
 		location : new google.maps.LatLng(56.466372, 84.977092),
 		location : new google.maps.LatLng(56.465977, 84.981496),
 		location : new google.maps.LatLng(56.466766, 84.981912),
-		location : new google.maps.LatLng(56.468194, 84.950316)
+		location : new google.maps.LatLng(56.485937, 84.980807),
+		location : new google.maps.LatLng(56.489449, 84.981278),
+		location : new google.maps.LatLng(56.489432, 84.977386)
   }];
 
     calculateAndDisplayRoute(directionsService, directionsDisplay, originPath, destPath, path);
