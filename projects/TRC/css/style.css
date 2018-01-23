@@ -4361,12 +4361,14 @@ h3 {
 	color: #ecebed;
 	box-sizing: border-box;
 	padding-left: 20px;
-	padding-right: 20px;
+	padding-right: 40px;
 	font-weight: 500;
 	font-size: 15px;
 	color: #b8c3d2;
 	border: 1px solid #ecebed;
 	outline: none;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .map__car-input > input::placeholder {
