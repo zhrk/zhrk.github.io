@@ -146,3 +146,9 @@ var typed = new Typed(".about__video-text", {
 
   }
 });
+
+if ($(window).innerWidth()>=768){ 
+  $(".about__video > video").each(function(){ 
+    $(this).attr("src", $(this).attr("src-desktop")); 
+  });
+}
