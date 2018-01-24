@@ -1,10 +1,17 @@
 function mainMobile() {
 	if (window.innerWidth < 767) {
 
+    $('.welcome-mobile').slick({
+      infinite: false,
+      arrows: false,
+      dots: true,
+      touchMove: true
+    });
+
 		$('.ads__actual').slick({
 		  infinite: false,
 		  arrows: false,
-		  dots: false,
+		  dots: true,
 		  touchMove: true,
 		  centerMode: true,
 		  centerPadding: (window.innerWidth - 320) / 2 + 'px'
@@ -24,20 +31,23 @@ function mainMobile() {
 		  dots: true,
 		  touchMove: true,
 		  centerMode: true,
-		  centerPadding: (window.innerWidth - 270) / 2 + 'px'
+		  centerPadding: (window.innerWidth - 270) / 2 + 'px',
+      initialSlide: 1
 		});
 
-	}
+	} else {
+
+    $('.welcome').slick({
+      infinite: false,
+      arrows: false,
+      dots: true,
+      touchMove: true
+    });
+
+  }
 }
 
 $(document).ready(function() {
-
-  $('.welcome').slick({
-    infinite: false,
-    arrows: false,
-    dots: true,
-    touchMove: true
-  });
 
   $('.ads__actual-2').slick({
     infinite: false,
@@ -104,10 +114,35 @@ function paralax() {
   document.querySelector('.welcome__container--iphone').style.backgroundPosition = (x * 0.9) + 'px' + ' ' + (y * 0.9) + 'px';
 }
 
-
-
-
-
-
-
 document.querySelector('body').addEventListener('mousemove', paralax);
+
+var slideNumber;
+
+var typed = new Typed(".about__video-text", {
+  strings: ["Попить кофе <br> и перекусить", "Отдохнуть <br> с детьми", "Приятные эмоции <br> от шопинга", "<span>П</span>осетить <br> салон красоты"],
+  showCursor: false,
+  typeSpeed: 40,
+  backSpeed: 60,
+  loop: true,
+  preStringTyped: (arrayPos, self) => {
+
+    switch (arrayPos) {
+      case 0:
+      document.querySelector('.about__video-img').innerHTML = '<img src="img/icons/cake.png">';
+      break;
+
+      case 1:
+      document.querySelector('.about__video-img').innerHTML = '<img src="img/icons/train.png">';
+      break;
+
+      case 2:
+      document.querySelector('.about__video-img').innerHTML = '<img src="img/icons/bag-about.png">';
+      break;
+
+      case 3:
+      document.querySelector('.about__video-img').innerHTML = '<img src="img/icons/fen-about.png">';
+      break;
+    }
+
+  }
+});

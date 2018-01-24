@@ -1498,6 +1498,7 @@ h3 {
 	font-size: 40px;
 	font-weight: 800;
 	line-height: 0.9;
+	height: 70px;
 }
 
 .about__info {
@@ -4736,4 +4737,32 @@ h3 {
 .welcome__iphone > img {
 	width: 100%;
 	height: 100%;
+}
+
+.welcome-mobile {
+	height: 260px;
+	width: 100%;
+	display: none;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.welcome-mobile img {
+	width: 100%;
+	height: 100%;
+}
+
+.ads__emerald-m-1 {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: none;
+}
+
+.ads__emerald-m-2 {
+	position: absolute;
+	z-index: 2;
+	top: -20px;
+	right: 0;
+	display: none;
 }
