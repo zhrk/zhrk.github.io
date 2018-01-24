@@ -119,7 +119,7 @@ document.querySelector('body').addEventListener('mousemove', paralax);
 var slideNumber;
 
 var typed = new Typed(".about__video-text", {
-  strings: ["Попить кофе <br> и перекусить", "Отдохнуть <br> с детьми", "Приятные эмоции <br> от шопинга", "<span>П</span>осетить <br> салон красоты"],
+  strings: ["Попить кофе <br> и перекусить", "Отдохнуть <br> с детьми", "Приятные эмоции <br> от шопинга", "Заглянуть в <br/> салон красоты"],
   showCursor: false,
   typeSpeed: 40,
   backSpeed: 60,
