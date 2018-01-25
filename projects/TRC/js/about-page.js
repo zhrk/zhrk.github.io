@@ -24,3 +24,9 @@ function aboutPageMobile() {
 }
 
 aboutPageMobile();
+
+/*if ($(window).innerWidth()>=767){ 
+  $("#video").each(function(){ 
+    $(this).attr("src", $(this).attr("src-desktop")); 
+  });
+}*/

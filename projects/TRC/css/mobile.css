@@ -853,7 +853,21 @@
 	}
 
 	.mags__nav-open  {
-		display: flex;
+		background-color: #fff;
+		box-sizing: border-box;
+		font-family: Roboto;
+		font-weight: 500;
+		box-sizing: border-box;
+		display: inline-block;
+		padding-left: 90px;
+		outline: none;
+	}
+
+	.mags__nav-open {
+		-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 	}
 
 	.mags__nav {
