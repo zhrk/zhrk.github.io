@@ -1,4 +1,4 @@
-function initMap() {
+/*function initMap() {
 	var directionsService = new google.maps.DirectionsService;
 	var directionsDisplay = new google.maps.DirectionsRenderer;
 
@@ -426,4 +426,63 @@ document.getElementById('btnP').addEventListener('click', selectP);
 
 document.getElementById('map__car--input').addEventListener('focus', deselectAll);
 
-document.querySelector('.map__top').addEventListener('click', openOptions);
+document.querySelector('.map__top').addEventListener('click', openOptions);*/
+
+ymaps.ready(init);
+var myMap;
+
+function init(){     
+  myMap = new ymaps.Map("map", {
+      center: [56.481799, 84.981671],
+      zoom: 15,
+      controls: []
+  });
+}
+
+
+
+
+function selectP3() {
+	var multiRoute = new ymaps.multiRouter.MultiRoute({
+	    referencePoints: [
+	      [56.521796, 85.059263],
+	      [56.499459, 84.970136],
+				[56.519286, 85.049478],
+				[56.520896, 85.047418],
+				[56.513344, 85.023128],
+				[56.509483, 85.013365],
+				[56.508415, 85.006842],
+				[56.502051, 85.004822],
+				[56.500007, 84.996489],
+				[56.500518, 84.975405],
+				[56.496105, 84.958319],
+				[56.496151, 84.956761],
+				[56.493665, 84.952890],
+				[56.493503, 84.948050],
+				[56.466799, 84.950369],
+				[56.466569, 84.969176],
+				[56.466174, 84.970783],
+				[56.466240, 84.976139],
+				[56.466372, 84.977092],
+				[56.466372, 84.977092],
+				[56.465977, 84.981496],
+				[56.466766, 84.981912],
+				[56.468194, 84.950316],
+				[56.481799, 84.981671]
+
+	    ],
+	    params: {
+	      routingMode: 'masstransit'
+	    }
+		}, {
+    boundsAutoApply: true
+	});
+	myMap.geoObjects.add(multiRoute);
+}
+
+
+
+
+
+
+document.getElementById('p3').addEventListener('click', selectP3);
