@@ -22,13 +22,14 @@ function mainMobile() {
 		  arrows: false,
 		  dots: true,
 		  touchMove: true,
-		  fade: true
+		  fade: true,
+      autoplay: true
 		});
 
 		$('.pop__brands').slick({
 		  infinite: false,
 		  arrows: false,
-		  dots: true,
+		  dots: false,
 		  touchMove: true,
 		  centerMode: true,
 		  centerPadding: (window.innerWidth - 270) / 2 + 'px',
@@ -111,7 +112,7 @@ function paralax() {
 
   document.querySelector('.ads').style.backgroundPosition = x + 'px' + ' ' + y + 'px';
   document.querySelector('.emerald').style.transform = 'translate(' + x + 'px' + ',' + y + 'px)';
-  document.querySelector('.welcome__container--iphone').style.backgroundPosition = (x * 0.9) + 'px' + ' ' + (y * 0.9) + 'px';
+ /* document.querySelector('.welcome__container--iphone').style.backgroundPosition = (x * 0.9) + 'px' + ' ' + (y * 0.9) + 'px';*/
 }
 
 document.querySelector('body').addEventListener('mousemove', paralax);

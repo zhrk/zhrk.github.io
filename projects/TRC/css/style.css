@@ -3945,6 +3945,7 @@ h3 {
 	opacity: 0;
 	pointer-events: none;
 	transition: all .15s ease-in-out;
+	z-index: 1;
 }
 
 .dt-share--active {
@@ -4704,19 +4705,27 @@ h3 {
 	color: #34213e;
 }
 
-.header__schedule:hover .about-page__time {
+/* .header__schedule:hover .about-page__time {
 	opacity: 1;
 	transition: all .15s ease-in-out;
+} */
+
+.about-page__time--visible {
+	opacity: 1 !important;
+	transition: all .15s ease-in-out !important;
+	pointer-events: all !important;
+	z-index: 6 !important;
 }
 
 .header__inner .about-page__time {
 	min-width: 307px;
 	position: absolute;
-	top: 45px;
+	top: 0;
 	left: -20px;
 	opacity: 0;
 	transition: all .15s ease-in-out;
 	pointer-events: none;
+	margin-top: 45px;
 }
 
 .about-page__time--hidden {

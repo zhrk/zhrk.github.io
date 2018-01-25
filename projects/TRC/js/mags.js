@@ -15,5 +15,5 @@ function closeNav() {
 
 
 
-document.querySelector('.mags__nav-open').addEventListener('click', openNav);
-document.querySelector('.mags__nav-close').addEventListener('click', closeNav);
+/*document.querySelector('.mags__nav-open').addEventListener('click', openNav);
+document.querySelector('.mags__nav-close').addEventListener('click', closeNav);*/

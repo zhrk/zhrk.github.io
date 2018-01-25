@@ -73,12 +73,39 @@ function initMap() {
   };
 
   var params_p29 = function() {
-		var originPath = '56.526182, 85.034106';
-		var destPath = '56.486158, 84.980455';
+		var originPath = '56.509527, 84.934944';
+		var destPath = '56.526120, 85.033843';
 		var path = [{
-		location : new google.maps.LatLng(56.519788, 85.026459),
-		location : new google.maps.LatLng(56.520959, 85.030708),
-		location : new google.maps.LatLng(56.511785, 85.039083)
+		location : new google.maps.LatLng(56.503900, 84.940103),
+		location : new google.maps.LatLng(56.504335, 84.942530),
+		location : new google.maps.LatLng(56.504201, 84.947568),
+		location : new google.maps.LatLng(56.500751, 84.946293),
+		location : new google.maps.LatLng(56.500584, 84.948417),
+		location : new google.maps.LatLng(56.488355, 84.947871),
+		location : new google.maps.LatLng(56.488221, 84.949146),
+		location : new google.maps.LatLng(56.481653, 84.949267),
+		location : new google.maps.LatLng(56.481514, 84.944868),
+		location : new google.maps.LatLng(56.475808, 84.945051),
+		location : new google.maps.LatLng(56.474668, 84.942988),
+		location : new google.maps.LatLng(56.473461, 84.945051),
+		location : new google.maps.LatLng(56.471618, 84.942017),
+		location : new google.maps.LatLng(56.459011, 84.938497),
+		location : new google.maps.LatLng(56.459045, 84.971088),
+		location : new google.maps.LatLng(56.455557, 84.975154),
+		location : new google.maps.LatLng(56.461895, 84.988385),
+		location : new google.maps.LatLng(56.466220, 84.980981),
+		location : new google.maps.LatLng(56.482377, 84.981648),
+		location : new google.maps.LatLng(56.486231, 84.980677),
+		location : new google.maps.LatLng(56.494541, 84.980252),
+		location : new google.maps.LatLng(56.501374, 84.982437),
+		location : new google.maps.LatLng(56.500571, 84.981405),
+		location : new google.maps.LatLng(56.500035, 84.996032),
+		location : new google.maps.LatLng(56.511221, 85.038941),
+		location : new google.maps.LatLng(56.520864, 85.030748),
+		location : new google.maps.LatLng(56.519726, 85.026560),
+		location : new google.maps.LatLng(56.523844, 85.033418)
+
+		
   }];
   
     calculateAndDisplayRoute(directionsService, directionsDisplay, originPath, destPath, path);

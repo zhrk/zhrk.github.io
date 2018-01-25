@@ -47,7 +47,6 @@
 	.mags__nav-value,
 	.mag__side-ad,
 	.mag .blog-page__back,
-	.event__more,
 	.event__title .event__title-nav,
 	.event .blog-page__back,
 	.album .blog-page__back,
@@ -242,49 +241,57 @@
 	}
 
 	.shops {
-		height: 440px;
+		height: 230px;
 	}
 
 	.shops__bg-3 {
-		height: 360px;
+		height: 193px;
 		background-color: #9751cd;
 	}
 
 	.shops__bg-3__inner {
 		background-image: none;
 		width: 100%;
-		height: 450px;
+		height: 230px;
 		overflow: hidden;
 	}
 
 	.bags-m {
 		display: block;
-		left: 0;
 		right: 0;
-		top: 130px;
+		top: 40px;
 		position: absolute;
 		z-index: 1;
 		display: flex;
 		justify-content: center;
+		width: 190px;
+		height: 200px;
+	}
+
+	.bags-m img {
+		width: 100%;
 	}
 
 	.shops__info {
-		top: 20px;
+		top: 0;
 		left: 0;
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		padding-left: 35px;
+		padding-top: 40px;
 	}
 
 	.shops__value {
-		font-size: 70px;
+		font-size: 60px;
 	}
 
 	.shops__text {
 		margin-left: 15px;
 		margin-top: 15px;
+		font-size: 15px;
 	}
 
 	.adv {
@@ -440,7 +447,7 @@
 	}
 
 	.pop__brands {
-		padding-bottom: 70px;
+		padding-bottom: 40px;
 	}
 
 	.pop .slick-dots {
@@ -992,8 +999,7 @@
 	}
 
 	.event__title-nav--mobile {
-		display: flex;
-		justify-content: center;
+		display: none;
 	}
 
 	.event__info-inner {
@@ -1255,6 +1261,27 @@
 
 	.ads__emerald-m-2 {
 		display: block;
+	}
+
+	.ads__actual-container:hover > img {
+		transform: none;
+	}
+
+	.movie__item > a:hover {
+		transform: none;
+	}
+
+	.event__more .slick-dots {
+		bottom: -15px;
+	}
+
+	.event__more h3 {
+		text-align: center;
+	}
+
+	.event__more .fav__item {
+		margin-right: 15px;
+		margin-left: 15px;
 	}
 
 }

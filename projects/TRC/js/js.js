@@ -175,6 +175,10 @@ function openFood() {
 	document.querySelector('.header__food-btn>a').classList.add('header__nav-item--active');
 }
 
+function openSchedule() {
+	document.querySelector('.header__schedule .about-page__time').classList.add('about-page__time--visible');
+}
+
 function closeToday() {
 	document.querySelector('.header__today').classList.add('hide-el');
 	document.querySelector('.header__today-btn>a').classList.remove('header__nav-item--active');
@@ -188,6 +192,10 @@ function closeShops() {
 function closeFood() {
 	document.querySelector('.header__food').classList.add('hide-el');
 	document.querySelector('.header__food-btn>a').classList.remove('header__nav-item--active');
+}
+
+function closeSchedule() {
+	document.querySelector('.header__schedule .about-page__time').classList.remove('about-page__time--visible');
 }
 
 function closeAll() {
@@ -208,6 +216,10 @@ $(".header__food").on( {
    'mouseleave':function() { closeFood() }
 });
 
+$(".header__inner .about-page__time").on( {
+   'mouseleave':function() { closeSchedule() }
+});
+
 
 
 
@@ -217,6 +229,8 @@ document.querySelector('.header__today-btn').addEventListener('mouseover', openT
 document.querySelector('.header__shops-btn').addEventListener('mouseover', openShops);
 document.querySelector('.header__food-btn').addEventListener('mouseover', openFood);
 document.querySelector('.header__info').addEventListener('mouseover', closeAll);
+
+document.querySelector('.header__schedule').addEventListener('mouseover', openSchedule);
 
 
 
@@ -259,6 +273,10 @@ $("body").mouseover(function(){
 		document.querySelector('.header__today-btn>a').classList.remove('header__nav-item--active');
 		document.querySelector('.header__food-btn>a').classList.remove('header__nav-item--active');
 		closeOtherNav();
+	}
+
+	if (event.target === document.querySelector('.header__path') || event.target === document.querySelector('.header__info')) {
+		closeSchedule();
 	}
 
 });

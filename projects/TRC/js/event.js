@@ -1,6 +1,13 @@
 function eventMobile() {
 	if (window.innerWidth < 767) {
-		document.querySelector('.event__inner').insertBefore(document.getElementById('event-img'), document.querySelector('.blog-page__back'));
+		$('.fav__items').slick({
+      infinite: false,
+      arrows: false,
+      dots: true,
+      touchMove: true,
+      centerMode: true,
+      centerPadding: '0'
+    });
 	}
 }
 
