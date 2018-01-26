@@ -20,53 +20,37 @@
 	directionsDisplay = new google.maps.DirectionsRenderer({map: map, suppressMarkers: true});
 
 	var params_p3 = function() {
-		var originPath = '56.521796, 85.059263';
-		var destPath = '56.481799, 84.981671';
+		var originPath = '56.540739, 85.056874';
+		var destPath = '56.487926, 84.976963';
 		var path = [{
-		location : new google.maps.LatLng(56.499459, 84.970136),
-		location : new google.maps.LatLng(56.519286, 85.049478),
-		location : new google.maps.LatLng(56.520896, 85.047418),
-		location : new google.maps.LatLng(56.513344, 85.023128),
-		location : new google.maps.LatLng(56.509483, 85.013365),
-		location : new google.maps.LatLng(56.508415, 85.006842),
-		location : new google.maps.LatLng(56.502051, 85.004822),
-		location : new google.maps.LatLng(56.500007, 84.996489),
-		location : new google.maps.LatLng(56.500518, 84.975405),
-		location : new google.maps.LatLng(56.496105, 84.958319),
-		location : new google.maps.LatLng(56.496151, 84.956761),
-		location : new google.maps.LatLng(56.493665, 84.952890),
-		location : new google.maps.LatLng(56.493503, 84.948050),
-		location : new google.maps.LatLng(56.466799, 84.950369),
-		location : new google.maps.LatLng(56.466569, 84.969176),
-		location : new google.maps.LatLng(56.466174, 84.970783),
-		location : new google.maps.LatLng(56.466240, 84.976139),
-		location : new google.maps.LatLng(56.466372, 84.977092),
-		location : new google.maps.LatLng(56.466372, 84.977092),
-		location : new google.maps.LatLng(56.465977, 84.981496),
-		location : new google.maps.LatLng(56.466766, 84.981912),
-		location : new google.maps.LatLng(56.468194, 84.950316)
+		location : new google.maps.LatLng(56.521298, 85.047588),
+		location : new google.maps.LatLng(56.522332, 85.061498),
+		location : new google.maps.LatLng(56.520819, 85.046858),
+		location : new google.maps.LatLng(56.508491, 85.006917),
+		location : new google.maps.LatLng(56.501870, 85.003927),
+		location : new google.maps.LatLng(56.492341, 84.950812),
+		location : new google.maps.LatLng(56.466774, 84.950633),
+		location : new google.maps.LatLng(56.466793, 84.981695),
+		location : new google.maps.LatLng(56.481994, 84.981727)
   }];
 
     calculateAndDisplayRoute(directionsService, directionsDisplay, originPath, destPath, path);
   };
 
   var params_p27 = function() {
-		var originPath = '56.415251, 85.041171';
-		var destPath = '56.516335, 85.044930';
+		var originPath = '56.415675, 85.041022';
+		var destPath = '56.516314, 85.044910';
 		var path = [{
-		location : new google.maps.LatLng(56.414235, 85.039130),
-		location : new google.maps.LatLng(56.424171, 85.019328),
-		location : new google.maps.LatLng(56.424171, 85.019328),
-		location : new google.maps.LatLng(56.425479, 85.018282),
-		location : new google.maps.LatLng(56.432026, 85.007258),
-		location : new google.maps.LatLng(56.436202, 84.995214),
-		location : new google.maps.LatLng(56.452225, 84.980720),
-		location : new google.maps.LatLng(56.455384, 84.976025),
-		location : new google.maps.LatLng(56.461250, 84.988069),
-		location : new google.maps.LatLng(56.460460, 84.990314),
-		location : new google.maps.LatLng(56.465733, 84.982640),
-		location : new google.maps.LatLng(56.482873, 84.981705),
-		location : new google.maps.LatLng(56.486539, 84.980983)
+		location : new google.maps.LatLng(56.426759, 85.022314),
+		location : new google.maps.LatLng(56.454414, 84.976583),
+		location : new google.maps.LatLng(56.460661, 84.989846),
+		location : new google.maps.LatLng(56.467133, 84.981685),
+		location : new google.maps.LatLng(56.482400, 84.981602),
+		location : new google.maps.LatLng(56.500207, 84.987379),
+		location : new google.maps.LatLng(56.507829, 85.026701),
+		location : new google.maps.LatLng(56.503713, 85.031941),
+		location : new google.maps.LatLng(56.500745, 85.040804),
+		location : new google.maps.LatLng(56.505630, 85.035446)
   }];
   
     calculateAndDisplayRoute(directionsService, directionsDisplay, originPath, destPath, path);
@@ -401,19 +385,40 @@ document.querySelector('.map__top').addEventListener('click', openOptions);
 ymaps.ready(init);
 var myMap;
 
-function init(){   
+function init() {
   myMap = new ymaps.Map("map", {
       center: [56.489925, 84.977457],
       zoom: 15,
       controls: []
   });
 
+  var suggestView = new ymaps.SuggestView(document.getElementById('map__car--input'));
+
+  suggestView.events.add('select', function (event) {
+
+	  var multiRoute = new ymaps.multiRouter.MultiRoute({
+	    referencePoints: [
+				[event.get('item').value],
+				[56.488487, 84.978049]
+	    ],
+		}, {
+    	boundsAutoApply: true
+		});
+
+		myMap.geoObjects.removeAll();
+		myMap.geoObjects.add(multiRoute);
+
+	});
+
   var placemark = new ymaps.Placemark([56.488487, 84.978049], {
     	balloonContent: ''
 		}, {
-    preset: "twirl#yellowStretchyIcon",
-    balloonCloseButton: false,
-    hideIconOnBalloonOpen: false
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
 	});
 
    myMap.geoObjects.add(placemark);
@@ -443,7 +448,6 @@ function selectP3() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
-	console.log(myMap.geoObjects);
 }
 
 function selectP27() {
@@ -470,7 +474,6 @@ function selectP27() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
-	console.log(myMap.geoObjects);
 }
 
 function selectP29() {
@@ -501,7 +504,6 @@ function selectP29() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
-	console.log(myMap.geoObjects);
 }
 
 function selectP401() {
@@ -527,7 +529,6 @@ function selectP401() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
-	console.log(myMap.geoObjects);
 }
 
 function selectP7() {
@@ -547,7 +548,6 @@ function selectP7() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
-	console.log(myMap.geoObjects);
 }
 
 
