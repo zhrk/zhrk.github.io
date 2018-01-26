@@ -4776,3 +4776,7 @@ h3 {
 	right: 0;
 	display: none;
 }
+
+.ymaps-2-1-60-route-pin {
+	display: none !important;
+}

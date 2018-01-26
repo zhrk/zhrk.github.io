@@ -259,13 +259,6 @@ AutocompleteDirectionsHandler.prototype.route = function() {
   });
 };
 
-
-
-
-
-
-
-
 function calculateAndDisplayRoute(directionsService, directionsDisplay, originPath, destPath,  path) {
 	myCoords = path;
 	op = originPath;
@@ -283,7 +276,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay, originPa
       window.alert('Directions request failed due to ' + status);
     }
   });
-}
+}*/
 
 
 
@@ -327,35 +320,6 @@ function deselectAll() {
 	document.getElementById('p401').classList.remove('map__btn--active');	
 	document.getElementById('p7').classList.remove('map__btn--active');	
 }
-
-function selectP3() {
-	deselectAll();
-	document.getElementById('p3').classList.add('map__btn--active');
-}
-
-
-
-function selectP27() {
-	deselectAll();
-	document.getElementById('p27').classList.add('map__btn--active');
-}
-
-function selectP29() {
-	deselectAll();
-	document.getElementById('p29').classList.add('map__btn--active');
-}
-
-function selectP401() {
-	deselectAll();
-	document.getElementById('p401').classList.add('map__btn--active');
-}
-
-function selectP7() {
-	deselectAll();
-	document.getElementById('p7').classList.add('map__btn--active');
-}
-
-
 
 function deselectAllM() {
 	document.getElementById('car').classList.remove('map__item--active');
@@ -426,63 +390,171 @@ document.getElementById('btnP').addEventListener('click', selectP);
 
 document.getElementById('map__car--input').addEventListener('focus', deselectAll);
 
-document.querySelector('.map__top').addEventListener('click', openOptions);*/
+document.querySelector('.map__top').addEventListener('click', openOptions);
+
+
+
+
+
+
 
 ymaps.ready(init);
 var myMap;
 
-function init(){     
+function init(){   
   myMap = new ymaps.Map("map", {
-      center: [56.481799, 84.981671],
+      center: [56.489925, 84.977457],
       zoom: 15,
       controls: []
   });
+
+  var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+    preset: "twirl#yellowStretchyIcon",
+    balloonCloseButton: false,
+    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
+
 }
 
-
-
-
 function selectP3() {
+	deselectAll();
+	document.getElementById('p3').classList.add('map__btn--active');
+
 	var multiRoute = new ymaps.multiRouter.MultiRoute({
 	    referencePoints: [
-	      [56.521796, 85.059263],
-	      [56.499459, 84.970136],
-				[56.519286, 85.049478],
-				[56.520896, 85.047418],
-				[56.513344, 85.023128],
-				[56.509483, 85.013365],
-				[56.508415, 85.006842],
-				[56.502051, 85.004822],
-				[56.500007, 84.996489],
-				[56.500518, 84.975405],
-				[56.496105, 84.958319],
-				[56.496151, 84.956761],
-				[56.493665, 84.952890],
-				[56.493503, 84.948050],
-				[56.466799, 84.950369],
-				[56.466569, 84.969176],
-				[56.466174, 84.970783],
-				[56.466240, 84.976139],
-				[56.466372, 84.977092],
-				[56.466372, 84.977092],
-				[56.465977, 84.981496],
-				[56.466766, 84.981912],
-				[56.468194, 84.950316],
-				[56.481799, 84.981671]
-
+				[56.540739, 85.056874],
+				[56.521298, 85.047588],
+				[56.522332, 85.061498],
+				[56.520819, 85.046858],
+				[56.508491, 85.006917],
+				[56.501870, 85.003927],
+				[56.492341, 84.950812],
+				[56.466774, 84.950633],
+				[56.466793, 84.981695],
+				[56.481994, 84.981727],
+				[56.487926, 84.976963]
 	    ],
-	    params: {
-	      routingMode: 'masstransit'
-	    }
 		}, {
     boundsAutoApply: true
 	});
+	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
+	console.log(myMap.geoObjects);
 }
 
+function selectP27() {
+	deselectAll();
+	document.getElementById('p27').classList.add('map__btn--active');
 
+	var multiRoute = new ymaps.multiRouter.MultiRoute({
+	    referencePoints: [
+				[56.415675, 85.041022],
+				[56.426759, 85.022314],
+				[56.454414, 84.976583],
+				[56.460661, 84.989846],
+				[56.467133, 84.981685],
+				[56.482400, 84.981602],
+				[56.500207, 84.987379],
+				[56.507829, 85.026701],
+				[56.503713, 85.031941],
+				[56.500745, 85.040804],
+				[56.505630, 85.035446],
+				[56.516314, 85.044910]
+	    ],
+		}, {
+    boundsAutoApply: true
+	});
+	myMap.geoObjects.removeAll();
+	myMap.geoObjects.add(multiRoute);
+	console.log(myMap.geoObjects);
+}
+
+function selectP29() {
+	deselectAll();
+	document.getElementById('p29').classList.add('map__btn--active');
+
+	var multiRoute = new ymaps.multiRouter.MultiRoute({
+	    referencePoints: [
+				[56.509394, 84.934961],
+				[56.503846, 84.940324],
+				[56.504090, 84.947591],
+				[56.500652, 84.946395],
+				[56.500476, 84.948458],
+				[56.481923, 84.949292],
+				[56.481631, 84.948936],
+				[56.458954, 84.938785],
+				[56.458916, 84.971123],
+				[56.456053, 84.977172],
+				[56.462591, 84.987471],
+				[56.482306, 84.981737],
+				[56.500165, 84.987368],
+				[56.512419, 85.038872],
+				[56.520841, 85.030193],
+				[56.528815, 85.033577]
+	    ],
+		}, {
+    boundsAutoApply: true
+	});
+	myMap.geoObjects.removeAll();
+	myMap.geoObjects.add(multiRoute);
+	console.log(myMap.geoObjects);
+}
+
+function selectP401() {
+	deselectAll();
+	document.getElementById('p401').classList.add('map__btn--active');
+
+	var multiRoute = new ymaps.multiRouter.MultiRoute({
+	    referencePoints: [
+				[56.415675, 85.041022],
+				[56.426759, 85.022314],
+				[56.454414, 84.976583],
+				[56.460661, 84.989846],
+				[56.467133, 84.981685],
+				[56.482400, 84.981602],
+				[56.508915, 84.982423],
+				[56.512754, 84.973814],
+				[56.528611, 84.979622],
+				[56.537772, 84.965455],
+				[56.569128, 84.965540]
+	    ],
+		}, {
+    boundsAutoApply: true
+	});
+	myMap.geoObjects.removeAll();
+	myMap.geoObjects.add(multiRoute);
+	console.log(myMap.geoObjects);
+}
+
+function selectP7() {
+	deselectAll();
+	document.getElementById('p7').classList.add('map__btn--active');
+
+	var multiRoute = new ymaps.multiRouter.MultiRoute({
+	    referencePoints: [
+				[56.461316, 84.989816],
+				[56.467139, 84.981664],
+				[56.500186, 84.987349],
+				[56.517361, 85.064998],
+				[56.518569, 85.106260]
+	    ],
+		}, {
+    boundsAutoApply: true
+	});
+	myMap.geoObjects.removeAll();
+	myMap.geoObjects.add(multiRoute);
+	console.log(myMap.geoObjects);
+}
 
 
 
 
 document.getElementById('p3').addEventListener('click', selectP3);
+document.getElementById('p27').addEventListener('click', selectP27);
+document.getElementById('p29').addEventListener('click', selectP29);
+document.getElementById('p401').addEventListener('click', selectP401);
+document.getElementById('p7').addEventListener('click', selectP7);
