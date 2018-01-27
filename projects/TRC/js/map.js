@@ -408,6 +408,19 @@ function init() {
 		myMap.geoObjects.removeAll();
 		myMap.geoObjects.add(multiRoute);
 
+		var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
+
 	});
 
   var placemark = new ymaps.Placemark([56.488487, 84.978049], {
@@ -448,6 +461,19 @@ function selectP3() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
+
+	var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
 }
 
 function selectP27() {
@@ -474,6 +500,19 @@ function selectP27() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
+
+	var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
 }
 
 function selectP29() {
@@ -504,6 +543,19 @@ function selectP29() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
+
+	var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
 }
 
 function selectP401() {
@@ -529,6 +581,19 @@ function selectP401() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
+
+	var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
 }
 
 function selectP7() {
@@ -548,6 +613,19 @@ function selectP7() {
 	});
 	myMap.geoObjects.removeAll();
 	myMap.geoObjects.add(multiRoute);
+
+	var placemark = new ymaps.Placemark([56.488487, 84.978049], {
+    	balloonContent: ''
+		}, {
+			iconLayout: 'default#image',
+      iconImageHref: 'img/marker.png',
+      iconImageSize: [87, 87],
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
+
+   myMap.geoObjects.add(placemark);
 }
 
 
