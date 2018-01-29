@@ -7,13 +7,3 @@ function closeNav() {
 	document.querySelector('.mags__nav').classList.remove('mags__nav--active');
 	document.querySelector('body').classList.remove('body--noscroll');
 }
-
-
-
-
-
-
-
-
-/*document.querySelector('.mags__nav-open').addEventListener('click', openNav);
-document.querySelector('.mags__nav-close').addEventListener('click', closeNav);*/

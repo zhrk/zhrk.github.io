@@ -112,7 +112,6 @@ function paralax() {
 
   document.querySelector('.ads').style.backgroundPosition = x + 'px' + ' ' + y + 'px';
   document.querySelector('.emerald').style.transform = 'translate(' + x + 'px' + ',' + y + 'px)';
- /* document.querySelector('.welcome__container--iphone').style.backgroundPosition = (x * 0.9) + 'px' + ' ' + (y * 0.9) + 'px';*/
 }
 
 document.querySelector('body').addEventListener('mousemove', paralax);
