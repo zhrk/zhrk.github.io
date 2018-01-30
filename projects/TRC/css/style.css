@@ -4452,12 +4452,6 @@ h3 {
 	position: relative;
 }
 
-.map__btn-feed:hover .map__popup {
-	visibility: visible;
-	opacity: 1;
-	transition: all .15s ease-in-out;
-}
-
 .map__text-time {
 	color: #34213e;
 }
