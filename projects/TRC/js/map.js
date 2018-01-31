@@ -119,6 +119,10 @@ function init() {
       controls: []
   });
 
+  var zoomControl = new ymaps.control.ZoomControl({options: { position: { right: 20, bottom: 50 }}}); 
+
+	myMap.controls.add(zoomControl);
+
   var suggestView = new ymaps.SuggestView(document.getElementById('map__car--input'));
 
   suggestView.events.add('select', function (event) {
