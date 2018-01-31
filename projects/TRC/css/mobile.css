@@ -859,8 +859,11 @@
 		font-weight: 500;
 		box-sizing: border-box;
 		display: inline-block;
-		padding-left: 90px;
+		padding-left: 15px;
 		outline: none;
+		background-image: url('../img/icons/arrow--bottom.svg');
+		background-position: 250px center;
+		background-repeat: no-repeat;
 	}
 
 	.mags__nav-open {
@@ -973,6 +976,10 @@
 
 	.event__inner {
 		padding-top: 0;
+	}
+
+	.event__info .mag__side {
+		display: none;
 	}
 
 	.event__img {

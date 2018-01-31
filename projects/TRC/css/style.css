@@ -1004,6 +1004,11 @@ h3 {
 	top: -50px;
 	z-index: 4;
 	right: 0;
+	width: 200px;
+}
+
+.emerald > img {
+	width: 100%;
 }
 
 .ads__row {
@@ -1917,6 +1922,7 @@ h3 {
 	margin-top: 20px;
 	background-color: transparent;
 	font-weight: 500;
+	font-size: 16px;
 	color: #fff;
 	border: 1px solid #383e44;
 	border-radius: 20.5px;
