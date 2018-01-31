@@ -169,6 +169,7 @@ h3 {
 
 .header__path {
 	cursor: pointer;
+	height: 100%;
 }
 
 .header__path-hidden {
@@ -1004,7 +1005,7 @@ h3 {
 	top: -50px;
 	z-index: 4;
 	right: 0;
-	width: 200px;
+	width: 150px;
 }
 
 .emerald > img {
