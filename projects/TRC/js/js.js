@@ -1,5 +1,10 @@
-$(document).ready(function() {
+function offPreloader() {
 	document.querySelector('.preloader').style.display = 'none';
+}
+
+
+$(document).ready(function() {
+	setTimeout(offPreloader, 1000);
 });
 
 var menuOpen = false;
