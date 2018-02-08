@@ -28,11 +28,16 @@ aboutPageMobile();
 if ($(window).innerWidth()>=767){ 
   $("#video").each(function(){ 
     $(this).attr("src", $(this).attr("src-desktop"));
+    document.getElementById('video').setAttribute('poster-desktop', 'img/about-poster-d.png');
   });
 }
 
 if ($(window).innerWidth()<=767){ 
   $("#video").each(function(){ 
+    $(this).attr("poster", $(this).attr("poster-desktop"));
+  });
+} else {
+	$("#video").each(function(){ 
     $(this).attr("poster", $(this).attr("poster-desktop"));
   });
 }
