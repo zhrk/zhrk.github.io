@@ -28,6 +28,11 @@ aboutPageMobile();
 if ($(window).innerWidth()>=767){ 
   $("#video").each(function(){ 
     $(this).attr("src", $(this).attr("src-desktop"));
+  });
+}
+
+if ($(window).innerWidth()<=767){ 
+  $("#video").each(function(){ 
     $(this).attr("poster", $(this).attr("poster-desktop"));
   });
 }
