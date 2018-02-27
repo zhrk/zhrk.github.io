@@ -38,6 +38,12 @@ function mainMobile() {
 
 	} else {
 
+    $('.welcome').on('init', function (event, slick, direction) {
+      if (!($('.welcome .slick-slide').length > 1)) {
+        $('.slick-dots').hide();
+      }
+    });
+
     $('.welcome').slick({
       infinite: false,
       arrows: false,

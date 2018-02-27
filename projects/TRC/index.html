@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="js/libs/pace.min.js"></script>
+	  <link rel="stylesheet" href="css/libs/pace-theme-minimal.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="stylesheet" href="css/libs/slick.css">
@@ -16,11 +18,11 @@
 	<body>
 		<header>
 			<div class="preloader">
-				<svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
-			    <circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#099d77" stroke-width="2" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(183.75 50 50)">
-			      <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="3.2s" begin="0s" repeatCount="indefinite"></animateTransform>
-			    </circle>
-			  </svg>
+				<div class="loader">
+				  <svg viewBox="0 0 50 50">
+				    <circle cx="25" cy="25" r="20" fill="none" stroke-width="2"/>
+				  </svg>
+				</div>
 			</div>
 			<div class="path hide-el">
 				<div class="path__inner">
@@ -296,12 +298,6 @@
 		</header>
 		<main>
 			<div class="welcome">
-			  <div class="welcome__container welcome__container--iphone">
-			  	<div class="welcome__iphone">
-			  		<img src="img/welcome-bg-2.png">
-			  	</div>
-			  </div>
-			  <div><img src="img/banner-big.jpg"></div>
 			  <div><img src="img/banner-big.jpg"></div>
 			  <div><img src="img/banner-big.jpg"></div>
 			</div>
@@ -667,6 +663,13 @@
 			</div>
 			<div class="posts">
 				<div class="posts__inner">
+					<div class="posts__img posts__img-1"><img src="img/album-6.jpg"></div>
+					<div class="posts__img posts__img-2"><img src="img/album-6.jpg"></div>
+					<div class="posts__img posts__img-3"><img src="img/album-6.jpg"></div>
+					<div class="posts__img posts__img-4"><img src="img/album-6.jpg"></div>
+					<div class="posts__img posts__img-5"><img src="img/album-6.jpg"></div>
+					<div class="posts__img posts__img-6"><img src="img/album-6.jpg"></div>
+					<div class="posts__img posts__img-7"><img src="img/album-6.jpg"></div>
 					<div class="posts__info">
 						<h3>#ИзумрудныйГород</h3>
 						<div class="posts__text">Подписывайся на наши паблики в социальных сетях</div>

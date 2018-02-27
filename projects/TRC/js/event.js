@@ -70,14 +70,13 @@ $(".datepicker-container").click(function(e){
 
 	if (e.target === document.getElementById('datepicker')) {
 		isOpenD = true;
-		console.log('isopenD= ' + isOpenD);
 	}
 
   e.stopPropagation();
 });
 
 $('#datepicker').datepicker({
-	autoClose: true,
+	autoClose: true
 })
 
 
