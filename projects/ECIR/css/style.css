@@ -520,6 +520,7 @@ main {
 	padding-bottom: 100px;
 	box-sizing: border-box;
 	display: flex;
+	position: relative;
 }
 
 .features__title {
@@ -569,15 +570,20 @@ main {
 }
 
 .features__graph {
-	transform: translate(-50px, 8px);
+	position: absolute;
 	align-self: flex-end;
 	opacity: 0;
 	transition: all 2s ease;
+	max-width: 0;
+	overflow: hidden;
+	left: 450px;
+	bottom: 40px;
 }
 
 .features__graph--active {
 	opacity: 1;
-	transition: all 2s ease;
+	max-width: 100%;
+	transition: max-width 2s ease, opacity 4s ease;
 }
 
 .how {
