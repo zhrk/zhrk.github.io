@@ -70,6 +70,15 @@ $(window).scroll(function(){
   }
 });
 
+$(window).scroll(function(){
+  if (isScrolledIntoView('.features__list') === true) {
+  	console.log('123');
+  	document.querySelector('.features__graph').classList.add('features__graph--active');
+  } else {
+  	document.querySelector('.features__graph').classList.remove('features__graph--active');
+  }
+});
+
 function isScrolledIntoView(elem){
     var $elem = $(elem);
     var $window = $(window);

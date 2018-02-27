@@ -571,6 +571,13 @@ main {
 .features__graph {
 	transform: translate(-50px, 8px);
 	align-self: flex-end;
+	opacity: 0;
+	transition: all 2s ease;
+}
+
+.features__graph--active {
+	opacity: 1;
+	transition: all 2s ease;
 }
 
 .how {
