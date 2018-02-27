@@ -57,9 +57,11 @@ $(document).ready(function() {
 $(window).scroll(function(){
   if (isScrolledIntoView('.btn--how') === true) {
   	setTimeout(function(){
-  		document.querySelector('.plank--1').classList.add('plank--1-active')
-  		document.querySelector('.plank--2').classList.add('plank--2-active')
-  	}, 1000);
+  		document.querySelector('.plank--1').classList.add('plank--1-active');
+  	}, 600);
+  	setTimeout(function(){
+  		document.querySelector('.plank--2').classList.add('plank--2-active');
+  	}, 900);
   	document.querySelector('.how__inner').classList.add('how__inner--visible');
   } else {
   	document.querySelector('.plank--1').classList.remove('plank--1-active');
