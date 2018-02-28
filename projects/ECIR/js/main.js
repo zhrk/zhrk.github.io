@@ -55,7 +55,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function(){
-  if (isScrolledIntoView('.btn--how') === true) {
+  if (isScrolledIntoView('.how__inner') === true) {
   	setTimeout(function(){
   		document.querySelector('.plank--1').classList.add('plank--1-active');
   	}, 600);
@@ -63,19 +63,6 @@ $(window).scroll(function(){
   		document.querySelector('.plank--2').classList.add('plank--2-active');
   	}, 900);
   	document.querySelector('.how__inner').classList.add('how__inner--visible');
-  } else {
-  	document.querySelector('.plank--1').classList.remove('plank--1-active');
-  	document.querySelector('.plank--2').classList.remove('plank--2-active');
-  	document.querySelector('.how__inner').classList.remove('how__inner--visible');
-  }
-});
-
-$(window).scroll(function(){
-  if (isScrolledIntoView('.features__list') === true) {
-  	console.log('123');
-  	document.querySelector('.features__graph').classList.add('features__graph--active');
-  } else {
-  	document.querySelector('.features__graph').classList.remove('features__graph--active');
   }
 });
 
