@@ -27,26 +27,38 @@ $(document).ready(function() {
 				case '1':
 					clearClasses();
 					document.querySelector('.nice-select').classList.add('nice-select-bg-1');
+					document.getElementById('value').value = 100;
+					document.getElementById('price').value = 100000;
 					break;
 				case '2':
 					clearClasses();
 					document.querySelector('.nice-select').classList.add('nice-select-bg-2');
+					document.getElementById('value').value = 101;
+					document.getElementById('price').value = 100001;
 					break;
 				case '3':
 					clearClasses();
 					document.querySelector('.nice-select').classList.add('nice-select-bg-3');
+					document.getElementById('value').value = 102;
+					document.getElementById('price').value = 100002;
 					break;
 				case '4':
 					clearClasses();
 					document.querySelector('.nice-select').classList.add('nice-select-bg-4');
+					document.getElementById('value').value = 103;
+					document.getElementById('price').value = 100003;
 					break;
 				case '5':
 					clearClasses();
 					document.querySelector('.nice-select').classList.add('nice-select-bg-5');
+					document.getElementById('value').value = 104;
+					document.getElementById('price').value = 100004;
 					break;
 				case '6':
 					clearClasses();
 					document.querySelector('.nice-select').classList.add('nice-select-bg-6');
+					document.getElementById('value').value = 105;
+					document.getElementById('price').value = 100005;
 					break;
 			}
 		})

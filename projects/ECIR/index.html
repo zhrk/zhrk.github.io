@@ -5,7 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="keywords" content="Some, SEO, Tags">
 		<meta name="description" content="A description of the page">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="icon" href="img/icons/favicon.png">
@@ -17,7 +17,7 @@
 		<header class="header--index">
 			<a class="anchorn" href="" name="top"></a>
 			<div class="header__inner">
-				<a class="header__logo" href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+				<a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
 				<nav>
 					<a class="header__link" href="">Telegram бот</a>
 					<a class="header__link" href="">Поддержка</a>
@@ -37,32 +37,32 @@
 						<div class="social-selector">
 							<input checked id="vk" name="social-selector" type="radio">
 							<label for="vk">
-								<img src="img/icons/vk.png" alt="Вконтакте">
+								<img src="img/icons/vk.svg" alt="Вконтакте">
 								<span>Вконтакте</span>
 							</label>
 							<input id="telegram" name="social-selector" type="radio">
 							<label for="telegram">
-								<img src="img/icons/telegram.png" alt="Telegram">
+								<img src="img/icons/telegram.svg" alt="Telegram">
 								<span>Telegram</span>
 							</label>
 							<input id="instagram" name="social-selector" type="radio">
 							<label for="instagram">
-								<img src="img/icons/instagram.png" alt="Instagram">
+								<img class="welcome__instagram" src="img/icons/sc-3.svg" alt="Instagram">
 								<span>Instagram</span>
 							</label>
 							<input id="facebook" name="social-selector" type="radio">
 							<label for="facebook">
-								<img src="img/icons/facebook.png" alt="Facebook">
+								<img src="img/icons/facebook.svg" alt="Facebook">
 								<span>Facebook</span>
 							</label>
 							<input id="twitter" name="social-selector" type="radio">
 							<label for="twitter">
-								<img src="img/icons/twitter.png" alt="Twitter">
+								<img src="img/icons/twitter.svg" alt="Twitter">
 								<span>Twitter</span>
 							</label>
 							<input id="youtube" name="social-selector" type="radio">
 							<label for="youtube">
-								<img src="img/icons/youtube.png" alt="YouTube">
+								<img src="img/icons/youtube.svg" alt="YouTube">
 								<span>YouTube</span>
 							</label>
 						</div>
@@ -84,11 +84,11 @@
 							</div>
 							<div class="welcome__form-col welcome__form-col--value">
 								<div class="welcome__form-row">Количество</div>
-								<input type="text">
+								<input value="100" id="value" type="text">
 							</div>
 							<div class="welcome__form-col welcome__form-col--price">
 								<div class="welcome__form-row">Стоимость</div>
-								<input type="text">
+								<input value="100000" id="price" type="text">
 							</div>
 							<div class="btn">Оформить заказ</div>
 						</div>
@@ -101,7 +101,7 @@
 					<div class="services__list">
 						<div class="services__row">
 							<div class="services__card services__card--border-lt">
-								<img src="img/icons/s-1.png" alt="Лайки">
+								<img src="img/icons/s-1.svg" alt="Лайки">
 								<div class="services__title">Лайки</div>
 								<div class="services__text">Лайки Вконтакте, в Фейбсуке и других <br> соц сетях. На записях фото и репосты <br> только от живых пользователей.</div>
 								<div class="services__social">
@@ -114,7 +114,7 @@
 								</div>
 							</div>
 							<div class="services__card">
-								<img src="img/icons/s-2.png" alt="Подписчики">
+								<img src="img/icons/s-2.svg" alt="Подписчики">
 								<div class="services__title">Подписчики</div>
 								<div class="services__text">Получать подписчиков стало легко и быстро, <br> активная аудитория в подписчиках <br> в любых социальных сетях.</div>
 								<div class="services__social">
@@ -127,7 +127,7 @@
 								</div>
 							</div>
 							<div class="services__card services__card--border-rt">
-								<img src="img/icons/s-3.png" alt="Поделиться">
+								<img src="img/icons/s-3.svg" alt="Поделиться">
 								<div class="services__title">Поделиться</div>
 								<div class="services__text">Репосты записей в группах, фото и видео, <br> помогут увеличить посещаемость <br> и популярность вам и вашему бизнесу.</div>
 								<div class="services__social">
@@ -142,7 +142,7 @@
 						</div>
 						<div class="services__row">
 							<div class="services__card services__card--border-lb">
-								<img src="img/icons/s-4.png" alt="Просмотры">
+								<img src="img/icons/s-4.svg" alt="Просмотры">
 								<div class="services__title">Просмотры</div>
 								<div class="services__text">Получите просмотры на свои <br> записи чтобы увеличить цифру <br> в своей статистике.</div>
 								<div class="services__social">
@@ -155,7 +155,7 @@
 								</div>
 							</div>
 							<div class="services__card">
-								<img src="img/icons/s-5.png" alt="Комментарии">
+								<img src="img/icons/s-5.svg" alt="Комментарии">
 								<div class="services__title">Комментарии</div>
 								<div class="services__text">Хотите чтобы ваши записи <br> комментировали? Теперь <br> это просто как никогда.</div>
 								<div class="services__social">
@@ -168,7 +168,7 @@
 								</div>
 							</div>
 							<div class="services__card">
-								<img src="img/icons/s-6.png" alt="Избранное">
+								<img src="img/icons/s-6.svg" alt="Избранное">
 								<div class="services__title">Избранное</div>
 								<div class="services__text">Вашу запись будут добавлять <br> в избранное или сохранять <br> в указанных соц сетях.</div>
 								<div class="services__social">
@@ -181,7 +181,7 @@
 								</div>
 							</div>
 							<div class="services__card services__card--border-rb">
-								<img src="img/icons/s-7.png" alt="Опросы">
+								<img src="img/icons/s-7.svg" alt="Опросы">
 								<div class="services__title">Опросы</div>
 								<div class="services__text">Вашу запись будут добавлять <br> в избранное или сохранять <br> в указанных соц сетях</div>
 								<div class="services__social">
@@ -202,7 +202,7 @@
 					<div class="features__list">
 						<div class="features__title">Преимущества</div>
 						<div class="features__item">
-							<img src="img/icons/rOketa.png" alt="Быстро">
+							<img src="img/icons/rOketa.svg" alt="Быстро">
 							<div class="features__info">
 								<div class="features__info-title">Быстро</div>
 								<div class="features__info-text">
@@ -211,7 +211,7 @@
 							</div>
 						</div>
 						<div class="features__item">
-							<img src="img/icons/gear.png" alt="Качественно">
+							<img src="img/icons/gear.svg" alt="Качественно">
 							<div class="features__info">
 								<div class="features__info-title">Качественно</div>
 								<div class="features__info-text">
@@ -220,7 +220,7 @@
 							</div>
 						</div>
 						<div class="features__item">
-							<img src="img/icons/shield.png" alt="Надежно">
+							<img src="img/icons/shield.svg" alt="Надежно">
 							<div class="features__info">
 								<div class="features__info-title">Надежно</div>
 								<div class="features__info-text">
@@ -229,7 +229,7 @@
 							</div>
 						</div>
 						<div class="features__item">
-							<img src="img/icons/gift.png" alt="Доступно">
+							<img src="img/icons/gift.svg" alt="Доступно">
 							<div class="features__info">
 								<div class="features__info-title">Доступно</div>
 								<div class="features__info-text">
@@ -256,7 +256,7 @@
 					<div class="how__img">
 						<div class="plank plank--1">
 							<div class="plank__img">
-								<img src="img/man.svg">
+								<img src="img/man.png">
 								<div class="plank__img-like"></div>
 							</div>
 							<div class="plank__info">
@@ -297,16 +297,16 @@
 											<div class="bot__time">15:02</div>
 										</div>
 										<div class="bot__cloud-text">Выберите товар</div>
-										<div class="btn btn--cloud-margin">100 подписчиков <img src="img/icons/peoples.png"> - 50 ₽</div>
-										<div class="btn">500 подписчиков <img src="img/icons/peoples.png"> - 200 ₽</div>
-										<div class="btn">1000 подписчиков <img src="img/icons/peoples.png"> - 300 ₽</div>
+										<div class="btn btn--cloud-margin">100 подписчиков <img src="img/icons/peoples.svg"> - 50 ₽</div>
+										<div class="btn">500 подписчиков <img src="img/icons/peoples.svg"> - 200 ₽</div>
+										<div class="btn">1000 подписчиков <img src="img/icons/peoples.svg"> - 300 ₽</div>
 									</div>
 									<div class="bot__cloud bot__cloud--rb bot__cloud--3">
 										<div class="bot__title">
 											<div class="bot__username">Пользователь</div>
 											<div class="bot__time">15:02</div>
 										</div>
-										<div class="bot__cloud-text bot__cloud-text--blue">1000 подписчиков <img src="img/icons/peoples.png"> - 300 ₽</div>
+										<div class="bot__cloud-text bot__cloud-text--blue">1000 подписчиков <img src="img/icons/peoples.svg"> - 300 ₽</div>
 									</div>
 									<div class="bot__cloud bot__cloud--lb bot__cloud--4">
 										<div class="bot__title">
@@ -362,7 +362,7 @@
 		<footer>
 			<div class="footer__inner">
 				<a href="index.html" class="footer__logo">
-					<img src="img/logo.png" alt="Логотип">
+					<img src="img/logo.svg" alt="Логотип">
 				</a>
 				<div class="footer__nav">
 					<div class="footer__row">

@@ -298,51 +298,51 @@ main {
 }
 
 .nice-select .option[data-value="1"] {
-	background-image: url('../img/icons/popcorn.png');
+	background-image: url('../img/icons/popcorn.svg');
 }
 
 .nice-select .option[data-value="2"] {
-	background-image: url('../img/icons/likes.png');
+	background-image: url('../img/icons/likes.svg');
 }
 
 .nice-select .option[data-value="3"] {
-	background-image: url('../img/icons/peoples.png');
+	background-image: url('../img/icons/peoples.svg');
 }
 
 .nice-select .option[data-value="4"] {
-	background-image: url('../img/icons/bart.png');
+	background-image: url('../img/icons/bart.svg');
 }
 
 .nice-select .option[data-value="5"] {
-	background-image: url('../img/icons/comments.png');
+	background-image: url('../img/icons/comments.svg');
 }
 
 .nice-select .option[data-value="6"] {
-	background-image: url('../img/icons/what.png');
+	background-image: url('../img/icons/what.svg');
 }
 
 .nice-select-bg-1 {
-	background-image: url('../img/icons/popcorn.png');
+	background-image: url('../img/icons/popcorn.svg');
 }
 
 .nice-select-bg-2 {
-	background-image: url('../img/icons/likes.png');
+	background-image: url('../img/icons/likes.svg');
 }
 
 .nice-select-bg-3 {
-	background-image: url('../img/icons/peoples.png');
+	background-image: url('../img/icons/peoples.svg');
 }
 
 .nice-select-bg-4 {
-	background-image: url('../img/icons/bart.png');
+	background-image: url('../img/icons/bart.svg');
 }
 
 .nice-select-bg-5 {
-	background-image: url('../img/icons/comments.png');
+	background-image: url('../img/icons/comments.svg');
 }
 
 .nice-select-bg-6 {
-	background-image: url('../img/icons/what.png');
+	background-image: url('../img/icons/what.svg');
 }
 
 .services {
@@ -453,59 +453,65 @@ main {
 }
 
 .services__vk {
-	background-image: url('../img/icons/ss-1.png');
+	background-image: url('../img/icons/ss-1.svg');
 }
 
 .services__telegram {
-	background-image: url('../img/icons/ss-2.png');
+	background-image: url('../img/icons/ss-2.svg');
 	background-size: contain;
 }
 
 .services__instagram {
-	background-image: url('../img/icons/ss-3.png');
+	background-image: url('../img/icons/ss-3.svg');
+	background-size: 16px 16px;
 }
 
 .services__facebook {
-	background-image: url('../img/icons/ss-4.png');
+	background-image: url('../img/icons/ss-4.svg');
 }
 
 .services__twitter {
-	background-image: url('../img/icons/ss-5.png');
+	background-image: url('../img/icons/ss-5.svg');
 }
 
 .services__youtube {
-	background-image: url('../img/icons/ss-6.png');
+	background-image: url('../img/icons/ss-6.svg');
 }
 
 .services__card:hover .services__vk {
-	background-image: url('../img/icons/sc-1.png');
+	background-image: url('../img/icons/sc-1.svg');
 	transition: all 0.2s ease;
 }
 
 .services__card:hover .services__telegram {
-	background-image: url('../img/icons/sc-2.png');
+	background-image: url('../img/icons/telegram.svg');
 	background-size: contain;
 	transition: all 0.2s ease;
 }
 
 .services__card:hover .services__instagram {
-	background-image: url('../img/icons/sc-3.png');
+	background-image: url('../img/icons/sc-3.svg');
 	transition: all 0.2s ease;
 }
 
 .services__card:hover .services__facebook {
-	background-image: url('../img/icons/sc-4.png');
+	background-image: url('../img/icons/sc-4.svg');
 	transition: all 0.2s ease;
 }
 
 .services__card:hover .services__twitter {
-	background-image: url('../img/icons/sc-5.png');
+	background-image: url('../img/icons/sc-5.svg');
 	transition: all 0.2s ease;
 }
 
 .services__card:hover .services__youtube {
-	background-image: url('../img/icons/sc-6.png');
+	background-image: url('../img/icons/sc-6.svg');
 	transition: all 0.2s ease;
+}
+
+.welcome__instagram {
+	width: 24.49px;
+	height: 24px;
 }
 
 .features {
@@ -776,6 +782,7 @@ main {
 	flex-direction: column;
 	padding-left: 125px;
 	box-sizing: border-box;
+	justify-content: center;
 }
 
 .bot__text {
@@ -803,6 +810,7 @@ main {
 	width: 356px;
 	border-radius: 10px;
 	margin-bottom: 15px;
+	box-sizing: border-box;
 }
 
 .bot__title {
@@ -906,6 +914,18 @@ main {
 		transform: translateY(410px);
 		opacity: 1;
 	}
+	20% {
+		transform: translateY(305px);
+		opacity: 1;
+	}
+	40% {
+		transform: translateY(25px);
+		opacity: 1;
+	}
+	60% {
+		transform: translateY(-80px);
+		opacity: 1;
+	}
 	80% {
 		transform: translateY(-280px);
 		opacity: 1;
@@ -932,12 +952,7 @@ main {
 }
 
 .bot__cloud--1 {
-	/* opacity: 0; */
 	margin-left: auto;
-	/* animation: firstCloud;
-	animation-delay: 1s;
-	animation-duration: 2s;
-	animation-iteration-count: infinite; */
 }
 
 .bot__cloud--3 {

@@ -171,10 +171,6 @@
 		flex-direction: column;
 	}
 
-	.welcome__form-next {
-		display: none;
-	}
-
 	.how__inner {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -237,6 +233,93 @@
 
 	.services__card:not(:last-child) {
 		border-bottom: 1px solid #F0F0F0;
+	}
+
+	.welcome__form-next {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.welcome__form-col {
+		width: 100%;
+	}
+
+	.welcome__form-row {
+		margin-top: 10px;
+	}
+
+	.welcome__form-next .btn {
+		margin-top: 20px;
+		align-self: center;
+	}
+
+	.welcome .social-selector {
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-grow: 0;
+	}
+
+	.welcome .social-selector label {
+		flex-direction: row;
+		width: 50%;
+	}
+
+	.welcome {
+		height: auto;
+	}
+
+	.welcome__form {
+		position: relative;
+		margin-top: 20px;
+		bottom: 20px;
+	}
+
+	.nice-select {
+		width: 100% !important;
+		position: relative !important;
+	}
+
+	.welcome__inner {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.nice-select .list {
+		width: 100% !important;
+		box-sizing: border-box;
+		right: 40px;
+	}
+
+	.nice-select .option {
+		width: 100%;
+		right: 40px;
+	}
+
+	.social-selector > label > span {
+		margin: 0;
+		margin-left: 10px;
+	}
+
+	.header--index {
+		height: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	h1  {
+		margin-top: 240px;
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.welcome__text {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	.welcome__form-text {
+		margin-top: 40px;
+		text-align: center;
 	}
 
 }
