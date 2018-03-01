@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="keywords" content="Some, SEO, Tags">
+		<meta name="description" content="A description of the page">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="icon" href="img/icons/favicon.png">
+		<link rel="stylesheet" href="libs/nice-select/nice-select.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+		<title>Мои заказы</title>
+	</head>
+	<body>
+		<header>
+			<a class="anchorn" href="" name="top"></a>
+			<div class="header__inner">
+				<a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+				<nav>
+					<a class="header__link" href="">Добавить заказ</a>
+					<a class="header__link" href="">Telegram бот</a>
+					<a class="header__link" href="">Поддержка</a>
+					<a class="header__link" href="">Контакты</a>
+				</nav>
+				<a href="cart.html" class="header__cart"> <!-- header__cart--disabled -->
+					<div class="header__cart-img">
+						<img src="img/icons/cart.svg">
+						<div class="header__indicator"></div> <!-- header__indicator--disabled -->
+					</div>
+					<div class="header__value">600 ₽</div>
+				</a>
+				<a href="" class="btn btn--hidden btn--header">Войти</a>
+			</div>
+		</header>
+		<main>
+			<div class="orders">
+				<div class="orders__inner">
+					<div class="orders__title">
+						<h4>Мои заказы</h4>
+						<div class="orders__nav">
+							<div class="orders__nav-item orders__nav-item--active">
+								<div class="orders__nav-text">Все</div>
+								<div class="orders__nav-value">4</div>
+							</div>
+							<div class="orders__nav-item">
+								<div class="orders__nav-text">Активные</div>
+								<div class="orders__nav-value">2</div>
+							</div>
+							<div class="orders__nav-item">
+								<div class="orders__nav-text">Завершенные</div>
+								<div class="orders__nav-value">2</div>
+							</div>
+						</div>
+					</div>
+					<div class="orders__list">
+						<div class="orders__item">
+							<img class="orders__add-img" src="img/icons/add-order.svg" alt="Добавить заказ">
+							<div class="orders__text">Для того чтобы создать задание <br> нажмите “Добавить заказ”</div>
+							<div class="btn">Добавить заказ</div>
+						</div>
+						<div class="orders__item">
+							<div class="orders__item-title">Заказ <span>#15610</span></div>
+							<div class="orders__info">
+								<div class="orders__info-item">
+									<div class="orders__info-title">Статус</div>
+									<div class="orders__info-value orders__info-value--queue">В очереди</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Стоимость</div>
+									<div class="orders__info-value">2500 ₽</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Дата</div>
+									<div class="orders__info-value">20 сентября 16:20</div>
+								</div>
+							</div>
+							<a href="order.html" class="btn btn--orders">Посмотреть заказ</a>
+						</div>
+						<div class="orders__item">
+							<div class="orders__item-title">Заказ <span>#15610</span></div>
+							<div class="orders__info">
+								<div class="orders__info-item">
+									<div class="orders__info-title">Статус</div>
+									<div class="orders__info-value orders__info-value--progress">
+										<span>5</span>
+										<span>из</span>
+										<span>10</span>
+									</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Стоимость</div>
+									<div class="orders__info-value">2500 ₽</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Дата</div>
+									<div class="orders__info-value">20 сентября 16:20</div>
+								</div>
+							</div>
+							<a href="order.html" class="btn btn--orders">Посмотреть заказ</a>
+						</div>
+						<div class="orders__item">
+							<div class="orders__item-title">Заказ <span>#15610</span></div>
+							<div class="orders__info">
+								<div class="orders__info-item">
+									<div class="orders__info-title">Статус</div>
+									<div class="orders__info-value orders__info-value--done">Исполнен</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Стоимость</div>
+									<div class="orders__info-value">2500 ₽</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Дата</div>
+									<div class="orders__info-value">20 сентября 16:20</div>
+								</div>
+							</div>
+							<a href="order.html" class="btn btn--orders">Посмотреть заказ</a>
+						</div>
+						<div class="orders__item">
+							<div class="orders__item-title">Заказ <span>#15610</span></div>
+							<div class="orders__info">
+								<div class="orders__info-item">
+									<div class="orders__info-title">Статус</div>
+									<div class="orders__info-value orders__info-value--error">Ошибка</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Стоимость</div>
+									<div class="orders__info-value">2500 ₽</div>
+								</div>
+								<div class="orders__info-item">
+									<div class="orders__info-title">Дата</div>
+									<div class="orders__info-value">20 сентября 16:20</div>
+								</div>
+							</div>
+							<a href="order.html" class="btn btn--orders">Посмотреть заказ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer__inner">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo.svg" alt="Логотип">
+				</a>
+				<div class="footer__nav">
+					<div class="footer__row">
+						<a href="">Поддержка</a>
+						<a href="">Контакты</a>
+						<a href="">Блог</a>
+						<a href="">Телеграм бот</a>
+					</div>
+					<div class="footer__row">
+						<a href="">Правила использования</a>
+						<a href="">Франшиза</a>
+						<a href="">Партнерская программа</a>
+					</div>
+				</div>
+				<div class="footer__copyright">ECIR.ru © 2018 <br> Все права защищены</div>
+				<a href="#top" class="footer__up">
+					<img src="img/icons/up.svg">
+				</a>
+			</div>
+		</footer>
+		<script src="libs/jquery-3.3.1.min.js"></script>
+		<script src="libs/nice-select/nice-select.min.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/orders.js"></script>
+	</body>
+</html>

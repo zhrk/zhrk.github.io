@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/mobile.css">
 		<link rel="icon" href="img/icons/favicon.png">
 		<link rel="stylesheet" href="libs/nice-select/nice-select.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 		<title>Главная</title>
 	</head>
 	<body>
@@ -23,6 +23,13 @@
 					<a class="header__link" href="">Поддержка</a>
 					<a class="header__link" href="">Контакты</a>
 				</nav>
+				<a href="cart.html" class="header__cart header__cart--disabled"> <!-- header__cart--disabled -->
+					<div class="header__cart-img">
+						<img src="img/icons/cart.svg">
+						<div class="header__indicator"></div> <!-- header__indicator--disabled -->
+					</div>
+					<div class="header__value">600 ₽</div>
+				</a>
 				<a href="" class="btn btn--header">Войти</a>
 			</div>
 		</header>
