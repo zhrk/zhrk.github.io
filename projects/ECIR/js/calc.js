@@ -1,3 +1,6 @@
+var itemValueInput = document.getElementById('item-value');
+var itemValue = itemValueInput.value;
+
 var priceInput = document.getElementById('price');
 var price = priceInput.value;
 
@@ -23,27 +26,29 @@ var rekLabel = document.getElementById('rek-label');
 var rek;
 
 var priceClean;
-var priceClean2;
 var priceCleanLabel = document.getElementById('price-clean');
-var priceCleanLabel2 = document.getElementById('price-clean2');
 
 var month;
 var monthInput = document.getElementById('month');
 var monthLabel = document.getElementById('month-label');
+var monthLabel2 = document.getElementById('month-label2');
 
 var priceMonth;
-var priceMonth2;
 var priceMonthLabel = document.getElementById('price-month');
-var priceMonthLabel2 = document.getElementById('price-month2');
 
-
+function changeItemValue() {
+	itemValue = itemValueInput.value;
+	changePriceDiller();
+	changePriceEc();
+	changePriceClean();
+	changePriceMonth();
+}
 
 function changePrice() {
 	price = priceInput.value;
 	changePriceDiller();
 	changePriceEc();
 	changePriceClean();
-	changePriceClean2();
 	changePriceMonth();
 }
 
@@ -58,7 +63,7 @@ function changeEc() {
 }
 
 function changePriceEc() {
-	priceEc = price * ec;
+	priceEc = price * ec * itemValue;
 	priceEcLabel.innerHTML = priceEc;
 }
 
@@ -68,25 +73,58 @@ function changeRek() {
 }
 
 function changePriceClean() {
-	priceClean = priceEc - price;
+	priceClean = priceEc - priceDiller;
 	priceCleanLabel.innerHTML = priceClean;
-}
-
-function changePriceClean2() {
-	priceClean2 = priceEc - priceDiller;
-	priceCleanLabel2.innerHTML = priceClean2;
 }
 
 function changeMonth() {
 	month = monthInput.value;
+	montText = 'месяц';
+	switch (month) {
+		case '1':
+			montText = 'месяц';
+		break;
+		case '2':
+			montText = 'месяца';
+		break;
+		case '3':
+			montText = 'месяца';
+		break;
+		case '4':
+			montText = 'месяца';
+		break;
+		case '5':
+			montText = 'месяцев';
+		break;
+		case '6':
+			montText = 'месяцев';
+		break;
+		case '7':
+			montText = 'месяцев';
+		break;
+		case '8':
+			montText = 'месяцев';
+		break;
+		case '9':
+			montText = 'месяцев';
+		break;
+		case '10':
+			montText = 'месяцев';
+		break;
+		case '11':
+			montText = 'месяцев';
+		break;
+		case '12':
+			montText = 'месяцев';
+		break;
+	}
 	monthLabel.innerHTML = month;
+	monthLabel2.innerHTML = montText;
 }
 
 function changePriceMonth() {
 	priceMonth = month * priceClean;
-	priceMonth2 = month * priceClean2;
 	priceMonthLabel.innerHTML = priceMonth;
-	priceMonthLabel2.innerHTML = priceMonth2;
 }
 
 
@@ -95,19 +133,19 @@ function changePriceMonth() {
 function changeMultiply1() {
 	priceMultiplier = multiply1.value;
 	changePriceDiller();
-	changePriceClean2();
+	changePriceClean();
 }
 
 function changeMultiply2() {
 	priceMultiplier = multiply2.value;
 	changePriceDiller();
-	changePriceClean2();
+	changePriceClean();
 }
 
 function changeMultiply3() {
 	priceMultiplier = multiply3.value;
 	changePriceDiller();
-	changePriceClean2();
+	changePriceClean();
 }
 
 
@@ -121,13 +159,13 @@ changeRek();
 changeEc();
 changePriceEc();
 changePriceClean();
-changePriceClean2();
 changeMonth();
 changePriceMonth();
 
 
 
 
+itemValueInput.addEventListener('input', changeItemValue);
 
 priceInput.addEventListener('input', changePrice);
 
@@ -138,10 +176,6 @@ ecInput.addEventListener('input', changeEc);
 ecInput.addEventListener('input', changePriceEc);
 
 ecInput.addEventListener('input', changePriceClean);
-
-ecInput.addEventListener('input', changePriceClean2);
-
-ecInput.addEventListener('input', changePriceClean2);
 
 ecInput.addEventListener('input', changePriceMonth);
 
