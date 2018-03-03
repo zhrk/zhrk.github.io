@@ -751,4 +751,20 @@
 		padding-bottom: 40px;
 	}
 
+	.calc__row {
+		flex-direction: column;
+	}
+
+	.calc .calc__prices {
+		flex-direction: column;
+	}
+
+	.calc .social-selector {
+		flex-direction: column;
+	}
+
+	.calc h5  {
+		text-align: center;
+	}
+
 }

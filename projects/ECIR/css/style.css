@@ -2759,12 +2759,12 @@ footer {
   flex-grow: 1;
 }
 
-.prices > div > label {
+.calc__prices > div > label {
 	font-weight: 500;
 	font-size: 16px;
 }
 
-.prices > div > div {
+.calc__prices > div > div {
 	margin-top: 10px;
 	font-size: 16px;
 }
@@ -2775,13 +2775,13 @@ footer {
 	justify-content: space-between;
 }
 
-.prices {
+.calc__prices {
 	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.prices > div {
+.calc__prices > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
