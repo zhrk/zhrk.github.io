@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="keywords" content="Some, SEO, Tags">
+		<meta name="description" content="A description of the page">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="icon" href="img/icons/favicon.png">
+		<link rel="stylesheet" href="libs/nice-select/nice-select.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+		<title>Добавить заказ</title>
+	</head>
+	<body>
+		<header>
+			<a class="anchorn" href="" name="top"></a>
+			<div class="header__inner">
+				<a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+				<nav>
+					<a class="header__link" href="">Добавить заказ</a>
+					<a class="header__link" href="">Telegram бот</a>
+					<a class="header__link" href="">Поддержка</a>
+					<a class="header__link" href="">Контакты</a>
+				</nav>
+				<a href="cart.html" class="header__cart"> <!-- header__cart--disabled -->
+					<div class="header__cart-img">
+						<img src="img/icons/cart.svg">
+						<div class="header__indicator"></div> <!-- header__indicator--disabled -->
+					</div>
+					<div class="header__value">600 ₽</div>
+				</a>
+				<a href="" class="btn btn--hidden btn--header">Войти</a>
+			</div>
+		</header>
+		<main>
+			<div class="calc">
+				<div class="calc__inner">
+					<div>
+						<label for="p1">Старт</label>
+						<input checked id="p1" type="radio" name="p" value="1.1">
+						<label for="p2">Бизнес</label>
+						<input id="p2" type="radio" name="p" value="1.07">
+						<label for="p3">Про</label>
+						<input id="p3" type="radio" name="p" value="1.05">
+					</div>
+					<div style="margin-top: 20px;">
+						<label for="">Цена товара</label>
+						<input id="price" type="text" value="100">
+					</div>
+					<div style="margin-top: 20px;">
+						<label for="">Цена товара для диллера</label>
+						<div id="price-diller"></div>
+					</div>
+					<div style="margin-top: 20px;  display: flex; flex-direction: column;">
+						<label for="">Сумма вложений рекламы в месяц <span id="rek-label"></span></label>
+						<input type="range" min="100" max="1000" step="100" value="100" " id="rek">
+					</div>
+					<div style="margin-top: 20px;  display: flex; flex-direction: column;">
+						<label for="">Наценка <span id="ec-label"></span></label>
+						<input type="range" min="1.5" max="5" step="0.5" value="1.5" " id="ec">
+					</div>
+					<div style="margin-top: 20px;">
+						<label for="">Цена товара для с наценкой</label>
+						<div id="price-ec"></div>
+					</div>
+					<div style="margin-top: 20px;">
+						<label for="">Чистая прибыль</label>
+						<div id="price-clean"></div>
+						<div>или ?</div>
+						<div id="price-clean2"></div>
+					</div>
+					<div style="margin-top: 20px;  display: flex; flex-direction: column;">
+						<label for="">Сколько вы заработаете через <span id="month-label"></span></label>
+						<input type="range" min="1" max="12" step="1" value="1" " id="month">
+						<div id="price-month"></div>
+						<div>или ?</div>
+						<div id="price-month2"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer__inner">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo.svg" alt="Логотип">
+				</a>
+				<div class="footer__nav">
+					<div class="footer__row">
+						<a href="">Поддержка</a>
+						<a href="">Контакты</a>
+						<a href="">Блог</a>
+						<a href="">Телеграм бот</a>
+					</div>
+					<div class="footer__row">
+						<a href="">Правила использования</a>
+						<a href="">Франшиза</a>
+						<a href="">Партнерская программа</a>
+					</div>
+				</div>
+				<div class="footer__copyright">ECIR.ru © 2018 <br> Все права защищены</div>
+				<a href="#top" class="footer__up">
+					<img src="img/icons/up.svg">
+				</a>
+			</div>
+		</footer>
+		<script src="libs/jquery-3.3.1.min.js"></script>
+		<script src="libs/nice-select/nice-select.min.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/calc.js"></script>
+	</body>
+</html>

@@ -316,8 +316,6 @@
 		text-align: center;
 	}
 
-	
-
 	.orders__title {
 		flex-direction: column;
 	}
@@ -325,10 +323,6 @@
 	.orders__nav {
 		margin-top: 20px;
 		flex-direction: column;
-	}
-
-	.orders__nav-item {
-		height: 50px;
 	}
 
 	.orders__nav-item:first-child {
@@ -413,7 +407,38 @@
 	}
 
 	.order__info {
-		display: none;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.order__info-item:first-child {
+		border: 0;
+		padding: 0;
+	}
+
+	.order__info-item:nth-child(2) {
+		border: 0;
+		padding: 0;
+	}
+
+	.order__info-value {
+		text-align: center;
+	}
+
+	.order__info-title {
+		text-align: center;
+	}
+
+	.order__info-item {
+		margin-bottom: 20px;
+	}
+
+	.order__info-item:nth-child(3) {
+		padding: 0;
+	}
+
+	.btn--order {
+		margin: 0;
 	}
 
 	.order__item {
@@ -431,6 +456,7 @@
 	.order__inner {
 		padding-left: 0;
 		padding-right: 0;
+		padding-bottom: 40px;
 	}
 
 	.order__row--title > .order__item--status {
@@ -470,6 +496,87 @@
 
 	.order__table {
 		align-self: center;
+	}
+
+	.add .social-selector {
+		flex-direction: column;
+	}
+
+	.add .services-selector {
+		flex-direction: column;
+	}
+
+	.add__info-title {
+		flex-direction: column;
+	}
+
+	.social-selector > label:not(:last-child) {
+		border: 0;
+		border-bottom: 1px solid #E3E7FC;
+	}
+
+	.add h5 {
+		text-align: center;
+	}
+
+	.add__title {
+		text-align: center;
+	}
+
+	.add__services-selector {
+		align-self: center;
+		width: 100%;
+	}
+
+	.add .services-selector > label {
+		justify-content: center;
+	}
+
+	.add .services-selector > label:not(:last-child) {
+		border: 0;
+		border-bottom: 1px solid #F0F2FA;
+	}
+
+	.add .social-selector > label {
+		flex-direction: row;
+	}
+
+	.services-selector {
+		width: 100%;
+	}
+
+	.add__item:not(:nth-child(2)) {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.add__item {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.add__inner {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-top: 40px;
+	}
+
+	.add__bottom {
+		flex-direction: column;
+	}
+
+	.add__bottom-row {
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	.add__bottom-col--j-end {
+		align-self: center;
+	}
+
+	.add__info-show {
+		margin-top: 10px;
 	}
 
 }
