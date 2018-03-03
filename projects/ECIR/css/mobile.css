@@ -710,13 +710,45 @@
 	}
 
 	.info__inner {
-		padding-left: 20px;
-		padding-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 		padding-top: 40px;
 	}
 
 	.info h5 {
 		text-align: center;
+	}
+
+	.info__review {
+		width: 100%;
+	}
+
+	.info__feedback-input > textarea {
+		height: 150px;
+	}
+
+	.info__feedback-input--ref > label > br {
+		display: none;
+	}
+
+	.info__feedback .btn {
+		text-align: center;
+	}
+
+	.info__feedback-title {
+		margin-bottom: 10px;
+	}
+
+	.info__content-left {
+		align-self: center;
+		max-width: 100%;
+	}
+
+	.page__inner {
+		padding-top: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 40px;
 	}
 
 }

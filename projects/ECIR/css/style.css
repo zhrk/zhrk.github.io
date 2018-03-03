@@ -44,6 +44,17 @@ h5 {
 	font-size: 30px;
 }
 
+h6 {
+	margin: 0;
+	padding: 0;
+	font-family: Muller;
+	font-weight: 900;
+	font-size: 20px;
+	color: #454559;
+	margin-top: 30px;
+	margin-bottom: -25px;
+}
+
 input {
 	font-family: Roboto;
 	font-size: 14px;
@@ -2457,7 +2468,7 @@ footer {
 	padding-left: 36px;
 	padding-right: 36px;
 	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-bottom: 100px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -2596,4 +2607,121 @@ footer {
 .info__feedback .btn {
 	align-self: flex-start;
 	margin-top: 30px;
+}
+
+.info__review {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	padding: 40px;
+	width: 483px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.info__review-name {
+	font-weight: bold;
+	line-height: 21px;
+	color: #454559;
+}
+
+.info__review-date {
+	margin-top: 5px;
+	font-weight: 500;
+	line-height: 18px;
+	font-size: 12px;
+	color: #999AB0;
+}
+
+.info__review-text {
+	margin-top: 10px;
+	font-weight: 500;
+	line-height: 21px;
+	color: #454559;
+}
+
+.info__stat {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #F2F4FA;
+	align-items: center;
+}
+
+.info__stat-title {
+	font-weight: 500;
+	color: #999AB0;
+}
+
+.info__stat-value {
+	color: #454559;
+	font-weight: bold;
+}
+
+.info__feedback-input--invite > label {
+	margin-top: 20px;
+	color: #454559;
+}
+
+.info__feedback-input--ref > label {
+	margin-top: 10px;
+	color: #454559;
+}
+
+.info__feedback-input--ref > label > span {
+	color: #32A652;
+}
+
+.page {
+	display: flex;
+	justify-content: center;
+	background-color: #F7F8FC;
+}
+
+.page__inner {
+	max-width: 1060px;
+	width: 100%;
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-top: 60px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding-right: 360px;
+}
+
+.page p {
+	color: #454559;
+	font-weight: 500;
+	line-height: 21px;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+}
+
+.page p > a {
+	color: #465EDB;
+	transition: all 0.2s ease;
+}
+
+.page p > a:hover {
+	color: #454559;
+	transition: all 0.2s ease;
+}
+
+.page ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.page ul > li {
+	color: #454559;
+	font-weight: 500;
+	line-height: 21px;
 }
