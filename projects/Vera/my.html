@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="keywords" content="Some, SEO, Tags">
+		<meta name="description" content="A description of the page">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="libs/nice-select/nice-select.css">
+		<link rel="icon" href="img/icons/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=latin-ext" rel="stylesheet">
+		<title>My orders</title>
+	</head>
+	<body>
+		<header>
+			<div class="header__inner">
+				<a class="header__logo" href="index.html">
+					<img src="img/logo.png">
+				</a>
+				<a class="header__logo--home" href="index.html">
+					<img src="img/logo--home.png">
+				</a>
+				<div class="header__nav">
+					<a class="header__link" href="">Trade</a>
+					<a class="header__link" href="">Wallets</a>
+					<a class="header__link header__link--active" href="">Orders</a> <!-- active class -->
+				</div>
+				<div class="header__time">
+					<div class="header__time-title">Server time</div>
+					<div class="header__time-value">11:59:47 pm</div>
+				</div>
+				<div class="header__balance">
+					<img src="img/icons/header__balance.png">
+					<div class="header__balance-value">10.043578 <span>04 BTC</span></div>
+					<a class="header__balance-plus" href=""><img src="img/icons/header__plus.png"></a>
+				</div>
+				<div class="header__bell">
+					<img src="img/icons/header__bell.png">
+					<div class="header__bell-circle">2</div>
+				</div>
+				<a href="" class="header__user">
+					<div href=""><img src="img/icons/header__user.png"></div>
+					<img src="img/icons/header__arrow.png">
+				</a>
+				<div class="header__nav--home">
+					<a href="" class="header__btn-login">Login</a>
+					<a href="" class="header__btn-signup">Signup</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="my">
+				<div class="my__inner">
+					<div class="my__title">
+						<h5>My orders</h5>
+						<div class="my__export">
+							<span>Export Trade History</span>
+							<img src="img/icons/my__export.png">
+						</div>
+					</div>
+					<div class="my__content">
+						<div class="my__nav trading">
+							<nav>
+								<div class="trading__nav-active"><span>OPEN</span></div>
+								<div><span>Filled</span></div>
+								<div><span>History</span></div>
+							</nav>
+							<nav>
+								<div class="trading__nav-active"><span>Buy</span></div>
+								<div><span>Sell</span></div>
+								<div><span>All</span></div>
+							</nav>
+							<div class="my__pair">
+								<span>PAIR:</span>
+								<select id="1" class="support__selector">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+								<div class="my__pair-divider"></div>
+								<select id="2" class="support__selector">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+							</div>
+							<nav>
+								<div class="trading__nav-active"><span>1D</span></div>
+								<div><span>1W</span></div>
+								<div><span>1M</span></div>
+								<div><span>1Y</span></div>
+								<div><span>MAX</span></div>
+								<div><span>Custom dates</span></div>
+							</nav>
+						</div>
+						<div class="my__table-title">
+							<div>CURRENCY PAIR</div>
+							<div>BUY/SELL</div>
+							<div>AMOUNT</div>
+							<div>PRICE</div>
+							<div>FEE</div>
+							<div>TOTAL</div>
+							<div>DATE Time</div>
+							<div>Status</div>
+						</div>
+						<div class="my__table">
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row my__table-row--cancelled"> <!-- cancelled -->
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__down.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Cancelled</div>
+							</div>
+							<div class="my__table-row my__table-row--filled"> <!-- filled -->
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Filled</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<div class="my__table-row">
+								<div class="my__table-a">USD/BTC</div>
+								<div class="my__table-b">
+									<img src="img/icons/my__up.png">
+								</div>
+								<div class="my__table-c">4644.65</div>
+								<div class="my__table-d">0.068<span>67804</span></div>
+								<div class="my__table-f">0.068<span>67804</span></div>
+								<div class="my__table-g">0.068<span>67804</span></div>
+								<div class="my__table-t">0.2018-02-14 <span>2:45:21</span></div>
+								<div class="my__table-z">Open</div>
+							</div>
+							<img class="my__dots" src="img/icons/reviews__dots.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="libs/jquery-3.3.1.min.js"></script>
+		<script src="libs/nice-select/nice-select.min.js"></script>
+		<script src="js/my.js"></script>
+	</body>
+</html>

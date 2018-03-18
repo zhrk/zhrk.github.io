@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="keywords" content="Some, SEO, Tags">
+		<meta name="description" content="A description of the page">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="icon" href="img/icons/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=latin-ext" rel="stylesheet">
+		<title>Trading</title>
+	</head>
+	<body>
+		<header>
+			<div class="header__inner">
+				<a class="header__logo" href="index.html">
+					<img src="img/logo.png">
+				</a>
+				<a class="header__logo--home" href="index.html">
+					<img src="img/logo--home.png">
+				</a>
+				<div class="header__nav">
+					<a class="header__link header__link--active" href="">Trade</a> <!-- active class -->
+					<a class="header__link" href="">Wallets</a>
+					<a class="header__link" href="">Orders</a>
+				</div>
+				<div class="header__time">
+					<div class="header__time-title">Server time</div>
+					<div class="header__time-value">11:59:47 pm</div>
+				</div>
+				<div class="header__balance">
+					<img src="img/icons/header__balance.png">
+					<div class="header__balance-value">10.043578 <span>04 BTC</span></div>
+					<a class="header__balance-plus" href=""><img src="img/icons/header__plus.png"></a>
+				</div>
+				<div class="header__bell">
+					<img src="img/icons/header__bell.png">
+					<div class="header__bell-circle">2</div>
+				</div>
+				<a href="" class="header__user">
+					<div href=""><img src="img/icons/header__user.png"></div>
+					<img src="img/icons/header__arrow.png">
+				</a>
+				<div class="header__nav--home">
+					<a href="" class="header__btn-login">Login</a>
+					<a href="" class="header__btn-signup">Signup</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="trading">
+				<div class="trading__inner">
+					<div class="trading__alert">
+						<img src="img/icons/trading__alert.png">
+						<span>Security Alert:</span>
+						<a href="">Enable 2-Factor Authentification</a>
+						<div class="trading__alert-close">
+							<img src="img/icons/trading__close.png">
+						</div>
+					</div>
+					<div class="trading__title">
+						<div class="trading__title-item">
+							<div class="trading__avatar">
+								<img src="img/cat.png">
+							</div>
+							<div class="trading__user-info">
+								<div class="trading__email">trader@vera.exchange</div>
+								<div class="trading__time-ip">
+									<span>Last login Time: 2018-02-12 07:12:12</span>
+									<span>IP: 95.103.227.165  </span>
+								</div>
+								<a href="" class="trading__activity">See ACCOUNT activity</a>
+							</div>
+						</div>
+						<div class="trading__title-item">
+							<div class="trading__status">
+								<div class="trading__status-title">
+									<span>Account status:</span>
+									<div>unverified</div>
+								</div>
+								<div class="trading__status-limit">
+									<span>Withdrawal Limit：</span>
+									<span>2 BTC</span>
+								</div>
+								<a class="trading__v-docs" href="">upload verification documents</a>
+							</div>
+						</div>
+						<div class="trading__title-item">
+							<div class="trading__balance">
+								<div class="trading__balance-title">
+									<img src="img/icons/trading__balance.png">
+									<span>Total Balance:</span>
+								</div>
+								<div class="trading__balance-value">30.068<span>67804 BTC</span></div>								
+								<div class="trading__balance-value2">$162914.29</div>								
+							</div>
+						</div>
+						<div class="trading__title-item">
+							<div class="trading__profit">
+								<div class="trading__profit-title">
+									<img src="img/icons/trading__profit.png">
+									<span>24H Profit/Loss:</span>
+								</div>
+								<div class="trading__profit-plus1">+0.068<span>67804 BTC</span></div>
+								<div class="trading__profit-plus2">+$116.66 <img class="trading__arrow-up" src="img/icons/rate__arrow-up.png"><img class="trading__arrow-down" src="img/icons/rate__arrow-down.png"></div> <!-- trading__profit-plus2--down -->
+							</div>
+						</div>
+					</div>
+					<div class="trading__content">
+						<div class="trading__col trading__col--1">
+							<div class="trading__buy">
+								<div class="trading__buy-title">
+									<nav>
+										<div class="trading__nav-active"><span>Buy</span></div> <!-- active class -->
+										<div><span>Sell</span></div>
+									</nav>
+									<div class="trading__buy-title-limit">
+										<span>Limit order</span>
+										<input class="switch__input" id="checkbox1" type="checkbox">
+										<label class="switch" for="checkbox1">
+											<div class="switch__circle"></div>
+										</label>
+									</div>
+								</div>
+								<div class="trading__buy-balance">BTC Balance:  <span>30.068</span>67804 </div>
+								<form>
+									<div class="trading__buy-row">
+										<div class="trading__buy-row-title">Price</div>
+										<input type="text">
+										<div class="trading__buy-row-title2">BTC</div>
+									</div>
+									<div class="trading__buy-row">
+										<div class="trading__buy-row-title">Amount</div>
+										<input type="text">
+										<div class="trading__buy-row-title2">ETH</div>
+									</div>
+									<div class="trading__buy-row">
+										<div class="trading__buy-row-title">Total</div>
+										<input type="text">
+										<div class="trading__buy-row-title2">BTC</div>
+									</div>
+									<div class="trading__buy-text">Trade commission: <span>0.1%</span></div>
+									<div class="btn btn--buy">BUY ETH</div>
+								</form>
+							</div>
+							<div class="trading__market">
+								<div class="tradigng__market-search">
+									<div class="trading__h">Markets</div>
+									<input type="text">
+								</div>
+								<div class="trading__buy-title">
+									<nav>
+										<div class="trading__nav-active"><span>VRTM</span></div> <!-- active class -->
+										<div><span>BTC</span></div>
+										<div><span>ETH</span></div>
+									</nav>
+									<div class="trading__buy-title-limit">
+										<input class="switch__input" id="checkbox2" type="checkbox">
+										<label class="switch" for="checkbox2">
+											<div class="switch__circle"></div>
+										</label>
+										<span class="trading__buy--selected">SELECTED</span>
+									</div>
+								</div>
+								<div class="trading__market-table-title">
+									<div>Coin</div>
+									<div>Price</div>
+									<div class="trading__market-vol">Volume</div>
+									<div>Change</div>
+								</div>
+								<div class="trading__market-table">
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle trading__market-table-circle--green"></div> <!-- green -->
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle trading__market-table-circle--green"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change trading__market-table-change--red">-2.5%</div> <!-- red -->
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle trading__market-table-circle--green"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle trading__market-table-circle--green"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+									<div class="trading__market-table-row">
+										<div class="trading__market-table-wrap">
+											<div class="trading__market-table-circle"></div>
+											<div class="trading__market-table-coin">ETH</div>
+										</div>
+										<div class="trading__market-table-price">0.068<span>67804</span></div>
+										<div class="trading__market-table-volume">4644.65</div>
+										<div class="trading__market-table-change">+2.5%</div>
+									</div>
+								</div>
+								<img class="trading__market-dots" src="img/icons/reviews__dots.png">
+							</div>
+						</div>
+						<div class="trading__col trading__col--2">
+							<div class="chart">
+								<div class="chart__title">
+									<div class="trading__h">Price chart</div>
+									<div class="trading__h trading__h--chart">BTC/ETH</div>
+									<nav>
+										<div class="trading__nav-active"><span>1D</span></div> <!-- active class -->
+										<div><span>1W</span></div>
+										<div><span>1M</span></div>
+										<div><span>1Y</span></div>
+										<div><span>MAX</span></div>
+									</nav>
+								</div>
+								<div class="chart__values">
+									<div class="chart__value">
+										<div class="chart__values-title">24h Change</div>
+										<div class="chart__value-subj">-0.0000508</div>
+										<div class="chart__value-percent">-4.48%</div>
+									</div>
+									<div class="chart__value">
+										<div class="chart__values-title chart__values-title-h">High</div>
+										<div class="chart__value-subj">0.0011420</div>
+									</div>
+									<div class="chart__value">
+										<div class="chart__values-title chart__values-title-l">Low</div>
+										<div class="chart__value-subj">0.0010695</div>
+									</div>
+									<div class="chart__value">
+										<div class="chart__values-title">24h Vol</div>
+										<div class="chart__value-subj">2,217.42 BTC</div>
+									</div>
+								</div>
+								<div class="chart__graph">
+									<div class="chart__graph-left">
+										<div class="chart__area">
+											<img src="img/chart.png">
+											<div class="chart__plank" style="top: 15px;">
+												<div class="chart__plank-value">0.0074</div>
+											</div>
+											<div class="chart__plank chart__plank--red" style="top: 75px;">
+												<div class="chart__plank-value">0.0074</div>
+											</div>
+											<div style="top: 20px; left: 50px;" class="chart__stick">
+												<div style="height: 15px" class="chart__a">
+													<div style="height: 30px; top: -10px" class="chart__b"></div>
+												</div>
+											</div>
+											<div style="top: 55px; left: 60px;" class="chart__stick chart__stick--red">
+												<div style="height: 15px" class="chart__a">
+													<div style="height: 30px; top: -10px" class="chart__b"></div>
+												</div>
+											</div>
+										</div>
+										<div class="chart__months">
+											<div>NOV’11</div>
+											<div>NOV’11</div>
+											<div>NOV’11</div>
+											<div>NOV’11</div>
+											<div>NOV’11</div>
+											<div>NOV’11</div>
+											<div>NOV’11</div>
+										</div>
+									</div>
+									<div class="chart__graph-right">
+										<div>0.008</div>
+										<div>0.008</div>
+										<div>0.008</div>
+										<div>0.008</div>
+										<div>0.008</div>
+										<div>0.008</div>
+										<div>0.008</div>
+										<div>0.008</div>
+									</div>
+								</div>
+							</div>
+							<div class="orders">
+								<div class="orders__title">
+									<div class="trading__h">Markets</div>
+									<nav>
+										<div class="trading__nav-active"><span>All</span></div> <!-- active class -->
+										<div><span>Open</span></div>
+										<div><span>Filled</span></div>
+									</nav>
+									<div class="trading__h trading__h--orders">Cancel Open Orders</div>
+								</div>
+								<div class="orders__h">
+									<div>CURRENCY PAIR</div>
+									<div>BUY/SELL</div>
+									<div>AMOUNT</div>
+									<div>PRICE</div>
+									<div>Time</div>
+									<div>Status</div>
+								</div>
+								<div class="orders__table">
+									<div class="orders__table-row">
+										<div class="orders__table-pair">USD/BTC</div>
+										<div class="orders__table-buy">BUY</div>
+										<div class="orders__table-amount">4644.65</div>
+										<div class="orders__table-price">0.068<span>67804</span></div>
+										<div class="orders__table-time">2:45:21</div>
+										<div class="orders__table-status">Open</div>
+										<div class="orders__table-close">
+											<img src="img/icons/orders__close.png">
+										</div>
+									</div>
+									<div class="orders__table-row">
+										<div class="orders__table-pair">USD/BTC</div>
+										<div class="orders__table-buy">BUY</div>
+										<div class="orders__table-amount">4644.65</div>
+										<div class="orders__table-price">0.068<span>67804</span></div>
+										<div class="orders__table-time">2:45:21</div>
+										<div class="orders__table-status orders__table-status--cancelled">cancelled</div>
+										<div class="orders__table-close">
+											<img src="img/icons/orders__close.png">
+										</div>
+									</div>
+									<div class="orders__table-row">
+										<div class="orders__table-pair">USD/BTC</div>
+										<div class="orders__table-buy orders__table-buy--sell">sell</div>
+										<div class="orders__table-amount">4644.65</div>
+										<div class="orders__table-price">0.068<span>67804</span></div>
+										<div class="orders__table-time">2:45:21</div>
+										<div class="orders__table-status orders__table-status--filled">Filled</div>
+										<div class="orders__table-close">
+											<img src="img/icons/orders__close.png">
+										</div>
+									</div>
+									<div class="orders__table-row">
+										<div class="orders__table-pair">USD/BTC</div>
+										<div class="orders__table-buy">BUY</div>
+										<div class="orders__table-amount">4644.65</div>
+										<div class="orders__table-price">0.068<span>67804</span></div>
+										<div class="orders__table-time">2:45:21</div>
+										<div class="orders__table-status">Open</div>
+										<div class="orders__table-close">
+											<img src="img/icons/orders__close.png">
+										</div>
+									</div>
+									<div class="orders__table-row">
+										<div class="orders__table-pair">USD/BTC</div>
+										<div class="orders__table-buy">BUY</div>
+										<div class="orders__table-amount">4644.65</div>
+										<div class="orders__table-price">0.068<span>67804</span></div>
+										<div class="orders__table-time">2:45:21</div>
+										<div class="orders__table-status">Open</div>
+										<div class="orders__table-close">
+											<img src="img/icons/orders__close.png">
+										</div>
+									</div>
+									<div class="orders__table-row">
+										<div class="orders__table-pair">USD/BTC</div>
+										<div class="orders__table-buy">BUY</div>
+										<div class="orders__table-amount">4644.65</div>
+										<div class="orders__table-price">0.068<span>67804</span></div>
+										<div class="orders__table-time">2:45:21</div>
+										<div class="orders__table-status">Open</div>
+										<div class="orders__table-close">
+											<img src="img/icons/orders__close.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="trading__col trading__col--3">
+							<div class="book__title">
+								<div class="trading__h">ORDER BOOK</div>
+								<nav>
+									<div class="trading__nav-active"><span>ORDER BOOK</span></div> <!-- active class -->
+									<div><span>trade history</span></div>
+								</nav>
+							</div>
+							<div class="book__title-2">
+								<div>TOTAL (ETH)</div>
+								<div>AMOUNT</div>
+								<div>Price  (BTC)</div>
+							</div>
+							<div class="book__table">
+								<div class="book__table-row">
+									<div style="width: 10%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 12%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 32%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 87%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 10%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 31%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 0%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 21%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 42%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 30%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 44%" class="book__table-progress book__table-progress--green"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--green">0.068<span>67804</span></div>
+								</div>
+								<div class="boot__table-change boot__table-change--red"> <!-- boot__table-change--green -->
+									<span>0.00044999</span>
+									<img class="book_1" src="img/icons/rate__arrow-down.png">
+									<img class="book_2" src="img/icons/rate__arrow-up.png">
+								</div>
+								<div class="book__table-row">
+									<div style="width: 50%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 21%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 22%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 50%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 51%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 0" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 87%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 20%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 80%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 40%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 20%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+								<div class="book__table-row">
+									<div style="width: 10%" class="book__table-progress book__table-progress--red"></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item">0.068<span>67804</span></div>
+									<div class="book__table-item book__table-item--red">0.068<span>67804</span></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="js/js.js"></script>
+	</body>
+</html>
