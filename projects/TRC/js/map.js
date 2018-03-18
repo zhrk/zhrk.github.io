@@ -323,8 +323,16 @@ function selectP401() {
 	    balloonCloseButton: false,
 	    hideIconOnBalloonOpen: false
 	});
+	var placemark2 = new ymaps.Placemark([56.486002, 84.980830], {
+    	balloonContent: 'Выходить здесь'
+		}, {
+	    preset: "twirl#yellowStretchyIcon",
+	    balloonCloseButton: false,
+	    hideIconOnBalloonOpen: false
+	});
 
    myMap.geoObjects.add(placemark);
+   myMap.geoObjects.add(placemark2);
 }
 
 function selectP7() {
