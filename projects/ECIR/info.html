@@ -8,8 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="libs/rangeslider/rangeslider.css">
 		<link rel="icon" href="img/icons/favicon.png">
-		<link rel="stylesheet" href="libs/nice-select/nice-select.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 		<title>Франшиза ECIR</title>
 	</head>
@@ -103,6 +103,112 @@
 					</div>
 				</div>
 			</div>
+			<div class="calc">
+				<div class="calc__inner">
+					<div class="calc__title">
+						<h5>Рассчитать доходность</h5>
+						<div class="calc__er">
+							<div class="calc__er--active" data-er='1' data-sign='$'>$</div>
+							<div data-er='57' data-sign='₽'>₽</div>
+						</div>
+					</div>
+					<div class="calc__container">
+						<div class="calc__left">
+							<div class="social-selector">
+								<input id="start" checked name="social-selector" type="radio">
+								<label for="start">
+									<img src="img/icons/boat.png">
+									<div>
+										<div class="calc__label-title">Старт</div>
+										<div id="startPrice" class="calc__label-value"><div>$</div><span></span></div>
+										<div class="calc__label-text">Наценка 10%</div>
+									</div>
+								</label>
+								<input id="business" name="social-selector" type="radio">
+								<label for="business">
+									<img src="img/icons/boat2.png">
+									<div>
+										<div class="calc__label-title">Бизнес</div>
+										<div id="businessPrice" class="calc__label-value"><div>$</div><span></span></div>
+										<div class="calc__label-text">Наценка 7%</div>
+									</div>
+								</label>
+								<input id="pro" name="social-selector" type="radio">
+								<label for="pro">
+									<img src="img/icons/boat3.png">
+									<div>
+										<div class="calc__label-title">Про</div>
+										<div id="proPrice" class="calc__label-value"><div>$</div><span></span></div>
+										<div class="calc__label-text">Наценка 5%</div>
+									</div>
+								</label>
+							</div>
+							<div class="calc__inputs">
+								<div class="calc__inputs-row">
+									<div class="calc__input-container">
+										<div class="calc__input-label">Цена товара, <span>₽</span></div>
+										<input id="itemPrice" value="100" class="calc__input" type="number">
+									</div>
+									<div class="calc__input-container">
+										<div class="calc__input-label">Кол-во товара</div>
+										<input id="itemValue" value="1" class="calc__input" type="number">
+									</div>
+								</div>
+								<div class="calc__ranges">
+									<div class="calc__ranges-label">Сумма вложений в рекламу в месяц</div>
+									<div class="calc__range">
+										<input data-rangeslider type="range" min="100" max="1000" step="100" value="100" id="adv">
+										<div class="calc__bauble calc__bauble--adv"><span>100</span></div>
+									</div>
+									<div class="calc__ranges-label">Наценка на товар в своей системе</div>
+									<div class="calc__range">
+										<input data-rangeslider type="range" min="1.5" max="5" step="0.5" value="1.5" id="ec">
+										<div class="calc__bauble calc__bauble--ec"><span>1.5</span></div>
+									</div>
+									<div class="calc__ranges-label">Количество месяцев работы сервиса</div>
+									<div class="calc__range">
+										<input data-rangeslider type="range" min="1" max="12" step="1" value="1" id="months">
+										<div class="calc__bauble calc__bauble--months"><span>1</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="calc__info">
+							<div class="calc__info-title">Итого</div>
+							<div class="calc__info-label">Стоимость франшизы</div>
+							<div class="calc__info-value">
+								<span>$</span>
+								<div id="fPrice">1000</div>
+							</div>
+							<div class="calc__info-label">Вложений в рекламу </div>
+							<div class="calc__info-value">
+								<span>$</span>
+								<div id="advInfo">300</div>
+							</div>
+							<div class="calc__info-label">Цена товара для диллера</div>
+							<div class="calc__info-value">
+								<span>$</span>
+								<div id="priceInfo">107</div>
+							</div>
+							<div class="calc__info-label">Цена товара с наценкой</div>
+							<div class="calc__info-value">
+								<span>$</span>
+								<div id="ecInfo">350</div>
+							</div>
+							<div class="calc__info-label">Время работы сервиса</div>
+							<div class="calc__info-value">
+								<div id="monthsInfo">1</div>
+								<div class="calc__month">Мес</div>
+							</div>
+							<div class="calc__info-label">Чистая прибыль</div>
+							<div class="calc__info-value">
+								<span>$</span>
+								<div id="cleanInfo">1458</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<div class="footer__inner">
@@ -129,8 +235,8 @@
 			</div>
 		</footer>
 		<script src="libs/jquery-3.3.1.min.js"></script>
-		<script src="libs/nice-select/nice-select.min.js"></script>
-		<script src="js/js.js"></script>
+		<script src="libs/rangeslider/rangeslider.js"></script>
 		<script src="js/info.js"></script>
+		<script type="text/javascript"></script>
 	</body>
 </html>
