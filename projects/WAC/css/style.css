@@ -4232,3 +4232,160 @@ footer {
 	height: 80%;
 	object-fit: contain;
 }
+
+.serv {
+	max-width: 1660px;
+	width: 100%;
+	align-self: center;
+	display: flex;
+	box-sizing: border-box;
+	padding: 0 20px;
+	flex-direction: column;
+}
+
+.serv__nav {
+	align-self: center;
+	display: flex;
+}
+
+.serv__nav-link {
+	font-family: Muller;
+	color: #5a6885;
+	font-size: 25px;
+	transition: all 0.2s ease-out;
+	position: relative;
+}
+
+.serv__nav-link:hover {
+	color: #323b4e;
+	transition: all 0.2s ease-out;
+}
+
+.serv__nav-link:not(:last-child) {
+	margin-right: 60px;
+}
+
+.serv__nav-link:not(:last-child):after {
+	content: '';
+	display: block;
+	width: 7px;
+	height: 7px;
+	background-color: #c3c9d4;
+	border-radius: 50%;
+	position: absolute;
+	top: 8px;
+	right: -33px;
+}
+
+.serv__nav-link--active {
+	color: #41a548;
+}
+
+.serv__list {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.serv__card {
+	display: block;
+	width: 376px;
+	height: 356px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	user-select: none;
+	transition: all 0.2s ease-out;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+
+.serv .nice-select {
+	display: none;
+}
+
+.serv__card:not(:nth-child(4n)) {
+	margin-right: 38px;
+}
+
+.serv__card:hover {
+	box-shadow: 1.047px 19.973px 59px 0px rgba(50, 59, 78, 0.25);
+	transition: all 0.2s ease-out;
+}
+
+.serv__card-img > img {
+	pointer-events: none;
+}
+
+.serv__plus {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.2s ease-out;
+}
+
+.serv__title {
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	font-family: Muller;
+	font-size: 20px;
+	color: #fff;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.2s ease-out;
+}
+
+.serv__info {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: rgba(50,59,78, 0.4);
+	transition: all 0.2s ease-out;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+.serv__card:hover .serv__plus {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease-out;
+}
+
+.serv__card:hover .serv__title {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease-out;
+}
+
+.serv__card:hover > .serv__info {
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+	transition: all 0.2s ease-out;
+}
+
+.serv__text {
+	font-size: 17px;
+	color: #fff;
+}
+
+.btn--serv {
+	position: absolute;
+	bottom: 30px;
+	font-size: 15px;
+	border-radius: 20.5px;
+	padding: 10px 30px;
+}

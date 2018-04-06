@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/peppermint.suggested.css">
+		<link rel="stylesheet" href="libs/nice-select/nice-select.css">
+		<link rel="icon" href="img/title-icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+		<title>Наши услуги</title>
+	</head>
+	<body>
+		<header>
+			<div class="menu-btn">
+				<div class="hamburger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<span class="menu-btn__text">Меню</span>
+			</div>
+			<div class="header__info">
+				<span class="header__address">Томск, ул. Герцена 26</span>
+				<span>32-82-02</span>
+				<div class="btn header__consultation">Получить консультацию</div>
+			</div>
+			<a href="index.html" class="header__logo header__logo--desktop"><img src="img/logo-header-desktop.png"></a>
+			<a href="index.html" class="header__logo header__logo--mobile"><img src="img/logo-header.png"></a>
+			<a class="header__call" href="tel:+73822328202">Позвонить</a>
+			<div class="modal">
+				<div class="menu">
+					<div class="menu__title">Меню</div>
+					<a href="index.html">Главная</a>
+					<a href="catalog.html">Каталог</a>
+					<a href="services.html">Услуги</a>
+					<a href="objects.html">Наши объекты</a>
+					<a href="about.html">О нас</a>
+					<a href="news.html">Новости</a>
+					<a href="contacts.html">Контакты</a>
+				</div>
+				<div class="modal__info">
+					<div class="modal__address">Томск, ул. Герцена 26</div>
+					<div class="modal__email">info@teplovtomske.ru</div>
+					<div class="modal__caption">Отдел продаж</div>
+					<div class="modal__numbers">32-82-02</div>
+					<div class="modal__caption">Круглосуточная сервисная служба</div>
+					<div class="modal__numbers">50-51-05</div>
+				</div>
+				<div class="modal__consl">
+					<span class="modal__consl-title">Получить <br> консультацию</span>
+					<form class="form-style" action="">
+						<div class="form-style__inner">
+							<span class="form-style__label form-style__name">Имя</span>
+							<input class="form-style__input" type="text">
+							<span class="form-style__label form-style__phone">Телефон</span>
+							<input class="form-style__input form-style__input-mask" type="text" maxlength='12'>
+						</div>
+						<button class="form-style__button btn" type="submit">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<main>
+			<h6 class="ourservices__headline">
+				<span>Наши услуги</span>
+				<div class="title-border"></div>
+			</h6>
+			<div class="serv">
+				<!-- https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag -->
+				<select id="serv-nav" class="serv__nav-m">
+					<option value="">Базовые потребности</option>
+					<option selected value="">Комфорт и удобства</option>
+					<option value="">Помощь и поддержка</option>
+					<option value="">Альтернативная энергия</option>
+				</select>
+				<div class="serv__nav">
+					<a class="serv__nav-link" href="">Базовые потребности</a> 
+					<a class="serv__nav-link serv__nav-link--active" href="">Комфорт и удобства</a> <!-- active class -->
+					<a class="serv__nav-link" href="">Помощь и поддержка</a>
+					<a class="serv__nav-link" href="">Альтернативная энергия</a>
+				</div>
+				<div class="serv__list">
+					<div class="serv__card">
+						<div class="serv__card-img">
+							<img src="img/serv-7.png">
+						</div>
+						<div class="serv__plus">
+							<img src="img/serv_plus.png">
+						</div>
+						<div class="serv__title">Электрика</div>
+						<div class="serv__info">
+							<div class="serv__text">Заказывая электромонтажные работы в компании “Тепло и уют”, вы получаете гарантии безопасной работы, обеспечиваемые: профессионализмом команды, современным оборудованием, оперативностью выполнения работ.</div>
+							<a class="btn btn--serv" href="">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="serv__card">
+						<div class="serv__card-img">
+							<img src="img/serv-8.png">
+						</div>
+						<div class="serv__plus">
+							<img src="img/serv_plus.png">
+						</div>
+						<div class="serv__title">Вентиляция</div>
+						<div class="serv__info">
+							<div class="serv__text">Мы подарим глоток свежего воздуха вашему помещению. Создайте комфортный микроклимат, установив систему вентиляции.</div>
+							<a class="btn btn--serv" href="">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="serv__card">
+						<div class="serv__card-img">
+							<img src="img/serv-9.png">
+						</div>
+						<div class="serv__plus">
+							<img src="img/serv_plus.png">
+						</div>
+						<div class="serv__title">Газоснабжение</div>
+						<div class="serv__info">
+							<div class="serv__text">Устройство внутренних газопроводов в газифицируемых зданиях требует точного соблюдения всех требования ГОСТ и СНиП. Высокая ответственность этих систем требует четкого следованиям правилам монтажа и эксплуатируемым нормам, чтобы исключить возможность утечек или создания аварийных ситуаций.</div>
+							<a class="btn btn--serv" href="">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="serv__card">
+						<div class="serv__card-img">
+							<img src="img/serv-10.png">
+						</div>
+						<div class="serv__plus">
+							<img src="img/serv_plus.png">
+						</div>
+						<div class="serv__title">Заливка теплого пола</div>
+						<div class="serv__info">
+							<div class="serv__text">Для эффективного выполнения своих функций стяжка для теплого пола должна быть правильно замешана и уложена в полном соответствии с параметрами системы. В “Тепло и уют” знают все тонкости этого процесса.</div>
+							<a class="btn btn--serv" href="">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="serv__card">
+						<div class="serv__card-img">
+							<img src="img/serv-11.png">
+						</div>
+						<div class="serv__plus">
+							<img src="img/serv_plus.png">
+						</div>
+						<div class="serv__title">Бурение скважин</div>
+						<div class="serv__info">
+							<div class="serv__text">Живительная вода станет ближе. Профессиональное бурение скважин - проектирование, исследования, проведения работ, пуско-наладка.</div>
+							<a class="btn btn--serv" href="">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="serv__card">
+						<div class="serv__card-img">
+							<img src="img/serv-12.png">
+						</div>
+						<div class="serv__plus">
+							<img src="img/serv_plus.png">
+						</div>
+						<div class="serv__title">Проектирование</div>
+						<div class="serv__info">
+							<div class="serv__text">Прежде чем приступить к выполнению работ, предварительно нужно провести расчеты, замеры, составить план, чтобы результат нашей работы оправдал ваши ожидания.</div>
+							<a class="btn btn--serv" href="">Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer__inner">
+				<div class="footer__logo">
+					<img src="img/logo-footer.png">
+					<span class="copyrighted">© 2011–2017, ООО «Тепло и уют»</span>
+				</div>
+				<div class="footer__info">
+					<div class="footer__block footer__block--1">
+						<div class="footer__title">Режим работы</div>
+						<span class="footer__caption">Будни</span>
+						<span class="footer__numbers">9:00 - 19:00</span>
+						<span class="footer__caption">Суббота</span>
+						<span class="footer__numbers">10:00 - 15:00</span>
+					</div>
+					<div class="footer__block footer__block--2">
+						<div class="footer__title">Телефоны</div>
+						<span class="footer__caption">Отдел продаж</span>
+						<span class="footer__numbers">32-82-02</span>
+						<span class="footer__caption">Круглосуточная сервисная служба</span>
+						<span class="footer__numbers">50-51-05</span>
+					</div>
+					<div class="footer__block">
+						<div class="footer__title">Контакты</div>
+						<span class="footer__numbers footer__numbers--address">Томск, ул. Герцена 26</span>
+						<span class="footer__email">info@teplovtomske.ru</span>
+						<a href="index.html" class="footer__btn">Открыть контакты</a>
+						<div class="footer__social">
+							<a href="index.html"><img src="img/vk.png"></a>
+							<a href="index.html"><img src="img/fb.png"></a>
+							<a href="index.html"><img src="img/insta.png"></a>
+							<a href="index.html"><img src="img/ok.png"></a>
+							<a href="index.html"><img src="img/flamp.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="libs/nice-select/nice-select.min.js"></script>
+		<script src="js/serv.js"></script>
+	</body>
+</html>
