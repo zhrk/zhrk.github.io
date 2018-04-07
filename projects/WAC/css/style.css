@@ -4248,6 +4248,10 @@ footer {
 	display: flex;
 }
 
+.serv__nav-m {
+	display: none;
+}
+
 .serv__nav-link {
 	font-family: Muller;
 	color: #5a6885;

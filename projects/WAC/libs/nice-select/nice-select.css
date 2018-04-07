@@ -37,7 +37,7 @@
   width: 100%;
   border-bottom: 1px solid #d7e3f7;
   font: Muller;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .nice-select:after {
@@ -153,9 +153,9 @@
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-position: 13px center;
-  color: #999AB0;
+  color: #5a6885;
   font: Muller;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .nice-select .option:not(:last-child) {

@@ -68,18 +68,18 @@
 				<div class="title-border"></div>
 			</h6>
 			<div class="serv">
-				<!-- https://stackoverflow.com/questions/2000656/using-href-links-inside-option-tag -->
-				<select id="serv-nav" class="serv__nav-m">
-					<option selected value="">Базовые потребности</option>
-					<option value="">Комфорт и удобства</option>
-					<option value="">Помощь и поддержка</option>
-					<option value="">Альтернативная энергия</option>
+				<!-- mobile links -->
+				<select id="serv-nav" class="serv__nav-m" onchange="location = this.value;">
+					<option selected value="serv.html">Базовые потребности</option>
+					<option value="serv2.html">Комфорт и удобства</option>
+					<option value="serv3.html">Помощь и поддержка</option>
+					<option value="serv4.html">Альтернативная энергия</option>
 				</select>
 				<div class="serv__nav">
-					<a class="serv__nav-link serv__nav-link--active" href="">Базовые потребности</a> <!-- active class -->
-					<a class="serv__nav-link" href="">Комфорт и удобства</a> 
-					<a class="serv__nav-link" href="">Помощь и поддержка</a>
-					<a class="serv__nav-link" href="">Альтернативная энергия</a>
+					<a class="serv__nav-link serv__nav-link--active" href="serv.html">Базовые потребности</a> <!-- active class -->
+					<a class="serv__nav-link" href="serv2.html">Комфорт и удобства</a> 
+					<a class="serv__nav-link" href="serv3.html">Помощь и поддержка</a>
+					<a class="serv__nav-link" href="serv4.html">Альтернативная энергия</a>
 				</div>
 				<div class="serv__list">
 					<div class="serv__card">
