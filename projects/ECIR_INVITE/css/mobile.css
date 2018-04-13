@@ -193,4 +193,8 @@
 		font-size: 20px;
 	}
 
+	.welcome__social > span {
+		font-size: 12px;
+	}
+
 }
