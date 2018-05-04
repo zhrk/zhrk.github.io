@@ -22,7 +22,7 @@
     padding-right: 30px;
     max-width: 375px;
     height: 600px;
-    background-image: url('../img/bnr-bg-m-ru.png');
+    background-image: url('../img/wut-m-ru.png');
     background-position: 0;
     align-items: center;
   }
@@ -44,7 +44,7 @@
   }
 
   .bnr--en {
-    background-image: url('../img/bnr-bg-m-en.png') !important;
+    background-image: url('../img/wut-m-en.png') !important;
   }
 
 }
