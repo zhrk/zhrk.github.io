@@ -3178,8 +3178,6 @@ footer {
 	border-radius: 5px;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 	background: #fff;
-	padding-left: 40px;
-	padding-right: 40px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -3187,6 +3185,8 @@ footer {
 }
 
 .faq__card-title {
+	padding-left: 40px;
+	padding-right: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -3224,6 +3224,8 @@ footer {
 }
 
 .faq__info {
+	padding-left: 40px;
+	padding-right: 40px;
 	max-height: 0;
 	overflow: hidden;
 	transition: all 0.2s ease-in-out;
