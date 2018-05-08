@@ -767,4 +767,49 @@
 		text-align: center;
 	}
 
+	.faq {
+		padding-top: 30px;
+	}
+
+	.faq__inner {
+		padding: 10px;
+	}
+
+	.faq__content {
+		flex-direction: column;
+	}
+
+	.faq h5 {
+		text-align: center;
+	}
+
+	.faq__nav-item.active:after {
+		display: none;
+	}
+
+	.faq__nav {
+		border: 0;
+		margin-bottom: 40px;
+	}
+
+	.faq__nav-item {
+		height: 40px;
+	}
+
+	.faq__headline > span {
+		font-size: 20px;
+	}
+
+	.faq__card-title > span {
+		font-size: 14px;
+	}
+
+	.faq__list {
+		margin: 0;
+	}
+
+	.faq__info--visible  {
+		max-height: 10000px;
+	}
+
 }
