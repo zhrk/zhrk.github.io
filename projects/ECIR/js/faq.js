@@ -5,7 +5,7 @@ $(".faq__card-title").each(function() {
   });
 });
 
-/*$('body').scrollspy({target: "#myScrollspy"})*/
+$('body').scrollspy({target: "#spy", offset: 250});
 
 var startNavOffset = $(".faq__nav").offset()['top'];
 
