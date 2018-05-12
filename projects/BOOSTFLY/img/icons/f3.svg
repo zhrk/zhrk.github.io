@@ -1,0 +1,10 @@
+<svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 0H0V3.33319H5V0Z" transform="translate(32.333 15.3575)" fill="#3579FF"/>
+<path d="M3.3316 0H0V4.99823H3.3316V0Z" transform="translate(30.7861 2.88354) rotate(44.9878)" fill="#3579FF"/>
+<path d="M4.99823 0H0V3.3316H4.99823V0Z" transform="translate(7.21484 2.88257) rotate(44.9919)" fill="#3579FF"/>
+<path d="M5 0H0V3.33319H5V0Z" transform="translate(0.666504 15.3575)" fill="#3579FF"/>
+<path d="M3.33326 0H0V4.9999H3.33326V0Z" transform="translate(7.21484 31.1654) rotate(-135)" fill="#3579FF"/>
+<path d="M4.9999 0H0V3.33326H4.9999V0Z" transform="translate(30.7847 31.1661) rotate(-135)" fill="#3579FF"/>
+<path d="M5 9.99958C7.76142 9.99958 10 7.7611 10 4.99979C10 2.23848 7.76142 0 5 0C2.23858 0 0 2.23848 0 4.99979C0 7.7611 2.23858 9.99958 5 9.99958Z" transform="translate(14 0.331543)" fill="#3579FF"/>
+<path d="M16.6667 8.33299C16.6667 3.73818 12.9283 0 8.33333 0C3.73833 0 0 3.73818 0 8.33299V13.3328C0 14.2527 0.746667 14.9994 1.66667 14.9994H3.33333V21.6658C3.33333 22.5857 4.08 23.3324 5 23.3324H11.6667C12.5867 23.3324 13.3333 22.5857 13.3333 21.6658V14.9994H15C15.92 14.9994 16.6667 14.2527 16.6667 13.3328V8.33299Z" transform="translate(10.6665 10.3312)" fill="#3579FF"/>
+</svg>
