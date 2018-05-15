@@ -1,0 +1,208 @@
+@media screen and (max-width: 1367px) {
+	
+	.welcome__inner {
+		padding-top: 100px;
+	}
+
+	.gift {
+		background-position: 95% bottom;
+	}
+
+}
+
+@media screen and (max-width: 1025px) {
+
+	.welcome__video {
+		display: none;
+	}
+
+	.welcome__filter {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 60px;
+	}
+
+	.welcome {
+		height: auto;
+	}
+
+	.welcome__text3 {
+		margin-top: 100px;
+	}
+
+	.who__inner {
+		padding-right: 20px;
+	}
+
+	.gift {
+		padding-left: 20px;
+		background-position: 360px bottom;
+	}
+
+	footer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	footer .who__sub > span {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+
+	.welcome {
+		padding-right: 20px;
+	}
+
+	.welcome__inner {
+		padding-top: 40px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.welcome__text2 {
+		font-size: 26px;
+	}
+	
+	.who__inner {
+		flex-direction: column;
+		height: auto;
+		padding: 0;
+	}
+
+	.who__info {
+		order: -1;
+	}
+
+	.who h4 {
+		margin-top: 40px;
+		font-size: 30px;
+		align-self: center;
+	}
+
+	.who__sub {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.who__sub > span {
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	.who__text {
+		font-size: 20px;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.who__text > br {
+		display: none;
+	}
+
+	.input-form {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.input-form > input {
+		height: 53px;
+		border-radius: 5px;
+		width: 100%;
+	}
+
+	.input-form > div {
+		margin-top: 10px;
+		border-radius: 5px;
+		height: 53px;
+		align-self: center;
+		width: 100%;
+	}
+
+	.footer__inner {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	.footer__inner > div {
+		margin-bottom: 20px;
+	}
+
+	.footer__rules > a {
+		align-self: center;
+	}
+
+	.gift__price > div {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.gift {
+		box-shadow: inset 0px 10px 20px #E1ECF8;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.gift h4 {
+		text-align: center;
+	}
+
+	.welcome__text3 {
+		margin-top: 40px;
+	}
+
+}
+
+@media screen and (max-width: 321px) {
+	
+	.who {
+		overflow: hidden;
+	}
+
+	.who__text {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.gift__price {
+		flex-direction: column;
+		height: auto;
+		align-self: center;
+	}
+
+	.gift__price > div {
+		height: 70px;
+		border: 0;
+	}
+
+	.gift__price-old:after {
+		width: 100px;
+	}
+
+	.gift__text {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.gift__price > div:first-child {
+		border-bottom: 2px solid #EAF6FF;
+	}
+
+	.welcome__text2 {
+		font-size: 20px;
+	}
+
+	.welcome__social > span {
+		font-size: 12px;
+	}
+
+}

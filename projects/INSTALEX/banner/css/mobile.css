@@ -1,0 +1,67 @@
+@media screen and (max-width: 1024px) {
+	
+  .wut {
+    background-position: -150px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  .wut {
+    background-position: -90px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  
+  .wut {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 375px;
+    height: 600px;
+    background-image: url('../img/wut-m-ru.png');
+    background-position: 0;
+    align-items: center;
+  }
+
+  .wut__text {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .wut__sale {
+    font-size: 18px;
+    padding-left: 0px;
+    padding-right: 20px;
+    align-self: center;
+  }
+
+  .wut__sale > br {
+    display: none;
+  }
+
+  .wut--en {
+    background-image: url('../img/wut-m-en.png') !important;
+  }
+
+}
+
+@media screen and (max-width: 394px) {
+  
+  .wut__sale {
+    font-size: 14px;
+  }
+
+  .wut__value {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .wut__text {
+    font-size: 30px;
+  }
+
+}
