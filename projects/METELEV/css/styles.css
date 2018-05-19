@@ -40,8 +40,14 @@ input {
   /* background-image: url('../img/welcome-bg.png'); */
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  display: flex;
+}
+
+.welcome__text-container {
+  height: 880px;
+  width: 880px;
   overflow: hidden;
+  position: relative;
 }
 
 .welcome__text-1 {
@@ -68,8 +74,8 @@ input {
 
 .welcome__circle {
   position: absolute;
-  height: 1488px;
-  width: 1488px;
+  height: 4000px;
+  width: 4000px;
   background: radial-gradient(transparent 150px, rgb(3, 4, 13) 150px);
   z-index: 3;
 }
