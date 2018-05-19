@@ -60,7 +60,7 @@ input {
 .welcome__text-2 {
   font-size: 200px;
   position: absolute;
-  animation: glitch 0.8s cubic-bezier(.25, .46, .45, .94) infinite;
+  animation: glitch 2s cubic-bezier(.25, .46, .45, .94) infinite;
   z-index: 1;
   user-select: none;
 }
@@ -87,19 +87,19 @@ input {
     color: #fff;
   }
   20% {
-    transform: translate(-3px, 3px);
+    transform: translate(-5px, 5px);
     color: #FF0000;
   }
   40% {
-    transform: translate(-3px, -3px);
+    transform: translate(-5px, -5px);
     color: #FAFF00;
   }
   60% {
-    transform: translate(3px, 3px);
+    transform: translate(5px, 5px);
     color: #FF0AFF;
   }
   80% {
-    transform: translate(3px, -3px);
+    transform: translate(5px, -5px);
     color: #000AFF;
   }
   100% {
