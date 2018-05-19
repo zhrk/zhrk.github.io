@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+input {
+  font-size: 20px;
+  font-family: IBM Plex Sans;
+  text-overflow: ellipsis;
+}
+
+::selection {
+  background-color: #fff;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  background-color: #03040D;
+}
+
+.welcome__inner {
+  height: 880px;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  /* background-image: url('../img/welcome-bg.png'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome__text-1 {
+  font-size: 200px;
+  position: absolute;
+  z-index: 2;
+  user-select: none;
+}
+
+.welcome__text-2 {
+  font-size: 200px;
+  position: absolute;
+  animation: glitch 0.8s cubic-bezier(.25, .46, .45, .94) infinite;
+  z-index: 1;
+  user-select: none;
+}
+
+.welcome__text-3 {
+  font-size: 200px;
+  position: absolute;
+  z-index: 4;
+  user-select: none;
+}
+
+.welcome__circle {
+  position: absolute;
+  height: 1488px;
+  width: 1488px;
+  background: radial-gradient(transparent 150px, rgb(3, 4, 13) 150px);
+  z-index: 3;
+}
+
+@keyframes glitch {
+  
+  0% {
+    transform: translate(0);
+    color: #fff;
+  }
+  20% {
+    transform: translate(-3px, 3px);
+    color: #FF0000;
+  }
+  40% {
+    transform: translate(-3px, -3px);
+    color: #FAFF00;
+  }
+  60% {
+    transform: translate(3px, 3px);
+    color: #FF0AFF;
+  }
+  80% {
+    transform: translate(3px, -3px);
+    color: #000AFF;
+  }
+  100% {
+    transform: translate(0);
+    color: #fff;
+  }
+
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  background-color: #03040D;
+}
+
+.mission__inner {
+  height: 800px;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  background-image: url('../img/mission-bg.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
