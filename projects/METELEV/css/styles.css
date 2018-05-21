@@ -124,6 +124,8 @@ input {
   width: 805px;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .welcome__text-1 {
@@ -164,6 +166,8 @@ input {
   margin-top: 85px;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: all 3s ease-in-out;
 }
 
 .welcome__logo {
@@ -216,6 +220,8 @@ input {
 .mission__container {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .mission__title {
@@ -256,6 +262,8 @@ input {
   padding-right: 15px;
   box-sizing: border-box;
   padding-top: 130px;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .today__row {
@@ -324,6 +332,8 @@ input {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .work__headline {
@@ -337,6 +347,8 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 300px;
 }
 
 .work__list > a {
@@ -344,7 +356,6 @@ input {
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #fff;
-  margin-bottom: 75px;
   transition: all 0.15s ease-in-out;
   padding-bottom: 1px;
 }
@@ -379,6 +390,8 @@ input {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .contacts__headline {
@@ -565,7 +578,6 @@ input {
   left: 0;
   position: relative;
   transition: all 0.6s ease-in-out;
-  opacity: 1;
   position: absolute;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -580,6 +592,8 @@ input {
 .history__title {
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .history__title > span {
@@ -623,6 +637,8 @@ input {
   display: flex;
   position: relative;
   z-index: 2;
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
 .history__left {
@@ -770,8 +786,17 @@ input {
   font-size: 56px;
 }
 
-.history__desc-title > span {
+.history__desc-title > a {
   border-bottom: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 1px;
+  transition: all 0.15s ease-in-out;
+}
+
+.history__desc-title > a:hover {
+  border-bottom: 3px solid #fff;
+  transition: all 0.15s ease-in-out;
 }
 
 .history__desc-text {
@@ -925,11 +950,11 @@ input {
 }
 
 .history__slide-logo {
-  height: 70px;
+  height: 80px;
 }
 
 .history__slide-link {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .history__slide-link > a {

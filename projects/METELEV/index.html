@@ -191,21 +191,21 @@
             </div>
             <div class="history__stats">
               <div class="history__stats-item">
-                <div class="history__stats-value">{{ currentCountries }}</div>
+                <div class="history__stats-value">{{ animatedCountries }}</div>
                 <div class="history__stats-title">Страны присутствия</div>
                 <div class="history__stats-bar">
                   <div v-bind:style="{ 'width': renderBar(currentCountries, totalCountries), 'transition': 'all 0.4s ease-in-out' }" class="history__stats-progress"></div>
                 </div>
               </div>
               <div class="history__stats-item">
-                <div class="history__stats-value">{{ currentUsers }}</div>
+                <div class="history__stats-value">{{ animatedUsers }}</div>
                 <div class="history__stats-title">Пользователей</div>
                 <div class="history__stats-bar">
                   <div v-bind:style="{ 'width': renderBar(currentUsers, totalUsers), 'transition': 'all 0.4s ease-in-out' }" class="history__stats-progress"></div>
                 </div>
               </div>
               <div class="history__stats-item">
-                <div class="history__stats-value">{{ currentEmployees }}</div>
+                <div class="history__stats-value">{{ animatedEmployees }}</div>
                 <div class="history__stats-title">Сотрудников</div>
                 <div class="history__stats-bar">
                   <div v-bind:style="{ 'width': renderBar(currentEmployees, totalEmployees), 'transition': 'all 0.4s ease-in-out' }" class="history__stats-progress"></div>
@@ -222,125 +222,14 @@
               <span>История</span>
             </div>
             <div class="history__slides-list">
-              <div class="history__slide">
+              <div class="history__slide" v-for="(slide, index) in slides">
                 <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
+                  <img v-bind:src="'img/logos/' + slide.logo" alt="logo">
                 </div>
                 <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
+                  <a v-bind:href="slide.link">{{ renderSlideString('title', language, index)  }}</a>
                 </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Мнoгофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
-              </div>
-              <div class="history__slide">
-                <div class="history__slide-logo">
-                  <img src="img/logos/instalex.svg" alt="logo">
-                </div>
-                <div class="history__slide-link">
-                  <a href="">Insalex.ru</a>
-                </div>
-                <div class="history__slide-desc">
-                  <p>Многофункциональный онлайн-сервис для упрвавления своими Instagram аккаунтами для личного и коммерческого использования.</p>
-                  <p>Подробная статистика и аналитика продвижения. Инструменты для автоматизации работы с Instagram.</p>
-                </div>
+                <div v-html="renderSlideString('description', language, index)" class="history__slide-desc"></div>
               </div>
             </div>
             <div class="history__slides-nav"></div>
@@ -405,6 +294,8 @@
       </div>
 
     </main>
+    <script src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
