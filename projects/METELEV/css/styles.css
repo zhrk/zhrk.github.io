@@ -297,6 +297,9 @@ input {
   background-color: #03040D;
   position: relative;
   overflow: hidden;
+  background-image: url('../img/work-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .work__inner {

@@ -475,7 +475,23 @@ $(document).ready(function(){
     infinite: false,
     appendArrows: $(".history__slides-nav"),
     prevArrow: '<div class="history__slides-prev"><img src="img/icons/history-slide-prev.svg" alt="prev"><span>Назад</span></div>',
-    nextArrow: '<div class="history__slides-next"><span>Далее</span><img src="img/icons/history-slide-next.svg" alt="next"></div>'
+    nextArrow: '<div class="history__slides-next"><span>Далее</span><img src="img/icons/history-slide-next.svg" alt="next"></div>',
+    responsive: [
+      {
+        breakpoint: 1279,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+      breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ],
   });
 
   /*os.on('enter', '.welcome__text-3', (element, event) => {
