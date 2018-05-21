@@ -478,36 +478,8 @@ $(document).ready(function(){
     nextArrow: '<div class="history__slides-next"><span>Далее</span><img src="img/icons/history-slide-next.svg" alt="next"></div>'
   });
 
-  os.on('enter', '.welcome__text-container', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.welcome__side', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.mission__container', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.today__inner', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.history__title', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.history__info', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.work__inner', (element, event) => {
-    element.style.opacity = 1;
-  });
-
-  os.on('enter', '.contacts__inner', (element, event) => {
-    element.style.opacity = 1;
-  });
+  /*os.on('enter', '.welcome__text-3', (element, event) => {
+    element.classList.add('slideInUp');
+  });*/
 
 });
