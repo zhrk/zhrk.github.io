@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="libs/animate.css">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600|IBM+Plex+Serif:400i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <title>Metelev</title>
   </head>
   <body>
@@ -31,9 +31,11 @@
             <img src="img/welcome-bg.png" alt="logo">
           </div>
           <div class="welcome__text-container">
-            <div class="welcome__text-1">Драйв <br> созда - <br> вать</div>
-            <div class="welcome__text-2">Драйв <br> созда - <br> вать</div>
-            <div class="welcome__text-3">Драйв <br> созда - <br> вать</div>
+            <div class="welcome__text-1">Драйв <br> созда − <br> вать</div>
+            <div class="welcome__text-2">Драйв <br> созда − <br> вать</div>
+            <div class="welcome__text-4">Драйв <br> созда − <br> вать</div>
+            <div class="welcome__text-5">Драйв <br> созда − <br> вать</div>
+            <div class="welcome__text-3">Драйв <br> созда − <br> вать</div>
             <div class="welcome__circle"></div>
           </div>
           <div class="welcome__side">
@@ -64,14 +66,14 @@
       <div class="today">
         <div class="today__inner">
           <div class="today__row">
-            <h1>Crown <br> Мedia <br> сегодня</h1>
+            <h1 class="today__h1">Crown <br> Мedia <br> сегодня</h1>
             <div class="today__list-col">
               <div class="today__item">
-                <div class="today__item-number">16</div>
+                <div class="today__item-number today__item--projects">0</div>
                 <div class="today__item-desc">Личных проектов</div>
               </div>
               <div class="today__item">
-                <div class="today__item-number">190</div>
+                <div class="today__item-number today__item--fr">0</div>
                 <div class="today__item-desc">Запущенных франшиз</div>
               </div>
             </div>
@@ -79,19 +81,19 @@
           <div class="today__row">
             <div class="today__list-row">
               <div class="today__item">
-                <div class="today__item-number">6</div>
+                <div class="today__item-number today__item--years">0</div>
                 <div class="today__item-desc">Лет опыта</div>
               </div>
               <div class="today__item">
-                <div class="today__item-number">2 <span>млн</span> </div>
+                <div class="today__item-number"><div class="today__item--users">0</div> <span>млн</span> </div>
                 <div class="today__item-desc">Пользователей</div>
               </div>
               <div class="today__item">
-                <div class="today__item-number">22</div>
+                <div class="today__item-number today__item--contry">0</div>
                 <div class="today__item-desc">Страны присутствия</div>
               </div>
               <div class="today__item">
-                <div class="today__item-number">19</div>
+                <div class="today__item-number today__item--emp">0</div>
                 <div class="today__item-desc">Сотрудников лаборатории</div>
               </div>
             </div>
@@ -126,7 +128,7 @@
             <div v-bind:class="{ active: isCurrentCircle(22) }" style="top: 180px; left: 640px;" class="history__map-circle"></div>
           </div>
           <div class="history__title">
-            <span>История</span>
+            <span class="history__title-span">История</span>
             <div>С 2012 года мы стремимся <br> создавать самые мощные <br> и эффективные сайты для <br> пользователей на земле.</div>
           </div>
           <div class="history__info">
@@ -280,6 +282,8 @@
           <div class="contacts__side">
             <div class="contacts__side-container">
               <div class="contacts__side-text-1">Или <br> пишите <br> сюда</div>
+              <div class="contacts__side-text-3">Или <br> пишите <br> сюда</div>
+              <div class="contacts__side-text-4">Или <br> пишите <br> сюда</div>
               <div class="contacts__side-text-2">Или <br> пишите <br> сюда</div>
             </div>
             <div class="contacts__tg">
@@ -298,6 +302,7 @@
     <script src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery.animateNumber.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/js.js"></script>

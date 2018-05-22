@@ -348,26 +348,38 @@ var app = new Vue({
   },
   methods: {
     selectYear: function (year) {
-      for (var i = 0; i < this.projects.length; i++) {
-        if(this.projects[i].year === year) {
-          this.month = this.projects[i].month;
-          this.year = year;
-          this.mapCircleId = this.projects[i].mapCircleId;
-          this.currentLogo = this.projects[i].currentLogo;
-          this.currentCountries = this.projects[i].countries;
-          this.currentUsers = this.projects[i].users;
-          this.currentEmployees = this.projects[i].employees;
-          break;
-        }
+      if (this.year !== year) {
+        document.querySelector('.history__left-col').classList.add('history__left-col--animate');
+        setTimeout(function() {
+          for (var i = 0; i < app.projects.length; i++) {
+            if(app.projects[i].year === year) {
+              app.month = app.projects[i].month;
+              app.year = year;
+              app.mapCircleId = app.projects[i].mapCircleId;
+              app.currentLogo = app.projects[i].currentLogo;
+              app.currentCountries = app.projects[i].countries;
+              app.currentUsers = app.projects[i].users;
+              app.currentEmployees = app.projects[i].employees;
+              break;
+            }
+          };
+          document.querySelector('.history__left-col').classList.remove('history__left-col--animate');
+        }, 800);
       }
     },
     selectMonth: function (month, mapCircleId, currentLogo, currentCountries, currentUsers, currentEmployees) {
-      this.month = month;
-      this.mapCircleId = mapCircleId;
-      this.currentLogo = currentLogo;
-      this.currentCountries = currentCountries;
-      this.currentUsers = currentUsers;
-      this.currentEmployees = currentEmployees;
+      if (this.month !== month) {
+        document.querySelector('.history__left-col').classList.add('history__left-col--animate');
+        setTimeout(function() {
+          app.month = month;
+          app.mapCircleId = mapCircleId;
+          app.currentLogo = currentLogo;
+          app.currentCountries = currentCountries;
+          app.currentUsers = currentUsers;
+          app.currentEmployees = currentEmployees;
+          document.querySelector('.history__left-col').classList.remove('history__left-col--animate');
+        }, 800);
+      }
     },
     translateMonth: function (language, month) {
       return this.months[language][month];
@@ -427,7 +439,7 @@ var app = new Vue({
     },
     renderSlideString: function (string, language, index) {
       return this.slides[index][string + language];
-    },
+    }
   },
   mounted: function () {
 
@@ -464,7 +476,7 @@ var app = new Vue({
       TweenLite.to(this.$data, 0.5, { tweenedEmployees: newValue });
     }
   },
-})
+});
 
 var os = new OnScreen();
 
@@ -494,8 +506,38 @@ $(document).ready(function(){
     ],
   });
 
-  /*os.on('enter', '.welcome__text-3', (element, event) => {
-    element.classList.add('slideInUp');
-  });*/
+  os.on('enter', '.mission__title', (element, event) => {
+    element.classList.add('mission__title--active');
+  });
+
+  var todayChecked = false;
+
+  os.on('enter', '.today__h1', (element, event) => {
+    element.classList.add('today__h1--active');
+
+    if (todayChecked === false) {
+      $('.today__item--projects').animateNumber({ number: 16 });
+      $('.today__item--fr').animateNumber({ number: 190 });
+      $('.today__item--years').animateNumber({ number: 6 });
+      $('.today__item--users').animateNumber({ number: 2 });
+      $('.today__item--contry').animateNumber({ number: 22 });
+      $('.today__item--emp').animateNumber({ number: 19 });
+      todayChecked = true;
+    }
+
+  });
+
+  os.on('enter', '.history__title-span', (element, event) => {
+    element.classList.add('history__title-span--active');
+  });
+
+  os.on('enter', '.work__headline', (element, event) => {
+    element.classList.add('work__headline--active');
+  });
+
+  os.on('enter', '.contacts__headline', (element, event) => {
+    element.classList.add('contacts__headline--active');
+  });
+
 
 });

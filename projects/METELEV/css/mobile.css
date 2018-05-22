@@ -1,4 +1,8 @@
 @media screen and (max-width: 1279px) {
+
+  .welcome__circle {
+    display: none;
+  }
   
   .history__slides-list .slick-track {
     box-sizing: border-box;
@@ -46,6 +50,19 @@
 
   .history__left {
     max-width: 750px;
+  }
+
+  .welcome__text-1,
+  .welcome__text-2,
+  .welcome__text-3,
+  .welcome__text-4,
+  .welcome__text-5 {
+    font-size: 180px;
+    line-height: 180px;
+  }
+
+  .today__item {
+    min-width: 170px;
   }
 
 }
@@ -172,16 +189,13 @@
     display: none;
   }
 
-  .welcome__text-1 {
-    font-size: 150px;
-  }
-
-  .welcome__text-2 {
-    font-size: 150px;
-  }
-
-  .welcome__text-3 {
-    display: none;
+  .welcome__text-1,
+  .welcome__text-2,
+  .welcome__text-3,
+  .welcome__text-4,
+  .welcome__text-5 {
+    font-size: 140px;
+    line-height: 140px;
   }
 
   .welcome__circle {
@@ -286,7 +300,10 @@
   }
 
   .welcome__text-1,
-  .welcome__text-2 {
+  .welcome__text-2,
+  .welcome__text-3,
+  .welcome__text-4,
+  .welcome__text-5 {
     font-size: 80px;
     line-height: 80px;
   }
