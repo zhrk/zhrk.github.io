@@ -398,7 +398,6 @@ input {
   display: flex;
   justify-content: center;
   background-color: #03040D;
-  position: relative;
   overflow: hidden;
   background-image: url('../img/work-bg.png');
   background-repeat: no-repeat;
@@ -463,14 +462,6 @@ input {
 
 .work__list > a:hover:after {
   animation: underline ease-in-out 0.5s;
-}
-
-.work__bg {
-  top: 480px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
 }
 
 .contacts {
