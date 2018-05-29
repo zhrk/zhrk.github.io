@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="40px" viewBox="0 0 32 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>9B986C8F-75BE-4393-9C50-FB08D64A28F0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main" transform="translate(-704.000000, -2258.000000)">
+            <g id="Group" transform="translate(550.000000, 2231.000000)">
+                <g id="round-find_in_page-24px" transform="translate(146.000000, 23.000000)">
+                    <g id="Bounding_Boxes">
+                        <polygon id="Shape" points="0 0 48 0 48 48 0 48"></polygon>
+                    </g>
+                    <g id="Rounded" transform="translate(8.000000, 4.000000)" fill="#FF8D00" fill-rule="nonzero">
+                        <path d="M32,35.18 L32,13.66 C32,12.6 31.58,11.58 30.82,10.84 L21.16,1.18 C20.42,0.42 19.4,0 18.34,0 L4,0 C1.8,0 0.02,1.8 0.02,4 L0,36 C0,38.2 1.78,40 3.98,40 L28,40 C28.9,40 29.7,39.7 30.38,39.2 L21.52,30.34 C19.8,31.46 17.74,32.1 15.52,31.98 C10.78,31.76 6.72,28.06 6.08,23.36 C5.2,16.66 10.98,11 17.74,12.14 C21.64,12.8 24.88,15.84 25.74,19.7 C26.4,22.62 25.76,25.34 24.34,27.5 L32,35.18 Z M10,22 C10,25.32 12.68,28 16,28 C19.32,28 22,25.32 22,22 C22,18.68 19.32,16 16,16 C12.68,16 10,18.68 10,22 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

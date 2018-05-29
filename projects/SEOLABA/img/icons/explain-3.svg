@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="29px" viewBox="0 0 40 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>113B08E8-2EA0-4696-9195-ED386B3C52BC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main" transform="translate(-1123.000000, -2263.000000)">
+            <g id="Group" transform="translate(973.000000, 2231.000000)">
+                <g id="round-low_priority-24px" transform="translate(170.000000, 47.000000) scale(1, -1) translate(-170.000000, -47.000000) translate(146.000000, 23.000000)">
+                    <g id="Bounding_Boxes">
+                        <polygon id="Shape" points="0 0 48 0 48 48 0 48"></polygon>
+                    </g>
+                    <g id="Rounded_1_" transform="translate(4.000000, 10.000000)" fill="#00FF9D" fill-rule="nonzero">
+                        <path d="M26,0 L38,0 C39.1,0 40,0.9 40,2 C40,3.1 39.1,4 38,4 L26,4 C24.9,4 24,3.1 24,2 C24,0.9 24.9,0 26,0 Z M26,11 L38,11 C39.1,11 40,11.9 40,13 C40,14.1 39.1,15 38,15 L26,15 C24.9,15 24,14.1 24,13 C24,11.9 24.9,11 26,11 Z M26,22 L38,22 C39.1,22 40,22.9 40,24 C40,25.1 39.1,26 38,26 L26,26 C24.9,26 24,25.1 24,24 C24,22.9 24.9,22 26,22 Z M15.7,28.3 L19.28,24.72 C19.68,24.32 19.68,23.7 19.28,23.3 L15.7,19.72 C15.08,19.08 14,19.52 14,20.42 L14,27.6 C14,28.48 15.08,28.92 15.7,28.3 Z M14,22 L13.4,22 C8.7,22 4.5,18.58 4.04,13.9 C3.52,8.54 7.74,4 13,4 L18,4 C19.1,4 20,3.1 20,2 C20,0.9 19.1,0 18,0 L13,0 C5.28,0 -0.92,6.8 0.12,14.72 C0.96,21.28 6.86,26 13.46,26 L14,26 L14,22 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
