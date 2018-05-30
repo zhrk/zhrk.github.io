@@ -1,11 +1,3 @@
-@media screen and (max-width: 1919px) {
-
-  .team__list {
-    padding-left: 40px;
-  }
-
-}
-
 @media screen and (max-width: 1239px) {
 
   .header__logo {
@@ -195,14 +187,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-
-  .team__list {
-    padding-left: 60px;
-  }
-
-  .team .slick-dots {
-    transform: translateX(-60px);
-  }
   
   .why__inner {
     background-image: none;
@@ -322,10 +306,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
-  .team__list {
-    padding-left: 50px;
-  }
 
   .welcome {
     background-image: none;

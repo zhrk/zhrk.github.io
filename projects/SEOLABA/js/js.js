@@ -27,51 +27,44 @@ $('a[href*="#"]')
   }
 });
 
-var TeamSlidesToShow;
-var TeamSlidesToShow = Math.floor(window.innerWidth/286);
+var teamSlidesToShow;
+var teamSlidesToShow = Math.floor(window.innerWidth/286);
 
 $('.team__list').slick({
   arrows: false,
+  centerMode: true,
   dots: true,
-  infinte: false,
   slidesToShow: 5,
   slidesToScroll: 5,
   responsive: [
     {
-      breakpoint: 2000,
-      settings: {
-        slidesToShow: 5,
-        slidesToScroll: 5
-      }
-    },
-    {
-      breakpoint: 1367,
+      breakpoint: 1441,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
       }
     },
     {
       breakpoint: 1025,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
       }
     },
     {
       breakpoint: 769,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
       }
     },
     {
-      breakpoint: 420,
+      breakpoint: 425,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
-    },
+    }
   ]
 });
 
@@ -86,6 +79,14 @@ $(".header__close").click(function() {
 $(".popup__form-close").click(function() {
   $(".popup__form").removeClass("popup__form--visible");
 });
+
+$(".popup__form").click(function() {
+  $(".popup__form").removeClass("popup__form--visible");
+});
+
+$('.feedback__form').click(function(e){
+   e.stopPropagation();
+});  
 
 
 $('*[data-popup="form"]').each(function(index) {
