@@ -1,13 +1,5 @@
 var TeamSlidesToShow;
 var TeamSlidesToShow = Math.floor(window.innerWidth/286);
-var rCounter = 0;
-
-window.onresize = function() {
-  if (rCounter < 1) {
-    rCounter = rCounter + 1;
-    location.reload(); 
-  }
-}
 
 $('.team__list').slick({
   centerMode: true,
