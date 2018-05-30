@@ -1,5 +1,9 @@
 @media screen and (max-width: 1239px) {
 
+  .header__logo {
+    transform: none;
+  }
+
   .header__menu {
     display: block;
   }
@@ -160,14 +164,6 @@
     font-size: 22px;
   }
 
-  .partners__list {
-    justify-content: center;
-  }
-
-  .partners__list > .partners__card:not(:nth-child(6n)) {
-    margin-right: 60px;
-  }
-
   .feedback__inner {
     padding-left: 20px;
     padding-right: 20px;
@@ -191,6 +187,14 @@
 }
 
 @media screen and (max-width: 1023px) {
+
+  .team__list {
+    padding-left: 60px;
+  }
+
+  .team .slick-dots {
+    transform: translateX(-60px);
+  }
   
   .why__inner {
     background-image: none;
@@ -278,19 +282,6 @@
     width: 350px;
   }
 
-  .partners__list {
-    align-self: center;
-    max-width: 516px;
-  }
-
-  .partners__list > .partners__card:not(:nth-child(6n)) {
-    margin-right: 0;
-  }
-
-  .partners__list > .partners__card:not(:nth-child(4n)) {
-    margin-right: 32px;
-  }
-
   .feedback {
     margin-top: 0;
     padding-bottom: 40px;
@@ -314,16 +305,26 @@
     max-width: 400px;
   }
 
+  .partners__list {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
 
+  .team__list {
+    padding-left: 50px;
+  }
+
   .welcome {
-    background-size: 70%;
+    background-image: none;
   }
 
   .welcome__inner {
-    margin-top: 120px;
+    margin-top: 140px;
   }
 
   h1 {
@@ -421,15 +422,17 @@
   }
 
   .partners__list {
-    max-width: 280px;
+    align-self: center;
+    flex-direction: column;
   }
 
-  .partners__list > .partners__card:not(:nth-child(4n)) {
-    margin-right: 0;
+  .partners__row {
+    flex-direction: column;
+    margin-top: 0;
   }
 
-  .partners__list > .partners__card:not(:nth-child(2n)) {
-    margin-right: 35px;
+  .partners__row .partners__card {
+    margin-bottom: 40px;
   }
 
   .footer__inner {

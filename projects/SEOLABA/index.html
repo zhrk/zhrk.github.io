@@ -23,19 +23,28 @@
   <body>
     
     <header>
+      <div class="popup__form"> <!-- popup__form--visible -->
+        <img class="popup__form-close" src="img/icons/close.svg" alt="close">
+        <form class="feedback__form" action="">
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="E-mail">
+          <textarea placeholder="Сообщение"></textarea>
+          <button class="btn">Отправить</button>
+        </form>
+      </div>
       <div class="header__inner">
-        <a href="">
+        <a class="header__logo" href="">
           <img src="img/logo.png" alt="logo">
         </a>
         <div class="header__nav">
-          <a href="" class="header__nav-link">SEO</a>
-          <a href="" class="header__nav-link">Этапы сотрудничества</a>
-          <a href="" class="header__nav-link">Рабочая группа</a>
-          <a href="" class="header__nav-link">Услуги</a>
-          <a href="" class="header__nav-link">Наши работы</a>
-          <a href="" class="header__nav-link">Отзывы</a>
-          <a href="" class="header__nav-link">Контакты</a>
-          <div class="header__social">
+          <a href="#seo" class="header__nav-link">SEO</a>
+          <a href="#steps" class="header__nav-link">Этапы сотрудничества</a>
+          <a href="#team" class="header__nav-link">Рабочая группа</a>
+          <a href="#services" class="header__nav-link">Услуги</a>
+          <a href="#portfolio" class="header__nav-link">Наши работы</a>
+          <a href="#reviews" class="header__nav-link">Отзывы</a>
+          <a href="#feedback" class="header__nav-link">Контакты</a>
+          <div class="header__social" style="display: none;">
             <a href="" class="header__social-link">
               <img src="img/icons/header-twitter.svg" alt="twitter">
             </a>
@@ -62,7 +71,7 @@
         <img src="img/BG.png" alt="bg">
       </div>
 
-      <div class="welcome">
+      <div class="welcome" id="seo">
         <div class="welcome__inner">
           <h1>SEO-анализ для <br> вашего сайта</h1>
           <div class="welcome__text">Проведем детальный анализ вашего сайта и разработаем подробные рекомендации по повышению его видимости в поисковых системах Яндекс и Google. Найдем все ошибки и дадим готовую инструкцию по их исправлению.</div>
@@ -76,7 +85,7 @@
               <span>Готовый аудит за 2 часа</span>
             </div>
           </div>
-          <a href="" class="btn btn--welcome">Заказать консультацию</a>
+          <div data-popup="form" class="btn btn--welcome">Заказать консультацию</div>
         </div>
       </div>
 
@@ -85,10 +94,10 @@
           <h4>Зачем нужно проводить <br> поисковый SEO-аудит <br> сайта</h4>
           <div class="why__text">Оценка раскрутки сайта помогает узнать его настоящее положение в выдачах поисковых систем, а также возможный рост и объем заказов с трафика. Мы готовим полную аналитику сайта и разрабатываем для каждого клиента перспективную стратегию развития и увеличения количества посетителей. Устранение обнаруженных технических ошибок на анализируемых сайтах поможет повысить их место в списке поисковой выдачи.</div>
           <div class="why__text">Профессионалы в поисковом маркетинге <br> подготовят сжатый SEO-аудит вашего сайта</div>
-          <a href="" class="why__consl">
+          <div data-popup="form" class="why__consl">
             <span>Заказать консультирование</span>
             <img src="img/icons/why-arrow.svg" alt="arrow">
-          </a>
+          </div>
         </div>
       </div>
 
@@ -117,19 +126,19 @@
             </div>
             <div class="explain__item">
               <img src="img/icons/explain-2.svg" alt="usability">
-              <div class="explain__item-title">Позиции</div>
+              <div class="explain__item-title">Юзабилити</div>
               <div class="explain__item-text">Вашим сайтом станет удобно пользоваться: поисковые машины, как и люди, замечают удобство и качество готового ресурса и именно это может стать ключевым фактором для обращения клиента именно к вам</div>
             </div>
             <div class="explain__item">
               <img src="img/icons/explain-3.svg" alt="robots">
-              <div class="explain__item-title">Позиции</div>
+              <div class="explain__item-title">Роботы</div>
               <div class="explain__item-text">Поисковые системы каждый день отправляют своих роботов на анализ всех сайтов, которые появляются в их выдаче. Чем меньше ошибок будет обнаружено на вашем сайте, тем выше он появится в поисковой выдаче</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="steps">
+      <div class="steps" id="steps">
         <div class="steps__inner">
           <h4>Этапы сотрудничества с нами</h4>
           <div class="steps__cards">
@@ -213,104 +222,64 @@
 
       </div>
 
-      <div class="team">
+      <div class="team" id="team">
         <h4 class="h4--center">Рабочая группа</h4>
-        <div class="team__text">Над любыми задачами работает группы в количестве 3-9 человек. <br> Опыт каждого сотрудника лаборатории в интернет-маркетинге – не менее 6 лет.</div>
+        <div class="team__text">Над любыми задачами работает группа в количестве 2-5 человек. <br> Опыт каждого сотрудника лаборатории в интернет-маркетинге – не менее 6 лет.</div>
         <div class="team__list">
           <div class="team__member">
             <div class="team__member-img">
               <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
+              <img src="img/avatars/1.jpg" alt="avatar">
             </div>
             <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
+              <div class="team__member-name" style="font-size: 20px">Владимир Молчанов</div>
+              <div class="team__member-who">Менеджер по работе с клиентами</div>
             </div>
           </div>
           <div class="team__member">
             <div class="team__member-img">
               <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
+              <img src="img/avatars/2.png" alt="avatar">
             </div>
             <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
+              <div class="team__member-name">Александр Метелев</div>
+              <div class="team__member-who">Менеджер по SEO / SMM</div>
             </div>
           </div>
           <div class="team__member">
             <div class="team__member-img">
               <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
+              <img src="img/avatars/3.jpg" alt="avatar">
             </div>
             <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
+              <div class="team__member-name">Левицкий Михаил</div>
+              <div class="team__member-who">Технический SEO специалист</div>
             </div>
           </div>
           <div class="team__member">
             <div class="team__member-img">
               <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
+              <img src="img/avatars/4.jpg" alt="avatar">
             </div>
             <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
+              <div class="team__member-name">Дубань Владимир</div>
+              <div class="team__member-who">Технический SEO специалист</div>
             </div>
           </div>
           <div class="team__member">
             <div class="team__member-img">
               <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
+              <img src="img/avatars/5.png" alt="avatar">
             </div>
             <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
-            </div>
-          </div>
-          <div class="team__member">
-            <div class="team__member-img">
-              <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
-            </div>
-            <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
-            </div>
-          </div>
-          <div class="team__member">
-            <div class="team__member-img">
-              <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
-            </div>
-            <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
-            </div>
-          </div>
-          <div class="team__member">
-            <div class="team__member-img">
-              <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
-            </div>
-            <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
-            </div>
-          </div>
-          <div class="team__member">
-            <div class="team__member-img">
-              <div class="team__member-filter"></div>
-              <img src="img/cat.png" alt="avatar">
-            </div>
-            <div class="team__member-bottom">
-              <div class="team__member-name">Eva Stark</div>
-              <div class="team__member-who">Web-Designer</div>
+              <div class="team__member-name">Анжелика Даванцо</div>
+              <div class="team__member-who">Технический SEO специалист</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="services">
+      <div class="services" id="services">
         <h4 class="h4--center">Услуги</h4>
         <div class="services__text">Выберите подходящую услугу:</div>
         <div class="services__list">
@@ -319,21 +288,21 @@
             <div class="services__card-title">SEO-аудит</div>
             <div class="services__card-text">Срок выполнения и сдачи технического аудита составляет рекордные 2 часа.</div>
             <div class="services__card-text">На выходе вы получите готовый PDF-файл со всеми техническими ошибками по анализируемому сайту и наши личные рекомендации по их исправлению, а также подсказки по дальнейшим действиям для оптимизации своего сайта.</div>
-            <div class="services__card-value">10 000 руб.</div>
-            <a href="" class="btn">Купить</a>
+            <div class="services__card-value">10 000 руб</div>
+            <div data-popup="form" href="" class="btn">Купить</div>
           </div>
           <div class="services__card services__card--blue">
             <img src="img/icons/s1.svg" alt="audit">
             <div class="services__card-title">SEO-стратегия</div>
             <div class="services__card-text">Мы проводим комплекс мероприятий для определения позиций сайта в поисковой выдаче в Яндексе и Google по геолокационным запросам.</div>
             <div class="services__card-text">Согласно описанной задаче в ТЗ наши специалисты прорабатывают список мер для оптимизации сайта и выхода в ТОП-50 / ТОП-30 / ТОП-10 по поисковым запросам в нише вашего бизнеса.</div>
-            <div class="services__card-value">30 000 руб.</div>
-            <a href="" class="btn">Купить</a>
+            <div class="services__card-value">30 000 руб</div>
+            <div data-popup="form" href="" class="btn">Купить</div>
           </div>
         </div>
       </div>
 
-      <div class="portfolio">
+      <div class="portfolio" id="portfolio">
         <div class="portfolio-img">
           <img src="img/portfolio-bg.png" alt="bubble">
         </div>
@@ -379,7 +348,7 @@
         </div>
       </div>
 
-      <div class="reviews">
+      <div class="reviews" id="reviews">
         <h4 class="h4--center">Отзывы клиентов</h4>
         <div class="reviews__list"> <!-- Желательно вывести 20 отзывов в 10-ти колонках -->
           <div class="reviews__col">
@@ -549,55 +518,47 @@
         <div class="partners__inner">
           <h4 class="h4--center">Партнеры лаборатории</h4>
           <div class="partners__list">
-            <div class="partners__card">
-              <img src="img/icons/p1.svg" alt="partner">
+            <div class="partners__row">
+              <div class="partners__card">
+                <img src="img/pp1.png" alt="partner">
+              </div>
+              <div class="partners__card">
+                <img src="img/pp2.png" alt="partner">
+              </div>
+              <div class="partners__card">
+                <img src="img/pp3.png" alt="partner">
+              </div>
+              <div class="partners__card">
+                <img src="img/pp4.png" alt="partner">
+              </div>
             </div>
-            <div class="partners__card">
-              <img src="img/icons/p2.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p3.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p4.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p5.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p6.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p1.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p2.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p3.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p4.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p5.svg" alt="partner">
-            </div>
-            <div class="partners__card">
-              <img src="img/icons/p6.svg" alt="partner">
+            <div class="partners__row partners__row--width">
+              <div class="partners__card">
+                <img src="img/pp5.png" alt="partner">
+              </div>
+              <div class="partners__card">
+                <img src="img/pp6.png" alt="partner">
+              </div>
+              <div class="partners__card">
+                <img src="img/pp7.png" alt="partner">
+              </div>
+              <div class="partners__card">
+                <img src="img/pp8.png" alt="partner">
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="feedback">
+      <div class="feedback" id="feedback">
         <div class="feedback__inner">
           <div class="feedback__info">
             <h4>Свяжитесь с нами</h4>
             <div class="feedback__info-text">Позвоните или напишите нам – наша служба клиентской поддержки работает каждый день с 10 до 18 часов. В мессенджерах мы отвечаем практически круглосуточно:</div>
             <div class="feedback__info-data">
-              <div>+7 999 801 300 09</div>
+              <div>+7 999 801 30 09</div>
               <div>hello@seolaba.io</div>
-              <div>Loft Pineapple, 22 Pink Street, New York</div>
+              <div>2-я Брестская ул., 9 строение 1, Москва, 123056</div>
             </div>
             <div class="footer__social">
               <a href="">
@@ -628,8 +589,10 @@
       </div>
       <div class="footer__inner">
         <img src="img/logo.png" alt="logo">
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolor, doloribus asperiores, esse hic officia nam ipsam minima quo! Distinctio.</span>
-        <div class="footer__copyright">© 2018 Seolaba. All rights reserved.</div>
+        <span>© SEOLABA 2018. Все права защищены.</span>
+        <div class="footer__copyright">
+          <img src="img/crownmedia.svg" alt="crownmedia">
+        </div>
       </div>
     </footer>
 
