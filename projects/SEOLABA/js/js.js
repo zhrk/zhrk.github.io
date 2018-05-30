@@ -1,9 +1,12 @@
 var TeamSlidesToShow;
 var TeamSlidesToShow = Math.floor(window.innerWidth/286);
+var rCounter = 0;
 
-
-window.onresize = function() { 
-  location.reload(); 
+window.onresize = function() {
+  if (rCounter < 1) {
+    rCounter = rCounter + 1;
+    location.reload(); 
+  }
 }
 
 $('.team__list').slick({
@@ -11,27 +14,7 @@ $('.team__list').slick({
   centerPadding: '32px',
   arrows: false,
   dots: true,
-  slidesToShow: TeamSlidesToShow,
-  /*responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]*/
+  slidesToShow: TeamSlidesToShow
 });
 
 $(".header__menu").click(function() {
