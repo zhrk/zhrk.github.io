@@ -124,6 +124,7 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .welcome {
@@ -258,6 +259,7 @@ main {
 .result {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .result__inner {
@@ -270,6 +272,13 @@ main {
   background-image: url('../img/result-bg.png');
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.result__bg {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  top: 100px;
 }
 
 .result__headline {
@@ -420,6 +429,9 @@ main {
 .steps {
   display: flex;
   justify-content: center;
+  background-image: url('../img/steps-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .steps__inner {
@@ -539,11 +551,8 @@ main {
 .laba {
   display: flex;
   flex-direction: column;
-  background-image: url('../img/laba-bg.png');
-  background-repeat: no-repeat;
-  background-position: center 20px;
-  background-size: cover;
-  padding-bottom: 1300px;
+  padding-bottom: 60px;
+  position: relative;
 }
 
 .laba > h4 {
@@ -561,15 +570,49 @@ main {
   text-align: center;
 }
 
-.laba-bg {
+.laba__img {
+  align-self: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.laba__img2 {
+  align-self: center;
   position: absolute;
-  right: 0;
+  /* bottom: -470px; */
+  top: 270px;
+  width: 100%;
+  z-index: 0;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.laba__img3 {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  top: 1250px;
+}
+
+.laba__img4 {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  top: 1400px;
+}
+
+.laba__img2 > img {
+  width: 100%;
 }
 
 .team {
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .team__text {
@@ -740,6 +783,7 @@ main {
 .portfolio {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .portfolio__inner {
@@ -749,6 +793,13 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.portfolio-img {
+  top: -400px;
+  right: 0;
+  position: absolute;
+  z-index: -2;
 }
 
 .portfolio__text {
@@ -1091,6 +1142,7 @@ footer {
   left: 0;
   height: 930px;
   overflow: hidden;
+  z-index: -2;
 }
 
 .footer__bg > img {
@@ -1117,4 +1169,41 @@ footer {
   margin-left: auto;
   line-height: 16px;
   font-size: 11px;
+}
+
+.index-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.index-bg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__close {
+  width: 32px;
+  height: 32px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.header__close > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__menu {
+  width: 32px;
+  height: 32px;
+  display: none;
+  transform: translateY(-10px);
+}
+
+.header__menu > img {
+  width: 100%;
+  height: 100%;
 }

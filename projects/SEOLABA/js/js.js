@@ -2,9 +2,6 @@ var TeamSlidesToShow;
 var TeamSlidesToShow = Math.floor(window.innerWidth/286);
 
 
-
-console.log();
-
 window.onresize = function() { 
   location.reload(); 
 }
@@ -35,4 +32,12 @@ $('.team__list').slick({
       }
     }
   ]*/
+});
+
+$(".header__menu").click(function() {
+  $(".header__nav").addClass("header__nav--visible");
+});
+
+$(".header__close").click(function() {
+  $(".header__nav").removeClass("header__nav--visible");
 });
