@@ -34,6 +34,8 @@ $('.team__list').slick({
   arrows: false,
   dots: true,
   infinte: false,
+  slidesToShow: 5,
+  slidesToScroll: 5,
   responsive: [
     {
       breakpoint: 2000,
