@@ -1173,9 +1173,11 @@ footer {
 }
 
 .footer__inner > span {
-  max-width: 500px;
+  max-width: 800px;
   display: block;
   margin-left: 50px;
+  line-height: 16px;
+  font-size: 11px;
 }
 
 .footer__copyright {
