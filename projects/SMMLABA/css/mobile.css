@@ -1,0 +1,415 @@
+@media screen and (max-width: 1280px) {
+  
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1367px) {
+  
+  .cases__popup-inner {
+    max-width: 780px;
+  }
+
+  .cases__popup-slide-title {
+    font-size: 26px;
+  }
+
+  .cases__popup-slide-info {
+    height: 500px;
+  }
+
+  .cases__popup-slide-phone > a > img {
+    height: 100%;
+  }
+
+  .cases__popup-nav > span:first-child {
+    transform: translateX(25px);
+  }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .cases__popup-close {
+    z-index: 10;
+  }
+  
+  .header__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .welcome__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .services__transition {
+    top: -200px;
+  }
+
+  .services__inner {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .services__card-right {
+    max-width: 400px;
+  }
+
+  .services__card-left {
+    margin-right: 40px;
+  }
+
+  .cases__popup-inner {
+    max-width: 780px;
+  }
+
+  .cases__popup-slide-title {
+    font-size: 26px;
+  }
+
+  .cases__popup-slide-info {
+    height: 500px;
+  }
+
+  .cases__popup-slide-phone > a > img {
+    height: 100%;
+  }
+
+  .cases__popup-nav > span:first-child {
+    transform: translateX(25px);
+  }
+
+  .contacts__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .contacts__info iframe {
+    max-width: 500px;
+  }
+
+  .contacts__info-left {
+    margin-right: 40px;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+  .services__card-left {
+    max-width: 300px;
+  }
+
+  .services__price-value {
+    font-size: 30px;
+  }
+
+  .faq__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .contacts {
+    background-color: #101120;
+  }
+
+  .contacts__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__info > .contacts__form {
+    margin-top: 20px;
+  }
+
+  .contacts__info-left {
+    margin-right: 0;
+    max-width: 500px;
+  }
+
+  .contacts__info > .contacts__form .btn {
+    align-self: center;
+  }
+
+}
+
+@media screen and (max-width: 415px) {
+
+  .popup__form-close {
+    transform: translateX(-52px);
+  }
+
+  .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .header__nav--visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .header__nav > a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .header__close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+  }
+
+  .header__close > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__menu {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+
+  .header__menu > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .welcome__img {
+    display: none;
+  }
+
+  .services__transition {
+    top: -140px;
+  }
+
+  .welcome__inner {
+    min-height: auto;
+    padding-bottom: 140px;
+  }
+
+  .services__card {
+    flex-direction: column;
+  }
+
+  .services__card-left {
+    margin-right: 0;
+  }
+
+  .services__card {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .services__card-title {
+    margin-top: 0;
+  }
+
+  .services__card-title {
+    align-self: center;
+  }
+
+  .services__card-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .services__price {
+    align-self: center;
+  }
+
+  .services__card-right .btn {
+    align-self: center;
+  }
+
+  .cases__list-1 .slick-slide {
+    transform: translateX(0);
+  }
+
+  .cases__list-2 .slick-slide {
+    transform: translateX(0);
+  }
+
+  .cases__list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .cases__item {
+    box-shadow: none;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .reviews h4 {
+    margin-top: -50px;
+  }
+
+  .reviews__list {
+    margin-top: 40px;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .reviews__list > .reviews__col:nth-child(n + 3) {
+    display: none;
+  }
+
+  .reviews__card {
+    transform: none;
+    min-width: 280px;
+    margin-left: 0;
+    margin-bottom: 64px;
+    margin-right: 0;
+  }
+
+  .reviews {
+    padding-bottom: 0;
+  }
+
+  .faq__card-info--visible {
+    max-height: 10000px;
+  }
+
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 0;
+    background-color: #18182F;
+  }
+
+  .contacts__bg {
+    padding-top: 40px;
+    background-color: #18182F;
+  }
+
+  .contacts__bg-logo {
+    position: static;
+    transform: none;
+  }
+
+  .contacts__bg > img {
+    display: none;
+  }
+
+  .faq__bg {
+    display: none;
+  }
+
+  .contacts__info iframe {
+    width: 100%;
+  }
+
+  .faq__card-title > img {
+    margin-left: 10px;
+  }
+
+  .cases__popup-slide-title {
+    font-size: 26px;
+  }
+
+  .cases__popup-slide-info {
+    height: 340px;
+  }
+
+  .cases__popup-slide-phone > a {
+    height: 100%;
+  }
+
+  .cases__popup-slide-phone > a > img {
+    height: 100%;
+  }
+
+  .cases__popup-slides {
+    top: 0px;
+  }
+
+  .cases__popup-slide-phone {
+    height: 100%;
+  }
+
+  .cases__popup-slide-phone > img {
+    height: 100%;
+  }
+
+  .cases__popup-nav .btn {
+    transform: translate(25px, 100px);
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .cases__popup-nav {
+    margin-top: 40px;
+  }
+
+  .cases__popup-slide-info {
+    height: 300px;
+  }
+
+  .cases__popup-nav > span:last-child {
+    transform: translateX(-45px);
+  }
+
+  .cases__popup-nav .btn {
+    transform: translate(15px, 100px);
+  }
+
+}
+
+@media screen and (max-width: 361px) {
+
+  .cases__popup-slide-info {
+    height: 270px;
+  }
+
+  .cases__popup-nav > span:last-child {
+    transform: translateX(-95px);
+  }
+
+  .cases__popup-nav .btn {
+    transform: translate(-10px, 100px);
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+}
