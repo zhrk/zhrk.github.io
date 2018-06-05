@@ -374,14 +374,18 @@ header {
   justify-content: center;
   font-family: SF UI Text;
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
   background: linear-gradient(0deg, rgba(33, 34, 60, 0.7), rgba(33, 34, 60, 0.7));
   transition: all 0.15s ease-in-out;
   pointer-events: none;
-  opacity: 0;
 }
 
-.cases__item:hover > .cases__item-name {
+.cases__item-name > span {
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}
+
+.cases__item:hover > .cases__item-name > span  {
   opacity: 1;
   transition: all 0.15s ease-in-out;
 }
