@@ -1,27 +1,15 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1919px) {
   
+  .cases__popup-slide-info {
+    height: 600px;
+  }
+
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1367px) {
   
-  .cases__popup-inner {
-    max-width: 780px;
-  }
-
-  .cases__popup-slide-title {
-    font-size: 26px;
-  }
-
   .cases__popup-slide-info {
     height: 500px;
-  }
-
-  .cases__popup-slide-phone > a > img {
-    height: 100%;
-  }
-
-  .cases__popup-nav > span:first-child {
-    transform: translateX(25px);
   }
 
 }
@@ -71,7 +59,7 @@
   }
 
   .cases__popup-slide-info {
-    height: 500px;
+    height: 600px;
   }
 
   .cases__popup-slide-phone > a > img {
@@ -138,7 +126,31 @@
 
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
+
+  .cases__popup-nav {
+    margin-top: 100px;
+  }
+
+  .cases__popup-nav .btn {
+    transform: translate(20px, 0) !important;
+  }
+
+  .cases__popup-nav > span:first-child {
+    transform: translate(70px, -80px) !important;
+  }
+
+  .cases__popup-nav > span:last-child {
+    transform: translate(-40px, -80px) !important;
+  }
+
+  .cases__list .slick-slide {
+    width: calc(100vw - 20px);
+  }
+
+  .cases__item {
+    width: 100%;
+  }
 
   .popup__form-close {
     transform: translateX(-52px);
@@ -204,7 +216,11 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .welcome__info > p {
+    font-size: 16px;
   }
 
   .welcome__img {
@@ -374,42 +390,42 @@
 
 }
 
-@media screen and (max-width: 400px) {
-
-  .cases__popup-nav {
-    margin-top: 40px;
-  }
+@media screen and (max-width: 376px) {
 
   .cases__popup-slide-info {
-    height: 300px;
+    height: 300px !important;
   }
 
   .cases__popup-nav > span:last-child {
-    transform: translateX(-45px);
+    transform: translate(-50px, -80px) !important;
   }
 
-  .cases__popup-nav .btn {
-    transform: translate(15px, 100px);
-  }
-
+  .cases__popup-nav > span:first-child {
+    transform: translate(60px, -80px) !important;
 }
-
-@media screen and (max-width: 361px) {
-
-  .cases__popup-slide-info {
-    height: 270px;
-  }
-
-  .cases__popup-nav > span:last-child {
-    transform: translateX(-95px);
-  }
-
-  .cases__popup-nav .btn {
-    transform: translate(-10px, 100px);
-  }
 
   h1 {
     font-size: 40px;
   }
+
+}
+
+@media screen and (max-width: 321px) {
+
+  .cases__popup-slide-info {
+    height: 260px !important;
+  }
+
+  .cases__popup-nav > span:last-child {
+    transform: translate(-100px, -80px) !important;
+  }
+
+  .cases__popup-nav > span:first-child {
+    transform: translate(60px, -80px) !important;
+}
+
+.cases__popup-nav .btn {
+    transform: translate(-10px, 0) !important;
+}
 
 }

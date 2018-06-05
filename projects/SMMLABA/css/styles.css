@@ -347,7 +347,7 @@ header {
 }
 
 .cases__list-1 .slick-slide {
-  transform: translateX(-300px);
+  transform: translateX(150px);
 }
 
 .cases__list-2 .slick-slide {
@@ -447,12 +447,21 @@ header {
   flex-direction: column;
 }
 
+.cases__popup-slide-info {
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+}
+
 .cases__popup-slides .slick-slide {
   width: 824px;
-  height: 950px;
   box-sizing: border-box;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.cases__popup-slide-phone > img {
+  height: 100%;
 }
 
 .cases__popup-slide {
@@ -467,23 +476,6 @@ header {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-.cases__popup-slide-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cases__popup-slide-phone {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cases__popup-slide-frame {
-  position: absolute;
-  pointer-events: none;
 }
 
 .cases__popup-slides button.slick-arrow {
@@ -512,7 +504,7 @@ header {
 }
 
 .cases__popup-nav {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   max-width: 570px;
   width: 100%;
@@ -916,4 +908,8 @@ header {
 
 .header__close {
   display: none;
+}
+
+.contacts__madeby {
+  margin-top: 40px;
 }
