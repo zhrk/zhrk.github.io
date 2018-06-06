@@ -1,5 +1,19 @@
 @media screen and (max-width: 1239px) {
 
+  .services__inner {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .services__card-right {
+    max-width: 400px;
+  }
+
+  .services__card-left {
+    margin-right: 40px;
+  }
+
   .header__logo {
     transform: none;
   }
@@ -180,13 +194,17 @@
     max-width: 460px;
   }
 
-  .services__list > .services__card:not(:last-child) {
-    margin-right: 60px;
-  }
-
 }
 
 @media screen and (max-width: 1023px) {
+
+  .services__card-left {
+    max-width: 300px;
+  }
+
+  .services__price-value {
+    font-size: 30px;
+  }
   
   .why__inner {
     background-image: none;
@@ -262,18 +280,6 @@
     margin-top: 40px;
   }
 
-  .services {
-    margin-top: 40px;
-  }
-
-  .services__list > .services__card:not(:last-child) {
-    margin-right: 32px;
-  }
-
-  .services__list > .services__card {
-    width: 350px;
-  }
-
   .feedback {
     margin-top: 0;
     padding-bottom: 40px;
@@ -306,6 +312,40 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .services__card {
+    flex-direction: column;
+  }
+
+  .services__card-left {
+    margin-right: 0;
+  }
+
+  .services__card {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .services__card-title {
+    margin-top: 0;
+  }
+
+  .services__card-title {
+    align-self: center;
+  }
+
+  .services__card-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .services__price {
+    align-self: center;
+  }
+
+  .services__card-right .btn {
+    align-self: center;
+  }
 
   .welcome {
     background-image: none;

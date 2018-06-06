@@ -814,4 +814,48 @@
 		max-height: 10000px;
 	}
 
+	.faq__card img {
+		width: 100% !important;
+	}
+
+}
+
+@media screen and (max-width: 1279px) {
+
+	.reviews h5 {
+		text-align: center;
+	}
+
+	.reviews__list {
+		align-self: center;
+		max-width: 564px;
+		flex-wrap: wrap;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.reviews__card {
+		margin-bottom: 20px;
+	}
+
+	.reviews__list > .reviews__card:not(:nth-child(2n)) {
+		margin-right: 20px;
+	}
+
+}
+
+@media screen and (max-width: 426px) {
+
+	.reviews__list {
+		align-self: center;
+		max-width: 272px;
+		flex-wrap: wrap;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.reviews__list > .reviews__card:not(:nth-child(2n)) {
+		margin-right: 0;
+	}
+
 }
