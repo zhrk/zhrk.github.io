@@ -16,6 +16,10 @@
 
 @media screen and (max-width: 1025px) {
 
+  .welcome {
+    background-image: none;
+  }
+
   .cases__popup-close {
     z-index: 10;
   }
