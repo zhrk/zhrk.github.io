@@ -101,7 +101,7 @@ header {
   background-color: #000;
   background-image: url('../img/header-bg.png');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-size: cover;
 }
 
 .header__inner {
