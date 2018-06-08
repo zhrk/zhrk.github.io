@@ -43,9 +43,31 @@ function initMobile() {
       ]
       });
 
+      $('.f-features').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
+      $('.f-price__inner').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
     }
 
   }
 }
 
 initMobile();
+
+$(".btn--bonuse").click(function() {
+  $(".why__bonuse").toggleClass("why__bonuse--active");
+});
+
+$(".why__bonuse-close").click(function() {
+  $(".why__bonuse").removeClass("why__bonuse--active");
+});
