@@ -1,0 +1,266 @@
+@media (min-width: 1240px) and (max-width: 1367px) {
+
+  .services__wtf {
+    top: -250px;
+  }
+
+}
+
+@media screen and (max-width: 1240px) {
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.15s ease-in-out;
+    z-index: 10;
+  }
+
+  .header__nav--visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .header__nav > .header__link {
+    align-self: flex-start;
+  }
+
+  .header__nav > .header__link:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .header__close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .digest__inner {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+
+  .digest__info {
+    align-self: center;
+  }
+
+  .digest__email {
+    margin-top: 40px;
+    align-self: center;
+    max-width: 816px;
+  }
+
+  .digest__email > form {
+    max-width: 256px;
+  }
+
+  .services__inner {
+    padding-top: 40px;
+  }
+  
+  .services__wtf {
+    display: none;
+  }
+
+  .services__list > .services__card:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .services__list > .services__card:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .blog__list {
+    max-width: 816px;
+    align-self: center;
+  }
+
+  .blog__list > .blog__article:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .blog__list > .blog__article:not(:nth-child(2n)) {
+    margin-right: 32px;
+  }
+
+  .blog__wtf {
+    display: none;
+  }
+
+  .blog {
+    margin-top: 40px;
+  }
+
+  .recent__inner {
+    box-sizing: border-box;
+  }
+
+  .info__tags-list {
+    max-width: 300px;
+  }
+
+  .info__inner {
+    padding-bottom: 40px;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+  .about__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .services__list > .services__card:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .blog__list {
+    max-width: 392px;
+  }
+
+  .blog__list > .blog__article:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .recent__list .slick-slide > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info__inner {
+    flex-direction: column;
+  }
+
+  .info__social {
+    order: -1;
+    justify-content: center;
+  }
+
+  .info__tags-list {
+    max-width: 100%;
+  }
+
+  .info__tags {
+    margin-top: 40px;
+  }
+
+  .info__tags-title {
+    text-align: center;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer__nav {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .footer__bg {
+    bottom: 400px;
+  }
+
+  .footer__nav > .footer__link:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  footer .header__social {
+    margin-top: 40px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .digest__article {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .digest__article-date {
+    margin-top: 10px;
+    order: 3;
+    max-width: 100%;
+  }
+
+  .digest__article-circle {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+  }
+
+  .digest__more {
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .digest__title {
+    flex-direction: column;
+  }
+
+  .about__inner {
+    flex-direction: column;
+  }
+
+  .about__left {
+    align-self: center;
+  }
+
+  .about__info {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .info__social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__bg {
+    bottom: 500px;
+  }
+
+  .info__tg {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+}
