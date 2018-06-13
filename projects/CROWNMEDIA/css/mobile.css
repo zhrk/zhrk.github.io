@@ -133,8 +133,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     box-sizing: border-box;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .services__list > .services__card:not(:nth-child(2n)) {
@@ -261,6 +261,18 @@
   .info__tg {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .about__left {
+    align-items: center;
+  }
+
+  .services__card-title {
+    text-align: center;
   }
 
 }
