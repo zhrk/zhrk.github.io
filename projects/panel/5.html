@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Some, SEO, Tags">
+    <meta name="description" content="A description of the page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" href="img/icons/favicons/favicon_16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/icons/favicons/favicon_32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="img/icons/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" href="libs/niceSelect/nice-select.css">
+    <title>Panel</title>
+  </head>
+  <body>
+    
+    <div class="panel">
+      <div class="panel__inner">
+        
+        <div class="panel-progress">
+          <div class="panel-progress__steps">
+            <div class="panel-progress__text">Шаг 5 из 10</div>
+            <div class="panel-progress__bar">
+              <div class="panel-progress__current" style="width: calc((5 / 10) * 100%)"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel__title">
+          <a class="panel__title-back" href="">
+            <img src="images/panel-back-arrow.svg" alt="back">
+            Назад
+          </a>
+          <span>Бриф</span>
+        </div>
+        <div class="panel__title-text">Внимательно заполните все поля в брифе для запуска вашего сайта, обязательные поля отмечены красным цветом</div>
+
+        <form class="panel__brief" action="" method="">
+          
+          <div class="panel__brief-row">
+            <div class="panel__input">
+              <label>The name of the system</label>
+              <input type="text">
+              <div class="panel__input-text">Will be displayed on the site everywhere</div>
+              <span>Error message</span>
+            </div>
+            <div class="panel__input">
+              <label>Domain name</label>
+              <input type="text">
+              <div class="panel__input-text">On which you want to start the system</div>
+              <span>Error message</span>
+            </div>
+            <div class="panel__input">
+              <label class="panel__input--app-info">
+                Select the subdomain
+                <div class="panel__int-item-bottom">
+                  <span style="display: none;">Робокасса</span>
+                  <div>
+                    <img src="images/int-info.svg" alt="info">
+                    <div>
+                      <b>App</b> - some description some description <br>
+                      <b>System</b> - some description some description <br>
+                      <b>Panel</b> - some description some description <br>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <select class="nice-select-input">
+                <option value="">App</option>
+                <option value="">System</option>
+                <option value="">Panel</option>
+              </select>
+              <div class="panel__input-text">On which you want to start the system</div>
+              <span>Error message</span>
+            </div>
+          </div>
+
+          <div class="panel__brief-row">
+            <div class="panel__input">
+              <label>Account (email) in instalex.pro</label>
+              <input type="text">
+              <span>Error message</span>
+            </div>
+            <div class="panel__input panel__input--low-errors">
+              <label>Contacts for the support page</label>
+              <input type="text" placeholder="Phone number">
+              <span>Error message</span>
+              <input type="text" placeholder="E-mail">
+              <span>Error message</span>
+            </div>
+            <div class="panel__input panel__input--low-errors">
+              <label>Contacts for the support page</label>
+              <input type="text" placeholder="Instagram">
+              <span>Error message</span>
+              <input type="text" placeholder="Facebook">
+              <span>Error message</span>
+              <input type="text" placeholder="YouTube">
+              <span>Error message</span>
+              <input type="text" placeholder="Telegram">
+              <span>Error message</span>
+              <input type="text" placeholder="Custom link">
+              <div class="panel__input-text">Will be placed in the footer of your site</div>
+              <span>Error message</span>
+            </div>
+          </div>
+
+          <div class="panel__brief-row">
+            <div class="panel__input">
+              <label>Primary language for the system</label>
+              <select class="nice-select-input nice-select-input--lang">
+                <option value="">English</option>
+                <option value="">Portuguese</option>
+                <option value="">German</option>
+                <option value="">Polish</option>
+                <option value="">Spanish</option>
+                <option value="">Italian</option>
+                <option value="">Norwegian</option>
+                <option value="">Czech</option>
+                <option value="">French</option>
+                <option value="">Arabic</option>
+                <option value="">Turkish</option>
+                <option value="">Farsi</option>
+                <option value="">Korean</option>
+                <option value="">Hebrew</option>
+              </select>
+              <div class="panel__input-text">On which you want to start the system</div>
+              <span>Error message</span>
+            </div>
+            <div class="panel__input">
+              <label>Primary currency for the system</label>
+              <select class="nice-select-input">
+                <option value="">USD</option>
+                <option value="">RUB</option>
+              </select>
+              <div class="panel__input-text">On which you want to start the system</div>
+              <span>Error message</span>
+            </div>
+          </div>
+
+          <div class="panel__brief-row panel__brief-row--pay-systems">
+            <div class="panel__input panel__input--low-errors">
+              <label>Make the business account in any payment gateaway from this list to receive payments from clients</label>
+              <select disabled class="nice-select-input">
+                <option value="">Яндекс касса</option>
+                <option value="">Робокасса</option>
+                <option selected value="">PayPal</option>
+                <option value="">Stripe</option>
+                <option value="">Walletone</option>
+                <option value="">Freekassa</option>
+              </select>
+              <span>Error message</span>
+              <input type="text" placeholder="API username">
+              <span>Error message</span>
+              <input type="text" placeholder="API password">
+              <span>Error message</span>
+              <input type="text" placeholder="Signature">
+              <span>Error message</span>
+            </div>
+            <div class="panel__input panel__input--low-errors">
+              <label>Make the business account in any payment gateaway from this list to receive payments from clients</label>
+              <select disabled class="nice-select-input">
+                <option value="">Яндекс касса</option>
+                <option value="">Робокасса</option>
+                <option value="">PayPal</option>
+                <option value="">Stripe</option>
+                <option selected value="">Walletone</option>
+                <option value="">Freekassa</option>
+              </select>
+              <span>Error message</span>
+              <input type="text" placeholder="API username">
+              <span>Error message</span>
+              <input type="text" placeholder="API password">
+              <span>Error message</span>
+              <input type="text" placeholder="Signature">
+              <span>Error message</span>
+            </div>
+          </div>
+
+          <div class="panel__brief-row">
+            <div class="panel__input panel__input--low-errors">
+              <label>Prices for Customers for Modules (min $11)</label>
+              <input type="text" placeholder="Promo Module">
+              <span>Error message</span>
+              <input type="text" placeholder="Direct Module">
+              <span>Error message</span>
+              <input type="text" placeholder="Comment Module">
+              <span>Error message</span>
+              <input type="text" placeholder="Posting  Module">
+              <span>Error message</span>
+            </div>
+            <div class="panel__input panel__input--low-errors panel__input--gifts">
+              <label>The amounts of recharge for customers (4 or more)</label>
+              <div>
+                <input type="text" placeholder="Amount">
+                <input type="text" placeholder="Gift">
+              </div>
+              <span>Error message</span>
+              <div>
+                <input type="text" placeholder="Amount">
+                <input type="text" placeholder="Gift">
+              </div>
+              <span>Error message</span>
+              <div>
+                <input type="text" placeholder="Amount">
+                <input type="text" placeholder="Gift">
+              </div>
+              <span>Error message</span>
+              <div>
+                <input type="text" placeholder="Amount">
+                <input type="text" placeholder="Gift">
+              </div>
+              <span>Error message</span>
+              <div class="panel__input-add-more">+ Add more</div>
+            </div>
+            <div class="panel__input panel__input--low-errors">
+              <label>Prices per 100 likes / 100 views</label>
+              <input type="text" placeholder="$1.5">
+              <span>Error message</span>
+              <input type="text" placeholder="$1.5">
+              <span>Error message</span>
+              <label class="panel__input--affiliate">Affiliate bonuses for users in %</label>
+              <input type="text" placeholder="10%">
+              <span>Error message</span>
+            </div>
+          </div>
+
+          <div class="panel__brief-row panel__brief-row--textarea">
+            <div class="panel__input panel__input--low-errors">
+              <label>Google Analytic integration or some live chats or widgets</label>
+              <input type="text" placeholder="Widget name">
+            </div>
+            <div class="panel__input panel__input--tags">
+              <textarea placeholder="Html-codes for Google Analytic integration or some live chats or widgets"></textarea>
+            </div>
+            <div class="panel__input-add-more">+ Add more</div>
+          </div>
+
+          <div class="panel__bottom">
+            <div class="panel__price">Итого: $ <div class="panel__price-value">21 990</div></div>
+            <button type="" class="panel-btn">
+              <span>Далее</span>
+              <img src="images/panel-next-arrow.svg" alt="arrow">
+            </button>  
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/lightGallery/js/lightgallery.min.js"></script>
+    <script src="libs/niceSelect/jquery.nice-select.min.js"></script>
+    <script src="libs/signature_pad.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
