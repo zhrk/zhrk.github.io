@@ -848,6 +848,10 @@ body {
   padding-bottom: 120px;
 }
 
+.panel__brief-row--textarea .panel__input--low-errors {
+  margin-right: 40px !important;
+}
+
 .panel__brief-row--textarea > .panel__input-add-more {
   position: absolute;
   left: 50%;
