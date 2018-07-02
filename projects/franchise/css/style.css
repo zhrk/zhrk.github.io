@@ -3625,6 +3625,7 @@ code {
 
 .franchise .btn {
 	border: 0;
+	text-transform: capitalize;
 }
 
 .franchise-welcome {
@@ -4771,6 +4772,26 @@ code {
 
 .calc2__ranges-label--ec {
 	margin-top: 60px;
+}
+
+.btn--white {
+	border: 1px solid #fff !important;
+	background-color: transparent;
+}
+
+.btn--white:hover {
+	background-color: #fff;
+	color: #222;
+	transition: all 0.15s esae-in-out;
+}
+
+.btn--white:hover > img {
+	filter:  none;
+	transition: all 0.15s esae-in-out;
+}
+
+.btn--white > img {
+	filter: brightness(0) invert(1);
 }
 
 @media screen and (max-width: 1208px) {
