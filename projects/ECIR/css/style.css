@@ -5688,6 +5688,10 @@ code {
 
 @media (max-width: 1208px) {
 
+	.social {
+		display: none;
+	}
+
 	.news__list {
 		align-items: center;
 	}
