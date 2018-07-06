@@ -90,3 +90,56 @@ function isScrolledIntoView(elem){
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+
+
+
+function animateNumber(el, interval) {
+  setInterval(function(){
+    var currentNumber = parseInt(el.innerHTML, 10);
+    currentNumber = currentNumber + 1;
+    el.innerHTML = currentNumber;
+  }, interval);
+}
+
+animateNumber(document.querySelector('.social__img-counter-1'), 500);
+animateNumber(document.querySelector('.social__img-counter-2'), 1000);
+animateNumber(document.querySelector('.social__img-counter-3'), 600);
+animateNumber(document.querySelector('.social__img-counter-4'), 1000);
+animateNumber(document.querySelector('.social__img-counter-5'), 700);
+animateNumber(document.querySelector('.social__img-counter-6'), 800);
+animateNumber(document.querySelector('.social__img-counter-7'), 900);
+
+animateNumber(document.querySelector('.social__img-counter-8'), 300);
+animateNumber(document.querySelector('.social__img-counter-9'), 500);
+animateNumber(document.querySelector('.social__img-counter-10'), 1000);
+animateNumber(document.querySelector('.social__img-counter-11'), 2000);
+
+animateNumber(document.querySelector('.social__img-counter-12'), 100);
+animateNumber(document.querySelector('.social__img-counter-13'), 1000);
+animateNumber(document.querySelector('.social__img-counter-14'), 2300);
+
+animateNumber(document.querySelector('.social__img-counter-15'), 1000);
+animateNumber(document.querySelector('.social__img-counter-16'), 2300);
+animateNumber(document.querySelector('.social__img-counter-17'), 2300);
+
+animateNumber(document.querySelector('.social__img-counter-18'), 100);
+animateNumber(document.querySelector('.social__img-counter-19'), 2000);
+
+animateNumber(document.querySelector('.social__img-counter-20'), 2000);
+animateNumber(document.querySelector('.social__img-counter-21'), 2000);
+animateNumber(document.querySelector('.social__img-counter-22'), 2000);
+animateNumber(document.querySelector('.social__img-counter-23'), 1000);
+
+animateNumber(document.querySelector('.social__img-counter-25'), 100);
+
+animateNumber(document.querySelector('.social__img-counter-26'), 2000);
+animateNumber(document.querySelector('.social__img-counter-27'), 2500);
+animateNumber(document.querySelector('.social__img-counter-28'), 1000);
+animateNumber(document.querySelector('.social__img-counter-29'), 3000);
+animateNumber(document.querySelector('.social__img-counter-30'), 1000);
+animateNumber(document.querySelector('.social__img-counter-31'), 2000);
+
+
+
+
+

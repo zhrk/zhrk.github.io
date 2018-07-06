@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Some, SEO, Tags">
+    <meta name="description" content="A description of the page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="libs/rangeslider/rangeslider.css">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <title>Template</title>
+  </head>
+  <body>
+
+    <header class="header--index">
+      <a class="anchorn" href="" name="top"></a>
+      <div class="header__inner">
+        <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+        <nav>
+          <a class="header__link" href="">Telegram бот</a>
+          <a class="header__link" href="">Поддержка</a>
+          <a class="header__link" href="">Контакты</a>
+        </nav>
+        <a href="cart.html" class="header__cart header__cart--disabled"> <!-- header__cart--disabled -->
+          <div class="header__cart-img">
+            <img src="img/icons/cart.svg">
+            <div class="header__indicator"></div> <!-- header__indicator--disabled -->
+          </div>
+          <div class="header__value">600 ₽</div>
+        </a>
+        <a href="" class="btn btn--header">Войти</a>
+      </div>
+    </header>
+
+
+
+
+
+
+
+    
+    <div class="franchise">
+
+      <div data-popup="feedback-close" class="popup-feedback">
+        <form action="">
+          <img data-popup="feedback-close" class="popup-feedback__close" src="img/c-close.svg" alt="close">
+          <div class="popup-feedback__row">
+            <div class="popup-feedback__input">
+              <div class="popup-feedback__label">Имя</div>
+              <input type="text">
+            </div>
+            <div class="popup-feedback__input">
+              <div class="popup-feedback__label">E-mail</div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="popup-feedback__label popup-feedback__label--2">Сообщение</div>
+          <textarea></textarea>
+          <nav>
+            <button type="submit" class="btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+            <div data-popup="feedback-close" class="btn">Закрыть</div>
+          </nav>
+          <div class="popup-feedback__tg">
+            <img src="img/ftg.svg" alt="tg">
+            Или пишите в телеграм — <a href="https://t.me/metelev011"> t.me/metelev011</a>
+          </div>
+        </form>
+      </div>
+      
+      <div class="franchise-welcome">
+        <div class="franchise-welcome__inner">
+          <h1>Запустите свой онлайн-магазин на платформе ECIR</h1>
+          <div class="franchise-welcome__text">Готовый бизнес по франшизе. Запустите свой SMM-сервис для раскрутки Социальных сетей и развивайте свой бизнес удаленно из любой точки мира! Это одна из лучших франшиз стоимостью до 1000$</div>
+          <div class="franchise-welcome__nav">
+            <div class="btn">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</div>
+            <div class="btn">ДЕМО ДОСТУП</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="franchise-info">
+        <div class="franchise-info__inner">
+          <div class="franchise-info__title">Работайте на международном рынке</div>
+          <div class="franchise-info__cards">
+            <div class="calc2">
+              <img class="calc2__close" src="img/c-close.svg" alt="close">
+              <div class="calc2__inner">
+                <div class="calc2__inner-container">
+                  <div class="calc2__selector">
+                    <div class="calc2__title">Тариф</div>
+                    <div id="start" class="calc2__select">
+                      <img src="img/icons/boat.png" alt="select">
+                      <div class="calc2__selector-info">
+                        <div class="calc2__selector-info-title">Start</div>
+                        <div class="calc2__selector-info-value">₽ 50000</div>
+                        <div class="calc2__selector-info-text">Markup 40%</div>
+                      </div>
+                      <div class="calc2__select-circle"><span></span></div>
+                    </div>
+                    <div id="business" class="calc2__select">
+                      <img src="img/icons/boat2.png" alt="select">
+                      <div class="calc2__selector-info">
+                        <div class="calc2__selector-info-title">Business</div>
+                        <div class="calc2__selector-info-value">₽ 80000</div>
+                        <div class="calc2__selector-info-text">Markup 30%</div>
+                      </div>
+                      <div class="calc2__select-circle"><span></span></div>
+                    </div>
+                    <div id="pro" class="calc2__select">
+                      <img src="img/icons/boat3.png" alt="select">
+                      <div class="calc2__selector-info">
+                        <div class="calc2__selector-info-title">PRO</div>
+                        <div class="calc2__selector-info-value">₽ 150000</div>
+                        <div class="calc2__selector-info-text">Markup 20%</div>
+                      </div>
+                      <div class="calc2__select-circle calc2__select-circle--active"><span></span></div>
+                    </div>
+                  </div>
+                  <div class="calc2__inputs">
+                    <div class="calc2__inputs-row">
+                      <div class="calc2__input-container">
+                        <div class="calc2__input-label">Стоимость товара</div>
+                        <input value="100" id="itemPrice" class="calc2__input" type="number">
+                      </div>
+                      <div class="calc2__input-container">
+                        <div class="calc2__input-label">Продаж в день</div>
+                        <input value="100" id="daySales" class="calc2__input" type="number">
+                      </div>
+                    </div>
+                    <div class="calc2__ranges">
+                      <div class="calc2__ranges-label">Сумма вложений в рекламу в месяц</div>
+                      <div class="calc2__range">
+                        <input data-rangeslider type="range" min="1000" max="10000" step="100" value="5000" id="adv">
+                        <div class="calc2__bauble calc2__bauble--adv" style="left: 123.556px;">₽ <span>5000</span></div>
+                      </div>
+                      <div class="calc2__ranges-label">Количество месяцев работы сервиса</div>
+                      <div class="calc2__range">
+                        <input data-rangeslider type="range" min="1" max="24" step="1" value="12" id="months">
+                        <div class="calc2__bauble calc2__bauble--months" style="left: 132.957px;"><span>12</span></div>
+                      </div>
+                      <div class="calc2__ranges-label calc2__ranges-label--ec">Коэфицент (наценка на продажу клиентам)</div>
+                      <div class="calc2__range">
+                        <input data-rangeslider type="range" min="1" max="10" step="0.5" value="7" id="ec">
+                        <div class="calc2__bauble calc2__bauble--ec" style="left: 185.333px;"><span>7</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc2__info">
+                    <div class="calc2__info-title">Итого</div>
+                    <div class="calc2__info-container">
+                      <div class="calc2__info-col">
+                        <div class="calc2__info-label">Стоимость франшизы</div>
+                        <div class="calc2__info-value">
+                          <span>₽</span>
+                          <div id="frPrice">150000</div>
+                        </div>
+                        <div class="calc2__info-label">Вложений в рекламу</div>
+                        <div class="calc2__info-value">
+                          <span>₽</span>
+                          <div id="advPrice">60000</div>
+                        </div>
+                        <div class="calc2__info-label">Cтоимость покупки</div>
+                        <div class="calc2__info-value">
+                          <span>₽</span>
+                          <div id="buyPrice">120</div>
+                        </div>
+                      </div>
+                      <div class="calc2__info-col">
+                        <div class="calc2__info-label">Стоимость продажи</div>
+                        <div class="calc2__info-value">
+                          <span>₽</span>
+                          <div id="soldPrice">840</div>
+                        </div>
+                        <div class="calc2__info-label">Время работы сервиса</div>
+                        <div class="calc2__info-value">
+                          <div id="monthsPrice">12</div>
+                          <div class="calc2__month">МЕС</div>
+                        </div>
+                        <div class="calc2__info-label">Чистая прибыль</div>
+                        <div class="calc2__info-value">
+                          <span>₽</span>
+                          <div id="cleanPrice">654000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calc2__nav">
+                  <div class="btn">СВЯЗАТЬСЯ С НАМИ</div>
+                  <div class="btn" id="calc2_close">Закрыть</div>
+                </div>
+              </div>
+            </div>
+            <div class="franchise-info__cards-list">
+              <div class="franchise-info__card">
+                <div class="franchise-info__card-value">$3000</div>
+                <div class="franchise-info__card-title">Средняя выручка дилера</div>
+              </div>
+              <div class="franchise-info__card">
+                <div class="franchise-info__card-value">2 месяца</div>
+                <div class="franchise-info__card-title">Выход на окупаемость*</div>
+              </div>
+              <div class="franchise-info__card">
+                <div class="franchise-info__card-value">170000</div>
+                <div class="franchise-info__card-title">Активных пользователей</div>
+              </div>
+              <div class="franchise-info__card">
+                <div class="franchise-info__card-value">4</div>
+                <div class="franchise-info__card-title">Языков поддержки</div>
+              </div>
+              <div class="franchise-info__card">
+                <div class="franchise-info__card-value">8</div>
+                <div class="franchise-info__card-title">Социальных сетей</div>
+              </div>
+              <div class="franchise-info__card">
+                <div class="franchise-info__card-value">7</div>
+                <div class="franchise-info__card-title">
+                  Страны присутствия
+                  <div class="franchise-info__ctr-btn"></div>
+                  <div class="franchise-info__cards-ctr">
+                    <div class="franchise-info__cards-ctr-col">
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c20.png" alt="ctr">Япония</div>
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c6.png" alt="ctr">Финляндия</div>
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c5.png" alt="ctr">США</div>
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c1.png" alt="ctr">Россия</div>
+                    </div>
+                    <div class="franchise-info__cards-ctr-col">
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c11.png" alt="ctr">Чехия</div>
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c10.png" alt="ctr">Польша</div>
+                      <div class="franchise-info__cards-ctr-item"><img src="img/c2.png" alt="ctr">Бразилия</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn" id="calc2_btn"><img src="img/calc.svg" alt="calc">Рассчитать доходность</div>
+            <div class="franchise-info__cards-list-text">* При условии покупки пакета «Старт» или пакета «Бизнес»</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="franchise-tools">
+        <div class="franchise-tools__inner">
+          <div class="franchise-tools__title">Инструменты для работы</div>
+          <div class="franchise-tools__list">
+            <div class="franchise-tools__card franchise-tools__card--1">
+              <div class="franchise-tools__card-title">Единая <br> система</div>
+              <div class="franchise-tools__card-text">Все сервисы работают на одной <br> системе, для максимального <br> удобства в эксплуатации</div>
+              <div class="franchise-tools__img-1">
+                <img src="img/tw1.png" alt="img">
+              </div>
+            </div>
+            <div class="franchise-tools__card franchise-tools__card--2">
+              <div class="franchise-tools__card-title">Страница <br> дилера</div>
+              <div class="franchise-tools__card-text">Полный контроль за системой <br> с управлением и аналитикой <br> аккаунтов клиентов в одном месте</div>
+              <div class="franchise-tools__img-2">
+                <img src="img/tw2.png" alt="img">
+              </div>
+              <div class="franchise-tools__img-3">
+                <img src="img/tw3.png" alt="img">
+              </div>
+            </div>
+            <div class="franchise-tools__card franchise-tools__card--3">
+              <div class="franchise-tools__card-title">Доступ с любых <br> устройств</div>
+              <div class="franchise-tools__card-text">Система отлично выглядит на всех <br> экранах, контролируйте все процессы <br> сервиса с любого устройства.</div>
+              <div class="franchise-tools__img-4">
+                <img src="img/tw4.png" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="franchise-service">
+        <div class="franchise-service__inner">
+          <div class="franchise-service__row-1">
+            <div class="franchise-service__left">
+              <div class="franchise-service__left-title">Сервис по <br> франшизе ECIR</div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>Работая по франшизе с ECIR наш дилер получает персонального менеджера, подробную аналитику и поддержку, вам не придется подключать сторонние сервисы, система готова к работе, а также вы получите:</span>
+              </div>
+              <div class="franchise-service__left-list">
+                <div class="franchise-service__left-card">
+                  <img src="img/sr1.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Результат многолетней <br> работы команды</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr2.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Готовый бизнес <br> с расчетами</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr3.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Команду разработчиков <br> и поддержку</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr4.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Базу знаний <br> по работе системы</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr5.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Минимальную цену <br> за 1 клиента на рынке</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr6.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Опыт в PR <br> и маркетинге</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr7.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Команду специалистов <br> SMM-маркетинга</div>
+                </div>
+                <div class="franchise-service__left-card">
+                  <img src="img/sr8.svg" alt="card">
+                  <div class="franchise-service__left-card-text">Бизнес план <br> на годы вперед</div>
+                </div>
+              </div>
+              <div class="franchise-service__left-timeline">
+                <img src="img/timeline1.svg" alt="timeline">
+              </div>
+            </div>
+            <div class="franchise-service__right">
+              <div class="franchise-service__right-title">Разработка <br> своего сервиса</div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>Инвестиции на запуск системы</span>
+              </div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>Собственный штат разработчиков <br> и поддержки</span>
+              </div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>Месяцы тестирования продукта</span>
+              </div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>Подключение множества <br> дополнительных сервисов</span>
+              </div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>Испытания и ошибки</span>
+              </div>
+              <div class="franchise-service__left-text">
+                <div>—</div>
+                <span>На выходе вы получите локальный <br> продукт который необходимо будет <br> постоянно дорабатывать и развивать</span>
+              </div>
+              <div style="transform: translateY(-19px);" class="franchise-service__right-timeline">
+                <img src="img/timeline2.svg" alt="timeline">
+              </div>
+            </div>
+          </div>
+          <div class="franchise-service__row-2">
+            <div class="franchise-service__wut franchise-service__wut--1">
+              <div class="franchise-service__wut-title">Узнайте больше <br> о франшизе</div>
+              <div class="franchise-service__wut-text">Скачайте презентацию чтобы узнать <br> про интересующие вас подробности</div>
+              <div class="btn">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</div>
+            </div>
+            <div class="franchise-service__wut franchise-service__wut--2">
+              <div class="franchise-service__wut-title">Демо доступ <br> к системе</div>
+              <div class="franchise-service__wut-text">Получите доступ чтобы попробовать <br> функционал и убедиться в качестве</div>
+              <div class="btn">ПОЛУЧИТЬ ДОСТУП</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="franchise-about">
+        <div class="franchise-about__inner">
+          <div class="franchise-about__name">
+            <img src="img/about-quotes.svg" alt="quotes">
+            <span>Александр Метелев основатель <br> IT лаборатории CrownMedia</span>
+          </div>
+          <div class="franchise-about__title">О нас</div>
+          <div class="franchise-about__text">
+            <span>В основе компании СrownMedia лежит фундаментальная ценность в постоянном развитии и создании чего то нового.</span>
+            <span>Мы больше 6 лет создаем и запускаем проекты, разрабатываем сложные Saas проекты и собираем лучшую команду на рынке.</span>
+          </div>
+          <div class="franchise-about__nav">
+            <div class="btn">СВЯЖИТЕСЬ С НАМИ</div> <!-- data-popup="feedback" -->
+            <a href="https://metelev.io"><img src="img/watermark_ru.svg" alt="crownmedia"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/rangeslider/rangeslider.js"></script>
+    <script src="js/fr.js"></script>
+  </body>
+</html>
