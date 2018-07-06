@@ -101,45 +101,46 @@ function animateNumber(el, interval) {
   }, interval);
 }
 
-animateNumber(document.querySelector('.social__img-counter-1'), 500);
-animateNumber(document.querySelector('.social__img-counter-2'), 1000);
-animateNumber(document.querySelector('.social__img-counter-3'), 600);
-animateNumber(document.querySelector('.social__img-counter-4'), 1000);
-animateNumber(document.querySelector('.social__img-counter-5'), 700);
-animateNumber(document.querySelector('.social__img-counter-6'), 800);
-animateNumber(document.querySelector('.social__img-counter-7'), 900);
-
-animateNumber(document.querySelector('.social__img-counter-8'), 300);
-animateNumber(document.querySelector('.social__img-counter-9'), 500);
-animateNumber(document.querySelector('.social__img-counter-10'), 1000);
-animateNumber(document.querySelector('.social__img-counter-11'), 2000);
-
-animateNumber(document.querySelector('.social__img-counter-12'), 100);
-animateNumber(document.querySelector('.social__img-counter-13'), 1000);
-animateNumber(document.querySelector('.social__img-counter-14'), 2300);
-
-animateNumber(document.querySelector('.social__img-counter-15'), 1000);
-animateNumber(document.querySelector('.social__img-counter-16'), 2300);
-animateNumber(document.querySelector('.social__img-counter-17'), 2300);
-
-animateNumber(document.querySelector('.social__img-counter-18'), 100);
-animateNumber(document.querySelector('.social__img-counter-19'), 2000);
-
-animateNumber(document.querySelector('.social__img-counter-20'), 2000);
-animateNumber(document.querySelector('.social__img-counter-21'), 2000);
-animateNumber(document.querySelector('.social__img-counter-22'), 2000);
-animateNumber(document.querySelector('.social__img-counter-23'), 1000);
-
-animateNumber(document.querySelector('.social__img-counter-25'), 100);
-
-animateNumber(document.querySelector('.social__img-counter-26'), 2000);
-animateNumber(document.querySelector('.social__img-counter-27'), 2500);
-animateNumber(document.querySelector('.social__img-counter-28'), 1000);
-animateNumber(document.querySelector('.social__img-counter-29'), 3000);
-animateNumber(document.querySelector('.social__img-counter-30'), 1000);
-animateNumber(document.querySelector('.social__img-counter-31'), 2000);
 
 
 
 
 
+
+animateNumber(document.querySelector('.social__insta-bubble--1 > span'), 100);
+animateNumber(document.querySelector('.social__insta-bubble--2 > span'), 100);
+animateNumber(document.querySelector('.social__insta-bubble--3 > span'), 100);
+animateNumber(document.querySelector('.social__card-insta__likes > span'), 100);
+animateNumber(document.querySelector('.social__card-insta__comments > span'), 100);
+animateNumber(document.querySelector('.social__card-insta__likes--2 > span'), 100);
+animateNumber(document.querySelector('.social__card-insta__comments--2 > span'), 100);
+
+animateNumber(document.querySelector('.social__card-vk-likes > span'), 100);
+animateNumber(document.querySelector('.social__card-vk-comments > span'), 100);
+animateNumber(document.querySelector('.social__card-vk-shares > span'), 100);
+animateNumber(document.querySelector('.social__card-vk-views > span'), 100);
+
+animateNumber(document.querySelector('.social__card-face-emoji > span'), 100);
+animateNumber(document.querySelector('.social__card-face-counter-1 > div'), 100);
+animateNumber(document.querySelector('.social__card-face-counter-2 > div'), 100);
+
+animateNumber(document.querySelector('.social__card-telega-info-count > span'), 100);
+animateNumber(document.querySelector('.social__card-telega-message-views > span'), 100);
+animateNumber(document.querySelector('.social__card-telega-message-views-2 > span'), 100);
+
+animateNumber(document.querySelector('.social__card-yt-info-count > span'), 100);
+animateNumber(document.querySelector('#yt-likes > span'), 100);
+animateNumber(document.querySelector('#tw-flwrs > span'), 100);
+animateNumber(document.querySelector('#tw-likes'), 100);
+animateNumber(document.querySelector('#tw-coments'), 100);
+animateNumber(document.querySelector('#tw-rt > span'), 100);
+animateNumber(document.querySelector('#tw-likes > span'), 100);
+
+animateNumber(document.querySelector('.social__card-sz-container > span > span'), 100);
+
+animateNumber(document.querySelector('#sc-flwrs > span'), 100);
+animateNumber(document.querySelector('#sc-1 > span'), 100);
+animateNumber(document.querySelector('#sc-2 > span'), 100);
+animateNumber(document.querySelector('#sc-3 > span'), 100);
+animateNumber(document.querySelector('#sc-likes > span'), 100);
+animateNumber(document.querySelector('#sc-rt > span'), 100);
