@@ -6454,3 +6454,9 @@ code {
 	left: -5px;
 	animation: fade-up 1.4s infinite ease-in-out;
 }
+
+@media (max-width: 1208px) {
+	.social {
+		display: none;
+	}
+}
