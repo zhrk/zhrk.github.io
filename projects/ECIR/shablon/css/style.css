@@ -6659,6 +6659,7 @@ code {
 	min-width: 200px;
 	position: absolute;
 	top: 40px;
+  z-index: 2;
 }
 
 .faq__nav--shablon .faq__nav-item.active:after {
@@ -7165,10 +7166,12 @@ code {
 	margin-bottom: 100px;
 	outline: none;
 	display: none;
+  position: absolute;
 }
 
 .shablon__card-wrapper.active {
 	display: flex;
+  position: relative;
 }
 
 .shablon__top {
