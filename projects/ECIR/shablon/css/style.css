@@ -7179,6 +7179,8 @@ code {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .shablon__top-inner {
@@ -7237,7 +7239,33 @@ code {
 	background-color: #3B5998;
 }
 
+.shablon__nav-mobile {
+  margin-bottom: 40px;
+  margin-top: -40px;
+  justify-content: center;
+  display: none;
+}
+
+.shablon__nav-mobile > select {
+  outline: none;
+  color: #999AB0 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  background: #fff;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #E3E7FC;
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 1208px) {
+
+  .shablon__nav-mobile {
+    display: flex;
+  }
 
 	.faq__nav--shablon {
 		margin-top: -40px;
@@ -7245,6 +7273,7 @@ code {
 		align-self: center;
 		top: 0;
 		max-width: 100%;
+    display: none;
 	}
 
 	.faq__nav--shablon .faq__nav-item {
@@ -7273,6 +7302,12 @@ code {
 	.shablon__card-tabs {
 		margin-left: 0;
 	}
+
+  .shablon__card-tabs > .nav-tabs,
+  .shablon__card-tabs > .tab-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
 }
 
@@ -7341,5 +7376,11 @@ code {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+  .shablon__top {
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
 }
