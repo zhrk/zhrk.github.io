@@ -1,4 +1,4 @@
-$('a[href*="#"]')
+/*$('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
@@ -25,4 +25,41 @@ $('a[href*="#"]')
       });
     }
   }
-});
+});*/
+
+
+//menu open on click
+  $(".header__link").each(function(index) {
+
+    
+
+    $(this).click(function(event) {
+
+
+      $(".header__link").each(function() {
+        $(this).removeClass("header__link--visible");
+        $(this).children().eq(2).removeClass("header__drop--visible");
+      });
+
+
+
+      $(this).children().eq(2).addClass("header__drop--visible");
+      $(this).addClass("header__link--visible");
+
+    });
+  });
+
+  $(document).click(function() {
+    $(".header__link").each(function() {
+      $(this).removeClass("header__link--visible");
+      $(this).children().eq(2).removeClass("header__drop--visible");
+    });
+  });
+
+  $('.header__drop').click(function(e){
+     e.stopPropagation();
+  });
+
+  $('.header__link').click(function(e){
+     e.stopPropagation();
+  });
