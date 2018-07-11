@@ -3727,6 +3727,38 @@ code {
 	background-color: #F6F7FD;
 }
 
+@media (max-width: 1208px) {
+
+  .p-table__header > div:last-child {
+    display: none;
+  }
+
+  .p-table__info-row > div:last-child {
+    display: none;
+  }
+
+  .p-table__nav {
+    width: 33.333%;
+  }
+
+  .p-table__header > div {
+    width: 33.333% !important;
+  }
+
+  .p-table__info-row > div {
+    width: 50% !important;
+  }
+
+  .p-table__nav > a {
+    padding-left: 10px;
+  }
+
+  .p-table__info-row > div {
+    padding-left: 10px;
+  }
+
+
+}
 
 
 /* FRANCHISE */
