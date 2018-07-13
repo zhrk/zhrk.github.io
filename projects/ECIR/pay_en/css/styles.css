@@ -145,6 +145,18 @@
     margin-bottom: 30px;
   }
 
+  .pay-way__bottom {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .pay-way__bottom > span {
+    margin-top: 20px;
+    text-align: center;
+  }
+
 }
 
 /* pay-way END */

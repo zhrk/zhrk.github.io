@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .btn {
   height: 50px;
   padding-left: 30px;
@@ -224,6 +228,18 @@
 
   .pay-way--ru .pay-way__list > .pay-way__item:not(:nth-child(8n)) {
     margin-right: 0;
+  }
+
+  .pay-way--ru .pay-way__list > .pay-way__item:not(:nth-child(4n)) {
+    margin-right: 10px;
+  }
+
+  .pay-way--ru .pay-way__list {
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: row;
+    align-self: center;
+    max-width: 306px;
   }
 
   .pay-way--ru .pay-way__bottom {
