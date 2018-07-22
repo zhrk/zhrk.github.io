@@ -64,6 +64,32 @@ $(document).ready(function() {
 		})
 	}
 
+  if (window.innerWidth < 1208) {
+
+    $('.services__list').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    });
+
+    $('.social-wrap').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    });
+
+    $('.news__list').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    });
+
+  }
+
+
 });
 
 $(window).scroll(function(){
