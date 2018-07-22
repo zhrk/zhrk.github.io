@@ -16,7 +16,8 @@ function showMoreText() {
 }
 
 
-
+$('#social').niceSelect();
+$('#service').niceSelect();
 
 
 
