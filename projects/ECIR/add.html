@@ -141,7 +141,8 @@
 									<div class="add__input-title">
 										<div>Количество</div>
 									</div>
-									<input value="100" class="add__input" type="text">
+									<input value="100" class="add__input add__input--error" type="text">
+                  <div class="add__input-error-text">Не менее 100</div>
 								</div>
 								<div class="add__bottom">
 									<div class="add__bottom-col">
@@ -278,7 +279,14 @@
 								<input type="text">
 							</div>
 						</div>
-						<button class="btn">Добавить в корзину</button>
+						<button class="btn"> <!-- .btn--loader --> <!-- класс для xhr -->
+							Добавить в корзину
+							<div class="loader">
+							  <svg viewBox="0 0 50 50">
+							    <circle cx="25" cy="25" r="20" fill="none" stroke-width="2"/>
+							  </svg>
+							</div>
+						</button>
 					</form>
 				</div>
 			</div>

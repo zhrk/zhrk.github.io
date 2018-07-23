@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	
-	$('#service').niceSelect();
+  $('#service').niceSelect();
+  $('#m-social').niceSelect();
+	$('#m-service').niceSelect();
 
 	document.querySelector('.nice-select').classList.add('nice-select-bg-1');
 
