@@ -264,8 +264,11 @@
 	}
 
 	.welcome__form-text {
-		margin-top: 40px;
-		text-align: center;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .01em;
+    margin-bottom: 30px;
 	}
 
 	.orders__title {

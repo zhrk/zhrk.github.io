@@ -7933,15 +7933,18 @@ footer {
 @media (max-width: 767px) {
 
 	.welcome__news {
-		padding-top: 8px;
-		padding-bottom: 8px;
 		border-radius: 12px 0 0 12px;
 		position: absolute;
 		left: 16px;
+		height: 40px;
 	}
 
 	.welcome__news > span {
 		color: #D9DAFF;
+	}
+
+	.welcome__news-bubble {
+		height: 100%;
 	}
 
 }
@@ -10273,7 +10276,7 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 	position: absolute;
-	max-width: 320px;
+	max-width: 340px;
 	top: 95%;
 	flex-direction: column;
 	display: none;
