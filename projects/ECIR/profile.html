@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Some, SEO, Tags">
+    <meta name="description" content="A description of the page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="libs/rangeslider/rangeslider.css">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <title>Template</title>
+  </head>
+  <body>
+
+    <header>
+      <a class="anchorn" href="" name="top"></a>
+      <div class="header__inner">
+        <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+        <nav>
+          <a class="header__link" href="">Telegram бот</a>
+          <a class="header__link" href="">Поддержка</a>
+          <a class="header__link" href="">Контакты</a>
+        </nav>
+        <a href="cart.html" class="header__cart header__cart--disabled">
+          <div class="header__cart-img">
+            <img src="img/icons/cart.svg">
+            <div class="header__indicator"></div>
+          </div>
+          <div class="header__value">600 ₽</div>
+        </a>
+        <a href="" class="btn btn--header">Войти</a>
+      </div>
+    </header>
+
+
+
+
+
+    <div class="profile">
+
+      <div class="profile-change">
+        <form class="profile-change__form">
+          <div class="profile-change__title">
+            <div>
+              <img src="img/profile/lock.svg" alt="lock">
+              <span>Изменение пароля</span>
+            </div>
+            <img class="profile-change--close" src="img/profile/close.svg" alt="close">
+          </div>
+          <div class="profile-input">
+            <label>Новый пароль</label>
+            <input type="text">
+            <span class="">Ошибка</span> <!-- .active -->
+          </div>
+          <div class="profile-input">
+            <label>Повторите пароль</label>
+            <input type="text">
+            <span class="">Ошибка</span> <!-- .active -->
+          </div>
+          <button class="btn">Изменить</button>
+        </form>
+      </div>
+
+      <div class="profile__title">
+        <div>
+          <span>Профиль</span>
+        </div>
+      </div>
+
+      <div class="profile__inner">
+        <div class="profile-col">
+
+          <div class="profile-info">
+            <div class="profile-info__title">Данные</div>
+            <div class="profile-input">
+              <label>Login</label>
+              <input type="text">
+              <span class="">Ошибка</span> <!-- .active -->
+            </div>
+            <div class="profile-input">
+              <label>Email</label>
+              <input type="text">
+              <span class="">Ошибка</span> <!-- .active -->
+            </div>
+            <button class="btn">Сохранить</button>
+            <div class="profile-info__bottom">
+              <div class="profile-info__bottom-btn profile-info--change">
+                <img src="img/profile/lock.svg" alt="icon">
+                <span>Изменить пароль</span>
+              </div>
+              <div class="profile-info__bottom-btn">
+                <img src="img/profile/trash.svg" alt="icon">
+                <span>Удалить аккаут</span>
+              </div>
+            </div>
+          </div>
+
+            <div class="profile-fast">
+              <div class="profile-fast__title">Быстрая авторизация</div>
+              <div class="profile-fast__btn">
+                <img src="img/profile/facebook.svg" alt="social">
+                <span>Sign In with Facebook</span>
+                <div class="active">
+                  <img src="img/profile/check.svg" alt="check">
+                </div>
+              </div>
+              <div class="profile-fast__btn">
+                <img src="img/profile/google.svg" alt="social">
+                <span>Sign In with Google</span>
+                <div class="">
+                  <img src="img/profile/check.svg" alt="check">
+                </div>
+              </div>
+          </div>
+
+        </div>
+        <div class="profile-col">
+          
+          <div class="profile-balance">
+            <img src="img/profile/wallet.svg" alt="wallet">
+            <div class="profile-balance__info">
+              <span>Баланс</span>
+              <div>1500 ₽</div>
+            </div>
+            <a href="" class="btn">Пополнить</a>
+          </div>
+
+          <div class="profile-bot">
+            <div class="profile-bot__title">Телеграм бот</div>
+            <div class="profile-bot__list">
+              <div class="profile-bot__list-item">
+                <img src="img/profile/check.svg" alt="check">
+                <span>Пополнение и проверка баланса</span>
+              </div>
+              <div class="profile-bot__list-item">
+                <img src="img/profile/check.svg" alt="check">
+                <span>История и добавление заказов</span>
+              </div>
+              <div class="profile-bot__list-item">
+                <img src="img/profile/check.svg" alt="check">
+                <span>Уведомления об акциях</span>
+              </div>
+            </div>
+            <a href="" class="btn">Подключить</a>
+          </div>
+
+          <div class="profile-table">
+            <div class="profile-table__title">История баланса</div>
+            <table id="myTable" class="display">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Заказ</th>
+                  <th>Баланс</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 56</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 55</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 54</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 53</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 52</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 51</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 50</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 49</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 48</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 47</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 46</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 45</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 44</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 43</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 42</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>53 Авг 2018</td>
+                  <td>№ 41</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 40</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 39</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>53 Авг 2018</td>
+                  <td>№ 38</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 37</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 36</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>43 Авг 2018</td>
+                  <td>№ 35</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 34</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>43 Авг 2018</td>
+                  <td>№ 33</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 32</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 31</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 30</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 29</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 28</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 27</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 26</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 25</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 24</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 23</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 22</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 21</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>23 Авг 2018</td>
+                  <td>№ 20</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 19</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 18</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 17</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>53 Авг 2018</td>
+                  <td>№ 16</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 15</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 14</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>53 Авг 2018</td>
+                  <td>№ 13</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 12</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 11</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>43 Авг 2018</td>
+                  <td>№ 10</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 9</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>43 Авг 2018</td>
+                  <td>№ 8</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 7</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 6</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 5</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 4</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 3</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 2</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+                <tr>
+                  <td>13 Авг 2018</td>
+                  <td>№ 1</td>
+                  <td>- 4.50 ₽</td>
+                </tr>
+              </tbody>
+          </table>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    
+    <script src="libs/jquery-3.3.1.min.js"></script>  
+    <script src="libs/jquery.dataTables.min.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>
