@@ -1,32 +1,76 @@
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ["May 2018", "June 2018", "July 2018", "August 2018", "September 2018", "October 2018"],
-        datasets: [{
-            label: '# of Votes',
-            data: [0.5, 0.7, 0.8, 1, 1.2, 1.6, 1.9, 2, 2.1, 2.4, 3],
-            backgroundColor: [
-                'rgba(58, 83, 214, 0.16)'
-            ],
-            borderColor: [
-                '#3A53D6'
-            ],
-            borderWidth: 3
-        }]
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      },
-      legend: {
-        display: false
-      }
-    }
+$.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
 
-    
+    // Create the chart
+    var chart = Highcharts.stockChart('container', {
+
+        chart: {
+            height: 400
+        },
+
+        rangeSelector: {
+            selected: 1,
+            floating: true,
+            x: 703
+        },
+
+        series: [{
+            name: '$',
+            data: data,
+            type: 'area',
+            threshold: null,
+            tooltip: {
+                valueDecimals: 2
+            }
+        }],
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    chart: {
+                        height: 300
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    navigator: {
+                        enabled: false
+                    }
+                }
+            }]
+        }
+    });
+
+});
+
+Highcharts.setOptions({
+  lang: {
+    loading: 'Загрузка...',
+    months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    weekdays: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+    shortMonths: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Нояб', 'Дек'],
+    exportButtonTitle: "Экспорт",
+    printButtonTitle: "Печать",
+    rangeSelectorFrom: "С",
+    rangeSelectorTo: "По",
+    rangeSelectorZoom: "Период",
+    downloadPNG: 'Скачать PNG',
+    downloadJPEG: 'Скачать JPEG',
+    downloadPDF: 'Скачать PDF',
+    downloadSVG: 'Скачать SVG',
+    printChart: 'Напечатать график',
+  },
+  rangeSelector: {
+      buttons: [
+        { count: 1, type: 'month', text: '1M'}, 
+        { count: 3, type: 'month', text: '3M'},
+        { count: 6, type: 'month', text: '6M'},
+        { count: 1, type: 'year' , text: '1Y'},
+        { type: 'all', text: 'All'}
+    ],
+    inputEnabled: false,
+    selected: 0
+},
 });

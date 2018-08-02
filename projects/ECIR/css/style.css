@@ -8955,6 +8955,10 @@ footer {
 	
 }
 
+.partner-welcome--dealer {
+	background-image: url('../img/partner/welcome-bg-dealer.svg');
+}
+
 .partner-welcome__inner {
 	height: 960px;
 	max-width: 1208px;
@@ -9329,6 +9333,11 @@ footer {
   }
 
 }
+
+/* PARTNER END */
+
+
+
 
 /* ADD MOBILE START */
 
@@ -10097,6 +10106,53 @@ footer {
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+}
+
+/* .myChart {
+	position: relative;
+}
+
+.myChart .highcharts-title {
+	display: none;
+}
+
+.myChart .highcharts-subtitle {
+	display: none;
+}
+
+.myChart .highcharts-exporting-group {
+	display: none;
+}
+
+.myChart .highcharts-credits {
+	display: none;
+}
+
+.myChart .highcharts-legend {
+	display: none;
+}
+
+.myChart .highcharts-axis.highcharts-yaxis {
+	display: none;
+} */
+
+.invite .highcharts-title,
+.invite .highcharts-subtitle,
+.invite .highcharts-range-selector-buttons > text:first-child,
+.invite .highcharts-input-group,
+.invite .highcharts-navigator,
+.invite .highcharts-grid.highcharts-xaxis-grid.highcharts-navigator-xaxis,
+.invite .highcharts-series.highcharts-series-1.highcharts-areaspline-series.highcharts-navigator-series,
+.invite .highcharts-scrollbar-track,
+.invite .highcharts-axis-labels.highcharts-xaxis-labels.highcharts-navigator-xaxis,
+.invite .highcharts-scrollbar,
+.invite .highcharts-credits {
+	display: none !important;
+}
+
+.invite .highcharts-container  {
+	height: 350px !important;
 }
 
 .invite__graph-title {
@@ -10613,3 +10669,75 @@ footer {
 }
 
 /* F-INFO END */
+
+
+
+
+/* ARTICLE WUT START */
+
+
+.feed__wut-container {
+	display: flex;
+	margin-top: 40px;
+}
+
+.feed__wut5 {
+	width: 100%;
+	height: 100px;
+	background-image: url('../img/feed-wut5.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.feed__wut5-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.feed__wut5-info > div {
+	font-weight: bold;
+	font-size: 28px;
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+
+.feed__wut5-info > span {
+	margin-top: 5px;
+	font-size: 16px;
+	color: #B5B8F2;
+}
+
+@media (max-width: 1208px) {
+	.feed__wut5 {
+		flex-direction: column;
+		height: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.feed__wut5-info {
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.feed__wut5-info > div {
+		margin-top: 20px;
+	}
+
+	.feed__wut5-info > span {
+		margin-top: 20px;
+	}
+
+}
+
+
+
+/* ARTICLE WUT END */
