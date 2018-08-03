@@ -271,65 +271,6 @@
     margin-bottom: 30px;
 	}
 
-	.orders__title {
-		flex-direction: column;
-	}
-
-	.orders__nav {
-		margin-top: 20px;
-		flex-direction: column;
-	}
-
-	.orders__nav-item:first-child {
-		border-radius: 5px 5px 0 0;
-	}
-
-	.orders__nav-item:last-child {
-		border-radius: 0 0 5px 5px;
-	}
-
-	.orders__nav-item:not(:last-child) {
-		border-right: 0;
-	}
-
-	.orders__nav-item:nth-child(2) {
-		border-top: 1px solid #F0F2FA;
-		border-bottom: 1px solid #F0F2FA;
-	}
-
-	.orders__item:not(:nth-child(3n)) {
-		margin-right: 0;
-	}
-
-	.btn--orders {
-		font-size: 12px;
-	}
-
-	.orders__info-title {
-		font-size: 13px;
-	}
-
-	.orders__info-value {
-		font-size: 13px;
-	}
-
-	.orders__item-title {
-		font-size: 23px;
-	}
-
-	.orders__inner {
-		padding-bottom: 20px;
-	}
-
-	.orders__list {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.orders__item {
-		max-width: 100%;
-	}
-
 	.footer__copyright {
 		order: 1;
 		text-align: center;
