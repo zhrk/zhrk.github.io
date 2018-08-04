@@ -24,3 +24,25 @@ $(".profile-change--close").click(function() {
 $('.profile-change__form').click(function(e){
    e.stopPropagation();
 });
+
+
+
+$(".profile-info--delete").click(function() {
+  $(".profile-delete").addClass("profile-delete--visible");
+});
+
+$(".profile-delete").click(function() {
+  $(".profile-delete").removeClass("profile-delete--visible");
+});
+
+$(".profile-delete--close").click(function() {
+  $(".profile-delete").removeClass("profile-delete--visible");
+});
+
+$(".profile-delete--no").click(function() {
+  $(".profile-delete").removeClass("profile-delete--visible");
+});
+
+$('.profile-delete__inner').click(function(e){
+   e.stopPropagation();
+});
