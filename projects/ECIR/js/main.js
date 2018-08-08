@@ -75,12 +75,14 @@ $(document).ready(function() {
       dots: true
     });
 
-    $('.social-wrap').slick({
+    $('.ionTabs__body').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       dots: true
     });
+
+    $('.ionTabs__body').slick('slickRemove', 8);
 
     $('.news__list').slick({
       slidesToShow: 1,
@@ -172,3 +174,8 @@ animateNumber(document.querySelector('#sc-2 > span'), 100);
 animateNumber(document.querySelector('#sc-3 > span'), 100);
 animateNumber(document.querySelector('#sc-likes > span'), 100);
 animateNumber(document.querySelector('#sc-rt > span'), 100);
+
+
+$.ionTabs("#tabs_1", {
+  type: "none"
+});
