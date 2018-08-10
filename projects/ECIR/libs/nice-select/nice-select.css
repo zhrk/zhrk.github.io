@@ -13,8 +13,8 @@
   height: 50px;
   line-height: 40px;
   outline: none;
-  padding-left: 50px;
-  padding-right: 35px;
+  padding-left: 16px;
+  padding-right: 16px;
   position: absolute;
   text-align: left !important;
   -webkit-transition: all 0.2s ease-in-out;
@@ -170,6 +170,7 @@
   background-color: transparent;
   color: #999;
   cursor: default;
+  display: none;
 }
 
 .no-csspointerevents .nice-select .list {
@@ -182,7 +183,7 @@
 
 .nice-select .option {
   background-repeat: no-repeat;
-  padding-left: 50px;
+  padding-left: 16px;
   height: 50px;
   box-sizing: border-box;
   line-height: 50px;
