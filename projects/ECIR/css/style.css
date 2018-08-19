@@ -13498,4 +13498,13 @@ h4.webinar-who {
 	margin-top: 0;
 }
 
+@media screen and (max-width: 1279px) {
+
+	.welcome--landing {
+    height: 100vh !important;
+	}
+
+}
+
+
 /* LANDING END */
