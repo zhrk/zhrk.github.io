@@ -7900,6 +7900,11 @@ footer {
 	color: #999AB0;
 }
 
+.fast--add {
+	margin-top: 40px;
+	padding-top: 20px;
+}
+
 @media (max-width: 1023px) {
 
 	.fast__list {
@@ -13445,3 +13450,52 @@ h4.webinar-who {
 }
 
 /* PRODUCT END */
+
+
+
+
+/* LANDING START */
+
+.landing {
+	height: calc(100vh);
+	background: linear-gradient(-45deg, #171A54, #151750, #101249, #0E1045);
+	background-size: 400% 400%;
+	animation: Gradient 5s ease-in-out infinite;
+}
+
+@keyframes Gradient {
+
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+
+}
+
+
+/* LANDING END */
+
+
+
+/* LANDING START */
+
+.welcome--landing {
+	height: 100vh;
+}
+
+.welcome--landing > .welcome__inner {
+	justify-content: center;
+}
+
+.welcome--landing > .welcome__inner > h1 {
+	margin-top: 0;
+}
+
+/* LANDING END */
