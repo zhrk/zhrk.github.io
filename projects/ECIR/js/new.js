@@ -19,7 +19,7 @@ $(".new__live-more").click(function() {
 });
 
 $(".ionTabs__tab--bots").click(function() {
-  $(".new__live").removeClass("add__list--visible");
+  $(".new__live").removeClass("new__live--visible");
   $(".add__list").addClass("add__list--visible");
 });
 
