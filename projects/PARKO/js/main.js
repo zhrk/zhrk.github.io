@@ -3,7 +3,9 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     navigation: true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    sectionSelector: '.welcome__section'
+    sectionSelector: '.welcome__section',
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    menu: '#myMenu'
   });
 
   $(".welcome__slider").on("init", function(event, slick, currentSlide) {
