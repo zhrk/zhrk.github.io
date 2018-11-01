@@ -22,4 +22,26 @@ $(document).ready(function() {
     draggable: false
   });
 
+
+
+
+
+  $('.welcome__add-slides').slick({
+    fade: true,
+    speed: 100
+  });
+
+
+
+  $('.welcome__add-nav-item').on('mouseover', function(event) {
+    var hoverSlide = event.target.dataset.addSlide;
+    
+    $('.welcome__add-slides').slick("slickGoTo", hoverSlide);
+
+  });
+
+
+
+
+
 });
