@@ -28,7 +28,7 @@ $(document).ready(function() {
 
   $('.welcome__add-slides').slick({
     fade: true,
-    speed: 100
+    speed: 0
   });
 
 
