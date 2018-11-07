@@ -42,6 +42,69 @@ $(document).ready(function() {
 
 
 
+  //team
+
+  $(".welcome__team-list").on("init", function(event, slick, currentSlide) {
+    $(this).append(
+      '<div class="slick-counter">'+ '<span>' + 1 + '</span> / ' + Math.ceil(slick.slideCount / slick.options.slidesToShow) +'</div>'
+    );
+  });
+
+  $(".welcome__team-list").on("afterChange", function(event, slick, currentSlide) {
+    $(this).find('.slick-counter').html('<span>' + ( ( currentSlide / slick.options.slidesToShow ) + 1 ) + '</span> / ' + Math.ceil(slick.slideCount / slick.options.slidesToShow));
+  });
+
+
+
+  $('.welcome__team-list').slick({
+    draggable: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1919,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5
+        }
+      }
+    ]
+  });
+
+
+
+  //logo
+
+  $(".welcome__logos").on("init", function(event, slick, currentSlide) {
+    $(this).append(
+      '<div class="slick-counter">'+ '<span>' + 1 + '</span> / ' + Math.ceil(slick.slideCount / slick.options.slidesToShow) +'</div>'
+    );
+  });
+
+  $(".welcome__logos").on("afterChange", function(event, slick, currentSlide) {
+    $(this).find('.slick-counter').html('<span>' + ( ( currentSlide / slick.options.slidesToShow ) + 1 ) + '</span> / ' + Math.ceil(slick.slideCount / slick.options.slidesToShow));
+  });
+
+
+
+  $('.welcome__logos').slick({
+    draggable: false,
+    slidesToShow: 7,
+    slidesToScroll: 7,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1919,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5
+        }
+      }
+    ]
+  });
+
+
 
 
 });
