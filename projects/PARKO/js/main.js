@@ -4,7 +4,7 @@ $(document).ready(function() {
     navigation: true,
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     sectionSelector: '.welcome__section',
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivePage', 'sixPage', 'lastPage'],
     menu: '#myMenu'
   });
 
@@ -106,5 +106,60 @@ $(document).ready(function() {
 
 
 
+
+  //news
+
+  $(".welcome__articles").on("init", function(event, slick, currentSlide) {
+    $(this).append(
+      '<div class="slick-counter">'+ '<span>' + 1 + '</span> / ' + Math.ceil(slick.slideCount / slick.options.slidesToShow) +'</div>'
+    );
+  });
+
+  $(".welcome__articles").on("afterChange", function(event, slick, currentSlide) {
+    $(this).find('.slick-counter').html('<span>' + ( ( currentSlide / slick.options.slidesToShow ) + 1 ) + '</span> / ' + Math.ceil(slick.slideCount / slick.options.slidesToShow));
+  });
+
+
+
+  $('.welcome__articles').slick({
+    draggable: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1599,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ],
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
+
+
+
+
+
+  $('.welcome__contact-form-select').niceSelect();
+
+
+
+  $("#header-call").click(function() {
+    $(".popup__call").addClass("popup__call--visible");
+  });
+
+  $(".popup__call-close").click(function() {
+    $(".popup__call").removeClass("popup__call--visible");
+  });
 
 });

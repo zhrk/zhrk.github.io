@@ -16,9 +16,51 @@
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="libs/fullpage/fullpage.min.css">
+    <link rel="stylesheet" href="libs/nice-select/nice-select.css">
     <title>Template</title>
   </head>
   <body>
+
+    <div class="popup__call">
+      <div class="popup__call-close">
+        <img src="img/popup/close.png" alt="close">
+      </div>
+      <div class="welcome__contact">
+        <div class="welcome__contact-left">
+          <div class="welcome__contact-title">КОНТАКТЫ</div>
+          <div class="welcome__contact-sub-title"><span>НАШЕГО</span> ОФИСА</div>
+          <div class="welcome__contact-top">Телефон:</div>
+          <div class="welcome__contact-bottom">8(495)790-86-97</div>
+          <div class="welcome__contact-top">Адрес:</div>
+          <div class="welcome__contact-bottom">г. Москва, ул. Новослободская 16, <br> офис 303, 77 шагов от метро <br> «Менделеевская».</div>
+          <div class="welcome__contact-top">E-mail:</div>
+          <div class="welcome__contact-bottom">info@parko.agency</div>
+        </div>
+        <form class="welcome__contact-form">
+          <div class="welcome__contact-form-title">ОСТАВИТЬ ЗАЯВКУ</div>
+          <input type="text" class="welcome__contact-form-input" placeholder="Как к Вам обращаться?">
+          <input type="text" class="welcome__contact-form-input" placeholder="Ваш номер телефона">
+          <input type="text" class="welcome__contact-form-input" placeholder="Ваш E-mail">
+          <select class="welcome__contact-form-select">
+            <option disabled selected>Выберите интересующую Вас услугу</option>
+            <option value="">Веб-дизайн</option>
+            <option value="">Веб-дизайн</option>
+            <option value="">Веб-дизайн</option>
+          </select>
+          <textarea class="welcome__contact-form-textarea" placeholder="Опишите, что Вам необходимо и наш специалист максимально подробно сможет проконсультировать Вас по интересующей услуге"></textarea>
+          <div class="welcome__contact-form-love">Ни одной заявки не оставим без ответа</div>
+          <div class="welcome__contact-form-data">
+            <input type="checkbox" id="personal2">
+            <label class="form__checkbox" for="personal2"></label>
+            <span>
+              Согласен на
+              <a href="">обработку моих данных</a>
+            </span>
+          </div>
+          <button class="btn btn--gradient">Отправить</button>
+        </form>
+      </div>
+    </div>
     
     <header class="header header--index">
       <div class="header__container">
@@ -28,13 +70,13 @@
         </a>
         <h1 class="header__text">Интернет агенство <br> полного цикла</h1>
       </div>
-      <nav class="header__nav" id="myMenu">
+      <nav class="header__nav">
         <ul>
-          <li data-menuanchor="firstPage" class="active">
-            <a href="#firstPage">О нас</a>
+          <li>
+            <a href="">О нас</a>
           </li>
-          <li data-menuanchor="secondPage">
-            <a href="#secondPage">Услуги</a>
+          <li>
+            <a href="">Услуги</a>
           </li>
           <li>
             <a href="">Портфолио</a>
@@ -46,7 +88,7 @@
       </nav>
       <div class="header__container">
         <a href="tel:+88001234567" class="header__phone">8 800 1234567</a>
-        <button class="btn btn--gradient btn--align-self-center btn--margin-right-60 btn--header-responsive">Заказать звонок</button>
+        <button id="header-call" class="btn btn--gradient btn--align-self-center btn--margin-right-60 btn--header-responsive">Заказать звонок</button>
       </div>
     </header>
 
@@ -234,7 +276,7 @@
       <div class="welcome__section">
         <div class="welcome__team">
           <div class="welcome__team-title">
-            <img src="img/welcome/team-title.png" alt="Команда">
+            Команда
           </div>
           <div class="welcome__team-title-text">которая <span>знает</span> свое дело</div>
           <div class="welcome__team-list">
@@ -281,7 +323,7 @@
       <div class="welcome__section">
         <div class="welcome__team welcome__team--clients">
           <div class="welcome__team-title">
-            <img src="img/welcome/team-clients.png" alt="Команда">
+            Клиенты
           </div>
           <div class="welcome__team-title-text">доверяющие <span>нашему опыту</span> </div>
           <div class="welcome__logos">
@@ -353,6 +395,157 @@
         </div>
       </div>
 
+      <div class="welcome__section">
+        <div class="welcome__team welcome__team--news">
+          <div class="welcome__team-title--news">
+            <a href="">Новости</a>
+            <a href="">Статьи</a>
+          </div>
+          <div class="welcome__articles">
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+            <div class="welcome__article">
+              <div class="welcome__article-date">2 ноября 2019</div>
+              <div class="welcome__article-img">
+                <div class="welcome__article-img-container">
+                  <img src="img/welcome/photo_2.png" alt="img">
+                </div>
+                <div class="welcome__article-text">Готовы к реализации проектов любой сложности, Обеспечим выполнение проекта в договоре.</div>
+              </div>
+              <a href="" class="welcome__article-read">Читать</a>
+            </div>
+
+            <div class="clearfix" style="opacity: 0"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome__section">
+        <div class="welcome__contact">
+          <div class="welcome__contact-left">
+            <div class="welcome__contact-title">КОНТАКТЫ</div>
+            <div class="welcome__contact-sub-title"><span>НАШЕГО</span> ОФИСА</div>
+            <div class="welcome__contact-top">Телефон:</div>
+            <div class="welcome__contact-bottom">8(495)790-86-97</div>
+            <div class="welcome__contact-top">Адрес:</div>
+            <div class="welcome__contact-bottom">г. Москва, ул. Новослободская 16, <br> офис 303, 77 шагов от метро <br> «Менделеевская».</div>
+            <div class="welcome__contact-top">E-mail:</div>
+            <div class="welcome__contact-bottom">info@parko.agency</div>
+          </div>
+          <form class="welcome__contact-form">
+            <div class="welcome__contact-form-title">ОСТАВИТЬ ЗАЯВКУ</div>
+            <input type="text" class="welcome__contact-form-input" placeholder="Как к Вам обращаться?">
+            <input type="text" class="welcome__contact-form-input" placeholder="Ваш номер телефона">
+            <input type="text" class="welcome__contact-form-input" placeholder="Ваш E-mail">
+            <select class="welcome__contact-form-select">
+              <option disabled selected>Выберите интересующую Вас услугу</option>
+              <option value="">Веб-дизайн</option>
+              <option value="">Веб-дизайн</option>
+              <option value="">Веб-дизайн</option>
+            </select>
+            <textarea class="welcome__contact-form-textarea" placeholder="Опишите, что Вам необходимо и наш специалист максимально подробно сможет проконсультировать Вас по интересующей услуге"></textarea>
+            <div class="welcome__contact-form-love">Ни одной заявки не оставим без ответа</div>
+            <div class="welcome__contact-form-data">
+              <input type="checkbox" id="personal">
+              <label class="form__checkbox" for="personal"></label>
+              <span>
+                Согласен на
+                <a href="">обработку моих данных</a>
+              </span>
+            </div>
+            <button class="btn btn--gradient">Отправить</button>
+          </form>
+        </div>
+      </div>
+
     </div>
 
 
@@ -365,6 +558,7 @@
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/fullpage/fullpage.min.js"></script>
+    <script src="libs/nice-select/nice-select.min.js"></script>
     <script src="js/js.js"></script>
     <script src="js/main.js"></script>
   </body>
