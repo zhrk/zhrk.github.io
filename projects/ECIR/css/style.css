@@ -14066,3 +14066,27 @@ h4.webinar-who {
 }
 
 /* NEW END */
+
+
+
+/* ORDER NEW COL START */
+
+.order__table .order__item--value--post {
+  display: none;
+}
+
+.order__table--posts-count .order__item--link {
+  width: 232px;
+}
+
+.order__table--posts-count .order__item--value--post {
+  display: flex;
+}
+
+@media screen and (max-width: 1279px) {
+  .order__item--value--post {
+    display: none !important;
+  }
+}
+
+/* ORDER NEW COL END */
