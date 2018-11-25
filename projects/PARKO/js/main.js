@@ -162,4 +162,9 @@ $(document).ready(function() {
     $(".popup__call").removeClass("popup__call--visible");
   });
 
+
+  $("#menu").click(function() {
+    $(".menu__popup").toggleClass("menu__popup--visible");
+  });
+
 });
