@@ -1,0 +1,10 @@
+.registration-form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8fc;
+}
+
+.registration-form__steps {
+  margin-top: 32px;
+}

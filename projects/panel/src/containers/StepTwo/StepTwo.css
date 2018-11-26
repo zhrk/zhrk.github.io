@@ -1,0 +1,36 @@
+.step-two {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.step-two__pdf-list {
+  align-self: center;
+  margin-top: 40px;
+  display: flex;
+}
+
+.step-two__pdf-list > .pdf:not(:last-child) {
+  margin-right: 40px;
+}
+
+.step-two > .button {
+  margin-top: 80px;
+  align-self: center;
+}
+
+@media (max-width: 413px) {
+  
+  .step-two__pdf-list {
+    flex-direction: column;
+  }
+
+  .step-two__pdf-list > .pdf:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .step-two__pdf-list > .pdf:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+}
