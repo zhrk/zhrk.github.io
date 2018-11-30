@@ -71,7 +71,9 @@
 
   .welcome__inner {
     height: auto;
-    background-image: url('../img/welcome-bg.jpg');
+    background-image: url('../img/welcome-bg-m.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     padding-bottom: 80px;
   }

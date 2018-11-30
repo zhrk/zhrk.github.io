@@ -1,4 +1,4 @@
-$('a[href*="#"]')
+/*$('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
@@ -25,7 +25,7 @@ $('a[href*="#"]')
       });
     }
   }
-});
+});*/
 
 var teamSlidesToShow;
 var teamSlidesToShow = Math.floor(window.innerWidth/286);

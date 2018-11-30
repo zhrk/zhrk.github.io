@@ -467,7 +467,7 @@ main {
   }
 
   .welcome {
-    background-image: url('../img/welcome-bg.png');
+    background-image: url('../img/welcome-bg.jpg');
   }
 
 }
@@ -5834,7 +5834,7 @@ footer {
 }
 
 .social__card-telega-content-inner {
-	background-image: url('../img/social/telega-bg.png');
+	background-image: url('../img/social/telega-bg.jpg');
 	flex-grow: 1;
 	padding-top: 24px;
 	padding-left: 24px;

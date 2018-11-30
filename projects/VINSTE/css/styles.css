@@ -1531,3 +1531,76 @@ footer {
   align-items: center;
   cursor: pointer;
 }
+
+.col-4 {
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* BANNER STYLES */
+
+.wut {
+  background-image: url('../img/w-i.png'), url('../img/w-bg.png');
+  background-position: bottom -100px right -200px, center center;
+  height: 350px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+.wut--2 {
+  background-image: url('../img/w-i-2.png'), url('../img/w-bg2.png');
+  background-position: bottom -100px right -120px, center center;
+}
+
+.wut .btn {
+  align-self: flex-start;
+  max-width: 150px;
+}
+
+.wut--2 .btn {
+  max-width: 200px;
+}
+
+.wut ul {
+  magrin: 0;
+  padding: 0;
+}
+
+.wut li {
+  font-family: Proxima Nova;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.wut li img {
+  margin-right: 10px;
+}
+
+.wut__h {
+  font-family: Proxima Nova;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.wut__h > span {
+  color: rgba(232, 13, 123, 255);
+  margin-right: 5px;
+}
+
+.wut__h2 {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
+}

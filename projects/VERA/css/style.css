@@ -3321,11 +3321,3 @@ textarea {
 .btn-v-w {
 	margin-top: 40px;
 }
-
-.my.wallets {
-  min-height: calc(100vh - 70px);
-}
-
-.my {
-  min-height: calc(100vh - 70px);
-}
