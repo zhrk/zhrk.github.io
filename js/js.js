@@ -47,7 +47,7 @@ function slideshow(element, hideClass, interval) {
   init();
 }
 
-document.addEventListener("load", function() {
+$(window).bind('load', function() {
   slideshow('#card-img__METELEV', 'card-img--hidden', 3000);
   slideshow('#card-img__SMMLABA', 'card-img--hidden', 3000);
   slideshow('#card-img__TRC', 'card-img--hidden', 3000);
